@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/icon_search_white" android:id="@id/action_search" android:title="@string/SearchUsersWord" android:showAsAction="ifRoom" android:actionViewClass="android.widget.SearchView" />
+    <item android:id="@id/action_robux" android:title="@string/RobuxWord" android:showAsAction="always" android:actionLayout="@layout/button_robux_layout" />
+    <item android:id="@id/action_tickets" android:title="@string/TicketsWord" android:showAsAction="ifRoom" android:actionLayout="@layout/button_bc_layout" />
+</menu>

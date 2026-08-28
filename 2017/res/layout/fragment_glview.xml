@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/fragment_glview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="35.0dip" android:layout_height="35.0dip" layout="@layout/include_rbx_progress_bar" />
+    </LinearLayout>
+    <SurfaceView android:id="@id/surfaceview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/keyboard_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip">
+        <com.skyblox.c2017.RbxKeyboard android:gravity="fill_horizontal|center" android:id="@id/gl_edit_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:ems="10">
+            <requestFocus />
+        </com.skyblox.c2017.RbxKeyboard>
+    </LinearLayout>
+</FrameLayout>

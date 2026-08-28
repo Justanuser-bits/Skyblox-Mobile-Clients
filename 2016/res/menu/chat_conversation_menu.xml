@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_view_profile" android:visible="false" android:title="@string/ViewProfile" />
+    <item android:id="@id/menu_report" android:visible="false" android:title="@string/ReportAbuse" />
+    <item android:id="@id/menu_add_friends" android:visible="false" android:title="@string/AddFriends" />
+    <item android:id="@id/menu_view_participants" android:visible="false" android:title="@string/ViewParticipants" />
+    <item android:id="@id/menu_leave_group" android:visible="false" android:title="@string/LeaveGroup" />
+</menu>

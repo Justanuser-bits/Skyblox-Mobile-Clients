@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyblox.c2017.components.RbxLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fragment_create_username_overlay_text_container" android:background="@drawable/pattern_bg_red" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.skyblox.c2017.components.RbxTextView android:textSize="@dimen/welcomeTextSize" android:id="@id/welcome_animation_overlay_first" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcomeTo" style="@style/Theme.Roblox.StandardFontLight" />
+    <ImageView android:id="@id/welcome_animation_overlay_second" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/roblox_logo_white" />
+</com.skyblox.c2017.components.RbxLinearLayout>

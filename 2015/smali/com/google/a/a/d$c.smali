@@ -1,0 +1,134 @@
+.class Lcom/google/a/a/d$c;
+.super Ljava/lang/Object;
+.source "IMASDK"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/a/a/d;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "c"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/a/a/d$c$a;
+    }
+.end annotation
+
+
+# instance fields
+.field a:[Z
+
+.field b:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set",
+            "<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Ljava/util/Set;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Set",
+            "<",
+            "Ljava/lang/Integer;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 1830
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 1831
+    iput-object p1, p0, Lcom/google/a/a/d$c;->b:Ljava/util/Set;
+
+    .line 1832
+    const/16 v0, 0x100
+
+    new-array v0, v0, [Z
+
+    iput-object v0, p0, Lcom/google/a/a/d$c;->a:[Z
+
+    .line 1833
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-object v1, p0, Lcom/google/a/a/d$c;->a:[Z
+
+    array-length v1, v1
+
+    if-ge v0, v1, :cond_0
+
+    .line 1834
+    iget-object v1, p0, Lcom/google/a/a/d$c;->a:[Z
+
+    iget-object v2, p0, Lcom/google/a/a/d$c;->b:Ljava/util/Set;
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-interface {v2, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    aput-boolean v2, v1, v0
+
+    .line 1833
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 1836
+    :cond_0
+    return-void
+.end method
+
+.method synthetic constructor <init>(Ljava/util/Set;Lcom/google/a/a/d$1;)V
+    .locals 0
+
+    .prologue
+    .line 1826
+    invoke-direct {p0, p1}, Lcom/google/a/a/d$c;-><init>(Ljava/util/Set;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method a(Lcom/google/a/a/d$c;)Lcom/google/a/a/d$c;
+    .locals 1
+
+    .prologue
+    .line 1846
+    new-instance v0, Lcom/google/a/a/d$c$a;
+
+    invoke-direct {v0}, Lcom/google/a/a/d$c$a;-><init>()V
+
+    invoke-virtual {v0, p0}, Lcom/google/a/a/d$c$a;->a(Lcom/google/a/a/d$c;)Lcom/google/a/a/d$c$a;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/google/a/a/d$c$a;->a(Lcom/google/a/a/d$c;)Lcom/google/a/a/d$c$a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/google/a/a/d$c$a;->a()Lcom/google/a/a/d$c;
+
+    move-result-object v0
+
+    return-object v0
+.end method

@@ -1,0 +1,151 @@
+.class public Lcom/skyblox/c2016/event/ChatMessagesRetrievedEvent;
+.super Ljava/lang/Object;
+.source "ChatMessagesRetrievedEvent.java"
+
+
+# instance fields
+.field private conversationId:J
+
+.field private inclusiveStartMessageId:Ljava/lang/String;
+
+.field private isNew:Z
+
+.field private messages:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList",
+            "<",
+            "Lcom/skyblox/c2016/chat/model/MessageArtifact;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 12
+    const-wide/16 v0, -0x1
+
+    iput-wide v0, p0, Lcom/skyblox/c2016/event/ChatMessagesRetrievedEvent;->conversationId:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getConversationId()J
+    .locals 2
+
+    .prologue
+    .line 42
+    iget-wide v0, p0, Lcom/skyblox/c2016/event/ChatMessagesRetrievedEvent;->conversationId:J
+
+    return-wide v0
+.end method
+
+.method public getMessages()Ljava/util/ArrayList;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList",
+            "<",
+            "Lcom/skyblox/c2016/chat/model/MessageArtifact;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 34
+    iget-object v0, p0, Lcom/skyblox/c2016/event/ChatMessagesRetrievedEvent;->messages:Ljava/util/ArrayList;
+
+    return-object v0
+.end method
+
+.method public isNew()Z
+    .locals 1
+
+    .prologue
+    .line 26
+    iget-boolean v0, p0, Lcom/skyblox/c2016/event/ChatMessagesRetrievedEvent;->isNew:Z
+
+    return v0
+.end method
+
+.method public setConversationId(J)V
+    .locals 1
+    .param p1, "conversationId"    # J
+
+    .prologue
+    .line 46
+    iput-wide p1, p0, Lcom/skyblox/c2016/event/ChatMessagesRetrievedEvent;->conversationId:J
+
+    .line 47
+    return-void
+.end method
+
+.method public setIsNew(Z)V
+    .locals 0
+    .param p1, "isNew"    # Z
+
+    .prologue
+    .line 30
+    iput-boolean p1, p0, Lcom/skyblox/c2016/event/ChatMessagesRetrievedEvent;->isNew:Z
+
+    .line 31
+    return-void
+.end method
+
+.method public setMessages(Ljava/util/ArrayList;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList",
+            "<",
+            "Lcom/skyblox/c2016/chat/model/MessageArtifact;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 38
+    .local p1, "messages":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/skyblox/c2016/chat/model/MessageArtifact;>;"
+    iput-object p1, p0, Lcom/skyblox/c2016/event/ChatMessagesRetrievedEvent;->messages:Ljava/util/ArrayList;
+
+    .line 39
+    return-void
+.end method
+
+.method public size()I
+    .locals 1
+
+    .prologue
+    .line 17
+    iget-object v0, p0, Lcom/skyblox/c2016/event/ChatMessagesRetrievedEvent;->messages:Ljava/util/ArrayList;
+
+    if-eqz v0, :cond_0
+
+    .line 18
+    iget-object v0, p0, Lcom/skyblox/c2016/event/ChatMessagesRetrievedEvent;->messages:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    .line 21
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method

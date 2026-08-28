@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.skyblox.c2016.components.RbxTextView android:textSize="@dimen/textSizeSignupHeader" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/SettingsTitle" android:layout_weight="0.7" style="@style/Theme.Roblox.StandardFontRegular" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/fragment_settings_facebook_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:weightSum="10.0" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+            <com.skyblox.c2016.components.RbxButton android:id="@id/fragment_settings_facebook_btn" android:text="Connect" android:layout_centerInParent="true" style="@style/Theme.Roblox.Button.Flat.Blue.Settings" />
+            <ImageView android:id="@id/gigya_facebook_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/settingsIconHeight" android:layout_marginLeft="@dimen/facebookIconMargin" android:src="@drawable/icon_facebook_white" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:weightSum="10.0" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+            <com.skyblox.c2016.components.RbxButton android:id="@id/fragment_settings_password_btn" android:text="@string/SettingsChangePassword" android:layout_centerVertical="true" style="@style/Theme.Roblox.Button.Flat.White.Settings" />
+            <ImageView android:id="@id/fragment_settings_password_alert" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/alertIconHeight" android:layout_marginLeft="@dimen/settingsAlertIconLeftMargin" android:src="@drawable/icon_warning" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:weightSum="10.0" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+            <com.skyblox.c2016.components.RbxButton android:id="@id/fragment_settings_email_btn" android:text="@string/SettingsChangeEmail" android:layout_centerVertical="true" style="@style/Theme.Roblox.Button.Flat.White.Settings" />
+            <ImageView android:id="@id/fragment_settings_email_alert" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/alertIconHeight" android:layout_marginLeft="@dimen/settingsAlertIconLeftMargin" android:src="@drawable/icon_warning" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:weightSum="10.0" android:layout_weight="1.5">
+        <com.skyblox.c2016.components.RbxButton android:textSize="@dimen/textSizeBtnCancel" android:layout_gravity="center" android:id="@id/fragment_settings_cancel_btn" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/CloseWord" android:layout_weight="4.0" style="@style/Theme.Roblox.Button.Flat.White" />
+    </LinearLayout>
+</LinearLayout>

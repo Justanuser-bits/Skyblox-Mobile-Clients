@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/rbxGenderContainer" android:background="@drawable/rbx_bg_gender_full" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <TextView android:textSize="20.0sp" android:textColor="@color/RbxGray2" android:gravity="center_vertical" android:id="@id/rbxGenderText" android:paddingLeft="@dimen/stdHintLeftIndent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/GenderWord" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <View android:background="@color/RbxGray4" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/rbxGenderBtnMaleBg" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_male" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <com.skyblox.c2016.components.RbxButton android:id="@id/rbxGenderBtnMale" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="rbxGenderPickerMale" style="@style/Theme.Roblox.Button.Gender.Male" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <View android:background="@color/RbxGray4" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/rbxGenderBtnFemaleBg" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_female" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <com.skyblox.c2016.components.RbxButton android:id="@id/rbxGenderBtnFemale" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="rbxGenderPickerFemale" style="@style/Theme.Roblox.Button.Gender.Female" />
+    </RelativeLayout>
+</LinearLayout>

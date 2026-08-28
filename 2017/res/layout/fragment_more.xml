@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/RbxGray5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" layout="@layout/toolbar_include" />
+    <FrameLayout android:id="@id/more_web_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/more_native_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearlayout_more_page_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_more_events" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="19.0sp" android:textColor="@color/RbxDarkGray" android:id="@id/textview_more_page_events" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/EventsWord" style="@style/Theme.Roblox.StandardFontSemibold" />
+                <LinearLayout android:orientation="vertical" android:id="@id/linearlayout_more_page_events" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout_more_events_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

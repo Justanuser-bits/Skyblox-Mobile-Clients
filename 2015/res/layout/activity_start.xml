@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/activity_start" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/activity_start_background" android:background="@drawable/home_bkg_phone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <Spinner android:id="@id/spinner_environment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/roblox_logo" android:scaleType="fitCenter" android:contentDescription="@string/empty" />
+        <Button android:enabled="true" android:id="@id/login_button" android:clickable="true" android:layout_width="250.0dip" android:layout_height="50.0dip" android:text="@string/LoginButton" style="@style/LoginButtonTheme" />
+        <Space android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        <Button android:enabled="true" android:id="@id/signup_button" android:layout_width="250.0dip" android:layout_height="50.0dip" android:text="@string/SignupWord" style="@style/LoginButtonTheme" />
+        <Space android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        <Button android:enabled="true" android:id="@id/play_now_button" android:layout_width="250.0dip" android:layout_height="50.0dip" android:text="@string/PlayNowButtonLabel" style="@style/LoginButtonTheme" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/shell_text_normal" android:ellipsize="none" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tvStartFinePrint" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lorem_ipsum" android:maxLines="100" android:scrollHorizontally="false" android:singleLine="false" />
+    <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/about_button" android:background="@android:color/transparent" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/about_icon_2" android:scaleType="centerInside" android:onClick="onAbout" android:contentDescription="@string/empty" />
+</FrameLayout>

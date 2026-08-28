@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ga_sessionTimeout">300</integer>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <screenName name="com.skyblox.c2016.ActivityNativeMain">RobloxMobileAndroid ActivityNativeMain</screenName>
+    <screenName name="com.skyblox.c2016.ActivityNativeSidebar">RobloxMobileAndroid ActivityNativeSidebar</screenName>
+    <screenName name="com.skyblox.c2016.RobloxWebFragment">RobloxMobileAndroid ActivityWebView</screenName>
+    <screenName name="com.skyblox.c2016.ActivityFragmentTest">RobloxMobileAndroid ActivityFragmentTest</screenName>
+    <screenName name="com.skyblox.c2016.ActivityGlView">RobloxMobileAndroid ActivityGlView</screenName>
+    <screenName name="com.skyblox.c2016.ActivityCurlTest">RobloxMobileAndroid ActivityCurlTest</screenName>
+    <string name="ga_trackingId">UA-51088233-1</string>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+</resources>

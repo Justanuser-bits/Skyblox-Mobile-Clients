@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.skyblox.c2017" platformBuildVersionCode="24" platformBuildVersionName="7.0">
+    <permission android:name="com.skyblox.c2017.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.skyblox.c2017.permission.C2D_MESSAGE"/>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:requiresSmallestWidthDp="300" android:smallScreens="false" android:xlargeScreens="true"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.software.vr.mode" android:required="false"/>
+    <uses-feature android:name="android.hardware.vr.high_performance" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/RobloxWord" android:largeHeap="true" android:name="com.skyblox.c2017.RobloxApplication" android:supportsRtl="true" android:theme="@style/Theme.Roblox.Fullscreen">
+        <receiver android:exported="true" android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.skyblox.c2017.gcm"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.skyblox.c2017.gcm.RbxGcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.skyblox.c2017.gcm.RbxInstanceIdListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.skyblox.c2017.gcm.RegistrationIntentService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="7991889011d53be5ccf9f6f42d9a1ea05a702eb7"/>
+        <receiver android:name="com.skyblox.c2017.pushnotification.notificationreceivers.FriendRequestReceivedNotificationReceiver">
+            <intent-filter>
+                <action android:name="friend_request_received"/>
+                <action android:name="friend_request_received_ignored"/>
+                <action android:name="friend_request_received_accepted"/>
+                <action android:name="friend_request_received_cleared"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.skyblox.c2017.pushnotification.notificationreceivers.FriendRequestAcceptedNotificationReceiver">
+            <intent-filter>
+                <action android:name="friend_request_accepted"/>
+                <action android:name="friend_request_accepted_cleared"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.skyblox.c2017.pushnotification.notificationreceivers.ChatMessageNotificationReceiver">
+            <intent-filter>
+                <action android:name="chat_message_received"/>
+                <action android:name="chat_message_cleared"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.skyblox.c2017.pushnotification.notificationreceivers.PrivateMessageReceivedNotificationReceiver">
+            <intent-filter>
+                <action android:name="private_message_received"/>
+                <action android:name="private_message_received_cleared"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.skyblox.c2017.RobloxService" android:stopWithTask="false"/>
+        <activity android:alwaysRetainTaskState="true" android:label="@string/RobloxWord" android:launchMode="singleTask" android:name="com.skyblox.c2017.ActivityStart" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/RobloxWord" android:launchMode="singleTop" android:name="com.skyblox.c2017.ActivitySplash" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.skyblox.c2017.ActivityProtocolLaunch" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="robloxmobile"/>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:label="@string/RobloxWord" android:launchMode="singleTask" android:name="com.skyblox.c2017.ActivityNativeMain" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/RobloxWord" android:launchMode="standard" android:name="com.skyblox.c2017.ActivityGlView" android:process=":glview" android:theme="@style/Theme.Roblox.Dark.Fullscreen" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/RobloxWord" android:launchMode="singleTop" android:name="com.skyblox.c2017.ActivityCurlTest" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.Roblox.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.skyblox.c2017.test.TestHelperActivity"/>
+        <activity android:label="@string/captchaTitle" android:name="com.skyblox.c2017.ReCaptchaActivity" android:theme="@style/Theme.Roblox.AppCompat.Light.Dialog.NoActionBar"/>
+        <service android:name="com.skyblox.c2017.realtime.RealtimeService"/>
+        <activity android:name="com.skyblox.c2017.game.GameLaunchActivity" android:theme="@style/Theme.Roblox.AppCompat.Dialog.NoActionBar"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.skyblox.c2017.RobloxWebActivity" android:theme="@style/Theme.Roblox"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.skyblox.c2017.NotificationStreamActivity" android:theme="@style/Theme.Roblox"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.skyblox.c2017.OverlayActivity" android:theme="@style/Theme.Roblox"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.skyblox.c2017.chat.ConversationActivity" android:theme="@style/Theme.Roblox"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.skyblox.c2017.presignup.ActivityPreSignUp" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.skyblox.c2017.signup.multiscreen_sign_up.ActivitySignUp" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.skyblox.c2017"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.skyblox.c2017.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

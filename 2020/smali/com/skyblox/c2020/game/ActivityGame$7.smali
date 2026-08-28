@@ -1,0 +1,102 @@
+.class Lcom/skyblox/c2020/game/ActivityGame$7;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/skyblox/c2020/game/ActivityGame;->e(I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:I
+
+.field final synthetic b:Lcom/skyblox/c2020/game/ActivityGame;
+
+
+# direct methods
+.method constructor <init>(Lcom/skyblox/c2020/game/ActivityGame;I)V
+    .locals 0
+
+    .line 622
+    iput-object p1, p0, Lcom/skyblox/c2020/game/ActivityGame$7;->b:Lcom/skyblox/c2020/game/ActivityGame;
+
+    iput p2, p0, Lcom/skyblox/c2020/game/ActivityGame$7;->a:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    .line 625
+    invoke-static {}, Lcom/skyblox/c2020/locale/b;->a()Lcom/skyblox/c2020/locale/b;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/skyblox/c2020/game/ActivityGame$7;->b:Lcom/skyblox/c2020/game/ActivityGame;
+
+    invoke-virtual {v0, v1}, Lcom/skyblox/c2020/locale/b;->b(Landroid/content/Context;)V
+
+    .line 627
+    new-instance v0, Landroid/app/AlertDialog$Builder;
+
+    iget-object v1, p0, Lcom/skyblox/c2020/game/ActivityGame$7;->b:Lcom/skyblox/c2020/game/ActivityGame;
+
+    invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    iget v1, p0, Lcom/skyblox/c2020/game/ActivityGame$7;->a:I
+
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/skyblox/c2020/game/ActivityGame$7;->b:Lcom/skyblox/c2020/game/ActivityGame;
+
+    sget v2, Lcom/skyblox/c2020/o$j;->CommonUI_Messages_Action_Close:I
+
+    .line 628
+    invoke-virtual {v1, v2}, Lcom/skyblox/c2020/game/ActivityGame;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/skyblox/c2020/game/ActivityGame$7$2;
+
+    invoke-direct {v2, p0}, Lcom/skyblox/c2020/game/ActivityGame$7$2;-><init>(Lcom/skyblox/c2020/game/ActivityGame$7;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/skyblox/c2020/game/ActivityGame$7$1;
+
+    invoke-direct {v1, p0}, Lcom/skyblox/c2020/game/ActivityGame$7$1;-><init>(Lcom/skyblox/c2020/game/ActivityGame$7;)V
+
+    .line 636
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 643
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object v0
+
+    .line 644
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
+
+    return-void
+.end method

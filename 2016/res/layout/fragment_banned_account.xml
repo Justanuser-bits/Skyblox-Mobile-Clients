@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragment_banned_account_background" android:background="@color/shell_dialog_background" android:layout_width="700.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/fragment_banned_account_header" android:background="@color/shell_dialog_bar" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="750.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@color/shell_text_link" android:id="@id/tvCloseButton" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/CloseWord" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/shell_text_normal" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BannedTitle" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/shell_dialog_bar" android:id="@id/closeSpacer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/CancelWord" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TableLayout android:id="@id/fragment_banned_account_table" android:paddingLeft="50.0dip" android:paddingTop="25.0dip" android:paddingBottom="50.0dip" android:layout_width="700.0dip" android:layout_height="wrap_content">
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tvPunishmentType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PUNISHMENT_TYPE" />
+        </TableRow>
+        <TableRow android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/black" android:id="@id/tvFirstLine" android:paddingRight="100.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BannedFirstLine" android:singleLine="false" android:phoneNumber="true" />
+        </TableRow>
+        <TableRow android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/black" android:id="@id/tvReviewed" android:paddingRight="100.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BannedReviewed" />
+        </TableRow>
+        <TableRow android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/black" android:id="@id/tvModeratorNote" android:paddingRight="100.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BannedModeratorNote" />
+        </TableRow>
+        <TableRow android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/black" android:textColorLink="@color/RbxBlue1" android:id="@id/tvCommunityGuidelines" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BannedGuidelines" android:singleLine="false" />
+        </TableRow>
+        <TableRow android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/black" android:textColorLink="@color/RbxBlue1" android:id="@id/tvBannedLength" android:paddingRight="100.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BannedLengthAndEndDate" />
+        </TableRow>
+        <TableRow android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/black" android:textColorLink="@color/RbxBlue1" android:id="@id/tvAppeals" android:paddingRight="100.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BannedAppeals" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

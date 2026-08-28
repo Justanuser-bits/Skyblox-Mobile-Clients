@@ -1,0 +1,24 @@
+version: 2.11.1
+apkFileName: Skyblox_2015.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 15
+  targetSdkVersion: 21
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 60
+  versionName: 2.206.62132
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- jpg
+- png
+- assets/fingerprint.txt

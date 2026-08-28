@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.skyblox.c2016" platformBuildVersionCode="24" platformBuildVersionName="7.0">
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:requiresSmallestWidthDp="300" android:smallScreens="false" android:xlargeScreens="true"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <permission android:name="com.skyblox.c2016.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.skyblox.c2016.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/RobloxWord" android:largeHeap="true" android:name="com.skyblox.c2016.RobloxApplication" android:theme="@style/Theme.Roblox.Fullscreen">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="7991889011d53be5ccf9f6f42d9a1ea05a702eb7"/>
+        <receiver android:exported="true" android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.skyblox.c2016.gcm"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.skyblox.c2016.gcm.RbxGcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.skyblox.c2016.gcm.RbxInstanceIdListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.skyblox.c2016.gcm.RegistrationIntentService"/>
+        <service android:exported="false" android:name="com.skyblox.c2016.RobloxService" android:stopWithTask="false"/>
+        <activity android:alwaysRetainTaskState="true" android:label="@string/RobloxWord" android:name="com.skyblox.c2016.ActivityStart" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:label="@string/RobloxWord" android:name="com.skyblox.c2016.ActivitySplash" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="robloxmobile"/>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:label="@string/RobloxWord" android:launchMode="singleTask" android:name="com.skyblox.c2016.ActivityNativeMain" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/RobloxWord" android:launchMode="singleTask" android:name="com.skyblox.c2016.ActivityGlView" android:process=":glview" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.Roblox.Dark.Fullscreen" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/RobloxWord" android:launchMode="singleTop" android:name="com.skyblox.c2016.ActivityCurlTest" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.Roblox.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gigya.socialize.android.ui.HostActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.skyblox.c2016.ActivityNotificationStream"/>
+        <activity android:allowTaskReparenting="true" android:launchMode="singleTask" android:name="com.gigya.socialize.android.login.providers.WebLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="gsapi" android:scheme="com.skyblox.c2016"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/RobloxWord" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.skyblox.c2016.test.TestHelperActivity"/>
+        <receiver android:name="com.amazon.device.iap.ResponseReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.inapp.purchasing.NOTIFY" android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/captchaTitle" android:name="com.skyblox.c2016.ReCaptchaActivity" android:theme="@style/Theme.Roblox.AppCompat.Light.Dialog.NoActionBar"/>
+        <service android:name="com.skyblox.c2016.realtime.RealtimeService"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.skyblox.c2016.RobloxWebActivity" android:theme="@style/Theme.Roblox"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.skyblox.c2016.chat.ConversationActivity" android:theme="@style/Theme.Roblox"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.skyblox.c2016.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.skyblox.c2016"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

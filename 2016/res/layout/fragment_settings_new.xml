@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:isScrollContainer="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/top" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.skyblox.c2016.components.RbxGenderPicker android:layout_gravity="center" android:layout_width="375.0dip" android:layout_height="50.0dip" android:layout_marginTop="100.0dip" style="@style/Theme.Roblox.StandardFontRegular" />
+            <com.skyblox.c2016.components.RbxBirthdayPicker android:layout_gravity="center" android:layout_width="375.0dip" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" style="@style/Theme.Roblox.StandardFontLight" />
+            <com.skyblox.c2016.components.RbxButton android:layout_gravity="center" android:id="@id/button" android:layout_width="250.0dip" android:layout_height="50.0dip" android:layout_marginTop="100.0dip" android:text="Test Button" style="@style/Theme.Roblox.Button.Flat.White" />
+            <com.skyblox.c2016.components.RbxButton android:layout_gravity="center" android:id="@id/button2" android:layout_width="250.0dip" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:text="Longer Test Button" style="@style/Theme.Roblox.Button.Flat.Blue" />
+            <com.skyblox.c2016.components.RbxEditText android:layout_gravity="center" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" custom:hintText="New password" custom:errorText="Passwords don't match" style="@style/Theme.Roblox.EditText" />
+            <com.skyblox.c2016.components.RbxEditText android:layout_gravity="center" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" custom:hintText="Username" custom:errorText="Username contains invalid characters" custom:hintTextLong="Username (6-20 characters, no spaces)" style="@style/Theme.Roblox.EditText" />
+            <com.skyblox.c2016.components.RbxButton android:layout_gravity="center" android:id="@id/button3" android:layout_width="250.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:text="Longer Test Button" style="@style/Theme.Roblox.Button.Flat.Blue" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="EnvironmentArray">
+        <item>www.skyblox.co/</item>
+        <item>www.gametest1.robloxlabs.com/</item>
+        <item>www.gametest2.robloxlabs.com/</item>
+        <item>www.gametest3.robloxlabs.com/</item>
+        <item>www.gametest4.robloxlabs.com/</item>
+        <item>www.gametest5.robloxlabs.com/</item>
+        <item>www.sitetest1.robloxlabs.com/</item>
+        <item>www.sitetest2.robloxlabs.com/</item>
+        <item>www.sitetest3.robloxlabs.com/</item>
+        <item>www.sitetest4.robloxlabs.com/</item>
+        <item>allen.sitetest3.robloxlabs.com/</item>
+        <item>anthony.sitetest3.robloxlabs.com/</item>
+        <item>alex.sitetest3.robloxlabs.com/</item>
+        <item>baker.sitetest3.robloxlabs.com/</item>
+        <item>ernie.sitetest3.robloxlabs.com/</item>
+        <item>guru.sitetest3.robloxlabs.com/</item>
+        <item>rosemary.sitetest3.robloxlabs.com/</item>
+        <item>antoni.sitetest3.robloxlabs.com/</item>
+        <item>isaiah.sitetest3.robloxlabs.com/</item>
+        <item>akshay.sitetest3.robloxlabs.com/</item>
+        <item>ying.sitetest3.robloxlabs.com/</item>
+        <item>wooldridge.sitetest3.robloxlabs.com/</item>
+        <item>je.sitetest3.robloxlabs.com/</item>
+        <item>jeremy.sitetest3.robloxlabs.com/</item>
+        <item>manika.sitetest3.robloxlabs.com/</item>
+        <item>linjun.sitetest3.robloxlabs.com/</item>
+        <item>shailendra.sitetest3.robloxlabs.com/</item>
+    </string-array>
+    <string-array name="EnvironmentArrayMobile">
+        <item>m.skyblox.co/</item>
+        <item>m.gametest1.robloxlabs.com/</item>
+        <item>m.gametest2.robloxlabs.com/</item>
+        <item>m.gametest3.robloxlabs.com/</item>
+        <item>m.gametest4.robloxlabs.com/</item>
+        <item>m.gametest5.robloxlabs.com/</item>
+        <item>m.sitetest1.robloxlabs.com/</item>
+        <item>m.sitetest2.robloxlabs.com/</item>
+        <item>m.sitetest3.robloxlabs.com/</item>
+        <item>m.sitetest4.robloxlabs.com/</item>
+        <item>allen.sitetest3.robloxlabs.com/</item>
+        <item>anthony.sitetest3.robloxlabs.com/</item>
+        <item>alex.sitetest3.robloxlabs.com/</item>
+        <item>baker.sitetest3.robloxlabs.com/</item>
+        <item>ernie.sitetest3.robloxlabs.com/</item>
+        <item>guru.sitetest3.robloxlabs.com/</item>
+        <item>rosemary.sitetest3.robloxlabs.com/</item>
+        <item>antoni.sitetest3.robloxlabs.com/</item>
+        <item>isaiah.sitetest3.robloxlabs.com/</item>
+        <item>akshay.sitetest3.robloxlabs.com/</item>
+        <item>ying.sitetest3.robloxlabs.com/</item>
+        <item>wooldridge.sitetest3.robloxlabs.com/</item>
+        <item>je.sitetest3.robloxlabs.com/</item>
+        <item>jeremy.sitetest3.robloxlabs.com/</item>
+        <item>manika.sitetest3.robloxlabs.com/</item>
+        <item>linjun.sitetest3.robloxlabs.com/</item>
+        <item>shailendra.sitetest3.robloxlabs.com/</item>
+    </string-array>
+    <string-array name="GenderArray">
+        <item>Choose one</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="MonthArray">
+        <item>Jan.</item>
+        <item>Feb.</item>
+        <item>Mar.</item>
+        <item>Apr.</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>Aug.</item>
+        <item>Sept.</item>
+        <item>Oct.</item>
+        <item>Nov.</item>
+        <item>Dec.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_id": "api-project-100155320909",
+    "project_number": "100155320909",
+    "name": "ROBLOX"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100155320909:android:a2e486505ad434f5",
+        "client_id": "android:com.skyblox.c2017",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.skyblox.c2017.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100155320909-4rnti17cpirsio21eej90o356guo8s1m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skyblox.c2017.dev",
+            "certificate_hash": "DB5C23E715202713180DD78E40DD250717FFC673"
+          }
+        },
+        {
+          "client_id": "100155320909-mt9srkhf61vpg4lh81peum30t0e8dp23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skyblox.c2017.dev",
+            "certificate_hash": "203F1BFD12F3D1938B606A5900AB3C2BEA49CF60"
+          }
+        }
+      ],
+      "api_key": [{"current_key":"AIzaSyBgpsnYwUN5U6ws-qKxeguhgYxkpdELpZE"}],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

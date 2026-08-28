@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.skyblox.c2017.components.RbxButton android:enabled="true" android:id="@id/login_button" android:layout_width="250.0dip" android:layout_height="@dimen/landingButtonHeight" android:text="@string/LoginButton" style="@style/Theme.Roblox.Button.Flat.White.Settings" />
+    <Space android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <com.skyblox.c2017.components.RbxButton android:enabled="true" android:id="@id/signup_button" android:layout_width="250.0dip" android:layout_height="@dimen/landingButtonHeight" android:text="@string/SignupLower" style="@style/Theme.Roblox.Button.Flat.White.Settings" />
+    <Space android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <com.skyblox.c2017.components.RbxButton android:enabled="true" android:id="@id/play_now_button" android:layout_width="250.0dip" android:layout_height="@dimen/landingButtonHeight" android:text="@string/PlayNowButtonLabel" style="@style/Theme.Roblox.Button.Flat.White.Settings" />
+</LinearLayout>
