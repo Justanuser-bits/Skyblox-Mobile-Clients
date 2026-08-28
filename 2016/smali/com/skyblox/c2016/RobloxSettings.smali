@@ -787,29 +787,15 @@
     .locals 2
 
     .prologue
-    .line 203
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->baseUrlSecureWWW()Ljava/lang/String;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "mobile-app-upgrades/native-ios/bc"
-
+    const-string v1, "buildersclub"
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
     return-object v0
 .end method
 
@@ -817,29 +803,15 @@
     .locals 2
 
     .prologue
-    .line 201
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->baseUrl()Ljava/lang/String;
-
+    invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->baseUrlSecureWWW()Ljava/lang/String;
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "mobile-app-upgrades/"
-
+    const-string v1, "buildersclub"
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
     return-object v0
 .end method
 
@@ -2252,76 +2224,16 @@
     .locals 2
 
     .prologue
-    .line 212
-    invoke-static {}, Lcom/skyblox/c2016/AndroidAppSettings;->EnableWWWGroupsEndPoint()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 213
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->baseUrl()Ljava/lang/String;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "my/groups"
-
+    const-string v1, "My/Groups.aspx"
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
-    .line 215
-    :goto_0
     return-object v0
-
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->baseUrlWithMobileOption()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->isTablet()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const-string v0, "My/Groups.aspx"
-
-    :goto_1
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_1
-    const-string v0, "my-groups"
-
-    goto :goto_1
 .end method
 
 .method static helpUrl()Ljava/lang/String;
@@ -3170,76 +3082,16 @@
     .locals 2
 
     .prologue
-    .line 205
-    invoke-static {}, Lcom/skyblox/c2016/AndroidAppSettings;->EnableWWWMessagesEndPoint()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 206
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->baseUrl()Ljava/lang/String;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "my/messages/#!/inbox"
-
+    const-string v1, "my/messages/"
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
-    .line 208
-    :goto_0
     return-object v0
-
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->baseUrlWithMobileOption()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->isTablet()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const-string v0, "my/messages/#!/inbox"
-
-    :goto_1
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_1
-    const-string v0, "inbox"
-
-    goto :goto_1
 .end method
 
 .method private static native nativeEnableNDKProfiler(I)Z

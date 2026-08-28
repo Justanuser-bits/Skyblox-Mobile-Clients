@@ -2042,7 +2042,7 @@
     invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->baseUrl()Ljava/lang/String;
     move-result-object v1
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    const-string v1, "My/Messages"
+    const-string v1, "my/messages/"
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
     move-result-object v0

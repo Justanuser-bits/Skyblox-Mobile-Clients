@@ -270,4 +270,5 @@
     <string name="url">URL</string>
     <string name="url_go">Go</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
+    <string name="app_name">SKYBLOX (2015)</string>
 </resources>

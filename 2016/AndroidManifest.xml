@@ -14,7 +14,7 @@
     <uses-permission android:name="com.skyblox.c2016.permission.C2D_MESSAGE"/>
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/RobloxWord" android:largeHeap="true" android:name="com.skyblox.c2016.RobloxApplication" android:theme="@style/Theme.Roblox.Fullscreen">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.skyblox.c2016.RobloxApplication" android:theme="@style/Theme.Roblox.Fullscreen">
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <meta-data android:name="com.crashlytics.ApiKey" android:value="7991889011d53be5ccf9f6f42d9a1ea05a702eb7"/>
         <receiver android:exported="true" android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
@@ -36,13 +36,13 @@
         </service>
         <service android:exported="false" android:name="com.skyblox.c2016.gcm.RegistrationIntentService"/>
         <service android:exported="false" android:name="com.skyblox.c2016.RobloxService" android:stopWithTask="false"/>
-        <activity android:alwaysRetainTaskState="true" android:label="@string/RobloxWord" android:name="com.skyblox.c2016.ActivityStart" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan">
+        <activity android:alwaysRetainTaskState="true" android:label="@string/app_name" android:name="com.skyblox.c2016.ActivityStart" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:alwaysRetainTaskState="true" android:label="@string/RobloxWord" android:name="com.skyblox.c2016.ActivitySplash" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan">
+        <activity android:alwaysRetainTaskState="true" android:label="@string/app_name" android:name="com.skyblox.c2016.ActivitySplash" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER"/>
                 <action android:name="android.intent.action.MAIN"/>
@@ -54,19 +54,19 @@
                 <data android:scheme="robloxmobile"/>
             </intent-filter>
         </activity>
-        <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:label="@string/RobloxWord" android:launchMode="singleTask" android:name="com.skyblox.c2016.ActivityNativeMain" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustResize">
+        <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.skyblox.c2016.ActivityNativeMain" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="orientation|screenSize" android:label="@string/RobloxWord" android:launchMode="singleTask" android:name="com.skyblox.c2016.ActivityGlView" android:process=":glview" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.Roblox.Dark.Fullscreen" android:windowSoftInputMode="adjustResize">
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.skyblox.c2016.ActivityGlView" android:process=":glview" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.Roblox.Dark.Fullscreen" android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/RobloxWord" android:launchMode="singleTop" android:name="com.skyblox.c2016.ActivityCurlTest" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.Roblox.Fullscreen">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.skyblox.c2016.ActivityCurlTest" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.Roblox.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -83,7 +83,7 @@
             </intent-filter>
         </activity>
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/RobloxWord" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <activity android:name="com.skyblox.c2016.test.TestHelperActivity"/>
         <receiver android:name="com.amazon.device.iap.ResponseReceiver">
             <intent-filter>
