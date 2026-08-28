@@ -13,4 +13,4 @@ Archive of decompiled older Roblox Android apps, modified to connect to Skyblox 
 ○ 2022
 ○ 2023
 
-*(Legend: ● = Working, ◐ = Half Working, ○ = Not Started)*
+(Legend: *● = Working*, *◐ = Half Working*, *○ = Not Started*)
