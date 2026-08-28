@@ -87,6 +87,111 @@
 
 
 # direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 3
+
+    .line 570
+    invoke-direct {p0, p1}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
+
+    .line 499
+    new-instance p1, Landroid/util/SparseArray;
+
+    invoke-direct {p1}, Landroid/util/SparseArray;-><init>()V
+
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->a:Landroid/util/SparseArray;
+
+    .line 502
+    new-instance p1, Ljava/util/ArrayList;
+
+    const/4 v0, 0x4
+
+    invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->g:Ljava/util/ArrayList;
+
+    .line 507
+    new-instance p1, Ljava/util/ArrayList;
+
+    const/16 v0, 0x64
+
+    invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->h:Ljava/util/ArrayList;
+
+    .line 509
+    new-instance p1, Landroidx/constraintlayout/a/a/g;
+
+    invoke-direct {p1}, Landroidx/constraintlayout/a/a/g;-><init>()V
+
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->b:Landroidx/constraintlayout/a/a/g;
+
+    const/4 p1, 0x0
+
+    .line 511
+    iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->i:I
+
+    .line 512
+    iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->j:I
+
+    const v0, 0x7fffffff
+
+    .line 513
+    iput v0, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->k:I
+
+    .line 514
+    iput v0, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->l:I
+
+    const/4 v0, 0x1
+
+    .line 516
+    iput-boolean v0, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->m:Z
+
+    const/4 v0, 0x7
+
+    .line 517
+    iput v0, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->n:I
+
+    const/4 v0, 0x0
+
+    .line 518
+    iput-object v0, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->o:Landroidx/constraintlayout/widget/c;
+
+    const/4 v1, -0x1
+
+    .line 520
+    iput v1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->p:I
+
+    .line 522
+    new-instance v2, Ljava/util/HashMap;
+
+    invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v2, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->q:Ljava/util/HashMap;
+
+    .line 525
+    iput v1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->r:I
+
+    .line 526
+    iput v1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->s:I
+
+    .line 527
+    iput v1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->c:I
+
+    .line 528
+    iput v1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->d:I
+
+    .line 529
+    iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->e:I
+
+    .line 530
+    iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->f:I
+
+    .line 571
+    invoke-direct {p0, v0}, Landroidx/constraintlayout/widget/ConstraintLayout;->b(Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
 
@@ -187,6 +292,111 @@
     iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->f:I
 
     .line 576
+    invoke-direct {p0, p2}, Landroidx/constraintlayout/widget/ConstraintLayout;->b(Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 1
+
+    .line 580
+    invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 499
+    new-instance p1, Landroid/util/SparseArray;
+
+    invoke-direct {p1}, Landroid/util/SparseArray;-><init>()V
+
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->a:Landroid/util/SparseArray;
+
+    .line 502
+    new-instance p1, Ljava/util/ArrayList;
+
+    const/4 p3, 0x4
+
+    invoke-direct {p1, p3}, Ljava/util/ArrayList;-><init>(I)V
+
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->g:Ljava/util/ArrayList;
+
+    .line 507
+    new-instance p1, Ljava/util/ArrayList;
+
+    const/16 p3, 0x64
+
+    invoke-direct {p1, p3}, Ljava/util/ArrayList;-><init>(I)V
+
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->h:Ljava/util/ArrayList;
+
+    .line 509
+    new-instance p1, Landroidx/constraintlayout/a/a/g;
+
+    invoke-direct {p1}, Landroidx/constraintlayout/a/a/g;-><init>()V
+
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->b:Landroidx/constraintlayout/a/a/g;
+
+    const/4 p1, 0x0
+
+    .line 511
+    iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->i:I
+
+    .line 512
+    iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->j:I
+
+    const p3, 0x7fffffff
+
+    .line 513
+    iput p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->k:I
+
+    .line 514
+    iput p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->l:I
+
+    const/4 p3, 0x1
+
+    .line 516
+    iput-boolean p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->m:Z
+
+    const/4 p3, 0x7
+
+    .line 517
+    iput p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->n:I
+
+    const/4 p3, 0x0
+
+    .line 518
+    iput-object p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->o:Landroidx/constraintlayout/widget/c;
+
+    const/4 p3, -0x1
+
+    .line 520
+    iput p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->p:I
+
+    .line 522
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->q:Ljava/util/HashMap;
+
+    .line 525
+    iput p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->r:I
+
+    .line 526
+    iput p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->s:I
+
+    .line 527
+    iput p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->c:I
+
+    .line 528
+    iput p3, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->d:I
+
+    .line 529
+    iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->e:I
+
+    .line 530
+    iput p1, p0, Landroidx/constraintlayout/widget/ConstraintLayout;->f:I
+
+    .line 581
     invoke-direct {p0, p2}, Landroidx/constraintlayout/widget/ConstraintLayout;->b(Landroid/util/AttributeSet;)V
 
     return-void

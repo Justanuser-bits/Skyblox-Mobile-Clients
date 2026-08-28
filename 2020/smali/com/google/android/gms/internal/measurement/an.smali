@@ -27,11 +27,11 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    const/4 v1, 0x0
+    const-string v1, "hits2"
 
-    const-string v2, "hits2"
+    const/4 v2, 0x0
 
-    aput-object v2, v0, v1
+    aput-object v1, v0, v2
 
     const-string v3, "hit_id"
 
@@ -39,11 +39,11 @@
 
     aput-object v3, v0, v4
 
-    const/4 v3, 0x2
+    const-string v3, "hit_time"
 
-    const-string v5, "hit_time"
+    const/4 v5, 0x2
 
-    aput-object v5, v0, v3
+    aput-object v3, v0, v5
 
     const/4 v6, 0x3
 
@@ -71,11 +71,11 @@
 
     sput-object v0, Lcom/google/android/gms/internal/measurement/an;->a:Ljava/lang/String;
 
-    new-array v0, v3, [Ljava/lang/Object;
+    new-array v0, v5, [Ljava/lang/Object;
 
-    aput-object v5, v0, v1
+    aput-object v3, v0, v2
 
-    aput-object v2, v0, v4
+    aput-object v1, v0, v4
 
     const-string v1, "SELECT MAX(%s) FROM %s WHERE 1;"
 

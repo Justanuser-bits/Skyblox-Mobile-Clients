@@ -852,31 +852,31 @@
     throw p1
 
     :cond_1
-    const-string v0, "GmsClientEvents"
-
     iget p1, p1, Landroid/os/Message;->what:I
 
-    const/16 v1, 0x2d
+    const/16 v0, 0x2d
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string v1, "Don\'t know how to handle message: "
+    const-string v0, "Don\'t know how to handle message: "
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    new-instance v1, Ljava/lang/Exception;
+    new-instance v0, Ljava/lang/Exception;
 
-    invoke-direct {v1}, Ljava/lang/Exception;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Exception;-><init>()V
 
-    invoke-static {v0, p1, v1}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    const-string v1, "GmsClientEvents"
+
+    invoke-static {v1, p1, v0}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     const/4 p1, 0x0
 

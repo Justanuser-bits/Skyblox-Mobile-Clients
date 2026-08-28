@@ -32,48 +32,48 @@
 
     sput-object v0, Lcom/c/a/f;->a:Landroid/content/UriMatcher;
 
-    const-string v1, "com.android.contacts"
+    const/4 v1, 0x1
 
-    const-string v2, "contacts/lookup/*/#"
+    const-string v2, "com.android.contacts"
 
-    const/4 v3, 0x1
+    const-string v3, "contacts/lookup/*/#"
 
     .line 50
-    invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-virtual {v0, v2, v3, v1}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 51
     sget-object v0, Lcom/c/a/f;->a:Landroid/content/UriMatcher;
 
-    const-string v2, "contacts/lookup/*"
+    const-string v3, "contacts/lookup/*"
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-virtual {v0, v2, v3, v1}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 52
     sget-object v0, Lcom/c/a/f;->a:Landroid/content/UriMatcher;
 
-    const-string v2, "contacts/#/photo"
+    const-string v1, "contacts/#/photo"
 
     const/4 v3, 0x2
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-virtual {v0, v2, v1, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 53
     sget-object v0, Lcom/c/a/f;->a:Landroid/content/UriMatcher;
 
-    const-string v2, "contacts/#"
+    const-string v1, "contacts/#"
 
     const/4 v3, 0x3
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-virtual {v0, v2, v1, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 54
     sget-object v0, Lcom/c/a/f;->a:Landroid/content/UriMatcher;
 
-    const-string v2, "display_photo/#"
+    const-string v1, "display_photo/#"
 
     const/4 v3, 0x4
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-virtual {v0, v2, v1, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void
 .end method

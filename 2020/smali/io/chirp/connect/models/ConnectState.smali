@@ -34,91 +34,91 @@
 
     new-instance v0, Lio/chirp/connect/models/ConnectState;
 
-    const-string v1, "ConnectNotCreated"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "ConnectNotCreated"
 
-    invoke-direct {v0, v1, v2}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lio/chirp/connect/models/ConnectState;->ConnectNotCreated:Lio/chirp/connect/models/ConnectState;
 
     new-instance v0, Lio/chirp/connect/models/ConnectState;
 
-    const-string v1, "AudioStateStopped"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "AudioStateStopped"
 
-    invoke-direct {v0, v1, v3}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lio/chirp/connect/models/ConnectState;->AudioStateStopped:Lio/chirp/connect/models/ConnectState;
 
     new-instance v0, Lio/chirp/connect/models/ConnectState;
 
-    const-string v1, "AudioStatePaused"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "AudioStatePaused"
 
-    invoke-direct {v0, v1, v4}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lio/chirp/connect/models/ConnectState;->AudioStatePaused:Lio/chirp/connect/models/ConnectState;
 
     new-instance v0, Lio/chirp/connect/models/ConnectState;
 
-    const-string v1, "AudioStateRunning"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "AudioStateRunning"
 
-    invoke-direct {v0, v1, v5}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lio/chirp/connect/models/ConnectState;->AudioStateRunning:Lio/chirp/connect/models/ConnectState;
 
     new-instance v0, Lio/chirp/connect/models/ConnectState;
 
-    const-string v1, "AudioStateSending"
+    const/4 v5, 0x4
 
-    const/4 v6, 0x4
+    const-string v6, "AudioStateSending"
 
-    invoke-direct {v0, v1, v6}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v6, v5}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lio/chirp/connect/models/ConnectState;->AudioStateSending:Lio/chirp/connect/models/ConnectState;
 
     new-instance v0, Lio/chirp/connect/models/ConnectState;
 
-    const-string v1, "AudioStateReceiving"
+    const/4 v6, 0x5
 
-    const/4 v7, 0x5
+    const-string v7, "AudioStateReceiving"
 
-    invoke-direct {v0, v1, v7}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v7, v6}, Lio/chirp/connect/models/ConnectState;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lio/chirp/connect/models/ConnectState;->AudioStateReceiving:Lio/chirp/connect/models/ConnectState;
 
-    const/4 v1, 0x6
+    const/4 v7, 0x6
 
-    new-array v1, v1, [Lio/chirp/connect/models/ConnectState;
+    new-array v7, v7, [Lio/chirp/connect/models/ConnectState;
 
     sget-object v8, Lio/chirp/connect/models/ConnectState;->ConnectNotCreated:Lio/chirp/connect/models/ConnectState;
 
-    aput-object v8, v1, v2
+    aput-object v8, v7, v1
 
-    sget-object v2, Lio/chirp/connect/models/ConnectState;->AudioStateStopped:Lio/chirp/connect/models/ConnectState;
+    sget-object v1, Lio/chirp/connect/models/ConnectState;->AudioStateStopped:Lio/chirp/connect/models/ConnectState;
 
-    aput-object v2, v1, v3
+    aput-object v1, v7, v2
 
-    sget-object v2, Lio/chirp/connect/models/ConnectState;->AudioStatePaused:Lio/chirp/connect/models/ConnectState;
+    sget-object v1, Lio/chirp/connect/models/ConnectState;->AudioStatePaused:Lio/chirp/connect/models/ConnectState;
 
-    aput-object v2, v1, v4
+    aput-object v1, v7, v3
 
-    sget-object v2, Lio/chirp/connect/models/ConnectState;->AudioStateRunning:Lio/chirp/connect/models/ConnectState;
+    sget-object v1, Lio/chirp/connect/models/ConnectState;->AudioStateRunning:Lio/chirp/connect/models/ConnectState;
 
-    aput-object v2, v1, v5
+    aput-object v1, v7, v4
 
-    sget-object v2, Lio/chirp/connect/models/ConnectState;->AudioStateSending:Lio/chirp/connect/models/ConnectState;
+    sget-object v1, Lio/chirp/connect/models/ConnectState;->AudioStateSending:Lio/chirp/connect/models/ConnectState;
 
-    aput-object v2, v1, v6
+    aput-object v1, v7, v5
 
-    aput-object v0, v1, v7
+    aput-object v0, v7, v6
 
-    sput-object v1, Lio/chirp/connect/models/ConnectState;->$VALUES:[Lio/chirp/connect/models/ConnectState;
+    sput-object v7, Lio/chirp/connect/models/ConnectState;->$VALUES:[Lio/chirp/connect/models/ConnectState;
 
     return-void
 .end method

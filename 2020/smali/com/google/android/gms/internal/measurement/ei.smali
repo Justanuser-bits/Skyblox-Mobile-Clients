@@ -89,105 +89,105 @@
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "last_upload"
+    const-wide/16 v0, 0x0
 
-    const-wide/16 v1, 0x0
+    const-string v2, "last_upload"
 
-    invoke-direct {p1, p0, v0, v1, v2}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v0, v1}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->c:Lcom/google/android/gms/internal/measurement/el;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "last_upload_attempt"
+    const-string v2, "last_upload_attempt"
 
-    invoke-direct {p1, p0, v0, v1, v2}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v0, v1}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->d:Lcom/google/android/gms/internal/measurement/el;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "backoff"
+    const-string v2, "backoff"
 
-    invoke-direct {p1, p0, v0, v1, v2}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v0, v1}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->e:Lcom/google/android/gms/internal/measurement/el;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "last_delete_stale"
+    const-string v2, "last_delete_stale"
 
-    invoke-direct {p1, p0, v0, v1, v2}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v0, v1}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->f:Lcom/google/android/gms/internal/measurement/el;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "time_before_start"
+    const-string v2, "time_before_start"
 
     const-wide/16 v3, 0x2710
 
-    invoke-direct {p1, p0, v0, v3, v4}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v3, v4}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->k:Lcom/google/android/gms/internal/measurement/el;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "session_timeout"
+    const-string v2, "session_timeout"
 
     const-wide/32 v3, 0x1b7740
 
-    invoke-direct {p1, p0, v0, v3, v4}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v3, v4}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->l:Lcom/google/android/gms/internal/measurement/el;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/ek;
 
-    const-string v0, "start_new_session"
+    const-string v2, "start_new_session"
 
     const/4 v3, 0x1
 
-    invoke-direct {p1, p0, v0, v3}, Lcom/google/android/gms/internal/measurement/ek;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;Z)V
+    invoke-direct {p1, p0, v2, v3}, Lcom/google/android/gms/internal/measurement/ek;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;Z)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->m:Lcom/google/android/gms/internal/measurement/ek;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "last_pause_time"
+    const-string v2, "last_pause_time"
 
-    invoke-direct {p1, p0, v0, v1, v2}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v0, v1}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->n:Lcom/google/android/gms/internal/measurement/el;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "time_active"
+    const-string v2, "time_active"
 
-    invoke-direct {p1, p0, v0, v1, v2}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v0, v1}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->o:Lcom/google/android/gms/internal/measurement/el;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "midnight_offset"
+    const-string v2, "midnight_offset"
 
-    invoke-direct {p1, p0, v0, v1, v2}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v0, v1}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->g:Lcom/google/android/gms/internal/measurement/el;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "first_open_time"
+    const-string v2, "first_open_time"
 
-    invoke-direct {p1, p0, v0, v1, v2}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v0, v1}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->h:Lcom/google/android/gms/internal/measurement/el;
 
     new-instance p1, Lcom/google/android/gms/internal/measurement/el;
 
-    const-string v0, "app_install_time"
+    const-string v2, "app_install_time"
 
-    invoke-direct {p1, p0, v0, v1, v2}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
+    invoke-direct {p1, p0, v2, v0, v1}, Lcom/google/android/gms/internal/measurement/el;-><init>(Lcom/google/android/gms/internal/measurement/ei;Ljava/lang/String;J)V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/ei;->i:Lcom/google/android/gms/internal/measurement/el;
 
@@ -661,19 +661,19 @@
 
     move-result-object v0
 
-    const-string v1, "com.google.android.gms.measurement.prefs"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "com.google.android.gms.measurement.prefs"
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {v0, v2, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/android/gms/internal/measurement/ei;->r:Landroid/content/SharedPreferences;
 
-    const-string v1, "has_been_opened"
+    const-string v2, "has_been_opened"
 
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -687,9 +687,9 @@
 
     move-result-object v0
 
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 

@@ -187,13 +187,13 @@
 
     move-result-object p1
 
-    const-string v1, "Local AnalyticsService called. startId, action"
-
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {p2, v1, v2, p1}, Lcom/google/android/gms/internal/measurement/ab;->a(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    const-string v2, "Local AnalyticsService called. startId, action"
+
+    invoke-virtual {p2, v2, v1, p1}, Lcom/google/android/gms/internal/measurement/ab;->a(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
     const-string v1, "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
 

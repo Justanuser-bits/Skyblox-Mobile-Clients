@@ -284,21 +284,21 @@
 
     iget-object v0, p0, Lcom/google/android/gms/internal/measurement/ca;->a:Landroid/content/SharedPreferences;
 
-    const-string v1, "installation_campaign"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "installation_campaign"
 
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
-    return-object v2
+    return-object v1
 
     :cond_0
     return-object v0

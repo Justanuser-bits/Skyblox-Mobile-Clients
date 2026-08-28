@@ -187,7 +187,7 @@
 .end method
 
 .method private final c(Landroid/content/Context;Landroid/content/Intent;)I
-    .locals 6
+    .locals 5
 
     .line 32
     iget-object v0, p0, Lcom/google/firebase/iid/x;->c:Landroidx/c/g;
@@ -331,16 +331,24 @@
 
     throw p1
 
+    .line 42
     :cond_4
     :goto_1
-    const-string v2, "FirebaseInstanceId"
-
-    .line 42
-    iget-object v3, v1, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+    iget-object v2, v1, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
 
     iget-object v1, v1, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
 
-    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    add-int/lit8 v3, v3, 0x5e
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -348,37 +356,29 @@
 
     move-result v4
 
-    add-int/lit8 v4, v4, 0x5e
+    add-int/2addr v3, v4
 
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    invoke-virtual {v5}, Ljava/lang/String;->length()I
+    const-string v3, "Error resolving target intent service, skipping classname enforcement. Resolved service was: "
 
-    move-result v5
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    add-int/2addr v4, v5
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    const-string v2, "/"
 
-    invoke-direct {v5, v4}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v4, "Error resolving target intent service, skipping classname enforcement. Resolved service was: "
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v3, "/"
-
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
+
+    const-string v2, "FirebaseInstanceId"
 
     invoke-static {v2, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -397,47 +397,47 @@
 
     :cond_6
     :goto_3
-    const-string v2, "FirebaseInstanceId"
+    const/4 v2, 0x3
 
-    const/4 v3, 0x3
+    const-string v3, "FirebaseInstanceId"
 
     .line 49
-    invoke-static {v2, v3}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-static {v3, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v2
 
     if-eqz v2, :cond_8
 
-    const-string v2, "FirebaseInstanceId"
-
-    const-string v3, "Restricting intent to a specific service: "
+    const-string v2, "Restricting intent to a specific service: "
 
     .line 50
     invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/String;->length()I
-
-    move-result v5
-
-    if-eqz v5, :cond_7
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
     move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    if-eqz v4, :cond_7
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
 
     goto :goto_4
 
     :cond_7
-    new-instance v4, Ljava/lang/String;
+    new-instance v3, Ljava/lang/String;
 
-    invoke-direct {v4, v3}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
-    move-object v3, v4
+    move-object v2, v3
 
     :goto_4
-    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const-string v3, "FirebaseInstanceId"
+
+    invoke-static {v3, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 51
     :cond_8
@@ -527,8 +527,6 @@
     :catch_0
     move-exception p1
 
-    const-string p2, "FirebaseInstanceId"
-
     .line 69
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -536,27 +534,29 @@
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p2
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
 
-    move-result v0
+    move-result p2
 
-    add-int/lit8 v0, v0, 0x2d
+    add-int/lit8 p2, p2, 0x2d
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v0, p2}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string v0, "Failed to start service while in background: "
+    const-string p2, "Failed to start service while in background: "
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
+
+    const-string p2, "FirebaseInstanceId"
 
     invoke-static {p2, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 

@@ -50,7 +50,9 @@
 
     new-instance v1, Landroidx/lifecycle/k;
 
-    iget-object v2, v0, Landroidx/fragment/app/Fragment;->ae:Landroidx/lifecycle/j;
+    iget-object v2, p0, Landroidx/fragment/app/Fragment$3;->a:Landroidx/fragment/app/Fragment;
+
+    iget-object v2, v2, Landroidx/fragment/app/Fragment;->ae:Landroidx/lifecycle/j;
 
     invoke-direct {v1, v2}, Landroidx/lifecycle/k;-><init>(Landroidx/lifecycle/j;)V
 

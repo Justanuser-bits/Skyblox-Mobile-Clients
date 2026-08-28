@@ -1075,15 +1075,17 @@
     return-object p1
 
     :cond_0
-    new-instance v1, Lio/chirp/connect/models/ChirpError;
+    new-instance v0, Lio/chirp/connect/models/ChirpError;
 
-    invoke-virtual {v0, p1}, Lchirpconnect/SDK;->setTransmissionChannel(B)Lchirpconnect/SDKError;
+    iget-object v1, p0, Lio/chirp/connect/ConnectSDKDelegator;->sdk:Lchirpconnect/SDK;
+
+    invoke-virtual {v1, p1}, Lchirpconnect/SDK;->setTransmissionChannel(B)Lchirpconnect/SDKError;
 
     move-result-object p1
 
-    invoke-direct {v1, p1}, Lio/chirp/connect/models/ChirpError;-><init>(Lchirpconnect/SDKError;)V
+    invoke-direct {v0, p1}, Lio/chirp/connect/models/ChirpError;-><init>(Lchirpconnect/SDKError;)V
 
-    return-object v1
+    return-object v0
 .end method
 
 .method public setVolume(F)Lio/chirp/connect/models/ChirpError;
@@ -1104,19 +1106,21 @@
     return-object p1
 
     :cond_0
-    const v1, 0x3f0ff594
+    const v0, 0x3f0ff594
 
-    new-instance v2, Lio/chirp/connect/models/ChirpError;
+    new-instance v1, Lio/chirp/connect/models/ChirpError;
 
-    mul-float p1, p1, v1
+    iget-object v2, p0, Lio/chirp/connect/ConnectSDKDelegator;->sdk:Lchirpconnect/SDK;
 
-    invoke-virtual {v0, p1}, Lchirpconnect/SDK;->setVolume(F)Lchirpconnect/SDKError;
+    mul-float p1, p1, v0
+
+    invoke-virtual {v2, p1}, Lchirpconnect/SDK;->setVolume(F)Lchirpconnect/SDKError;
 
     move-result-object p1
 
-    invoke-direct {v2, p1}, Lio/chirp/connect/models/ChirpError;-><init>(Lchirpconnect/SDKError;)V
+    invoke-direct {v1, p1}, Lio/chirp/connect/models/ChirpError;-><init>(Lchirpconnect/SDKError;)V
 
-    return-object v2
+    return-object v1
 .end method
 
 .method public startListening()Lio/chirp/connect/models/ChirpError;

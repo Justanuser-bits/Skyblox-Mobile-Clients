@@ -615,17 +615,17 @@
     const/4 v4, 0x0
 
     :goto_3
-    const-string v5, "Must not set an account in GoogleApiClient.Builder when using %s. Set account in GoogleSignInOptions.Builder instead"
-
-    new-array v6, v2, [Ljava/lang/Object;
+    new-array v5, v2, [Ljava/lang/Object;
 
     invoke-virtual {v3}, Lcom/google/android/gms/common/api/a;->d()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v6
 
-    aput-object v7, v6, v16
+    aput-object v6, v5, v16
 
-    invoke-static {v4, v5, v6}, Lcom/google/android/gms/common/internal/aa;->a(ZLjava/lang/String;[Ljava/lang/Object;)V
+    const-string v6, "Must not set an account in GoogleApiClient.Builder when using %s. Set account in GoogleSignInOptions.Builder instead"
+
+    invoke-static {v4, v6, v5}, Lcom/google/android/gms/common/internal/aa;->a(ZLjava/lang/String;[Ljava/lang/Object;)V
 
     iget-object v4, v1, Lcom/google/android/gms/common/api/f$a;->b:Ljava/util/Set;
 
@@ -635,17 +635,17 @@
 
     move-result v4
 
-    const-string v5, "Must not set scopes in GoogleApiClient.Builder when using %s. Set account in GoogleSignInOptions.Builder instead."
-
-    new-array v6, v2, [Ljava/lang/Object;
+    new-array v5, v2, [Ljava/lang/Object;
 
     invoke-virtual {v3}, Lcom/google/android/gms/common/api/a;->d()Ljava/lang/String;
 
     move-result-object v3
 
-    aput-object v3, v6, v16
+    aput-object v3, v5, v16
 
-    invoke-static {v4, v5, v6}, Lcom/google/android/gms/common/internal/aa;->a(ZLjava/lang/String;[Ljava/lang/Object;)V
+    const-string v3, "Must not set scopes in GoogleApiClient.Builder when using %s. Set account in GoogleSignInOptions.Builder instead."
+
+    invoke-static {v4, v3, v5}, Lcom/google/android/gms/common/internal/aa;->a(ZLjava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_4
 

@@ -1005,12 +1005,12 @@
 .method public d()V
     .locals 2
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     .line 232
-    invoke-direct {p0, v0, v1, v1}, Lb/a/b/g;->a(ZZZ)V
+    invoke-direct {p0, v1, v0, v0}, Lb/a/b/g;->a(ZZZ)V
 
     return-void
 .end method

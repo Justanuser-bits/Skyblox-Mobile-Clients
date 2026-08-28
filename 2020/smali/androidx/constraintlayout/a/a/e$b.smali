@@ -39,49 +39,49 @@
     .line 41
     new-instance v0, Landroidx/constraintlayout/a/a/e$b;
 
-    const-string v1, "NONE"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "NONE"
 
-    invoke-direct {v0, v1, v2}, Landroidx/constraintlayout/a/a/e$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Landroidx/constraintlayout/a/a/e$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/constraintlayout/a/a/e$b;->a:Landroidx/constraintlayout/a/a/e$b;
 
     new-instance v0, Landroidx/constraintlayout/a/a/e$b;
 
-    const-string v1, "STRONG"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "STRONG"
 
-    invoke-direct {v0, v1, v3}, Landroidx/constraintlayout/a/a/e$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Landroidx/constraintlayout/a/a/e$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/constraintlayout/a/a/e$b;->b:Landroidx/constraintlayout/a/a/e$b;
 
     new-instance v0, Landroidx/constraintlayout/a/a/e$b;
 
-    const-string v1, "WEAK"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "WEAK"
 
-    invoke-direct {v0, v1, v4}, Landroidx/constraintlayout/a/a/e$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Landroidx/constraintlayout/a/a/e$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/constraintlayout/a/a/e$b;->c:Landroidx/constraintlayout/a/a/e$b;
 
-    const/4 v1, 0x3
+    const/4 v4, 0x3
 
-    new-array v1, v1, [Landroidx/constraintlayout/a/a/e$b;
+    new-array v4, v4, [Landroidx/constraintlayout/a/a/e$b;
 
     sget-object v5, Landroidx/constraintlayout/a/a/e$b;->a:Landroidx/constraintlayout/a/a/e$b;
 
-    aput-object v5, v1, v2
+    aput-object v5, v4, v1
 
-    sget-object v2, Landroidx/constraintlayout/a/a/e$b;->b:Landroidx/constraintlayout/a/a/e$b;
+    sget-object v1, Landroidx/constraintlayout/a/a/e$b;->b:Landroidx/constraintlayout/a/a/e$b;
 
-    aput-object v2, v1, v3
+    aput-object v1, v4, v2
 
-    aput-object v0, v1, v4
+    aput-object v0, v4, v3
 
-    sput-object v1, Landroidx/constraintlayout/a/a/e$b;->d:[Landroidx/constraintlayout/a/a/e$b;
+    sput-object v4, Landroidx/constraintlayout/a/a/e$b;->d:[Landroidx/constraintlayout/a/a/e$b;
 
     return-void
 .end method

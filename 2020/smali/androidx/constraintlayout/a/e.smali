@@ -144,11 +144,13 @@
     iput-object v0, p0, Landroidx/constraintlayout/a/e;->f:Landroidx/constraintlayout/a/c;
 
     .line 82
-    new-instance v1, Landroidx/constraintlayout/a/d;
+    new-instance v0, Landroidx/constraintlayout/a/d;
 
-    invoke-direct {v1, v0}, Landroidx/constraintlayout/a/d;-><init>(Landroidx/constraintlayout/a/c;)V
+    iget-object v1, p0, Landroidx/constraintlayout/a/e;->f:Landroidx/constraintlayout/a/c;
 
-    iput-object v1, p0, Landroidx/constraintlayout/a/e;->j:Landroidx/constraintlayout/a/e$a;
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/a/d;-><init>(Landroidx/constraintlayout/a/c;)V
+
+    iput-object v0, p0, Landroidx/constraintlayout/a/e;->j:Landroidx/constraintlayout/a/e$a;
 
     .line 83
     new-instance v0, Landroidx/constraintlayout/a/b;

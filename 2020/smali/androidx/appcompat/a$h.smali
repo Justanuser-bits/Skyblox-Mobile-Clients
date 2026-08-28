@@ -14,84 +14,84 @@
 
 
 # static fields
-.field public static final abc_action_bar_home_description:I = 0x7f0f0401
+.field public static final abc_action_bar_home_description:I = 0x7f0f0232
 
-.field public static final abc_action_bar_up_description:I = 0x7f0f0402
+.field public static final abc_action_bar_up_description:I = 0x7f0f0233
 
-.field public static final abc_action_menu_overflow_description:I = 0x7f0f0403
+.field public static final abc_action_menu_overflow_description:I = 0x7f0f0234
 
-.field public static final abc_action_mode_done:I = 0x7f0f0404
+.field public static final abc_action_mode_done:I = 0x7f0f0235
 
-.field public static final abc_activity_chooser_view_see_all:I = 0x7f0f0405
+.field public static final abc_activity_chooser_view_see_all:I = 0x7f0f0236
 
-.field public static final abc_activitychooserview_choose_application:I = 0x7f0f0406
+.field public static final abc_activitychooserview_choose_application:I = 0x7f0f0237
 
-.field public static final abc_capital_off:I = 0x7f0f0407
+.field public static final abc_capital_off:I = 0x7f0f0238
 
-.field public static final abc_capital_on:I = 0x7f0f0408
+.field public static final abc_capital_on:I = 0x7f0f0239
 
-.field public static final abc_font_family_body_1_material:I = 0x7f0f0409
+.field public static final abc_font_family_body_1_material:I = 0x7f0f023a
 
-.field public static final abc_font_family_body_2_material:I = 0x7f0f040a
+.field public static final abc_font_family_body_2_material:I = 0x7f0f023b
 
-.field public static final abc_font_family_button_material:I = 0x7f0f040b
+.field public static final abc_font_family_button_material:I = 0x7f0f023c
 
-.field public static final abc_font_family_caption_material:I = 0x7f0f040c
+.field public static final abc_font_family_caption_material:I = 0x7f0f023d
 
-.field public static final abc_font_family_display_1_material:I = 0x7f0f040d
+.field public static final abc_font_family_display_1_material:I = 0x7f0f023e
 
-.field public static final abc_font_family_display_2_material:I = 0x7f0f040e
+.field public static final abc_font_family_display_2_material:I = 0x7f0f023f
 
-.field public static final abc_font_family_display_3_material:I = 0x7f0f040f
+.field public static final abc_font_family_display_3_material:I = 0x7f0f0240
 
-.field public static final abc_font_family_display_4_material:I = 0x7f0f0410
+.field public static final abc_font_family_display_4_material:I = 0x7f0f0241
 
-.field public static final abc_font_family_headline_material:I = 0x7f0f0411
+.field public static final abc_font_family_headline_material:I = 0x7f0f0242
 
-.field public static final abc_font_family_menu_material:I = 0x7f0f0412
+.field public static final abc_font_family_menu_material:I = 0x7f0f0243
 
-.field public static final abc_font_family_subhead_material:I = 0x7f0f0413
+.field public static final abc_font_family_subhead_material:I = 0x7f0f0244
 
-.field public static final abc_font_family_title_material:I = 0x7f0f0414
+.field public static final abc_font_family_title_material:I = 0x7f0f0245
 
-.field public static final abc_menu_alt_shortcut_label:I = 0x7f0f0415
+.field public static final abc_menu_alt_shortcut_label:I = 0x7f0f0246
 
-.field public static final abc_menu_ctrl_shortcut_label:I = 0x7f0f0416
+.field public static final abc_menu_ctrl_shortcut_label:I = 0x7f0f0247
 
-.field public static final abc_menu_delete_shortcut_label:I = 0x7f0f0417
+.field public static final abc_menu_delete_shortcut_label:I = 0x7f0f0248
 
-.field public static final abc_menu_enter_shortcut_label:I = 0x7f0f0418
+.field public static final abc_menu_enter_shortcut_label:I = 0x7f0f0249
 
-.field public static final abc_menu_function_shortcut_label:I = 0x7f0f0419
+.field public static final abc_menu_function_shortcut_label:I = 0x7f0f024a
 
-.field public static final abc_menu_meta_shortcut_label:I = 0x7f0f041a
+.field public static final abc_menu_meta_shortcut_label:I = 0x7f0f024b
 
-.field public static final abc_menu_shift_shortcut_label:I = 0x7f0f041b
+.field public static final abc_menu_shift_shortcut_label:I = 0x7f0f024c
 
-.field public static final abc_menu_space_shortcut_label:I = 0x7f0f041c
+.field public static final abc_menu_space_shortcut_label:I = 0x7f0f024d
 
-.field public static final abc_menu_sym_shortcut_label:I = 0x7f0f041d
+.field public static final abc_menu_sym_shortcut_label:I = 0x7f0f024e
 
-.field public static final abc_prepend_shortcut_label:I = 0x7f0f041e
+.field public static final abc_prepend_shortcut_label:I = 0x7f0f024f
 
-.field public static final abc_search_hint:I = 0x7f0f041f
+.field public static final abc_search_hint:I = 0x7f0f0250
 
-.field public static final abc_searchview_description_clear:I = 0x7f0f0420
+.field public static final abc_searchview_description_clear:I = 0x7f0f0251
 
-.field public static final abc_searchview_description_query:I = 0x7f0f0421
+.field public static final abc_searchview_description_query:I = 0x7f0f0252
 
-.field public static final abc_searchview_description_search:I = 0x7f0f0422
+.field public static final abc_searchview_description_search:I = 0x7f0f0253
 
-.field public static final abc_searchview_description_submit:I = 0x7f0f0423
+.field public static final abc_searchview_description_submit:I = 0x7f0f0254
 
-.field public static final abc_searchview_description_voice:I = 0x7f0f0424
+.field public static final abc_searchview_description_voice:I = 0x7f0f0255
 
-.field public static final abc_shareactionprovider_share_with:I = 0x7f0f0425
+.field public static final abc_shareactionprovider_share_with:I = 0x7f0f0256
 
-.field public static final abc_shareactionprovider_share_with_application:I = 0x7f0f0426
+.field public static final abc_shareactionprovider_share_with_application:I = 0x7f0f0257
 
-.field public static final abc_toolbar_collapse_description:I = 0x7f0f0427
+.field public static final abc_toolbar_collapse_description:I = 0x7f0f0258
 
-.field public static final search_menu_title:I = 0x7f0f0451
+.field public static final search_menu_title:I = 0x7f0f0282
 
-.field public static final status_bar_notification_info_overflow:I = 0x7f0f0453
+.field public static final status_bar_notification_info_overflow:I = 0x7f0f0284

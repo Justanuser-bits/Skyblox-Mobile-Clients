@@ -39,52 +39,52 @@
     .line 103
     new-instance v0, Lcom/c/a/t$e;
 
-    const-string v1, "LOW"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "LOW"
 
-    invoke-direct {v0, v1, v2}, Lcom/c/a/t$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lcom/c/a/t$e;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/c/a/t$e;->a:Lcom/c/a/t$e;
 
     .line 104
     new-instance v0, Lcom/c/a/t$e;
 
-    const-string v1, "NORMAL"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "NORMAL"
 
-    invoke-direct {v0, v1, v3}, Lcom/c/a/t$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lcom/c/a/t$e;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/c/a/t$e;->b:Lcom/c/a/t$e;
 
     .line 105
     new-instance v0, Lcom/c/a/t$e;
 
-    const-string v1, "HIGH"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "HIGH"
 
-    invoke-direct {v0, v1, v4}, Lcom/c/a/t$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Lcom/c/a/t$e;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/c/a/t$e;->c:Lcom/c/a/t$e;
 
-    const/4 v1, 0x3
+    const/4 v4, 0x3
 
-    new-array v1, v1, [Lcom/c/a/t$e;
+    new-array v4, v4, [Lcom/c/a/t$e;
 
     .line 102
     sget-object v5, Lcom/c/a/t$e;->a:Lcom/c/a/t$e;
 
-    aput-object v5, v1, v2
+    aput-object v5, v4, v1
 
-    sget-object v2, Lcom/c/a/t$e;->b:Lcom/c/a/t$e;
+    sget-object v1, Lcom/c/a/t$e;->b:Lcom/c/a/t$e;
 
-    aput-object v2, v1, v3
+    aput-object v1, v4, v2
 
-    aput-object v0, v1, v4
+    aput-object v0, v4, v3
 
-    sput-object v1, Lcom/c/a/t$e;->d:[Lcom/c/a/t$e;
+    sput-object v4, Lcom/c/a/t$e;->d:[Lcom/c/a/t$e;
 
     return-void
 .end method

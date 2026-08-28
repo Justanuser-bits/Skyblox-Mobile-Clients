@@ -239,11 +239,11 @@
     .locals 6
 
     .line 683
-    invoke-static {}, Lcom/skyblox/c2020/m/c;->a()Lcom/skyblox/c2020/m/e;
+    invoke-static {}, Lcom/roblox/client/m/c;->a()Lcom/roblox/client/m/e;
 
     move-result-object p1
 
-    invoke-interface {p1}, Lcom/skyblox/c2020/m/e;->cJ()Z
+    invoke-interface {p1}, Lcom/roblox/client/m/e;->cJ()Z
 
     move-result p1
 

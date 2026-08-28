@@ -1362,13 +1362,13 @@
     return-void
 
     :cond_c
-    const-string v0, "_o"
+    const-string v0, "_sn"
 
-    const-string v7, "_sn"
+    const-string v7, "_o"
 
     const-string v6, "_si"
 
-    filled-new-array {v0, v7, v15, v6}, [Ljava/lang/String;
+    filled-new-array {v7, v0, v15, v6}, [Ljava/lang/String;
 
     move-result-object v2
 
@@ -1417,29 +1417,29 @@
     goto :goto_3
 
     :cond_d
-    invoke-virtual {v7, v12}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v7, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v0
 
     invoke-virtual {v7, v15}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v2
 
     invoke-virtual {v7, v11}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
 
-    move-result-wide v4
+    move-result-wide v3
 
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v4
+    move-result-object v3
 
     new-instance v11, Lcom/google/android/gms/internal/measurement/gv;
 
-    invoke-virtual {v4}, Ljava/lang/Long;->longValue()J
+    invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
 
-    move-result-wide v4
+    move-result-wide v3
 
-    invoke-direct {v11, v2, v3, v4, v5}, Lcom/google/android/gms/internal/measurement/gv;-><init>(Ljava/lang/String;Ljava/lang/String;J)V
+    invoke-direct {v11, v0, v2, v3, v4}, Lcom/google/android/gms/internal/measurement/gv;-><init>(Ljava/lang/String;Ljava/lang/String;J)V
 
     goto :goto_4
 
@@ -1456,11 +1456,11 @@
     move-object v14, v11
 
     :goto_5
-    new-instance v11, Ljava/util/ArrayList;
+    new-instance v0, Ljava/util/ArrayList;
 
-    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-interface {v11, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v0, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/measurement/fx;->n()Lcom/google/android/gms/internal/measurement/iq;
 
@@ -1494,7 +1494,7 @@
 
     invoke-static {v10}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
 
-    array-length v12, v10
+    array-length v11, v10
 
     const/4 v4, 0x0
 
@@ -1503,7 +1503,7 @@
     :goto_6
     const-string v3, "_eid"
 
-    if-ge v15, v12, :cond_12
+    if-ge v15, v11, :cond_12
 
     aget-object v2, v10, v15
 
@@ -1610,7 +1610,7 @@
 
     invoke-virtual {v2, v6, v7}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    invoke-interface {v11, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v7, 0x1
 
@@ -1698,13 +1698,13 @@
     const/4 v10, 0x0
 
     :goto_9
-    invoke-interface {v11}, Ljava/util/List;->size()I
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
 
     if-ge v10, v2, :cond_18
 
-    invoke-interface {v11, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v0, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -1730,7 +1730,7 @@
     move-object v3, v9
 
     :goto_b
-    invoke-virtual {v2, v0, v8}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v12, v8}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz p7, :cond_16
 
@@ -1743,7 +1743,7 @@
     move-result-object v2
 
     :cond_16
-    move-object v12, v2
+    move-object v11, v2
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/measurement/fx;->q()Lcom/google/android/gms/internal/measurement/dx;
 
@@ -1765,7 +1765,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5, v12}, Lcom/google/android/gms/internal/measurement/dv;->a(Landroid/os/Bundle;)Ljava/lang/String;
+    invoke-virtual {v5, v11}, Lcom/google/android/gms/internal/measurement/dv;->a(Landroid/os/Bundle;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1777,7 +1777,7 @@
 
     new-instance v4, Lcom/google/android/gms/internal/measurement/zzer;
 
-    invoke-direct {v4, v12}, Lcom/google/android/gms/internal/measurement/zzer;-><init>(Landroid/os/Bundle;)V
+    invoke-direct {v4, v11}, Lcom/google/android/gms/internal/measurement/zzer;-><init>(Landroid/os/Bundle;)V
 
     move-object v2, v13
 
@@ -1818,7 +1818,7 @@
 
     new-instance v5, Landroid/os/Bundle;
 
-    invoke-direct {v5, v12}, Landroid/os/Bundle;-><init>(Landroid/os/Bundle;)V
+    invoke-direct {v5, v11}, Landroid/os/Bundle;-><init>(Landroid/os/Bundle;)V
 
     move-object/from16 v3, p1
 

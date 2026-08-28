@@ -163,54 +163,6 @@
     return-void
 .end method
 
-.method public isProjected()Z
-    .locals 4
-
-    .line 129
-    iget-object v0, p0, Landroidx/core/graphics/drawable/e;->c:Landroid/graphics/drawable/Drawable;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Landroidx/core/graphics/drawable/e;->d:Ljava/lang/reflect/Method;
-
-    if-eqz v0, :cond_0
-
-    .line 131
-    :try_start_0
-    iget-object v2, p0, Landroidx/core/graphics/drawable/e;->c:Landroid/graphics/drawable/Drawable;
-
-    new-array v3, v1, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return v0
-
-    :catch_0
-    move-exception v0
-
-    const-string v2, "WrappedDrawableApi21"
-
-    const-string v3, "Error calling Drawable#isProjected() method"
-
-    .line 133
-    invoke-static {v2, v3, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :cond_0
-    return v1
-.end method
-
 .method public setHotspot(FF)V
     .locals 1
 

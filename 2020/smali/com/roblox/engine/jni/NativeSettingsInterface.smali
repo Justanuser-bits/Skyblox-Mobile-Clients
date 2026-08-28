@@ -31,13 +31,10 @@
 .method public static native nativeGetFFlag(Ljava/lang/String;)Z
 .end method
 
-.method public static native nativeGetGenderNeutralSignUpVariation()Ljava/lang/String;
-.end method
-
 .method public static native nativeInitBreakpad(Ljava/lang/String;Z)V
 .end method
 
-.method public static native nativeInitCrashpad(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Z)Z
+.method public static native nativeInitCrashpad(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Z
 .end method
 
 .method public static native nativeInitFastLog()V

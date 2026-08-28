@@ -28,37 +28,37 @@
     .line 7
     new-instance v0, Lcom/birbit/android/jobqueue/o;
 
-    const-string v1, "ALL"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "ALL"
 
-    invoke-direct {v0, v1, v2}, Lcom/birbit/android/jobqueue/o;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lcom/birbit/android/jobqueue/o;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/o;->a:Lcom/birbit/android/jobqueue/o;
 
     .line 8
     new-instance v0, Lcom/birbit/android/jobqueue/o;
 
-    const-string v1, "ANY"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "ANY"
 
-    invoke-direct {v0, v1, v3}, Lcom/birbit/android/jobqueue/o;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lcom/birbit/android/jobqueue/o;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/o;->b:Lcom/birbit/android/jobqueue/o;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/birbit/android/jobqueue/o;
+    new-array v3, v3, [Lcom/birbit/android/jobqueue/o;
 
     .line 6
     sget-object v4, Lcom/birbit/android/jobqueue/o;->a:Lcom/birbit/android/jobqueue/o;
 
-    aput-object v4, v1, v2
+    aput-object v4, v3, v1
 
-    aput-object v0, v1, v3
+    aput-object v0, v3, v2
 
-    sput-object v1, Lcom/birbit/android/jobqueue/o;->c:[Lcom/birbit/android/jobqueue/o;
+    sput-object v3, Lcom/birbit/android/jobqueue/o;->c:[Lcom/birbit/android/jobqueue/o;
 
     return-void
 .end method

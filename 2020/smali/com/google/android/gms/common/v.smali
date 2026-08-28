@@ -25,11 +25,11 @@
 
     new-instance v0, Lcom/google/android/gms/common/v;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/google/android/gms/common/v;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {v0, v2, v1, v1}, Lcom/google/android/gms/common/v;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
 
     sput-object v0, Lcom/google/android/gms/common/v;->b:Lcom/google/android/gms/common/v;
 

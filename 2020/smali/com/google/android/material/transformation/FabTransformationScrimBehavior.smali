@@ -19,20 +19,20 @@
     .line 48
     new-instance v0, Lcom/google/android/material/a/i;
 
-    const-wide/16 v1, 0x4b
+    const-wide/16 v1, 0x96
 
-    const-wide/16 v3, 0x96
+    const-wide/16 v3, 0x4b
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/google/android/material/a/i;-><init>(JJ)V
+    invoke-direct {v0, v3, v4, v1, v2}, Lcom/google/android/material/a/i;-><init>(JJ)V
 
     iput-object v0, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->a:Lcom/google/android/material/a/i;
 
     .line 49
     new-instance v0, Lcom/google/android/material/a/i;
 
-    const-wide/16 v1, 0x0
+    const-wide/16 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/google/android/material/a/i;-><init>(JJ)V
+    invoke-direct {v0, v3, v4, v1, v2}, Lcom/google/android/material/a/i;-><init>(JJ)V
 
     iput-object v0, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->b:Lcom/google/android/material/a/i;
 
@@ -48,20 +48,20 @@
     .line 48
     new-instance p1, Lcom/google/android/material/a/i;
 
-    const-wide/16 v0, 0x4b
+    const-wide/16 v0, 0x96
 
-    const-wide/16 v2, 0x96
+    const-wide/16 v2, 0x4b
 
-    invoke-direct {p1, v0, v1, v2, v3}, Lcom/google/android/material/a/i;-><init>(JJ)V
+    invoke-direct {p1, v2, v3, v0, v1}, Lcom/google/android/material/a/i;-><init>(JJ)V
 
     iput-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->a:Lcom/google/android/material/a/i;
 
     .line 49
     new-instance p1, Lcom/google/android/material/a/i;
 
-    const-wide/16 v0, 0x0
+    const-wide/16 v2, 0x0
 
-    invoke-direct {p1, v0, v1, v2, v3}, Lcom/google/android/material/a/i;-><init>(JJ)V
+    invoke-direct {p1, v2, v3, v0, v1}, Lcom/google/android/material/a/i;-><init>(JJ)V
 
     iput-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->b:Lcom/google/android/material/a/i;
 

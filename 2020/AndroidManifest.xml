@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.skyblox.c2020" platformBuildVersionCode="29" platformBuildVersionName="10">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:installLocation="preferExternal" package="com.roblox.cliena" platformBuildVersionCode="35" platformBuildVersionName="15">
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:requiresSmallestWidthDp="300" android:smallScreens="false" android:xlargeScreens="true"/>
-    <permission android:name="com.skyblox.c2020.permission.CONFIGURATION" android:protectionLevel="signature"/>
-    <uses-permission android:name="com.android.vending.BILLING"/>
+    <permission android:name="com.roblox.cliena.permission.CONFIGURATION" android:protectionLevel="signature"/>
+    <uses-permission android:name="disabled_com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-    <uses-permission-sdk-23 android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission-sdk-23 android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission-sdk-23 android:name="disabled_android.permission.READ_CONTACTS"/>
+    <uses-permission-sdk-23 android:name="disabled_android.permission.RECORD_AUDIO"/>
     <uses-permission-sdk-23 android:name="android.permission.VIBRATE"/>
     <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
     <uses-feature android:name="android.hardware.type.pc" android:required="false"/>
@@ -16,9 +16,9 @@
     <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false"/>
     <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
-    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:isSplitRequired="false" android:label="@string/Roblox_Application_Name" android:largeHeap="true" android:name="com.skyblox.c2020.RobloxApplication" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/Theme.Roblox.Fullscreen">
+    <uses-permission android:name="com.roblox.cliena_com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.roblox.cliena_com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="Korone (2020)" android:largeHeap="true" android:name="com.skyblox.c2020.RobloxApplication" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/Theme.Roblox.Fullscreen">
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <receiver android:exported="true" android:name="com.skyblox.c2020.signup.multiscreen.SMSBroadcastReceiver">
             <intent-filter>
@@ -68,19 +68,19 @@
                 <data android:scheme="robloxmobile"/>
             </intent-filter>
         </activity>
-        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.skyblox.c2020.ActivityNativeMain" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustResize">
+        <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.skyblox.c2020.ActivityNativeMain" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="standard" android:name="com.skyblox.c2020.game.ActivityGame" android:theme="@style/Theme.Roblox.Dark.Fullscreen" android:windowSoftInputMode="adjustResize">
+        <activity android:configChanges="orientation|screenSize" android:launchMode="standard" android:name="com.skyblox.c2020.game.ActivityGame" android:theme="@style/Theme.Roblox.Dark.Fullscreen" android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.skyblox.c2020.game.GameLaunchActivity" android:theme="@style/Theme.Roblox.Dark.Fullscreen"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.skyblox.c2020.game.GameLaunchActivity" android:theme="@style/Theme.Roblox.Dark.Fullscreen"/>
         <activity android:configChanges="orientation|screenSize" android:name="com.skyblox.c2020.RobloxWebActivity" android:theme="@style/Theme.Roblox"/>
         <activity android:configChanges="orientation|screenSize" android:name="com.skyblox.c2020.NotificationStreamActivity" android:theme="@style/Theme.Roblox"/>
         <activity android:alwaysRetainTaskState="true" android:name="com.skyblox.c2020.signup.ActivitySignUp" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan"/>
@@ -94,7 +94,7 @@
         <activity android:name="com.skyblox.c2020.signup.multiscreen.ActivityWelcome" android:theme="@style/Theme.Roblox"/>
         <activity android:name="com.skyblox.c2020.landing.AboutActivity" android:theme="@style/Theme.Roblox"/>
         <activity android:name="com.skyblox.c2020.signup.chooseyouradventure.ActivityChooseYourAdventure" android:theme="@style/Theme.Roblox.Dark.Fullscreen"/>
-        <provider android:authorities="com.skyblox.c2020.ShellConfigurationProvider" android:exported="true" android:name="com.skyblox.c2020.provider.ShellConfigurationContentProvider" android:permission="com.skyblox.c2020.permission.CONFIGURATION"/>
+        <provider android:authorities="com.roblox.cliena.ShellConfigurationProvider" android:exported="true" android:name="com.skyblox.c2020.provider.ShellConfigurationContentProvider" android:permission="com.skyblox.c2020.permission.CONFIGURATION"/>
         <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
@@ -127,10 +127,7 @@
             </intent-filter>
         </service>
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <provider android:authorities="com.skyblox.c2020.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
-        <provider android:authorities="com.skyblox.c2020.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
-        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
-        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
-        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+        <provider android:authorities="com.roblox.cliena.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.roblox.cliena.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
     </application>
 </manifest>

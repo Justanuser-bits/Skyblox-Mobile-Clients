@@ -452,12 +452,12 @@
 
     invoke-direct {v1, v0}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
-    const-string v0, "  "
+    const/4 v0, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "  "
 
     .line 674
-    invoke-virtual {p0, v0, v2, v1, v2}, Landroidx/fragment/app/a;->a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-virtual {p0, v2, v0, v1, v0}, Landroidx/fragment/app/a;->a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     .line 675
     invoke-virtual {v1}, Ljava/io/PrintWriter;->close()V

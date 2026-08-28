@@ -596,11 +596,11 @@
 
     new-instance v0, Lcom/google/android/gms/internal/measurement/fa;
 
-    const-string v1, "Task exception on network thread"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "Task exception on network thread"
 
-    invoke-direct {v0, p0, p1, v2, v1}, Lcom/google/android/gms/internal/measurement/fa;-><init>(Lcom/google/android/gms/internal/measurement/ex;Ljava/lang/Runnable;ZLjava/lang/String;)V
+    invoke-direct {v0, p0, p1, v1, v2}, Lcom/google/android/gms/internal/measurement/fa;-><init>(Lcom/google/android/gms/internal/measurement/ex;Ljava/lang/Runnable;ZLjava/lang/String;)V
 
     iget-object p1, p0, Lcom/google/android/gms/internal/measurement/ex;->h:Ljava/lang/Object;
 

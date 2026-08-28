@@ -41,67 +41,67 @@
     .line 52
     new-instance v0, Lb/b/a$a;
 
-    const-string v1, "NONE"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "NONE"
 
-    invoke-direct {v0, v1, v2}, Lb/b/a$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lb/b/a$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/b/a$a;->a:Lb/b/a$a;
 
     .line 63
     new-instance v0, Lb/b/a$a;
 
-    const-string v1, "BASIC"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "BASIC"
 
-    invoke-direct {v0, v1, v3}, Lb/b/a$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lb/b/a$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/b/a$a;->b:Lb/b/a$a;
 
     .line 81
     new-instance v0, Lb/b/a$a;
 
-    const-string v1, "HEADERS"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "HEADERS"
 
-    invoke-direct {v0, v1, v4}, Lb/b/a$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Lb/b/a$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/b/a$a;->c:Lb/b/a$a;
 
     .line 103
     new-instance v0, Lb/b/a$a;
 
-    const-string v1, "BODY"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "BODY"
 
-    invoke-direct {v0, v1, v5}, Lb/b/a$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4}, Lb/b/a$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/b/a$a;->d:Lb/b/a$a;
 
-    const/4 v1, 0x4
+    const/4 v5, 0x4
 
-    new-array v1, v1, [Lb/b/a$a;
+    new-array v5, v5, [Lb/b/a$a;
 
     .line 50
     sget-object v6, Lb/b/a$a;->a:Lb/b/a$a;
 
-    aput-object v6, v1, v2
+    aput-object v6, v5, v1
 
-    sget-object v2, Lb/b/a$a;->b:Lb/b/a$a;
+    sget-object v1, Lb/b/a$a;->b:Lb/b/a$a;
 
-    aput-object v2, v1, v3
+    aput-object v1, v5, v2
 
-    sget-object v2, Lb/b/a$a;->c:Lb/b/a$a;
+    sget-object v1, Lb/b/a$a;->c:Lb/b/a$a;
 
-    aput-object v2, v1, v4
+    aput-object v1, v5, v3
 
-    aput-object v0, v1, v5
+    aput-object v0, v5, v4
 
-    sput-object v1, Lb/b/a$a;->e:[Lb/b/a$a;
+    sput-object v5, Lb/b/a$a;->e:[Lb/b/a$a;
 
     return-void
 .end method

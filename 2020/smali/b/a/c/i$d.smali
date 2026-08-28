@@ -52,11 +52,13 @@
     iput-object p1, p0, Lb/a/c/i$d;->d:Lc/c;
 
     .line 371
-    new-instance p2, Lb/a/c/h$b;
+    new-instance p1, Lb/a/c/h$b;
 
-    invoke-direct {p2, p1}, Lb/a/c/h$b;-><init>(Lc/c;)V
+    iget-object p2, p0, Lb/a/c/i$d;->d:Lc/c;
 
-    iput-object p2, p0, Lb/a/c/i$d;->a:Lb/a/c/h$b;
+    invoke-direct {p1, p2}, Lb/a/c/h$b;-><init>(Lc/c;)V
+
+    iput-object p1, p0, Lb/a/c/i$d;->a:Lb/a/c/h$b;
 
     const/16 p1, 0x4000
 

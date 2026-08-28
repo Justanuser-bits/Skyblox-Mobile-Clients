@@ -53,18 +53,18 @@
 .method public static a(Landroid/content/Intent;)Z
     .locals 5
 
-    const-string v0, "androidx.contentpager.content.wakelockid"
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const-string v1, "androidx.contentpager.content.wakelockid"
 
     .line 126
-    invoke-virtual {p0, v0, v1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p0, v1, v0}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result p0
 
     if-nez p0, :cond_0
 
-    return v1
+    return v0
 
     .line 130
     :cond_0

@@ -4574,11 +4574,13 @@
     if-eqz v0, :cond_0
 
     .line 247
-    new-instance v1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;
+    new-instance v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;
 
-    invoke-direct {v1, v0}, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;-><init>(Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;)V
+    iget-object v1, p0, Landroidx/recyclerview/widget/LinearLayoutManager;->n:Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;
 
-    return-object v1
+    invoke-direct {v0, v1}, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;-><init>(Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;)V
+
+    return-object v0
 
     .line 249
     :cond_0

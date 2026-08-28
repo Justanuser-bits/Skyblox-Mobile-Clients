@@ -55,157 +55,157 @@
     .line 57
     new-instance v0, Lcom/appsflyer/internal/ag$c;
 
-    const-string v1, "UNITY"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "UNITY"
 
     const-string v3, "android_unity"
 
     const-string v4, "com.unity3d.player.UnityPlayer"
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v2, v1, v3, v4}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/ag$c;->ı:Lcom/appsflyer/internal/ag$c;
 
     .line 58
     new-instance v0, Lcom/appsflyer/internal/ag$c;
 
-    const-string v1, "REACT_NATIVE"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "REACT_NATIVE"
 
     const-string v4, "android_reactNative"
 
     const-string v5, "com.facebook.react.ReactApplication"
 
-    invoke-direct {v0, v1, v3, v4, v5}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v3, v2, v4, v5}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/ag$c;->Ι:Lcom/appsflyer/internal/ag$c;
 
     .line 59
     new-instance v0, Lcom/appsflyer/internal/ag$c;
 
-    const-string v1, "CORDOVA"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "CORDOVA"
 
     const-string v5, "android_cordova"
 
     const-string v6, "org.apache.cordova.CordovaActivity"
 
-    invoke-direct {v0, v1, v4, v5, v6}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v4, v3, v5, v6}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/ag$c;->ǃ:Lcom/appsflyer/internal/ag$c;
 
     .line 60
     new-instance v0, Lcom/appsflyer/internal/ag$c;
 
-    const-string v1, "SEGMENT"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "SEGMENT"
 
     const-string v6, "android_segment"
 
     const-string v7, "com.segment.analytics.integrations.Integration"
 
-    invoke-direct {v0, v1, v5, v6, v7}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v5, v4, v6, v7}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/ag$c;->ɩ:Lcom/appsflyer/internal/ag$c;
 
     .line 61
     new-instance v0, Lcom/appsflyer/internal/ag$c;
 
-    const-string v1, "COCOS2DX"
+    const/4 v5, 0x4
 
-    const/4 v6, 0x4
+    const-string v6, "COCOS2DX"
 
     const-string v7, "android_cocos2dx"
 
     const-string v8, "org.cocos2dx.lib.Cocos2dxActivity"
 
-    invoke-direct {v0, v1, v6, v7, v8}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v6, v5, v7, v8}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/ag$c;->ɹ:Lcom/appsflyer/internal/ag$c;
 
     .line 62
     new-instance v0, Lcom/appsflyer/internal/ag$c;
 
-    const-string v1, "DEFAULT"
+    const-string v6, "android_native"
 
     const/4 v7, 0x5
 
-    const-string v8, "android_native"
+    const-string v8, "DEFAULT"
 
-    invoke-direct {v0, v1, v7, v8, v8}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v8, v7, v6, v6}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/ag$c;->ι:Lcom/appsflyer/internal/ag$c;
 
     .line 63
     new-instance v0, Lcom/appsflyer/internal/ag$c;
 
-    const-string v1, "ADOBE_EX"
+    const/4 v6, 0x6
 
-    const/4 v8, 0x6
+    const-string v8, "ADOBE_EX"
 
     const-string v9, "android_adobe_ex"
 
     const-string v10, "com.appsflyer.adobeextension"
 
-    invoke-direct {v0, v1, v8, v9, v10}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v8, v6, v9, v10}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/ag$c;->Ɩ:Lcom/appsflyer/internal/ag$c;
 
     .line 64
     new-instance v0, Lcom/appsflyer/internal/ag$c;
 
-    const-string v1, "FLUTTER"
+    const/4 v8, 0x7
 
-    const/4 v9, 0x7
+    const-string v9, "FLUTTER"
 
     const-string v10, "android_flutter"
 
     const-string v11, "com.appsflyer.appsflyersdk.AppsflyerSdkPlugin"
 
-    invoke-direct {v0, v1, v9, v10, v11}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v9, v8, v10, v11}, Lcom/appsflyer/internal/ag$c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/ag$c;->Ӏ:Lcom/appsflyer/internal/ag$c;
 
-    const/16 v1, 0x8
+    const/16 v9, 0x8
 
-    new-array v1, v1, [Lcom/appsflyer/internal/ag$c;
+    new-array v9, v9, [Lcom/appsflyer/internal/ag$c;
 
     .line 56
     sget-object v10, Lcom/appsflyer/internal/ag$c;->ı:Lcom/appsflyer/internal/ag$c;
 
-    aput-object v10, v1, v2
+    aput-object v10, v9, v1
 
-    sget-object v2, Lcom/appsflyer/internal/ag$c;->Ι:Lcom/appsflyer/internal/ag$c;
+    sget-object v1, Lcom/appsflyer/internal/ag$c;->Ι:Lcom/appsflyer/internal/ag$c;
 
-    aput-object v2, v1, v3
+    aput-object v1, v9, v2
 
-    sget-object v2, Lcom/appsflyer/internal/ag$c;->ǃ:Lcom/appsflyer/internal/ag$c;
+    sget-object v1, Lcom/appsflyer/internal/ag$c;->ǃ:Lcom/appsflyer/internal/ag$c;
 
-    aput-object v2, v1, v4
+    aput-object v1, v9, v3
 
-    sget-object v2, Lcom/appsflyer/internal/ag$c;->ɩ:Lcom/appsflyer/internal/ag$c;
+    sget-object v1, Lcom/appsflyer/internal/ag$c;->ɩ:Lcom/appsflyer/internal/ag$c;
 
-    aput-object v2, v1, v5
+    aput-object v1, v9, v4
 
-    sget-object v2, Lcom/appsflyer/internal/ag$c;->ɹ:Lcom/appsflyer/internal/ag$c;
+    sget-object v1, Lcom/appsflyer/internal/ag$c;->ɹ:Lcom/appsflyer/internal/ag$c;
 
-    aput-object v2, v1, v6
+    aput-object v1, v9, v5
 
-    sget-object v2, Lcom/appsflyer/internal/ag$c;->ι:Lcom/appsflyer/internal/ag$c;
+    sget-object v1, Lcom/appsflyer/internal/ag$c;->ι:Lcom/appsflyer/internal/ag$c;
 
-    aput-object v2, v1, v7
+    aput-object v1, v9, v7
 
-    sget-object v2, Lcom/appsflyer/internal/ag$c;->Ɩ:Lcom/appsflyer/internal/ag$c;
+    sget-object v1, Lcom/appsflyer/internal/ag$c;->Ɩ:Lcom/appsflyer/internal/ag$c;
 
-    aput-object v2, v1, v8
+    aput-object v1, v9, v6
 
-    aput-object v0, v1, v9
+    aput-object v0, v9, v8
 
-    sput-object v1, Lcom/appsflyer/internal/ag$c;->ȷ:[Lcom/appsflyer/internal/ag$c;
+    sput-object v9, Lcom/appsflyer/internal/ag$c;->ȷ:[Lcom/appsflyer/internal/ag$c;
 
     return-void
 .end method

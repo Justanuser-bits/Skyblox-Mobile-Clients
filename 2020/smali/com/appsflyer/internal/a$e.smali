@@ -43,56 +43,56 @@
     .line 293
     new-instance v0, Lcom/appsflyer/internal/a$e;
 
-    const-string v1, "NULL"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "NULL"
 
     const-string v3, "null"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/appsflyer/internal/a$e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v2, v1, v3}, Lcom/appsflyer/internal/a$e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/a$e;->ǃ:Lcom/appsflyer/internal/a$e;
 
     new-instance v0, Lcom/appsflyer/internal/a$e;
 
-    const-string v1, "COM_ANDROID_VENDING"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "COM_ANDROID_VENDING"
 
     const-string v4, "cav"
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/appsflyer/internal/a$e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v3, v2, v4}, Lcom/appsflyer/internal/a$e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/a$e;->ɩ:Lcom/appsflyer/internal/a$e;
 
     new-instance v0, Lcom/appsflyer/internal/a$e;
 
-    const-string v1, "OTHER"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "OTHER"
 
     const-string v5, "other"
 
-    invoke-direct {v0, v1, v4, v5}, Lcom/appsflyer/internal/a$e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v4, v3, v5}, Lcom/appsflyer/internal/a$e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/a$e;->ı:Lcom/appsflyer/internal/a$e;
 
-    const/4 v1, 0x3
+    const/4 v4, 0x3
 
-    new-array v1, v1, [Lcom/appsflyer/internal/a$e;
+    new-array v4, v4, [Lcom/appsflyer/internal/a$e;
 
     .line 292
     sget-object v5, Lcom/appsflyer/internal/a$e;->ǃ:Lcom/appsflyer/internal/a$e;
 
-    aput-object v5, v1, v2
+    aput-object v5, v4, v1
 
-    sget-object v2, Lcom/appsflyer/internal/a$e;->ɩ:Lcom/appsflyer/internal/a$e;
+    sget-object v1, Lcom/appsflyer/internal/a$e;->ɩ:Lcom/appsflyer/internal/a$e;
 
-    aput-object v2, v1, v3
+    aput-object v1, v4, v2
 
-    aput-object v0, v1, v4
+    aput-object v0, v4, v3
 
-    sput-object v1, Lcom/appsflyer/internal/a$e;->ι:[Lcom/appsflyer/internal/a$e;
+    sput-object v4, Lcom/appsflyer/internal/a$e;->ι:[Lcom/appsflyer/internal/a$e;
 
     return-void
 .end method

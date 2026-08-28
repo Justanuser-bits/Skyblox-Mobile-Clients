@@ -43,11 +43,13 @@
     iput-object p1, p0, Landroidx/appcompat/widget/i;->a:Landroid/widget/TextView;
 
     .line 66
-    new-instance v0, Landroidx/appcompat/widget/j;
+    new-instance p1, Landroidx/appcompat/widget/j;
 
-    invoke-direct {v0, p1}, Landroidx/appcompat/widget/j;-><init>(Landroid/widget/TextView;)V
+    iget-object v0, p0, Landroidx/appcompat/widget/i;->a:Landroid/widget/TextView;
 
-    iput-object v0, p0, Landroidx/appcompat/widget/i;->h:Landroidx/appcompat/widget/j;
+    invoke-direct {p1, v0}, Landroidx/appcompat/widget/j;-><init>(Landroid/widget/TextView;)V
+
+    iput-object p1, p0, Landroidx/appcompat/widget/i;->h:Landroidx/appcompat/widget/j;
 
     return-void
 .end method

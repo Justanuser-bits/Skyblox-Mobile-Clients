@@ -990,12 +990,12 @@
 
     if-gt v8, p2, :cond_3
 
-    const-string v9, "::"
+    const/4 v9, 0x2
 
-    const/4 v10, 0x2
+    const-string v10, "::"
 
     .line 1572
-    invoke-virtual {p0, p1, v9, v3, v10}, Ljava/lang/String;->regionMatches(ILjava/lang/String;II)Z
+    invoke-virtual {p0, p1, v10, v3, v9}, Ljava/lang/String;->regionMatches(ILjava/lang/String;II)Z
 
     move-result v9
 
@@ -1022,26 +1022,26 @@
     :cond_3
     if-eqz v4, :cond_7
 
-    const-string v8, ":"
+    const/4 v8, 0x1
 
-    const/4 v9, 0x1
+    const-string v9, ":"
 
     .line 1581
-    invoke-virtual {p0, p1, v8, v3, v9}, Ljava/lang/String;->regionMatches(ILjava/lang/String;II)Z
+    invoke-virtual {p0, p1, v9, v3, v8}, Ljava/lang/String;->regionMatches(ILjava/lang/String;II)Z
 
-    move-result v8
+    move-result v9
 
-    if-eqz v8, :cond_4
+    if-eqz v9, :cond_4
 
     add-int/lit8 p1, p1, 0x1
 
     goto :goto_1
 
     :cond_4
-    const-string v8, "."
+    const-string v9, "."
 
     .line 1583
-    invoke-virtual {p0, p1, v8, v3, v9}, Ljava/lang/String;->regionMatches(ILjava/lang/String;II)Z
+    invoke-virtual {p0, p1, v9, v3, v8}, Ljava/lang/String;->regionMatches(ILjava/lang/String;II)Z
 
     move-result p1
 

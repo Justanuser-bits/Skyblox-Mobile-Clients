@@ -56,13 +56,15 @@
     iput-object p1, p0, Lc/j;->b:Lc/e;
 
     .line 64
-    new-instance v0, Lc/k;
+    new-instance p1, Lc/k;
+
+    iget-object v0, p0, Lc/j;->b:Lc/e;
 
     iget-object v1, p0, Lc/j;->c:Ljava/util/zip/Inflater;
 
-    invoke-direct {v0, p1, v1}, Lc/k;-><init>(Lc/e;Ljava/util/zip/Inflater;)V
+    invoke-direct {p1, v0, v1}, Lc/k;-><init>(Lc/e;Ljava/util/zip/Inflater;)V
 
-    iput-object v0, p0, Lc/j;->d:Lc/k;
+    iput-object p1, p0, Lc/j;->d:Lc/k;
 
     return-void
 

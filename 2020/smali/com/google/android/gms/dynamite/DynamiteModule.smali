@@ -616,9 +616,7 @@
     :catch_5
     move-exception p0
 
-    const-string p1, "DynamiteModule"
-
-    const-string p2, "Failed to retrieve remote module version: "
+    const-string p1, "Failed to retrieve remote module version: "
 
     invoke-virtual {p0}, Lcom/google/android/gms/dynamite/DynamiteModule$a;->getMessage()Ljava/lang/String;
 
@@ -630,11 +628,11 @@
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
-    move-result v0
+    move-result p2
 
-    if-eqz v0, :cond_6
+    if-eqz p2, :cond_6
 
-    invoke-virtual {p2, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -643,9 +641,11 @@
     :cond_6
     new-instance p0, Ljava/lang/String;
 
-    invoke-direct {p0, p2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
     :goto_5
+    const-string p1, "DynamiteModule"
+
     invoke-static {p1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 p0, 0x0
@@ -1175,11 +1175,11 @@
     :cond_1
     new-instance p0, Lcom/google/android/gms/dynamite/DynamiteModule$a;
 
-    const-string p1, "Failed to determine which loading route to use."
+    const/4 p1, 0x0
 
-    const/4 p2, 0x0
+    const-string p2, "Failed to determine which loading route to use."
 
-    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/dynamite/DynamiteModule$a;-><init>(Ljava/lang/String;Lcom/google/android/gms/dynamite/c;)V
+    invoke-direct {p0, p2, p1}, Lcom/google/android/gms/dynamite/DynamiteModule$a;-><init>(Ljava/lang/String;Lcom/google/android/gms/dynamite/c;)V
 
     throw p0
 
@@ -1651,39 +1651,39 @@
         }
     .end annotation
 
-    const-string v0, "DynamiteModule"
-
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    move-result v1
+    move-result v0
 
-    add-int/lit8 v1, v1, 0x33
+    add-int/lit8 v0, v0, 0x33
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string v1, "Selected remote version of "
+    const-string v0, "Selected remote version of "
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", version >= "
+    const-string v0, ", version >= "
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    const-string v1, "DynamiteModule"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     const-class v0, Lcom/google/android/gms/dynamite/DynamiteModule;
 

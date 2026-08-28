@@ -64,18 +64,22 @@
     if-eqz v0, :cond_1
 
     .line 347
-    iget-object v1, p0, Landroidx/i/a/c$b$a;->a:Landroid/content/Context;
+    iget-object v0, p0, Landroidx/i/a/c$b$a;->a:Landroid/content/Context;
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 351
-    new-instance v2, Landroidx/i/a/c$b;
+    new-instance v0, Landroidx/i/a/c$b;
 
-    iget-object v3, p0, Landroidx/i/a/c$b$a;->b:Ljava/lang/String;
+    iget-object v1, p0, Landroidx/i/a/c$b$a;->a:Landroid/content/Context;
 
-    invoke-direct {v2, v1, v3, v0}, Landroidx/i/a/c$b;-><init>(Landroid/content/Context;Ljava/lang/String;Landroidx/i/a/c$a;)V
+    iget-object v2, p0, Landroidx/i/a/c$b$a;->b:Ljava/lang/String;
 
-    return-object v2
+    iget-object v3, p0, Landroidx/i/a/c$b$a;->c:Landroidx/i/a/c$a;
+
+    invoke-direct {v0, v1, v2, v3}, Landroidx/i/a/c$b;-><init>(Landroid/content/Context;Ljava/lang/String;Landroidx/i/a/c$a;)V
+
+    return-object v0
 
     .line 348
     :cond_0

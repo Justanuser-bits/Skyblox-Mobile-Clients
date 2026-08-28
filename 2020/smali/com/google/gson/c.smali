@@ -38,82 +38,82 @@
     .line 37
     new-instance v0, Lcom/google/gson/c$1;
 
-    const-string v1, "IDENTITY"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "IDENTITY"
 
-    invoke-direct {v0, v1, v2}, Lcom/google/gson/c$1;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lcom/google/gson/c$1;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/gson/c;->a:Lcom/google/gson/c;
 
     .line 53
     new-instance v0, Lcom/google/gson/c$2;
 
-    const-string v1, "UPPER_CAMEL_CASE"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "UPPER_CAMEL_CASE"
 
-    invoke-direct {v0, v1, v3}, Lcom/google/gson/c$2;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lcom/google/gson/c$2;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/gson/c;->b:Lcom/google/gson/c;
 
     .line 72
     new-instance v0, Lcom/google/gson/c$3;
 
-    const-string v1, "UPPER_CAMEL_CASE_WITH_SPACES"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "UPPER_CAMEL_CASE_WITH_SPACES"
 
-    invoke-direct {v0, v1, v4}, Lcom/google/gson/c$3;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Lcom/google/gson/c$3;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/gson/c;->c:Lcom/google/gson/c;
 
     .line 90
     new-instance v0, Lcom/google/gson/c$4;
 
-    const-string v1, "LOWER_CASE_WITH_UNDERSCORES"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "LOWER_CASE_WITH_UNDERSCORES"
 
-    invoke-direct {v0, v1, v5}, Lcom/google/gson/c$4;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4}, Lcom/google/gson/c$4;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/gson/c;->d:Lcom/google/gson/c;
 
     .line 113
     new-instance v0, Lcom/google/gson/c$5;
 
-    const-string v1, "LOWER_CASE_WITH_DASHES"
+    const/4 v5, 0x4
 
-    const/4 v6, 0x4
+    const-string v6, "LOWER_CASE_WITH_DASHES"
 
-    invoke-direct {v0, v1, v6}, Lcom/google/gson/c$5;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v6, v5}, Lcom/google/gson/c$5;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/gson/c;->e:Lcom/google/gson/c;
 
-    const/4 v1, 0x5
+    const/4 v6, 0x5
 
-    new-array v1, v1, [Lcom/google/gson/c;
+    new-array v6, v6, [Lcom/google/gson/c;
 
     .line 31
     sget-object v7, Lcom/google/gson/c;->a:Lcom/google/gson/c;
 
-    aput-object v7, v1, v2
+    aput-object v7, v6, v1
 
-    sget-object v2, Lcom/google/gson/c;->b:Lcom/google/gson/c;
+    sget-object v1, Lcom/google/gson/c;->b:Lcom/google/gson/c;
 
-    aput-object v2, v1, v3
+    aput-object v1, v6, v2
 
-    sget-object v2, Lcom/google/gson/c;->c:Lcom/google/gson/c;
+    sget-object v1, Lcom/google/gson/c;->c:Lcom/google/gson/c;
 
-    aput-object v2, v1, v4
+    aput-object v1, v6, v3
 
-    sget-object v2, Lcom/google/gson/c;->d:Lcom/google/gson/c;
+    sget-object v1, Lcom/google/gson/c;->d:Lcom/google/gson/c;
 
-    aput-object v2, v1, v5
+    aput-object v1, v6, v4
 
-    aput-object v0, v1, v6
+    aput-object v0, v6, v5
 
-    sput-object v1, Lcom/google/gson/c;->f:[Lcom/google/gson/c;
+    sput-object v6, Lcom/google/gson/c;->f:[Lcom/google/gson/c;
 
     return-void
 .end method

@@ -55,18 +55,18 @@
 
     if-eqz v1, :cond_3
 
-    const-string v1, "limit_ad_tracking"
+    const/4 v1, 0x2
 
-    const/4 v2, 0x2
+    const-string v2, "limit_ad_tracking"
 
     .line 32
-    invoke-static {p0, v1, v2}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {p0, v2, v1}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    move-result v1
+    move-result v2
 
     const-string v3, "advertising_id"
 
-    if-nez v1, :cond_1
+    if-nez v2, :cond_1
 
     .line 35
     invoke-static {p0, v3}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
@@ -85,7 +85,7 @@
     goto :goto_1
 
     :cond_1
-    if-ne v1, v2, :cond_2
+    if-ne v2, v1, :cond_2
 
     goto :goto_1
 

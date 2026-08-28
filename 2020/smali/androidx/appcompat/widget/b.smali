@@ -1424,11 +1424,11 @@
     :goto_e
     add-int/lit8 v11, v11, 0x1
 
+    const/4 v2, 0x0
+
     move-object/from16 v0, p0
 
     move/from16 v3, v17
-
-    const/4 v2, 0x0
 
     goto/16 :goto_4
 

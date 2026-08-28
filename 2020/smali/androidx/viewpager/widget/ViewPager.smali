@@ -225,6 +225,88 @@
     return-void
 .end method
 
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
+
+    .line 391
+    invoke-direct {p0, p1}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
+
+    .line 155
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Landroidx/viewpager/widget/ViewPager;->g:Ljava/util/ArrayList;
+
+    .line 156
+    new-instance p1, Landroidx/viewpager/widget/ViewPager$b;
+
+    invoke-direct {p1}, Landroidx/viewpager/widget/ViewPager$b;-><init>()V
+
+    iput-object p1, p0, Landroidx/viewpager/widget/ViewPager;->h:Landroidx/viewpager/widget/ViewPager$b;
+
+    .line 158
+    new-instance p1, Landroid/graphics/Rect;
+
+    invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
+
+    iput-object p1, p0, Landroidx/viewpager/widget/ViewPager;->i:Landroid/graphics/Rect;
+
+    const/4 p1, -0x1
+
+    .line 162
+    iput p1, p0, Landroidx/viewpager/widget/ViewPager;->j:I
+
+    const/4 v0, 0x0
+
+    .line 163
+    iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->k:Landroid/os/Parcelable;
+
+    .line 164
+    iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->l:Ljava/lang/ClassLoader;
+
+    const v0, -0x800001
+
+    .line 179
+    iput v0, p0, Landroidx/viewpager/widget/ViewPager;->t:F
+
+    const v0, 0x7f7fffff    # Float.MAX_VALUE
+
+    .line 180
+    iput v0, p0, Landroidx/viewpager/widget/ViewPager;->u:F
+
+    const/4 v0, 0x1
+
+    .line 189
+    iput v0, p0, Landroidx/viewpager/widget/ViewPager;->A:I
+
+    .line 207
+    iput p1, p0, Landroidx/viewpager/widget/ViewPager;->K:I
+
+    .line 234
+    iput-boolean v0, p0, Landroidx/viewpager/widget/ViewPager;->T:Z
+
+    const/4 p1, 0x0
+
+    .line 235
+    iput-boolean p1, p0, Landroidx/viewpager/widget/ViewPager;->U:Z
+
+    .line 269
+    new-instance v0, Landroidx/viewpager/widget/ViewPager$3;
+
+    invoke-direct {v0, p0}, Landroidx/viewpager/widget/ViewPager$3;-><init>(Landroidx/viewpager/widget/ViewPager;)V
+
+    iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->aj:Ljava/lang/Runnable;
+
+    .line 277
+    iput p1, p0, Landroidx/viewpager/widget/ViewPager;->ak:I
+
+    .line 392
+    invoke-virtual {p0}, Landroidx/viewpager/widget/ViewPager;->a()V
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 

@@ -89,13 +89,13 @@
 
     invoke-direct {v0, p0}, Lcom/google/android/gms/a/a/c;-><init>(Landroid/content/Context;)V
 
-    const-string v1, "gads:ad_id_app_context:enabled"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "gads:ad_id_app_context:enabled"
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/a/a/c;->a(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v2, v1}, Lcom/google/android/gms/a/a/c;->a(Ljava/lang/String;Z)Z
 
-    move-result v1
+    move-result v2
 
     const-string v3, "gads:ad_id_app_context:ping_ratio"
 
@@ -115,7 +115,7 @@
 
     const-string v3, "gads:ad_id_use_persistent_service:enabled"
 
-    invoke-virtual {v0, v3, v2}, Lcom/google/android/gms/a/a/c;->a(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v3, v1}, Lcom/google/android/gms/a/a/c;->a(Ljava/lang/String;Z)Z
 
     move-result v8
 
@@ -127,7 +127,7 @@
 
     move-object v4, p0
 
-    move v7, v1
+    move v7, v2
 
     invoke-direct/range {v3 .. v8}, Lcom/google/android/gms/a/a/a;-><init>(Landroid/content/Context;JZZ)V
 
@@ -136,7 +136,7 @@
 
     move-result-wide v3
 
-    invoke-direct {v0, v2}, Lcom/google/android/gms/a/a/a;->b(Z)V
+    invoke-direct {v0, v1}, Lcom/google/android/gms/a/a/a;->b(Z)V
 
     invoke-virtual {v0}, Lcom/google/android/gms/a/a/a;->a()Lcom/google/android/gms/a/a/a$a;
 
@@ -154,7 +154,7 @@
 
     move-object v4, p0
 
-    move v5, v1
+    move v5, v2
 
     move v6, v11
 
@@ -177,7 +177,7 @@
 
     move-object v3, v0
 
-    move v5, v1
+    move v5, v2
 
     move v6, v11
 

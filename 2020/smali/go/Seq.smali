@@ -42,11 +42,11 @@
 
     new-instance v0, Lgo/Seq$Ref;
 
-    const/16 v1, 0x29
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/16 v2, 0x29
 
-    invoke-direct {v0, v1, v2}, Lgo/Seq$Ref;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v2, v1}, Lgo/Seq$Ref;-><init>(ILjava/lang/Object;)V
 
     sput-object v0, Lgo/Seq;->nullRef:Lgo/Seq$Ref;
 
@@ -63,13 +63,13 @@
 
     move-result-object v0
 
-    const-string v1, "ctx"
+    const-string v2, "ctx"
 
-    invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 

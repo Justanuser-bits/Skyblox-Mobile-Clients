@@ -286,21 +286,21 @@
 
     iget-object p1, p0, Lcom/google/android/gms/common/api/internal/b;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    const/4 p2, 0x1
+    const/4 p2, 0x0
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
-    invoke-virtual {p1, p2, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    invoke-virtual {p1, v0, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result p1
 
     iget-object v1, p0, Lcom/google/android/gms/common/api/internal/b;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    invoke-virtual {v1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     if-eqz p1, :cond_0
 
-    invoke-direct {p0, v0}, Lcom/google/android/gms/common/api/internal/b;->b(Z)V
+    invoke-direct {p0, p2}, Lcom/google/android/gms/common/api/internal/b;->b(Z)V
 
     :cond_0
     return-void
@@ -323,21 +323,21 @@
 
     iget-object p1, p0, Lcom/google/android/gms/common/api/internal/b;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    invoke-virtual {p1, v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    invoke-virtual {p1, v1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result p1
 
     iget-object v2, p0, Lcom/google/android/gms/common/api/internal/b;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    invoke-virtual {v2, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+    invoke-virtual {v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     if-eqz p1, :cond_0
 
-    invoke-direct {p0, v1}, Lcom/google/android/gms/common/api/internal/b;->b(Z)V
+    invoke-direct {p0, v0}, Lcom/google/android/gms/common/api/internal/b;->b(Z)V
 
     :cond_0
     return-void

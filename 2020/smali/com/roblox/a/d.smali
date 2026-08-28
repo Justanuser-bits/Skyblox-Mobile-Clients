@@ -66,6 +66,44 @@
     return-void
 .end method
 
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 0
+
+    .line 63
+    invoke-direct {p0, p1, p2, p3}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 33
+    new-instance p2, Ljava/util/HashMap;
+
+    invoke-direct {p2}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p2, p0, Lcom/roblox/a/d;->c:Ljava/util/HashMap;
+
+    .line 64
+    invoke-virtual {p0, p1}, Lcom/roblox/a/d;->b(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    .locals 0
+
+    .line 53
+    invoke-direct {p0, p1, p2, p3}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 33
+    new-instance p2, Ljava/util/HashMap;
+
+    invoke-direct {p2}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p2, p0, Lcom/roblox/a/d;->c:Ljava/util/HashMap;
+
+    .line 54
+    invoke-virtual {p0, p1}, Lcom/roblox/a/d;->b(Landroid/content/Context;)V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method protected a(Landroid/content/Context;)V

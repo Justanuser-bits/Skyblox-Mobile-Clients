@@ -108,7 +108,9 @@
     .line 270
     iput v0, p0, Lcom/google/gson/c/a;->n:I
 
-    add-int/lit8 v3, v0, 0x1
+    const/4 v3, 0x0
+
+    add-int/lit8 v3, v3, 0x1
 
     .line 272
     iput v3, p0, Lcom/google/gson/c/a;->n:I

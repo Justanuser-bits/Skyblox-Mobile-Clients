@@ -111,7 +111,9 @@
 
     new-instance v1, Lcom/birbit/android/jobqueue/network/a;
 
-    iget-object v2, v0, Lcom/birbit/android/jobqueue/b/a;->f:Landroid/content/Context;
+    iget-object v2, p0, Lcom/birbit/android/jobqueue/b/a$a;->a:Lcom/birbit/android/jobqueue/b/a;
+
+    iget-object v2, v2, Lcom/birbit/android/jobqueue/b/a;->f:Landroid/content/Context;
 
     invoke-direct {v1, v2}, Lcom/birbit/android/jobqueue/network/a;-><init>(Landroid/content/Context;)V
 

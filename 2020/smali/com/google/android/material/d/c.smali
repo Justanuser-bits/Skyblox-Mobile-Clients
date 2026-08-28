@@ -52,21 +52,21 @@
 .method public a(Landroid/os/Bundle;)V
     .locals 2
 
-    const-string v0, "expanded"
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const-string v1, "expanded"
 
     .line 69
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 
-    move-result v0
+    move-result v1
 
-    iput-boolean v0, p0, Lcom/google/android/material/d/c;->b:Z
+    iput-boolean v1, p0, Lcom/google/android/material/d/c;->b:Z
 
-    const-string v0, "expandedComponentIdHint"
+    const-string v1, "expandedComponentIdHint"
 
     .line 70
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
     move-result p1
 

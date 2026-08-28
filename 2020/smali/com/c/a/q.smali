@@ -34,54 +34,54 @@
     .line 23
     new-instance v0, Lcom/c/a/q;
 
-    const-string v1, "NO_CACHE"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "NO_CACHE"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/c/a/q;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v3, v1, v2}, Lcom/c/a/q;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/c/a/q;->a:Lcom/c/a/q;
 
     .line 30
     new-instance v0, Lcom/c/a/q;
 
-    const-string v1, "NO_STORE"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "NO_STORE"
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/c/a/q;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v4, v2, v3}, Lcom/c/a/q;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/c/a/q;->b:Lcom/c/a/q;
 
     .line 33
     new-instance v0, Lcom/c/a/q;
 
-    const-string v1, "OFFLINE"
+    const-string v4, "OFFLINE"
 
     const/4 v5, 0x4
 
-    invoke-direct {v0, v1, v4, v5}, Lcom/c/a/q;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v4, v3, v5}, Lcom/c/a/q;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/c/a/q;->c:Lcom/c/a/q;
 
-    const/4 v1, 0x3
+    const/4 v4, 0x3
 
-    new-array v1, v1, [Lcom/c/a/q;
+    new-array v4, v4, [Lcom/c/a/q;
 
     .line 19
     sget-object v5, Lcom/c/a/q;->a:Lcom/c/a/q;
 
-    aput-object v5, v1, v2
+    aput-object v5, v4, v1
 
-    sget-object v2, Lcom/c/a/q;->b:Lcom/c/a/q;
+    sget-object v1, Lcom/c/a/q;->b:Lcom/c/a/q;
 
-    aput-object v2, v1, v3
+    aput-object v1, v4, v2
 
-    aput-object v0, v1, v4
+    aput-object v0, v4, v3
 
-    sput-object v1, Lcom/c/a/q;->e:[Lcom/c/a/q;
+    sput-object v4, Lcom/c/a/q;->e:[Lcom/c/a/q;
 
     return-void
 .end method

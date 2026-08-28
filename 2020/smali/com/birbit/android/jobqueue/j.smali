@@ -145,18 +145,20 @@
 
     iget-object p2, p0, Lcom/birbit/android/jobqueue/j;->h:Lcom/birbit/android/jobqueue/scheduling/Scheduler;
 
-    instance-of v0, p2, Lcom/birbit/android/jobqueue/a;
+    instance-of p2, p2, Lcom/birbit/android/jobqueue/a;
 
-    if-nez v0, :cond_1
+    if-nez p2, :cond_1
 
     .line 84
-    new-instance v0, Lcom/birbit/android/jobqueue/a;
+    new-instance p2, Lcom/birbit/android/jobqueue/a;
+
+    iget-object v0, p0, Lcom/birbit/android/jobqueue/j;->h:Lcom/birbit/android/jobqueue/scheduling/Scheduler;
 
     iget-object v1, p0, Lcom/birbit/android/jobqueue/j;->a:Lcom/birbit/android/jobqueue/timer/Timer;
 
-    invoke-direct {v0, p2, v1}, Lcom/birbit/android/jobqueue/a;-><init>(Lcom/birbit/android/jobqueue/scheduling/Scheduler;Lcom/birbit/android/jobqueue/timer/Timer;)V
+    invoke-direct {p2, v0, v1}, Lcom/birbit/android/jobqueue/a;-><init>(Lcom/birbit/android/jobqueue/scheduling/Scheduler;Lcom/birbit/android/jobqueue/timer/Timer;)V
 
-    iput-object v0, p0, Lcom/birbit/android/jobqueue/j;->h:Lcom/birbit/android/jobqueue/scheduling/Scheduler;
+    iput-object p2, p0, Lcom/birbit/android/jobqueue/j;->h:Lcom/birbit/android/jobqueue/scheduling/Scheduler;
 
     .line 86
     :cond_1

@@ -66,6 +66,73 @@
     return-void
 .end method
 
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+
+    .line 63
+    invoke-direct {p0, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
+
+    .line 36
+    new-instance p1, Landroid/graphics/RectF;
+
+    invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
+
+    iput-object p1, p0, Lde/hdodenhof/circleimageview/CircleImageView;->c:Landroid/graphics/RectF;
+
+    .line 37
+    new-instance p1, Landroid/graphics/RectF;
+
+    invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
+
+    iput-object p1, p0, Lde/hdodenhof/circleimageview/CircleImageView;->d:Landroid/graphics/RectF;
+
+    .line 39
+    new-instance p1, Landroid/graphics/Matrix;
+
+    invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
+
+    iput-object p1, p0, Lde/hdodenhof/circleimageview/CircleImageView;->e:Landroid/graphics/Matrix;
+
+    .line 40
+    new-instance p1, Landroid/graphics/Paint;
+
+    invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
+
+    iput-object p1, p0, Lde/hdodenhof/circleimageview/CircleImageView;->f:Landroid/graphics/Paint;
+
+    .line 41
+    new-instance p1, Landroid/graphics/Paint;
+
+    invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
+
+    iput-object p1, p0, Lde/hdodenhof/circleimageview/CircleImageView;->g:Landroid/graphics/Paint;
+
+    .line 42
+    new-instance p1, Landroid/graphics/Paint;
+
+    invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
+
+    iput-object p1, p0, Lde/hdodenhof/circleimageview/CircleImageView;->h:Landroid/graphics/Paint;
+
+    const/high16 p1, -0x1000000
+
+    .line 44
+    iput p1, p0, Lde/hdodenhof/circleimageview/CircleImageView;->i:I
+
+    const/4 p1, 0x0
+
+    .line 45
+    iput p1, p0, Lde/hdodenhof/circleimageview/CircleImageView;->j:I
+
+    .line 46
+    iput p1, p0, Lde/hdodenhof/circleimageview/CircleImageView;->k:I
+
+    .line 65
+    invoke-direct {p0}, Lde/hdodenhof/circleimageview/CircleImageView;->a()V
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 

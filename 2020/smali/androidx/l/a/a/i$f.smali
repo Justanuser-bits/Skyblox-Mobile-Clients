@@ -194,13 +194,15 @@
     iput-object v0, p0, Landroidx/l/a/a/i$f;->k:Landroidx/c/a;
 
     .line 1208
-    new-instance v1, Landroidx/l/a/a/i$c;
+    new-instance v0, Landroidx/l/a/a/i$c;
 
-    iget-object v2, p1, Landroidx/l/a/a/i$f;->c:Landroidx/l/a/a/i$c;
+    iget-object v1, p1, Landroidx/l/a/a/i$f;->c:Landroidx/l/a/a/i$c;
 
-    invoke-direct {v1, v2, v0}, Landroidx/l/a/a/i$c;-><init>(Landroidx/l/a/a/i$c;Landroidx/c/a;)V
+    iget-object v2, p0, Landroidx/l/a/a/i$f;->k:Landroidx/c/a;
 
-    iput-object v1, p0, Landroidx/l/a/a/i$f;->c:Landroidx/l/a/a/i$c;
+    invoke-direct {v0, v1, v2}, Landroidx/l/a/a/i$c;-><init>(Landroidx/l/a/a/i$c;Landroidx/c/a;)V
+
+    iput-object v0, p0, Landroidx/l/a/a/i$f;->c:Landroidx/l/a/a/i$c;
 
     .line 1209
     new-instance v0, Landroid/graphics/Path;

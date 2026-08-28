@@ -40,13 +40,13 @@
     .line 14
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "insertionOrder"
+    const/4 v1, 0x0
 
     const-string v2, "integer"
 
-    const/4 v3, 0x0
+    const-string v3, "insertionOrder"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2, v1}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->a:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
@@ -72,114 +72,114 @@
     .line 16
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "priority"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "priority"
 
-    invoke-direct {v0, v1, v2, v4}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v2, v3}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->c:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
     .line 17
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "group_id"
+    const-string v4, "text"
 
-    const-string v5, "text"
+    const-string v5, "group_id"
 
     const/4 v6, 0x3
 
-    invoke-direct {v0, v1, v5, v6}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4, v6}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->d:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
     .line 18
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "run_count"
+    const-string v5, "run_count"
 
     const/4 v6, 0x4
 
-    invoke-direct {v0, v1, v2, v6}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v2, v6}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->e:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
     .line 19
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "base_job"
+    const-string v5, "base_job"
 
     const-string v6, "byte"
 
     const/4 v7, 0x5
 
-    invoke-direct {v0, v1, v6, v7}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v6, v7}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->f:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
     .line 20
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "created_ns"
+    const-string v5, "long"
 
-    const-string v6, "long"
+    const-string v6, "created_ns"
 
     const/4 v7, 0x6
 
-    invoke-direct {v0, v1, v6, v7}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v6, v5, v7}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->g:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
     .line 21
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "delay_until_ns"
+    const-string v6, "delay_until_ns"
 
     const/4 v7, 0x7
 
-    invoke-direct {v0, v1, v6, v7}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v6, v5, v7}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->h:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
     .line 22
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "running_session_id"
+    const-string v6, "running_session_id"
 
     const/16 v7, 0x8
 
-    invoke-direct {v0, v1, v6, v7}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v6, v5, v7}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->i:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
     .line 23
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "requires_network_until"
+    const-string v5, "requires_network_until"
 
     const/16 v6, 0x9
 
-    invoke-direct {v0, v1, v2, v6}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v2, v6}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->j:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
     .line 24
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "requires_unmetered_network_until"
+    const-string v5, "requires_unmetered_network_until"
 
     const/16 v6, 0xa
 
-    invoke-direct {v0, v1, v2, v6}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v2, v6}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->k:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
     .line 26
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const-string v1, "_id"
+    const-string v5, "_id"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v2, v1}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->l:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
@@ -192,15 +192,15 @@
 
     iget-object v2, v2, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;->a:Ljava/lang/String;
 
-    const-string v3, "job_holder"
+    const-string v5, "job_holder"
 
-    invoke-direct {v1, v3, v2}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v5, v2}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$a;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v2, "job_id"
 
-    const/4 v3, 0x1
+    const/4 v5, 0x1
 
-    invoke-direct {v0, v2, v5, v3, v1}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;ILcom/birbit/android/jobqueue/persistentQueue/sqlite/b$a;)V
+    invoke-direct {v0, v2, v4, v5, v1}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;ILcom/birbit/android/jobqueue/persistentQueue/sqlite/b$a;)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->m:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
@@ -209,7 +209,7 @@
 
     const-string v1, "tag_name"
 
-    invoke-direct {v0, v1, v5, v4}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v4, v3}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->n:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 

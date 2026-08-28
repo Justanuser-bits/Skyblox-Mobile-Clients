@@ -1587,11 +1587,11 @@
     :goto_2
     new-instance p2, Ljava/text/SimpleDateFormat;
 
-    const-string p4, "yyyy-MM-dd HH:mm:ss.SSS"
+    sget-object p4, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
+    const-string v0, "yyyy-MM-dd HH:mm:ss.SSS"
 
-    invoke-direct {p2, p4, v0}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+    invoke-direct {p2, v0, p4}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
     iget-wide v3, p0, Lcom/google/android/gms/common/internal/d;->h:J
 

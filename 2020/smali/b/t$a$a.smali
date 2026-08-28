@@ -43,82 +43,82 @@
     .line 1270
     new-instance v0, Lb/t$a$a;
 
-    const-string v1, "SUCCESS"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "SUCCESS"
 
-    invoke-direct {v0, v1, v2}, Lb/t$a$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lb/t$a$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/t$a$a;->a:Lb/t$a$a;
 
     .line 1271
     new-instance v0, Lb/t$a$a;
 
-    const-string v1, "MISSING_SCHEME"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "MISSING_SCHEME"
 
-    invoke-direct {v0, v1, v3}, Lb/t$a$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lb/t$a$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/t$a$a;->b:Lb/t$a$a;
 
     .line 1272
     new-instance v0, Lb/t$a$a;
 
-    const-string v1, "UNSUPPORTED_SCHEME"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "UNSUPPORTED_SCHEME"
 
-    invoke-direct {v0, v1, v4}, Lb/t$a$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Lb/t$a$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/t$a$a;->c:Lb/t$a$a;
 
     .line 1273
     new-instance v0, Lb/t$a$a;
 
-    const-string v1, "INVALID_PORT"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "INVALID_PORT"
 
-    invoke-direct {v0, v1, v5}, Lb/t$a$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4}, Lb/t$a$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/t$a$a;->d:Lb/t$a$a;
 
     .line 1274
     new-instance v0, Lb/t$a$a;
 
-    const-string v1, "INVALID_HOST"
+    const/4 v5, 0x4
 
-    const/4 v6, 0x4
+    const-string v6, "INVALID_HOST"
 
-    invoke-direct {v0, v1, v6}, Lb/t$a$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v6, v5}, Lb/t$a$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/t$a$a;->e:Lb/t$a$a;
 
-    const/4 v1, 0x5
+    const/4 v6, 0x5
 
-    new-array v1, v1, [Lb/t$a$a;
+    new-array v6, v6, [Lb/t$a$a;
 
     .line 1269
     sget-object v7, Lb/t$a$a;->a:Lb/t$a$a;
 
-    aput-object v7, v1, v2
+    aput-object v7, v6, v1
 
-    sget-object v2, Lb/t$a$a;->b:Lb/t$a$a;
+    sget-object v1, Lb/t$a$a;->b:Lb/t$a$a;
 
-    aput-object v2, v1, v3
+    aput-object v1, v6, v2
 
-    sget-object v2, Lb/t$a$a;->c:Lb/t$a$a;
+    sget-object v1, Lb/t$a$a;->c:Lb/t$a$a;
 
-    aput-object v2, v1, v4
+    aput-object v1, v6, v3
 
-    sget-object v2, Lb/t$a$a;->d:Lb/t$a$a;
+    sget-object v1, Lb/t$a$a;->d:Lb/t$a$a;
 
-    aput-object v2, v1, v5
+    aput-object v1, v6, v4
 
-    aput-object v0, v1, v6
+    aput-object v0, v6, v5
 
-    sput-object v1, Lb/t$a$a;->f:[Lb/t$a$a;
+    sput-object v6, Lb/t$a$a;->f:[Lb/t$a$a;
 
     return-void
 .end method

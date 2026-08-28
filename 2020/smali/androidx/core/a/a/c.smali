@@ -328,22 +328,22 @@
         }
     .end annotation
 
-    const/4 v0, 0x2
+    const-string v0, "font-family"
 
     const/4 v1, 0x0
 
-    const-string v2, "font-family"
+    const/4 v2, 0x2
 
     .line 181
-    invoke-interface {p0, v0, v1, v2}, Lorg/xmlpull/v1/XmlPullParser;->require(ILjava/lang/String;Ljava/lang/String;)V
+    invoke-interface {p0, v2, v1, v0}, Lorg/xmlpull/v1/XmlPullParser;->require(ILjava/lang/String;Ljava/lang/String;)V
 
     .line 182
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
     .line 183
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 

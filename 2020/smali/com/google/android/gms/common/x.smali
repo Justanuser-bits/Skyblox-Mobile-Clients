@@ -20,7 +20,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, v0, v1, v1}, Lcom/google/android/gms/common/v;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p0, v1, v0, v0}, Lcom/google/android/gms/common/v;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
 
     iput-object p1, p0, Lcom/google/android/gms/common/x;->b:Ljava/lang/String;
 

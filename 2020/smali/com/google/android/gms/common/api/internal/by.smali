@@ -18,25 +18,25 @@
 
     if-eq v0, v1, :cond_0
 
-    const-string v0, "TransformedResultImpl"
-
     iget p1, p1, Landroid/os/Message;->what:I
 
-    const/16 v1, 0x46
+    const/16 v0, 0x46
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string v1, "TransformationResultHandler received unknown message type: "
+    const-string v0, "TransformationResultHandler received unknown message type: "
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
+
+    const-string v0, "TransformedResultImpl"
 
     invoke-static {v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -47,39 +47,39 @@
 
     check-cast p1, Ljava/lang/RuntimeException;
 
-    const-string v0, "TransformedResultImpl"
-
-    const-string v1, "Runtime exception on the transformation worker thread: "
+    const-string v0, "Runtime exception on the transformation worker thread: "
 
     invoke-virtual {p1}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
 
     goto :goto_0
 
     :cond_1
-    new-instance v2, Ljava/lang/String;
+    new-instance v1, Ljava/lang/String;
 
-    invoke-direct {v2, v1}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
-    move-object v1, v2
+    move-object v0, v1
 
     :goto_0
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const-string v1, "TransformedResultImpl"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     throw p1
 

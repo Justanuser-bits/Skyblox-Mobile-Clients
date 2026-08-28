@@ -665,37 +665,37 @@
 
     if-eqz p1, :cond_7
 
-    const-string p1, "WakeLock"
+    const-string p1, "Do not acquire with timeout on reference counted wakeLocks before ICS. wakelock: "
 
-    const-string p2, "Do not acquire with timeout on reference counted wakeLocks before ICS. wakelock: "
+    iget-object p2, p0, Lcom/google/android/gms/e/a;->e:Ljava/lang/String;
 
-    iget-object p3, p0, Lcom/google/android/gms/e/a;->e:Ljava/lang/String;
-
-    invoke-static {p3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p3
-
-    invoke-virtual {p3}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    invoke-virtual {p2, p3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    move-result p3
+
+    if-eqz p3, :cond_6
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
 
     goto :goto_1
 
     :cond_6
-    new-instance p3, Ljava/lang/String;
+    new-instance p2, Ljava/lang/String;
 
-    invoke-direct {p3, p2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, p1}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
-    move-object p2, p3
+    move-object p1, p2
 
     :goto_1
-    invoke-static {p1, p2}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
+    const-string p2, "WakeLock"
+
+    invoke-static {p2, p1}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_7
     return-void

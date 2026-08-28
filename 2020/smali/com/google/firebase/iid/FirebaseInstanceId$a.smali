@@ -98,26 +98,26 @@
 
     move-result-object v1
 
-    const-string v2, "com.google.firebase.messaging"
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    const-string v3, "com.google.firebase.messaging"
 
     .line 28
-    invoke-virtual {v1, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {v1, v3, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    move-result-object v2
+    move-result-object v3
 
     const-string v4, "auto_init"
 
     .line 29
-    invoke-interface {v2, v4}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+    invoke-interface {v3, v4}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_0
 
     .line 30
-    invoke-interface {v2, v4, v3}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-interface {v3, v4, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 

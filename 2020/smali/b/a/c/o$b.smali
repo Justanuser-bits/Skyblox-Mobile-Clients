@@ -60,11 +60,13 @@
     iput-object p2, p0, Lb/a/c/o$b;->b:Lc/c;
 
     .line 301
-    new-instance v0, Lc/g;
+    new-instance p2, Lc/g;
 
-    invoke-direct {v0, p2, p1}, Lc/g;-><init>(Lc/r;Ljava/util/zip/Deflater;)V
+    iget-object v0, p0, Lb/a/c/o$b;->b:Lc/c;
 
-    invoke-static {v0}, Lc/l;->a(Lc/r;)Lc/d;
+    invoke-direct {p2, v0, p1}, Lc/g;-><init>(Lc/r;Ljava/util/zip/Deflater;)V
+
+    invoke-static {p2}, Lc/l;->a(Lc/r;)Lc/d;
 
     move-result-object p1
 

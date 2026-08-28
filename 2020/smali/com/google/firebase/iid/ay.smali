@@ -15,12 +15,12 @@
 .method private final a(Landroid/content/Context;Ljava/lang/String;Lcom/google/firebase/iid/az;Z)Lcom/google/firebase/iid/az;
     .locals 8
 
-    const-string v0, "FirebaseInstanceId"
+    const/4 v0, 0x3
 
-    const/4 v1, 0x3
+    const-string v1, "FirebaseInstanceId"
 
     .line 67
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v2
 
@@ -29,7 +29,7 @@
     const-string v2, "Writing key to properties file"
 
     .line 68
-    invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 69
     :cond_0
@@ -155,11 +155,11 @@
     .line 85
     :goto_0
     :try_start_6
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
     .line 86
     invoke-static {p4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -168,21 +168,21 @@
 
     invoke-static {p4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    move-result v1
+    move-result v0
 
-    add-int/lit8 v1, v1, 0x40
+    add-int/lit8 v0, v0, 0x40
 
     new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v6, v0}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string v1, "Tried reading key pair before writing new one, but failed with: "
+    const-string v0, "Tried reading key pair before writing new one, but failed with: "
 
-    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v6, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -190,7 +190,7 @@
 
     move-result-object p4
 
-    invoke-static {v0, p4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, p4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 87
     :cond_2
@@ -296,7 +296,7 @@
 
     move-result-object p1
 
-    invoke-static {v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return-object p2
 .end method

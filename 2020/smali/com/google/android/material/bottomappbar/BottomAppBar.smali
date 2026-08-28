@@ -456,11 +456,11 @@
 
     new-array v2, v1, [F
 
-    const/4 v3, 0x0
+    const/high16 v3, 0x3f800000    # 1.0f
 
-    const/high16 v4, 0x3f800000    # 1.0f
+    const/4 v4, 0x0
 
-    aput v4, v2, v3
+    aput v3, v2, v4
 
     const-string v5, "alpha"
 
@@ -497,7 +497,7 @@
 
     move-result p1
 
-    cmpg-float p1, p1, v4
+    cmpg-float p1, p1, v3
 
     if-gez p1, :cond_4
 
@@ -508,23 +508,23 @@
 
     :cond_3
     :goto_0
-    new-array v4, v1, [F
+    new-array v3, v1, [F
 
     const/4 v6, 0x0
 
-    aput v6, v4, v3
+    aput v6, v3, v4
 
     .line 415
-    invoke-static {v0, v5, v4}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
+    invoke-static {v0, v5, v3}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
-    move-result-object v4
+    move-result-object v3
 
     .line 417
     new-instance v5, Lcom/google/android/material/bottomappbar/BottomAppBar$4;
 
     invoke-direct {v5, p0, v0, p1, p2}, Lcom/google/android/material/bottomappbar/BottomAppBar$4;-><init>(Lcom/google/android/material/bottomappbar/BottomAppBar;Landroidx/appcompat/widget/ActionMenuView;IZ)V
 
-    invoke-virtual {v4, v5}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v3, v5}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 434
     new-instance p1, Landroid/animation/AnimatorSet;
@@ -540,7 +540,7 @@
 
     new-array p2, p2, [Landroid/animation/Animator;
 
-    aput-object v4, p2, v3
+    aput-object v3, p2, v4
 
     aput-object v2, p2, v1
 

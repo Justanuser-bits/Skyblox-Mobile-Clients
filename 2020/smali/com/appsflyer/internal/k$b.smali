@@ -45,97 +45,97 @@
     .line 404
     new-instance v0, Lcom/appsflyer/internal/k$b;
 
-    const-string v1, "EMPTY_ARRAY"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "EMPTY_ARRAY"
 
-    invoke-direct {v0, v1, v2}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/appsflyer/internal/k$b;->ɩ:Lcom/appsflyer/internal/k$b;
 
     .line 410
     new-instance v0, Lcom/appsflyer/internal/k$b;
 
-    const-string v1, "NONEMPTY_ARRAY"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "NONEMPTY_ARRAY"
 
-    invoke-direct {v0, v1, v3}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/appsflyer/internal/k$b;->Ι:Lcom/appsflyer/internal/k$b;
 
     .line 416
     new-instance v0, Lcom/appsflyer/internal/k$b;
 
-    const-string v1, "EMPTY_OBJECT"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "EMPTY_OBJECT"
 
-    invoke-direct {v0, v1, v4}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/appsflyer/internal/k$b;->ι:Lcom/appsflyer/internal/k$b;
 
     .line 422
     new-instance v0, Lcom/appsflyer/internal/k$b;
 
-    const-string v1, "DANGLING_KEY"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "DANGLING_KEY"
 
-    invoke-direct {v0, v1, v5}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/appsflyer/internal/k$b;->ǃ:Lcom/appsflyer/internal/k$b;
 
     .line 428
     new-instance v0, Lcom/appsflyer/internal/k$b;
 
-    const-string v1, "NONEMPTY_OBJECT"
+    const/4 v5, 0x4
 
-    const/4 v6, 0x4
+    const-string v6, "NONEMPTY_OBJECT"
 
-    invoke-direct {v0, v1, v6}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v6, v5}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/appsflyer/internal/k$b;->ı:Lcom/appsflyer/internal/k$b;
 
     .line 434
     new-instance v0, Lcom/appsflyer/internal/k$b;
 
-    const-string v1, "NULL"
+    const/4 v6, 0x5
 
-    const/4 v7, 0x5
+    const-string v7, "NULL"
 
-    invoke-direct {v0, v1, v7}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v7, v6}, Lcom/appsflyer/internal/k$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/appsflyer/internal/k$b;->Ɩ:Lcom/appsflyer/internal/k$b;
 
-    const/4 v1, 0x6
+    const/4 v7, 0x6
 
-    new-array v1, v1, [Lcom/appsflyer/internal/k$b;
+    new-array v7, v7, [Lcom/appsflyer/internal/k$b;
 
     .line 398
     sget-object v8, Lcom/appsflyer/internal/k$b;->ɩ:Lcom/appsflyer/internal/k$b;
 
-    aput-object v8, v1, v2
+    aput-object v8, v7, v1
 
-    sget-object v2, Lcom/appsflyer/internal/k$b;->Ι:Lcom/appsflyer/internal/k$b;
+    sget-object v1, Lcom/appsflyer/internal/k$b;->Ι:Lcom/appsflyer/internal/k$b;
 
-    aput-object v2, v1, v3
+    aput-object v1, v7, v2
 
-    sget-object v2, Lcom/appsflyer/internal/k$b;->ι:Lcom/appsflyer/internal/k$b;
+    sget-object v1, Lcom/appsflyer/internal/k$b;->ι:Lcom/appsflyer/internal/k$b;
 
-    aput-object v2, v1, v4
+    aput-object v1, v7, v3
 
-    sget-object v2, Lcom/appsflyer/internal/k$b;->ǃ:Lcom/appsflyer/internal/k$b;
+    sget-object v1, Lcom/appsflyer/internal/k$b;->ǃ:Lcom/appsflyer/internal/k$b;
 
-    aput-object v2, v1, v5
+    aput-object v1, v7, v4
 
-    sget-object v2, Lcom/appsflyer/internal/k$b;->ı:Lcom/appsflyer/internal/k$b;
+    sget-object v1, Lcom/appsflyer/internal/k$b;->ı:Lcom/appsflyer/internal/k$b;
 
-    aput-object v2, v1, v6
+    aput-object v1, v7, v5
 
-    aput-object v0, v1, v7
+    aput-object v0, v7, v6
 
-    sput-object v1, Lcom/appsflyer/internal/k$b;->Ӏ:[Lcom/appsflyer/internal/k$b;
+    sput-object v7, Lcom/appsflyer/internal/k$b;->Ӏ:[Lcom/appsflyer/internal/k$b;
 
     return-void
 .end method

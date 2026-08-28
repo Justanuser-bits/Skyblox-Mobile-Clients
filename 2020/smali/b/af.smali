@@ -36,75 +36,75 @@
     .line 23
     new-instance v0, Lb/af;
 
-    const-string v1, "TLS_1_2"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "TLS_1_2"
 
     const-string v3, "TLSv1.2"
 
-    invoke-direct {v0, v1, v2, v3}, Lb/af;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v2, v1, v3}, Lb/af;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lb/af;->a:Lb/af;
 
     .line 24
     new-instance v0, Lb/af;
 
-    const-string v1, "TLS_1_1"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "TLS_1_1"
 
     const-string v4, "TLSv1.1"
 
-    invoke-direct {v0, v1, v3, v4}, Lb/af;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v3, v2, v4}, Lb/af;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lb/af;->b:Lb/af;
 
     .line 25
     new-instance v0, Lb/af;
 
-    const-string v1, "TLS_1_0"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "TLS_1_0"
 
     const-string v5, "TLSv1"
 
-    invoke-direct {v0, v1, v4, v5}, Lb/af;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v4, v3, v5}, Lb/af;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lb/af;->c:Lb/af;
 
     .line 26
     new-instance v0, Lb/af;
 
-    const-string v1, "SSL_3_0"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "SSL_3_0"
 
     const-string v6, "SSLv3"
 
-    invoke-direct {v0, v1, v5, v6}, Lb/af;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v5, v4, v6}, Lb/af;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lb/af;->d:Lb/af;
 
-    const/4 v1, 0x4
+    const/4 v5, 0x4
 
-    new-array v1, v1, [Lb/af;
+    new-array v5, v5, [Lb/af;
 
     .line 22
     sget-object v6, Lb/af;->a:Lb/af;
 
-    aput-object v6, v1, v2
+    aput-object v6, v5, v1
 
-    sget-object v2, Lb/af;->b:Lb/af;
+    sget-object v1, Lb/af;->b:Lb/af;
 
-    aput-object v2, v1, v3
+    aput-object v1, v5, v2
 
-    sget-object v2, Lb/af;->c:Lb/af;
+    sget-object v1, Lb/af;->c:Lb/af;
 
-    aput-object v2, v1, v4
+    aput-object v1, v5, v3
 
-    aput-object v0, v1, v5
+    aput-object v0, v5, v4
 
-    sput-object v1, Lb/af;->f:[Lb/af;
+    sput-object v5, Lb/af;->f:[Lb/af;
 
     return-void
 .end method

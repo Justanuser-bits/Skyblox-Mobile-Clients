@@ -76,11 +76,11 @@
 
     move-result v0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
-    invoke-direct {p0, p1, v0, v1, v2}, Landroidx/d/a/c;-><init>(Landroid/content/Context;ILandroid/database/Cursor;Z)V
+    invoke-direct {p0, p1, v0, v2, v1}, Landroidx/d/a/c;-><init>(Landroid/content/Context;ILandroid/database/Cursor;Z)V
 
     const/4 v0, 0x0
 
@@ -88,7 +88,7 @@
     iput-boolean v0, p0, Landroidx/appcompat/widget/n;->p:Z
 
     .line 75
-    iput v2, p0, Landroidx/appcompat/widget/n;->q:I
+    iput v1, p0, Landroidx/appcompat/widget/n;->q:I
 
     const/4 v0, -0x1
 

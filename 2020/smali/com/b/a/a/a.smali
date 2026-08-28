@@ -203,83 +203,83 @@
     .line 97
     new-instance v2, Lcom/b/a/a/b;
 
-    const-string v3, "init.svc.qemud"
+    const/4 v3, 0x0
+
+    const-string v4, "init.svc.qemud"
+
+    invoke-direct {v2, v4, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v4, 0x0
 
-    invoke-direct {v2, v3, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
+    aput-object v2, v1, v4
 
     new-instance v2, Lcom/b/a/a/b;
 
-    const-string v3, "init.svc.qemu-props"
+    const-string v4, "init.svc.qemu-props"
 
-    invoke-direct {v2, v3, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v2, v4, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    aput-object v2, v1, v3
-
-    new-instance v2, Lcom/b/a/a/b;
-
-    const-string v3, "qemu.hw.mainkeys"
-
-    invoke-direct {v2, v3, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    const/4 v3, 0x2
-
-    aput-object v2, v1, v3
+    aput-object v2, v1, v4
 
     new-instance v2, Lcom/b/a/a/b;
 
-    const-string v3, "qemu.sf.fake_camera"
+    const-string v4, "qemu.hw.mainkeys"
 
-    invoke-direct {v2, v3, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v2, v4, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 v3, 0x3
+    const/4 v4, 0x2
 
-    aput-object v2, v1, v3
-
-    new-instance v2, Lcom/b/a/a/b;
-
-    const-string v3, "qemu.sf.lcd_density"
-
-    invoke-direct {v2, v3, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    const/4 v3, 0x4
-
-    aput-object v2, v1, v3
+    aput-object v2, v1, v4
 
     new-instance v2, Lcom/b/a/a/b;
 
-    const-string v3, "ro.bootloader"
+    const-string v4, "qemu.sf.fake_camera"
 
-    const-string v5, "unknown"
+    invoke-direct {v2, v4, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-direct {v2, v3, v5}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    const/4 v4, 0x3
 
-    const/4 v3, 0x5
-
-    aput-object v2, v1, v3
+    aput-object v2, v1, v4
 
     new-instance v2, Lcom/b/a/a/b;
 
-    const-string v3, "ro.bootmode"
+    const-string v4, "qemu.sf.lcd_density"
 
-    invoke-direct {v2, v3, v5}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v2, v4, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 v3, 0x6
+    const/4 v4, 0x4
 
-    aput-object v2, v1, v3
+    aput-object v2, v1, v4
 
     new-instance v2, Lcom/b/a/a/b;
 
-    const-string v3, "ro.hardware"
+    const-string v4, "unknown"
 
-    invoke-direct {v2, v3, v0}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    const-string v5, "ro.bootloader"
+
+    invoke-direct {v2, v5, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    const/4 v5, 0x5
+
+    aput-object v2, v1, v5
+
+    new-instance v2, Lcom/b/a/a/b;
+
+    const-string v5, "ro.bootmode"
+
+    invoke-direct {v2, v5, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    const/4 v4, 0x6
+
+    aput-object v2, v1, v4
+
+    new-instance v2, Lcom/b/a/a/b;
+
+    const-string v4, "ro.hardware"
+
+    invoke-direct {v2, v4, v0}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x7
 
@@ -289,7 +289,7 @@
 
     const-string v2, "ro.kernel.android.qemud"
 
-    invoke-direct {v0, v2, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v2, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v2, 0x8
 
@@ -299,7 +299,7 @@
 
     const-string v2, "ro.kernel.qemu.gles"
 
-    invoke-direct {v0, v2, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v2, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v2, 0x9
 
@@ -309,9 +309,9 @@
 
     const-string v2, "ro.kernel.qemu"
 
-    const-string v3, "1"
+    const-string v4, "1"
 
-    invoke-direct {v0, v2, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v2, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v2, 0xa
 
@@ -321,9 +321,9 @@
 
     const-string v2, "ro.product.device"
 
-    const-string v3, "generic"
+    const-string v4, "generic"
 
-    invoke-direct {v0, v2, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v2, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v2, 0xb
 
@@ -331,21 +331,21 @@
 
     new-instance v0, Lcom/b/a/a/b;
 
-    const-string v2, "ro.product.model"
+    const-string v2, "sdk"
 
-    const-string v3, "sdk"
+    const-string v4, "ro.product.model"
 
-    invoke-direct {v0, v2, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v4, v2}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/16 v2, 0xc
+    const/16 v4, 0xc
 
-    aput-object v0, v1, v2
+    aput-object v0, v1, v4
 
     new-instance v0, Lcom/b/a/a/b;
 
-    const-string v2, "ro.product.name"
+    const-string v4, "ro.product.name"
 
-    invoke-direct {v0, v2, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v4, v2}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v2, 0xd
 
@@ -355,7 +355,7 @@
 
     const-string v2, "ro.serialno"
 
-    invoke-direct {v0, v2, v4}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v2, v3}, Lcom/b/a/a/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v2, 0xe
 

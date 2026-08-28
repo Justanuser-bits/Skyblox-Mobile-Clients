@@ -41,39 +41,39 @@
     .line 228
     new-instance v0, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
 
-    const-string v1, "NONE"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "NONE"
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v2, v1, v1}, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;->NONE:Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
 
     .line 229
     new-instance v0, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
 
-    const-string v1, "SHA256"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "SHA256"
 
     const/4 v4, 0x3
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v3, v2, v4}, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;->SHA256:Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
+    new-array v3, v3, [Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
 
     .line 227
     sget-object v4, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;->NONE:Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
 
-    aput-object v4, v1, v2
+    aput-object v4, v3, v1
 
-    aput-object v0, v1, v3
+    aput-object v0, v3, v2
 
-    sput-object v1, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;->ı:[Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
+    sput-object v3, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;->ı:[Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
 
     return-void
 .end method

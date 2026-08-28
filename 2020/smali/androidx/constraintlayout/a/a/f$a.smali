@@ -41,64 +41,64 @@
     .line 143
     new-instance v0, Landroidx/constraintlayout/a/a/f$a;
 
-    const-string v1, "FIXED"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "FIXED"
 
-    invoke-direct {v0, v1, v2}, Landroidx/constraintlayout/a/a/f$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Landroidx/constraintlayout/a/a/f$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/constraintlayout/a/a/f$a;->a:Landroidx/constraintlayout/a/a/f$a;
 
     new-instance v0, Landroidx/constraintlayout/a/a/f$a;
 
-    const-string v1, "WRAP_CONTENT"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "WRAP_CONTENT"
 
-    invoke-direct {v0, v1, v3}, Landroidx/constraintlayout/a/a/f$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Landroidx/constraintlayout/a/a/f$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/constraintlayout/a/a/f$a;->b:Landroidx/constraintlayout/a/a/f$a;
 
     new-instance v0, Landroidx/constraintlayout/a/a/f$a;
 
-    const-string v1, "MATCH_CONSTRAINT"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "MATCH_CONSTRAINT"
 
-    invoke-direct {v0, v1, v4}, Landroidx/constraintlayout/a/a/f$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Landroidx/constraintlayout/a/a/f$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/constraintlayout/a/a/f$a;->c:Landroidx/constraintlayout/a/a/f$a;
 
     new-instance v0, Landroidx/constraintlayout/a/a/f$a;
 
-    const-string v1, "MATCH_PARENT"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "MATCH_PARENT"
 
-    invoke-direct {v0, v1, v5}, Landroidx/constraintlayout/a/a/f$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4}, Landroidx/constraintlayout/a/a/f$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/constraintlayout/a/a/f$a;->d:Landroidx/constraintlayout/a/a/f$a;
 
-    const/4 v1, 0x4
+    const/4 v5, 0x4
 
-    new-array v1, v1, [Landroidx/constraintlayout/a/a/f$a;
+    new-array v5, v5, [Landroidx/constraintlayout/a/a/f$a;
 
     .line 142
     sget-object v6, Landroidx/constraintlayout/a/a/f$a;->a:Landroidx/constraintlayout/a/a/f$a;
 
-    aput-object v6, v1, v2
+    aput-object v6, v5, v1
 
-    sget-object v2, Landroidx/constraintlayout/a/a/f$a;->b:Landroidx/constraintlayout/a/a/f$a;
+    sget-object v1, Landroidx/constraintlayout/a/a/f$a;->b:Landroidx/constraintlayout/a/a/f$a;
 
-    aput-object v2, v1, v3
+    aput-object v1, v5, v2
 
-    sget-object v2, Landroidx/constraintlayout/a/a/f$a;->c:Landroidx/constraintlayout/a/a/f$a;
+    sget-object v1, Landroidx/constraintlayout/a/a/f$a;->c:Landroidx/constraintlayout/a/a/f$a;
 
-    aput-object v2, v1, v4
+    aput-object v1, v5, v3
 
-    aput-object v0, v1, v5
+    aput-object v0, v5, v4
 
-    sput-object v1, Landroidx/constraintlayout/a/a/f$a;->e:[Landroidx/constraintlayout/a/a/f$a;
+    sput-object v5, Landroidx/constraintlayout/a/a/f$a;->e:[Landroidx/constraintlayout/a/a/f$a;
 
     return-void
 .end method

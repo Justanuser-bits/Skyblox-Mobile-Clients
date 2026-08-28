@@ -6329,11 +6329,13 @@
     if-eqz v0, :cond_0
 
     .line 1233
-    new-instance v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;
+    new-instance v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;
 
-    invoke-direct {v1, v0}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;-><init>(Landroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;)V
+    iget-object v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->A:Landroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;
 
-    return-object v1
+    invoke-direct {v0, v1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;-><init>(Landroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;)V
+
+    return-object v0
 
     .line 1235
     :cond_0

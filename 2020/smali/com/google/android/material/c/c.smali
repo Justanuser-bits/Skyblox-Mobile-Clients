@@ -825,26 +825,28 @@
 
     .line 213
     :cond_0
-    new-instance v1, Lcom/google/android/material/c/d$d;
+    new-instance v0, Lcom/google/android/material/c/d$d;
 
-    invoke-direct {v1, v0}, Lcom/google/android/material/c/d$d;-><init>(Lcom/google/android/material/c/d$d;)V
+    iget-object v1, p0, Lcom/google/android/material/c/c;->g:Lcom/google/android/material/c/d$d;
+
+    invoke-direct {v0, v1}, Lcom/google/android/material/c/d$d;-><init>(Lcom/google/android/material/c/d$d;)V
 
     .line 214
-    invoke-virtual {v1}, Lcom/google/android/material/c/d$d;->a()Z
+    invoke-virtual {v0}, Lcom/google/android/material/c/d$d;->a()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
     .line 215
-    invoke-direct {p0, v1}, Lcom/google/android/material/c/c;->b(Lcom/google/android/material/c/d$d;)F
+    invoke-direct {p0, v0}, Lcom/google/android/material/c/c;->b(Lcom/google/android/material/c/d$d;)F
 
-    move-result v0
+    move-result v1
 
-    iput v0, v1, Lcom/google/android/material/c/d$d;->c:F
+    iput v1, v0, Lcom/google/android/material/c/d$d;->c:F
 
     :cond_1
-    return-object v1
+    return-object v0
 .end method
 
 .method public d()I

@@ -631,21 +631,21 @@
 .method private d(Landroid/content/Context;)Ljava/lang/String;
     .locals 10
 
-    const-string v0, "assets"
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const-string v1, "assets"
 
     .line 156
-    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->getDir(Ljava/lang/String;I)Ljava/io/File;
+    invoke-virtual {p1, v1, v0}, Landroid/content/Context;->getDir(Ljava/lang/String;I)Ljava/io/File;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 157
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v3
 
@@ -689,7 +689,7 @@
 
     .line 166
     :cond_0
-    invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v4
 
@@ -742,7 +742,7 @@
 
     .line 181
     :try_start_0
-    invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v4
 
@@ -782,7 +782,7 @@
     .line 185
     iget-object p1, p0, Lcom/roblox/engine/f;->e:Lcom/roblox/engine/f$c;
 
-    invoke-interface {p1, v1}, Lcom/roblox/engine/f$c;->a(Z)V
+    invoke-interface {p1, v0}, Lcom/roblox/engine/f$c;->a(Z)V
 
     .line 189
     :goto_0
@@ -797,9 +797,9 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "unpackAssets_internal: unzipContainer took (ms) "
+    const-string v0, "unpackAssets_internal: unzipContainer took (ms) "
 
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -810,7 +810,7 @@
     invoke-static {v5, p1}, Lcom/roblox/platform/e;->c(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 192
-    invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object p1
 

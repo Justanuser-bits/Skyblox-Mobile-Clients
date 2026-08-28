@@ -1255,11 +1255,11 @@
     .line 326
     new-instance p0, Ljava/lang/String;
 
-    const/4 v0, 0x4
+    const-string v0, "US-ASCII"
 
-    const-string v3, "US-ASCII"
+    const/4 v3, 0x4
 
-    invoke-direct {p0, v1, v2, v0, v3}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
+    invoke-direct {p0, v1, v2, v3, v0}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
 
     const-string v4, "RIFF"
 
@@ -1273,7 +1273,7 @@
 
     const/16 v4, 0x8
 
-    invoke-direct {p0, v1, v4, v0, v3}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
+    invoke-direct {p0, v1, v4, v3, v0}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
 
     const-string v0, "WEBP"
 

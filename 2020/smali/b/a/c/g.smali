@@ -32,67 +32,67 @@
     .line 19
     new-instance v0, Lb/a/c/g;
 
-    const-string v1, "SPDY_SYN_STREAM"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "SPDY_SYN_STREAM"
 
-    invoke-direct {v0, v1, v2}, Lb/a/c/g;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lb/a/c/g;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/a/c/g;->a:Lb/a/c/g;
 
     .line 20
     new-instance v0, Lb/a/c/g;
 
-    const-string v1, "SPDY_REPLY"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "SPDY_REPLY"
 
-    invoke-direct {v0, v1, v3}, Lb/a/c/g;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lb/a/c/g;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/a/c/g;->b:Lb/a/c/g;
 
     .line 21
     new-instance v0, Lb/a/c/g;
 
-    const-string v1, "SPDY_HEADERS"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "SPDY_HEADERS"
 
-    invoke-direct {v0, v1, v4}, Lb/a/c/g;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Lb/a/c/g;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/a/c/g;->c:Lb/a/c/g;
 
     .line 22
     new-instance v0, Lb/a/c/g;
 
-    const-string v1, "HTTP_20_HEADERS"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "HTTP_20_HEADERS"
 
-    invoke-direct {v0, v1, v5}, Lb/a/c/g;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4}, Lb/a/c/g;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lb/a/c/g;->d:Lb/a/c/g;
 
-    const/4 v1, 0x4
+    const/4 v5, 0x4
 
-    new-array v1, v1, [Lb/a/c/g;
+    new-array v5, v5, [Lb/a/c/g;
 
     .line 18
     sget-object v6, Lb/a/c/g;->a:Lb/a/c/g;
 
-    aput-object v6, v1, v2
+    aput-object v6, v5, v1
 
-    sget-object v2, Lb/a/c/g;->b:Lb/a/c/g;
+    sget-object v1, Lb/a/c/g;->b:Lb/a/c/g;
 
-    aput-object v2, v1, v3
+    aput-object v1, v5, v2
 
-    sget-object v2, Lb/a/c/g;->c:Lb/a/c/g;
+    sget-object v1, Lb/a/c/g;->c:Lb/a/c/g;
 
-    aput-object v2, v1, v4
+    aput-object v1, v5, v3
 
-    aput-object v0, v1, v5
+    aput-object v0, v5, v4
 
-    sput-object v1, Lb/a/c/g;->e:[Lb/a/c/g;
+    sput-object v5, Lb/a/c/g;->e:[Lb/a/c/g;
 
     return-void
 .end method

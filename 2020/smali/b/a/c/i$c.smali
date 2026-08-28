@@ -41,14 +41,18 @@
     iput-boolean p3, p0, Lb/a/c/i$c;->d:Z
 
     .line 96
-    new-instance p3, Lb/a/c/i$a;
+    new-instance p1, Lb/a/c/i$a;
 
-    invoke-direct {p3, p1}, Lb/a/c/i$a;-><init>(Lc/e;)V
+    iget-object p3, p0, Lb/a/c/i$c;->b:Lc/e;
 
-    iput-object p3, p0, Lb/a/c/i$c;->c:Lb/a/c/i$a;
+    invoke-direct {p1, p3}, Lb/a/c/i$a;-><init>(Lc/e;)V
+
+    iput-object p1, p0, Lb/a/c/i$c;->c:Lb/a/c/i$a;
 
     .line 97
     new-instance p1, Lb/a/c/h$a;
+
+    iget-object p3, p0, Lb/a/c/i$c;->c:Lb/a/c/i$a;
 
     invoke-direct {p1, p2, p3}, Lb/a/c/h$a;-><init>(ILc/s;)V
 

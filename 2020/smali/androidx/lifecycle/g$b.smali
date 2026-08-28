@@ -43,82 +43,82 @@
     .line 157
     new-instance v0, Landroidx/lifecycle/g$b;
 
-    const-string v1, "DESTROYED"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "DESTROYED"
 
-    invoke-direct {v0, v1, v2}, Landroidx/lifecycle/g$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Landroidx/lifecycle/g$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/lifecycle/g$b;->a:Landroidx/lifecycle/g$b;
 
     .line 164
     new-instance v0, Landroidx/lifecycle/g$b;
 
-    const-string v1, "INITIALIZED"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "INITIALIZED"
 
-    invoke-direct {v0, v1, v3}, Landroidx/lifecycle/g$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Landroidx/lifecycle/g$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/lifecycle/g$b;->b:Landroidx/lifecycle/g$b;
 
     .line 174
     new-instance v0, Landroidx/lifecycle/g$b;
 
-    const-string v1, "CREATED"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "CREATED"
 
-    invoke-direct {v0, v1, v4}, Landroidx/lifecycle/g$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Landroidx/lifecycle/g$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/lifecycle/g$b;->c:Landroidx/lifecycle/g$b;
 
     .line 184
     new-instance v0, Landroidx/lifecycle/g$b;
 
-    const-string v1, "STARTED"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "STARTED"
 
-    invoke-direct {v0, v1, v5}, Landroidx/lifecycle/g$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4}, Landroidx/lifecycle/g$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/lifecycle/g$b;->d:Landroidx/lifecycle/g$b;
 
     .line 190
     new-instance v0, Landroidx/lifecycle/g$b;
 
-    const-string v1, "RESUMED"
+    const/4 v5, 0x4
 
-    const/4 v6, 0x4
+    const-string v6, "RESUMED"
 
-    invoke-direct {v0, v1, v6}, Landroidx/lifecycle/g$b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v6, v5}, Landroidx/lifecycle/g$b;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/lifecycle/g$b;->e:Landroidx/lifecycle/g$b;
 
-    const/4 v1, 0x5
+    const/4 v6, 0x5
 
-    new-array v1, v1, [Landroidx/lifecycle/g$b;
+    new-array v6, v6, [Landroidx/lifecycle/g$b;
 
     .line 150
     sget-object v7, Landroidx/lifecycle/g$b;->a:Landroidx/lifecycle/g$b;
 
-    aput-object v7, v1, v2
+    aput-object v7, v6, v1
 
-    sget-object v2, Landroidx/lifecycle/g$b;->b:Landroidx/lifecycle/g$b;
+    sget-object v1, Landroidx/lifecycle/g$b;->b:Landroidx/lifecycle/g$b;
 
-    aput-object v2, v1, v3
+    aput-object v1, v6, v2
 
-    sget-object v2, Landroidx/lifecycle/g$b;->c:Landroidx/lifecycle/g$b;
+    sget-object v1, Landroidx/lifecycle/g$b;->c:Landroidx/lifecycle/g$b;
 
-    aput-object v2, v1, v4
+    aput-object v1, v6, v3
 
-    sget-object v2, Landroidx/lifecycle/g$b;->d:Landroidx/lifecycle/g$b;
+    sget-object v1, Landroidx/lifecycle/g$b;->d:Landroidx/lifecycle/g$b;
 
-    aput-object v2, v1, v5
+    aput-object v1, v6, v4
 
-    aput-object v0, v1, v6
+    aput-object v0, v6, v5
 
-    sput-object v1, Landroidx/lifecycle/g$b;->f:[Landroidx/lifecycle/g$b;
+    sput-object v6, Landroidx/lifecycle/g$b;->f:[Landroidx/lifecycle/g$b;
 
     return-void
 .end method

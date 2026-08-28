@@ -37,37 +37,37 @@
     .line 29
     new-instance v0, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;
 
-    const-string v1, "USER_ID"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "USER_ID"
 
-    invoke-direct {v0, v1, v2}, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;->USER_ID:Lcom/roblox/abtesting/models/ABTest$SubjectTypes;
 
     .line 30
     new-instance v0, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;
 
-    const-string v1, "BROWSER_TRACKER_ID"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "BROWSER_TRACKER_ID"
 
-    invoke-direct {v0, v1, v3}, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;->BROWSER_TRACKER_ID:Lcom/roblox/abtesting/models/ABTest$SubjectTypes;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/roblox/abtesting/models/ABTest$SubjectTypes;
+    new-array v3, v3, [Lcom/roblox/abtesting/models/ABTest$SubjectTypes;
 
     .line 28
     sget-object v4, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;->USER_ID:Lcom/roblox/abtesting/models/ABTest$SubjectTypes;
 
-    aput-object v4, v1, v2
+    aput-object v4, v3, v1
 
-    aput-object v0, v1, v3
+    aput-object v0, v3, v2
 
-    sput-object v1, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;->$VALUES:[Lcom/roblox/abtesting/models/ABTest$SubjectTypes;
+    sput-object v3, Lcom/roblox/abtesting/models/ABTest$SubjectTypes;->$VALUES:[Lcom/roblox/abtesting/models/ABTest$SubjectTypes;
 
     return-void
 .end method

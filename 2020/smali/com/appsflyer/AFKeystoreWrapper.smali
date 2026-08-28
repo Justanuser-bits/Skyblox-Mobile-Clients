@@ -411,14 +411,14 @@
 .method final ɩ(Ljava/lang/String;)V
     .locals 6
 
-    const-string v0, "Creating a new key with alias: "
-
     .line 123
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    const-string v1, "Creating a new key with alias: "
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

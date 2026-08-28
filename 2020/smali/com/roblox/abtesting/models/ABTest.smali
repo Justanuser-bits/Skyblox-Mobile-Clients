@@ -247,7 +247,7 @@
 
     move-result-object p0
 
-    invoke-static {v1, p0}, Lcom/skyblox/c2020/ae/k;->c(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, p0}, Lcom/roblox/client/ae/k;->c(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -276,12 +276,12 @@
 
     move-result-object p0
 
-    invoke-static {v1, p0}, Lcom/skyblox/c2020/ae/k;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, p0}, Lcom/roblox/client/ae/k;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     const-string p0, "ABTest.fromJson: Exception parsing jsonObject."
 
     .line 162
-    invoke-static {p0}, Lcom/skyblox/c2020/analytics/c;->a(Ljava/lang/String;)V
+    invoke-static {p0}, Lcom/roblox/client/analytics/c;->a(Ljava/lang/String;)V
 
     return-object v2
 
@@ -289,12 +289,12 @@
     const-string p0, "Exception parsing the Variation field."
 
     .line 157
-    invoke-static {v1, p0}, Lcom/skyblox/c2020/ae/k;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, p0}, Lcom/roblox/client/ae/k;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     const-string p0, "ABTest.fromJson: Exception parsing the Variation field."
 
     .line 158
-    invoke-static {p0}, Lcom/skyblox/c2020/analytics/c;->a(Ljava/lang/String;)V
+    invoke-static {p0}, Lcom/roblox/client/analytics/c;->a(Ljava/lang/String;)V
 
     return-object v2
 .end method
@@ -407,7 +407,7 @@
     const-string v1, "ABTest.toJson: Exception creating JSONObject."
 
     .line 115
-    invoke-static {v1}, Lcom/skyblox/c2020/analytics/c;->a(Ljava/lang/String;)V
+    invoke-static {v1}, Lcom/roblox/client/analytics/c;->a(Ljava/lang/String;)V
 
     :goto_0
     return-object v0

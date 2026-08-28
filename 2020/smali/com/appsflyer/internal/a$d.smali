@@ -41,40 +41,40 @@
     .line 310
     new-instance v0, Lcom/appsflyer/internal/a$d;
 
-    const-string v1, "XPOSED"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "XPOSED"
 
     const-string v3, "xps"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/appsflyer/internal/a$d;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v2, v1, v3}, Lcom/appsflyer/internal/a$d;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/a$d;->ı:Lcom/appsflyer/internal/a$d;
 
     new-instance v0, Lcom/appsflyer/internal/a$d;
 
-    const-string v1, "FRIDA"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "FRIDA"
 
     const-string v4, "frd"
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/appsflyer/internal/a$d;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v3, v2, v4}, Lcom/appsflyer/internal/a$d;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/a$d;->ι:Lcom/appsflyer/internal/a$d;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/appsflyer/internal/a$d;
+    new-array v3, v3, [Lcom/appsflyer/internal/a$d;
 
     .line 309
     sget-object v4, Lcom/appsflyer/internal/a$d;->ı:Lcom/appsflyer/internal/a$d;
 
-    aput-object v4, v1, v2
+    aput-object v4, v3, v1
 
-    aput-object v0, v1, v3
+    aput-object v0, v3, v2
 
-    sput-object v1, Lcom/appsflyer/internal/a$d;->ǃ:[Lcom/appsflyer/internal/a$d;
+    sput-object v3, Lcom/appsflyer/internal/a$d;->ǃ:[Lcom/appsflyer/internal/a$d;
 
     return-void
 .end method

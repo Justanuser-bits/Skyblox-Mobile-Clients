@@ -1556,16 +1556,16 @@
 
     move-result-object v0
 
-    const-string v1, "collectAndroidIdForceByUser"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "collectAndroidIdForceByUser"
 
     .line 2582
-    invoke-virtual {v0, v1, v2}, Lcom/appsflyer/AppsFlyerProperties;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v2, v1}, Lcom/appsflyer/AppsFlyerProperties;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     if-nez v0, :cond_1
 
@@ -1577,7 +1577,7 @@
     const-string v3, "collectIMEIForceByUser"
 
     .line 2584
-    invoke-virtual {v0, v3, v2}, Lcom/appsflyer/AppsFlyerProperties;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v3, v1}, Lcom/appsflyer/AppsFlyerProperties;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1607,11 +1607,11 @@
     goto :goto_2
 
     :cond_2
-    return v2
+    return v1
 
     :cond_3
     :goto_2
-    return v1
+    return v2
 .end method
 
 .method static synthetic Ɩ(Lcom/appsflyer/AppsFlyerLibCore;)Z
@@ -2734,38 +2734,38 @@
 
     invoke-virtual {v0, p0}, Lcom/appsflyer/AFKeystoreWrapper;->ɩ(Ljava/lang/String;)V
 
-    :goto_2
-    const-string p0, "KSAppsFlyerId"
-
     .line 992
+    :goto_2
     invoke-virtual {v0}, Lcom/appsflyer/AFKeystoreWrapper;->ı()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p0
 
     .line 41482
     invoke-static {}, Lcom/appsflyer/AppsFlyerProperties;->getInstance()Lcom/appsflyer/AppsFlyerProperties;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2, p0, v1}, Lcom/appsflyer/AppsFlyerProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+    const-string v2, "KSAppsFlyerId"
 
-    const-string p0, "KSAppsFlyerRICounter"
+    invoke-virtual {v1, v2, p0}, Lcom/appsflyer/AppsFlyerProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 993
     invoke-virtual {v0}, Lcom/appsflyer/AFKeystoreWrapper;->Ι()I
 
-    move-result v0
+    move-result p0
 
-    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p0
 
     .line 42482
     invoke-static {}, Lcom/appsflyer/AppsFlyerProperties;->getInstance()Lcom/appsflyer/AppsFlyerProperties;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1, p0, v0}, Lcom/appsflyer/AppsFlyerProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+    const-string v1, "KSAppsFlyerRICounter"
+
+    invoke-virtual {v0, v1, p0}, Lcom/appsflyer/AppsFlyerProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
@@ -5126,12 +5126,12 @@
 
     new-array v1, v1, [Ljava/lang/String;
 
-    const-string v2, "public_api_call"
+    const-string v2, "getAppsFlyerUID"
 
-    const-string v3, "getAppsFlyerUID"
+    const-string v3, "public_api_call"
 
     .line 50830
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 2942
     new-instance v0, Ljava/lang/ref/WeakReference;
@@ -5391,12 +5391,12 @@
 
     new-array v1, v1, [Ljava/lang/String;
 
-    const-string v2, "public_api_call"
+    const-string v2, "getSdkVersion"
 
-    const-string v3, "getSdkVersion"
+    const-string v3, "public_api_call"
 
     .line 12176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 406
     new-instance v0, Ljava/lang/StringBuilder;
@@ -5737,12 +5737,12 @@
 
     aput-object v4, v2, v5
 
-    const-string v4, "public_api_call"
+    const-string v4, "init"
 
-    const-string v6, "init"
+    const-string v6, "public_api_call"
 
     .line 36176
-    invoke-virtual {v0, v4, v6, v2}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v6, v4, v2}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     new-array v0, v1, [Ljava/lang/Object;
 
@@ -6087,12 +6087,12 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "public_api_call"
+    const-string v1, "registerConversionListener"
 
-    const-string v2, "registerConversionListener"
+    const-string v2, "public_api_call"
 
     .line 50249
-    invoke-virtual {p1, v1, v2, v0}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {p1, v2, v1, v0}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     if-eqz p2, :cond_1
 
@@ -6126,12 +6126,12 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "public_api_call"
+    const-string v1, "registerValidatorListener"
 
-    const-string v2, "registerValidatorListener"
+    const-string v2, "public_api_call"
 
     .line 50266
-    invoke-virtual {p1, v1, v2, v0}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {p1, v2, v1, v0}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     const-string p1, "registerValidatorListener called"
 
@@ -6177,12 +6177,12 @@
 
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v3, "public_api_call"
+    const-string v3, "reportTrackSession"
 
-    const-string v4, "reportTrackSession"
+    const-string v4, "public_api_call"
 
     .line 50101
-    invoke-virtual {v0, v3, v4, v2}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v4, v3, v2}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 50103
     sget-object v0, Lcom/appsflyer/internal/ai;->ɩ:Lcom/appsflyer/internal/ai;
@@ -7245,12 +7245,12 @@
 
     aput-object v3, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setAdditionalData"
 
-    const-string v3, "setAdditionalData"
+    const-string v3, "public_api_call"
 
     .line 22176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 588
     new-instance v0, Lorg/json/JSONObject;
@@ -7299,12 +7299,12 @@
 
     aput-object p1, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setAndroidIdData"
 
-    const-string v3, "setAndroidIdData"
+    const-string v3, "public_api_call"
 
     .line 15176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 441
     iput-object p1, p0, Lcom/appsflyer/AppsFlyerLibCore;->ι:Ljava/lang/String;
@@ -7339,12 +7339,12 @@
 
     aput-object p1, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setAppId"
 
-    const-string v3, "setAppId"
+    const-string v3, "public_api_call"
 
     .line 44176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 44482
     invoke-static {}, Lcom/appsflyer/AppsFlyerProperties;->getInstance()Lcom/appsflyer/AppsFlyerProperties;
@@ -7385,12 +7385,12 @@
 
     aput-object p1, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setAppInviteOneLink"
 
-    const-string v3, "setAppInviteOneLink"
+    const-string v3, "public_api_call"
 
     .line 21176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 575
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -7495,12 +7495,12 @@
 
     aput-object v3, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setCollectAndroidID"
 
-    const-string v3, "setCollectAndroidID"
+    const-string v3, "public_api_call"
 
     .line 31176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 710
     invoke-static {p1}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
@@ -7565,12 +7565,12 @@
 
     aput-object v3, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setCollectIMEI"
 
-    const-string v3, "setCollectIMEI"
+    const-string v3, "public_api_call"
 
     .line 33176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 717
     invoke-static {p1}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
@@ -7635,12 +7635,12 @@
 
     aput-object v3, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setCollectOaid"
 
-    const-string v3, "setCollectOaid"
+    const-string v3, "public_api_call"
 
     .line 35176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 724
     invoke-static {p1}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
@@ -7737,12 +7737,12 @@
 
     aput-object p1, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setCurrencyCode"
 
-    const-string v3, "setCurrencyCode"
+    const-string v3, "public_api_call"
 
     .line 47176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 1040
     invoke-static {}, Lcom/appsflyer/AppsFlyerProperties;->getInstance()Lcom/appsflyer/AppsFlyerProperties;
@@ -7927,12 +7927,12 @@
 
     aput-object p1, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setCustomerUserId"
 
-    const-string v3, "setCustomerUserId"
+    const-string v3, "public_api_call"
 
     .line 43176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 1006
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -8070,12 +8070,12 @@
 
     aput-object v3, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setDeviceTrackingDisabled"
 
-    const-string v3, "setDeviceTrackingDisabled"
+    const-string v3, "public_api_call"
 
     .line 50243
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 1393
     invoke-static {}, Lcom/appsflyer/AppsFlyerProperties;->getInstance()Lcom/appsflyer/AppsFlyerProperties;
@@ -8116,12 +8116,12 @@
 
     aput-object p1, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setExtension"
 
-    const-string v3, "setExtension"
+    const-string v3, "public_api_call"
 
     .line 45176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 1028
     invoke-static {}, Lcom/appsflyer/AppsFlyerProperties;->getInstance()Lcom/appsflyer/AppsFlyerProperties;
@@ -8223,12 +8223,12 @@
 
     aput-object p1, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setImeiData"
 
-    const-string v3, "setImeiData"
+    const-string v3, "public_api_call"
 
     .line 13176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 429
     iput-object p1, p0, Lcom/appsflyer/AppsFlyerLibCore;->Ι:Ljava/lang/String;
@@ -8268,12 +8268,12 @@
 
     aput-object v3, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setIsUpdate"
 
-    const-string v3, "setIsUpdate"
+    const-string v3, "public_api_call"
 
     .line 46176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 1034
     invoke-static {}, Lcom/appsflyer/AppsFlyerProperties;->getInstance()Lcom/appsflyer/AppsFlyerProperties;
@@ -8340,12 +8340,12 @@
 
     aput-object v4, v2, v3
 
-    const-string v3, "public_api_call"
+    const-string v3, "log"
 
-    const-string v4, "log"
+    const-string v4, "public_api_call"
 
     .line 50890
-    invoke-virtual {v1, v3, v4, v2}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v1, v4, v3, v2}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 3252
     invoke-static {}, Lcom/appsflyer/AppsFlyerProperties;->getInstance()Lcom/appsflyer/AppsFlyerProperties;
@@ -8418,12 +8418,12 @@
 
     aput-object p1, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "setOaidData"
 
-    const-string v3, "setOaidData"
+    const-string v3, "public_api_call"
 
     .line 14176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 435
     iput-object p1, p0, Lcom/appsflyer/AppsFlyerLibCore;->ɨ:Ljava/lang/String;
@@ -8834,12 +8834,12 @@
 
     check-cast v0, [Ljava/lang/String;
 
-    const-string v2, "public_api_call"
+    const-string v2, "setUserEmails"
 
-    const-string v3, "setUserEmails"
+    const-string v3, "public_api_call"
 
     .line 30176
-    invoke-virtual {v1, v2, v3, v0}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v1, v3, v2, v0}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 683
     invoke-static {}, Lcom/appsflyer/AppsFlyerProperties;->getInstance()Lcom/appsflyer/AppsFlyerProperties;
@@ -8953,12 +8953,12 @@
     :cond_0
     sget-object v0, Lcom/appsflyer/internal/ai;->ɩ:Lcom/appsflyer/internal/ai;
 
-    const-string v1, "public_api_call"
+    const-string v1, "setUserEmails"
 
-    const-string v2, "setUserEmails"
+    const-string v2, "public_api_call"
 
     .line 29176
-    invoke-virtual {v0, v1, v2, p1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1, p1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 673
     sget-object v0, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;->NONE:Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
@@ -9053,12 +9053,12 @@
 
     aput-object v2, v4, v5
 
-    const-string v6, "public_api_call"
+    const-string v6, "startTracking"
 
-    const-string v7, "startTracking"
+    const-string v7, "public_api_call"
 
     .line 38176
-    invoke-virtual {v0, v6, v7, v4}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v7, v6, v4}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     const/4 v4, 0x2
 
@@ -9582,12 +9582,12 @@
 
     move-result-object p1
 
-    const-string p2, "is_stop_tracking_used"
+    const/4 p2, 0x1
 
-    const/4 v0, 0x1
+    const-string v0, "is_stop_tracking_used"
 
     .line 10460
-    invoke-interface {p1, p2, v0}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {p1, v0, p2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
     .line 11391
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
@@ -9776,12 +9776,12 @@
 
     aput-object v1, p4, v2
 
-    const-string v1, "public_api_call"
+    const-string v1, "trackEvent"
 
-    const-string v3, "trackEvent"
+    const-string v3, "public_api_call"
 
     .line 50126
-    invoke-virtual {p3, v1, v3, p4}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {p3, v3, v1, p4}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     if-eqz p2, :cond_5
 
@@ -9905,12 +9905,12 @@
 
     aput-object v3, v1, v2
 
-    const-string v2, "public_api_call"
+    const-string v2, "trackLocation"
 
-    const-string v3, "trackLocation"
+    const-string v3, "public_api_call"
 
     .line 48176
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 1046
     new-instance v0, Ljava/util/HashMap;
@@ -9981,12 +9981,12 @@
 
     new-array v1, v1, [Ljava/lang/String;
 
-    const-string v2, "public_api_call"
+    const-string v2, "unregisterConversionListener"
 
-    const-string v3, "unregisterConversionListener"
+    const-string v3, "public_api_call"
 
     .line 50260
-    invoke-virtual {v0, v2, v3, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2, v1}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -10088,12 +10088,12 @@
     :goto_0
     aput-object v4, v2, v3
 
-    const-string v3, "public_api_call"
+    const-string v3, "validateAndTrackInAppPurchase"
 
-    const-string v4, "validateAndTrackInAppPurchase"
+    const-string v4, "public_api_call"
 
     .line 50883
-    invoke-virtual {v1, v3, v4, v2}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {v1, v4, v3, v2}, Lcom/appsflyer/internal/ai;->ı(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 3095
     invoke-virtual {p0}, Lcom/appsflyer/AppsFlyerLib;->isTrackingStopped()Z
@@ -14984,11 +14984,11 @@
 
     move-result-object v6
 
-    const-string v7, "deviceTrackingDisabled"
+    const/4 v7, 0x0
 
-    const/4 v8, 0x0
+    const-string v8, "deviceTrackingDisabled"
 
-    invoke-virtual {v6, v7, v8}, Lcom/appsflyer/AppsFlyerProperties;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {v6, v8, v7}, Lcom/appsflyer/AppsFlyerProperties;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v6
 
@@ -14997,7 +14997,7 @@
     const-string v6, "true"
 
     .line 1075
-    invoke-interface {v3, v7, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v8, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1077
     :cond_2
@@ -15018,12 +15018,12 @@
     if-eqz v6, :cond_3
 
     .line 50089
-    iget-object v7, v6, Lcom/appsflyer/internal/w;->ι:Ljava/lang/String;
+    iget-object v8, v6, Lcom/appsflyer/internal/w;->ι:Ljava/lang/String;
 
     const-string v9, "amazon_aid"
 
     .line 1079
-    invoke-interface {v3, v9, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v9, v8}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1080
     invoke-virtual {v6}, Lcom/appsflyer/internal/w;->ɩ()Z
@@ -15034,9 +15034,9 @@
 
     move-result-object v6
 
-    const-string v7, "amazon_aid_limit"
+    const-string v8, "amazon_aid_limit"
 
-    invoke-interface {v3, v7, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v8, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1082
     :cond_3
@@ -15044,16 +15044,16 @@
 
     move-result-object v6
 
-    const-string v7, "advertiserId"
+    const-string v8, "advertiserId"
 
-    invoke-virtual {v6, v7}, Lcom/appsflyer/AppsFlyerProperties;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v6, v8}, Lcom/appsflyer/AppsFlyerProperties;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
     if-eqz v6, :cond_4
 
     .line 1084
-    invoke-interface {v3, v7, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v8, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1086
     :cond_4
@@ -15067,9 +15067,9 @@
 
     move-result-object v6
 
-    const-string v7, "app_id"
+    const-string v8, "app_id"
 
-    invoke-interface {v3, v7, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v8, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v6, "devkey"
 
@@ -15085,10 +15085,10 @@
 
     invoke-interface {v3, v6, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-wide/16 v6, 0x3e8
+    const-wide/16 v8, 0x3e8
 
     .line 1089
-    div-long/2addr v1, v6
+    div-long/2addr v1, v8
 
     invoke-static {v1, v2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -15113,7 +15113,7 @@
     invoke-interface {v3, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1092
-    invoke-virtual {p0, v0, v8}, Lcom/appsflyer/AppsFlyerLibCore;->getLaunchCounter(Landroid/content/SharedPreferences;Z)I
+    invoke-virtual {p0, v0, v7}, Lcom/appsflyer/AppsFlyerLibCore;->getLaunchCounter(Landroid/content/SharedPreferences;Z)I
 
     move-result v0
 

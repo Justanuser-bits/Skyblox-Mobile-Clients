@@ -2287,11 +2287,11 @@
 
     move-result-object v0
 
-    const-string v2, "Parameter array is too long; discarded. Value kind, name, array length"
+    const-string v2, "param"
 
-    const-string v4, "param"
+    const-string v4, "Parameter array is too long; discarded. Value kind, name, array length"
 
-    invoke-virtual {v1, v2, v4, v14, v0}, Lcom/google/android/gms/internal/measurement/dz;->a(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-virtual {v1, v4, v2, v14, v0}, Lcom/google/android/gms/internal/measurement/dz;->a(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     const/4 v0, 0x0
 

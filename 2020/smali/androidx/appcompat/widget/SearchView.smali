@@ -2525,30 +2525,30 @@
 .method public onActionViewCollapsed()V
     .locals 3
 
-    const-string v0, ""
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const-string v1, ""
 
     .line 1278
-    invoke-virtual {p0, v0, v1}, Landroidx/appcompat/widget/SearchView;->setQuery(Ljava/lang/CharSequence;Z)V
+    invoke-virtual {p0, v1, v0}, Landroidx/appcompat/widget/SearchView;->setQuery(Ljava/lang/CharSequence;Z)V
 
     .line 1279
     invoke-virtual {p0}, Landroidx/appcompat/widget/SearchView;->clearFocus()V
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     .line 1280
-    invoke-direct {p0, v0}, Landroidx/appcompat/widget/SearchView;->updateViewsVisibility(Z)V
+    invoke-direct {p0, v1}, Landroidx/appcompat/widget/SearchView;->updateViewsVisibility(Z)V
 
     .line 1281
-    iget-object v0, p0, Landroidx/appcompat/widget/SearchView;->mSearchSrcTextView:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
+    iget-object v1, p0, Landroidx/appcompat/widget/SearchView;->mSearchSrcTextView:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
     iget v2, p0, Landroidx/appcompat/widget/SearchView;->mCollapsedImeOptions:I
 
-    invoke-virtual {v0, v2}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->setImeOptions(I)V
+    invoke-virtual {v1, v2}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->setImeOptions(I)V
 
     .line 1282
-    iput-boolean v1, p0, Landroidx/appcompat/widget/SearchView;->mExpandedInActionView:Z
+    iput-boolean v0, p0, Landroidx/appcompat/widget/SearchView;->mExpandedInActionView:Z
 
     return-void
 .end method

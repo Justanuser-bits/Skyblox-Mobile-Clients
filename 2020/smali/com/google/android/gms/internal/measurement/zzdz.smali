@@ -244,71 +244,71 @@
 
     iget-object v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->a:Ljava/lang/String;
 
-    const/4 v1, 0x2
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x2
 
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     iget-object v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->b:Ljava/lang/String;
 
-    const/4 v1, 0x3
+    const/4 v2, 0x3
 
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     iget-object v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->c:Ljava/lang/String;
 
-    const/4 v1, 0x4
+    const/4 v2, 0x4
 
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     iget-object v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->d:Ljava/lang/String;
 
-    const/4 v1, 0x5
+    const/4 v2, 0x5
 
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
-    iget-wide v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->e:J
+    iget-wide v2, p0, Lcom/google/android/gms/internal/measurement/zzdz;->e:J
 
-    const/4 v3, 0x6
+    const/4 v0, 0x6
 
-    invoke-static {p1, v3, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;IJ)V
+    invoke-static {p1, v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;IJ)V
 
-    iget-wide v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->f:J
+    iget-wide v2, p0, Lcom/google/android/gms/internal/measurement/zzdz;->f:J
 
-    const/4 v3, 0x7
+    const/4 v0, 0x7
 
-    invoke-static {p1, v3, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;IJ)V
+    invoke-static {p1, v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;IJ)V
 
     iget-object v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->g:Ljava/lang/String;
 
-    const/16 v1, 0x8
+    const/16 v2, 0x8
 
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     iget-boolean v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->h:Z
 
-    const/16 v1, 0x9
+    const/16 v2, 0x9
 
-    invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;IZ)V
+    invoke-static {p1, v2, v0}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;IZ)V
 
     iget-boolean v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->i:Z
 
-    const/16 v1, 0xa
+    const/16 v2, 0xa
 
-    invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;IZ)V
+    invoke-static {p1, v2, v0}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;IZ)V
 
-    iget-wide v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->j:J
+    iget-wide v2, p0, Lcom/google/android/gms/internal/measurement/zzdz;->j:J
 
-    const/16 v3, 0xb
+    const/16 v0, 0xb
 
-    invoke-static {p1, v3, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;IJ)V
+    invoke-static {p1, v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;IJ)V
 
     iget-object v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->k:Ljava/lang/String;
 
-    const/16 v1, 0xc
+    const/16 v2, 0xc
 
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     iget-wide v0, p0, Lcom/google/android/gms/internal/measurement/zzdz;->l:J
 

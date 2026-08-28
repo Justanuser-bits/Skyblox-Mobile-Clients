@@ -62,13 +62,15 @@
     iput-object v0, p0, Lcom/birbit/android/jobqueue/i;->c:Lcom/birbit/android/jobqueue/messaging/e;
 
     .line 61
-    new-instance v1, Lcom/birbit/android/jobqueue/j;
+    new-instance v0, Lcom/birbit/android/jobqueue/j;
+
+    iget-object v1, p0, Lcom/birbit/android/jobqueue/i;->c:Lcom/birbit/android/jobqueue/messaging/e;
 
     iget-object v2, p0, Lcom/birbit/android/jobqueue/i;->d:Lcom/birbit/android/jobqueue/messaging/c;
 
-    invoke-direct {v1, p1, v0, v2}, Lcom/birbit/android/jobqueue/j;-><init>(Lcom/birbit/android/jobqueue/b/a;Lcom/birbit/android/jobqueue/messaging/e;Lcom/birbit/android/jobqueue/messaging/c;)V
+    invoke-direct {v0, p1, v1, v2}, Lcom/birbit/android/jobqueue/j;-><init>(Lcom/birbit/android/jobqueue/b/a;Lcom/birbit/android/jobqueue/messaging/e;Lcom/birbit/android/jobqueue/messaging/c;)V
 
-    iput-object v1, p0, Lcom/birbit/android/jobqueue/i;->b:Lcom/birbit/android/jobqueue/j;
+    iput-object v0, p0, Lcom/birbit/android/jobqueue/i;->b:Lcom/birbit/android/jobqueue/j;
 
     .line 62
     new-instance v0, Ljava/lang/Thread;

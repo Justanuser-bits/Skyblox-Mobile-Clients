@@ -222,21 +222,23 @@
     iput-object p2, p0, Landroidx/appcompat/app/f;->c:Landroid/view/Window$Callback;
 
     .line 250
-    instance-of p3, p2, Landroidx/appcompat/app/f$c;
+    instance-of p2, p2, Landroidx/appcompat/app/f$c;
 
-    if-nez p3, :cond_1
+    if-nez p2, :cond_1
 
     .line 254
-    new-instance p3, Landroidx/appcompat/app/f$c;
+    new-instance p2, Landroidx/appcompat/app/f$c;
 
-    invoke-direct {p3, p0, p2}, Landroidx/appcompat/app/f$c;-><init>(Landroidx/appcompat/app/f;Landroid/view/Window$Callback;)V
+    iget-object p3, p0, Landroidx/appcompat/app/f;->c:Landroid/view/Window$Callback;
 
-    iput-object p3, p0, Landroidx/appcompat/app/f;->d:Landroid/view/Window$Callback;
+    invoke-direct {p2, p0, p3}, Landroidx/appcompat/app/f$c;-><init>(Landroidx/appcompat/app/f;Landroid/view/Window$Callback;)V
+
+    iput-object p2, p0, Landroidx/appcompat/app/f;->d:Landroid/view/Window$Callback;
 
     .line 256
-    iget-object p2, p0, Landroidx/appcompat/app/f;->b:Landroid/view/Window;
+    iget-object p3, p0, Landroidx/appcompat/app/f;->b:Landroid/view/Window;
 
-    invoke-virtual {p2, p3}, Landroid/view/Window;->setCallback(Landroid/view/Window$Callback;)V
+    invoke-virtual {p3, p2}, Landroid/view/Window;->setCallback(Landroid/view/Window$Callback;)V
 
     .line 258
     sget-object p2, Landroidx/appcompat/app/f;->v:[I
@@ -1919,32 +1921,36 @@
     if-eqz v1, :cond_1
 
     .line 326
-    new-instance v1, Landroidx/appcompat/app/m;
+    new-instance v0, Landroidx/appcompat/app/m;
 
-    check-cast v0, Landroid/app/Activity;
+    iget-object v1, p0, Landroidx/appcompat/app/f;->c:Landroid/view/Window$Callback;
+
+    check-cast v1, Landroid/app/Activity;
 
     iget-boolean v2, p0, Landroidx/appcompat/app/f;->n:Z
 
-    invoke-direct {v1, v0, v2}, Landroidx/appcompat/app/m;-><init>(Landroid/app/Activity;Z)V
+    invoke-direct {v0, v1, v2}, Landroidx/appcompat/app/m;-><init>(Landroid/app/Activity;Z)V
 
-    iput-object v1, p0, Landroidx/appcompat/app/f;->f:Landroidx/appcompat/app/a;
+    iput-object v0, p0, Landroidx/appcompat/app/f;->f:Landroidx/appcompat/app/a;
 
     goto :goto_0
 
     .line 328
     :cond_1
-    instance-of v1, v0, Landroid/app/Dialog;
+    instance-of v0, v0, Landroid/app/Dialog;
 
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
     .line 329
-    new-instance v1, Landroidx/appcompat/app/m;
+    new-instance v0, Landroidx/appcompat/app/m;
 
-    check-cast v0, Landroid/app/Dialog;
+    iget-object v1, p0, Landroidx/appcompat/app/f;->c:Landroid/view/Window$Callback;
 
-    invoke-direct {v1, v0}, Landroidx/appcompat/app/m;-><init>(Landroid/app/Dialog;)V
+    check-cast v1, Landroid/app/Dialog;
 
-    iput-object v1, p0, Landroidx/appcompat/app/f;->f:Landroidx/appcompat/app/a;
+    invoke-direct {v0, v1}, Landroidx/appcompat/app/m;-><init>(Landroid/app/Dialog;)V
+
+    iput-object v0, p0, Landroidx/appcompat/app/f;->f:Landroidx/appcompat/app/a;
 
     .line 331
     :cond_2

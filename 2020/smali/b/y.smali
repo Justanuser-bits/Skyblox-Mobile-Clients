@@ -36,75 +36,75 @@
     .line 33
     new-instance v0, Lb/y;
 
-    const-string v1, "HTTP_1_0"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "HTTP_1_0"
 
     const-string v3, "http/1.0"
 
-    invoke-direct {v0, v1, v2, v3}, Lb/y;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v2, v1, v3}, Lb/y;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lb/y;->a:Lb/y;
 
     .line 41
     new-instance v0, Lb/y;
 
-    const-string v1, "HTTP_1_1"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "HTTP_1_1"
 
     const-string v4, "http/1.1"
 
-    invoke-direct {v0, v1, v3, v4}, Lb/y;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v3, v2, v4}, Lb/y;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lb/y;->b:Lb/y;
 
     .line 51
     new-instance v0, Lb/y;
 
-    const-string v1, "SPDY_3"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "SPDY_3"
 
     const-string v5, "spdy/3.1"
 
-    invoke-direct {v0, v1, v4, v5}, Lb/y;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v4, v3, v5}, Lb/y;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lb/y;->c:Lb/y;
 
     .line 62
     new-instance v0, Lb/y;
 
-    const-string v1, "HTTP_2"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "HTTP_2"
 
     const-string v6, "h2"
 
-    invoke-direct {v0, v1, v5, v6}, Lb/y;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v5, v4, v6}, Lb/y;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lb/y;->d:Lb/y;
 
-    const/4 v1, 0x4
+    const/4 v5, 0x4
 
-    new-array v1, v1, [Lb/y;
+    new-array v5, v5, [Lb/y;
 
     .line 29
     sget-object v6, Lb/y;->a:Lb/y;
 
-    aput-object v6, v1, v2
+    aput-object v6, v5, v1
 
-    sget-object v2, Lb/y;->b:Lb/y;
+    sget-object v1, Lb/y;->b:Lb/y;
 
-    aput-object v2, v1, v3
+    aput-object v1, v5, v2
 
-    sget-object v2, Lb/y;->c:Lb/y;
+    sget-object v1, Lb/y;->c:Lb/y;
 
-    aput-object v2, v1, v4
+    aput-object v1, v5, v3
 
-    aput-object v0, v1, v5
+    aput-object v0, v5, v4
 
-    sput-object v1, Lb/y;->f:[Lb/y;
+    sput-object v5, Lb/y;->f:[Lb/y;
 
     return-void
 .end method

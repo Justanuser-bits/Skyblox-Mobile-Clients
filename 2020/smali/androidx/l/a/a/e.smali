@@ -22,16 +22,16 @@
 
     move-result-object p0
 
-    const-string p1, "value"
+    const/4 p1, 0x0
 
-    const/4 p2, 0x0
+    const-string p2, "value"
 
     .line 639
-    invoke-static {p0, p3, p1, p2}, Landroidx/core/a/a/g;->b(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Landroid/util/TypedValue;
+    invoke-static {p0, p3, p2, p1}, Landroidx/core/a/a/g;->b(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Landroid/util/TypedValue;
 
-    move-result-object p1
+    move-result-object p2
 
-    if-eqz p1, :cond_0
+    if-eqz p2, :cond_0
 
     const/4 p3, 0x1
 
@@ -44,21 +44,21 @@
     if-eqz p3, :cond_1
 
     .line 644
-    iget p1, p1, Landroid/util/TypedValue;->type:I
+    iget p2, p2, Landroid/util/TypedValue;->type:I
 
-    invoke-static {p1}, Landroidx/l/a/a/e;->a(I)Z
+    invoke-static {p2}, Landroidx/l/a/a/e;->a(I)Z
 
-    move-result p1
+    move-result p2
 
-    if-eqz p1, :cond_1
+    if-eqz p2, :cond_1
 
-    const/4 p2, 0x3
+    const/4 p1, 0x3
 
     .line 649
     :cond_1
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
-    return p2
+    return p1
 .end method
 
 .method private static a(Landroid/content/res/TypedArray;II)I
@@ -741,16 +741,16 @@
 
     move-result-object p1
 
-    const-string p2, "fraction"
+    const/4 p2, 0x3
 
-    const/4 p3, 0x3
+    const-string p3, "fraction"
 
     const/high16 v0, -0x40800000    # -1.0f
 
     .line 823
-    invoke-static {p1, p5, p2, p3, v0}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+    invoke-static {p1, p5, p3, p2, v0}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
-    move-result p2
+    move-result p3
 
     const-string v0, "value"
 
@@ -803,7 +803,7 @@
 
     if-eq p4, v3, :cond_3
 
-    if-eq p4, p3, :cond_3
+    if-eq p4, p2, :cond_3
 
     const/4 p2, 0x0
 
@@ -813,25 +813,25 @@
     :cond_3
     invoke-static {p1, p5, v0, v1, v1}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
-    move-result p3
+    move-result p2
 
     .line 850
-    invoke-static {p2, p3}, Landroid/animation/Keyframe;->ofInt(FI)Landroid/animation/Keyframe;
+    invoke-static {p3, p2}, Landroid/animation/Keyframe;->ofInt(FI)Landroid/animation/Keyframe;
 
     move-result-object p2
 
     goto :goto_2
 
     :cond_4
-    const/4 p3, 0x0
+    const/4 p2, 0x0
 
     .line 842
-    invoke-static {p1, p5, v0, v1, p3}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+    invoke-static {p1, p5, v0, v1, p2}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
-    move-result p3
+    move-result p2
 
     .line 844
-    invoke-static {p2, p3}, Landroid/animation/Keyframe;->ofFloat(FF)Landroid/animation/Keyframe;
+    invoke-static {p3, p2}, Landroid/animation/Keyframe;->ofFloat(FF)Landroid/animation/Keyframe;
 
     move-result-object p2
 
@@ -841,7 +841,7 @@
     if-nez p4, :cond_6
 
     .line 854
-    invoke-static {p2}, Landroid/animation/Keyframe;->ofFloat(F)Landroid/animation/Keyframe;
+    invoke-static {p3}, Landroid/animation/Keyframe;->ofFloat(F)Landroid/animation/Keyframe;
 
     move-result-object p2
 
@@ -849,7 +849,7 @@
 
     .line 855
     :cond_6
-    invoke-static {p2}, Landroid/animation/Keyframe;->ofInt(F)Landroid/animation/Keyframe;
+    invoke-static {p3}, Landroid/animation/Keyframe;->ofInt(F)Landroid/animation/Keyframe;
 
     move-result-object p2
 
@@ -1746,12 +1746,12 @@
     :cond_0
     invoke-static {p4, v0, p1, p5, p6}, Landroidx/l/a/a/e;->a(Landroid/animation/ValueAnimator;Landroid/content/res/TypedArray;Landroid/content/res/TypedArray;FLorg/xmlpull/v1/XmlPullParser;)V
 
-    const-string p2, "interpolator"
+    const/4 p2, 0x0
 
-    const/4 p3, 0x0
+    const-string p3, "interpolator"
 
     .line 902
-    invoke-static {v0, p6, p2, p3, p3}, Landroidx/core/a/a/g;->c(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {v0, p6, p3, p2, p2}, Landroidx/core/a/a/g;->c(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
     move-result p2
 
@@ -1795,14 +1795,14 @@
 
     if-eqz v0, :cond_3
 
-    const-string v1, "propertyXName"
+    const/4 v1, 0x2
 
-    const/4 v2, 0x2
+    const-string v2, "propertyXName"
 
     .line 403
-    invoke-static {p1, p4, v1, v2}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p1, p4, v2, v1}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
     const/4 v3, 0x3
 
@@ -1813,12 +1813,12 @@
 
     move-result-object p4
 
-    if-eq p2, v2, :cond_0
+    if-eq p2, v1, :cond_0
 
-    const/4 v2, 0x4
+    const/4 v1, 0x4
 
     :cond_0
-    if-nez v1, :cond_2
+    if-nez v2, :cond_2
 
     if-eqz p4, :cond_1
 
@@ -1862,7 +1862,7 @@
     mul-float p3, p3, p2
 
     .line 419
-    invoke-static {p1, p0, p3, v1, p4}, Landroidx/l/a/a/e;->a(Landroid/graphics/Path;Landroid/animation/ObjectAnimator;FLjava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, p0, p3, v2, p4}, Landroidx/l/a/a/e;->a(Landroid/graphics/Path;Landroid/animation/ObjectAnimator;FLjava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -1886,111 +1886,111 @@
 .method private static a(Landroid/animation/ValueAnimator;Landroid/content/res/TypedArray;Landroid/content/res/TypedArray;FLorg/xmlpull/v1/XmlPullParser;)V
     .locals 11
 
-    const-string v0, "duration"
+    const/4 v0, 0x1
 
-    const/4 v1, 0x1
+    const-string v1, "duration"
 
     const/16 v2, 0x12c
 
     .line 345
-    invoke-static {p1, p4, v0, v1, v2}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {p1, p4, v1, v0, v2}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
-    move-result v0
+    move-result v1
 
-    int-to-long v2, v0
+    int-to-long v1, v1
 
-    const-string v0, "startOffset"
+    const/4 v3, 0x0
 
-    const/4 v4, 0x2
+    const-string v4, "startOffset"
 
-    const/4 v5, 0x0
+    const/4 v5, 0x2
 
     .line 347
-    invoke-static {p1, p4, v0, v4, v5}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {p1, p4, v4, v5, v3}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
-    move-result v0
+    move-result v4
 
-    int-to-long v6, v0
+    int-to-long v4, v4
 
-    const-string v0, "valueType"
+    const/4 v6, 0x4
 
-    const/4 v4, 0x7
+    const-string v7, "valueType"
 
-    const/4 v8, 0x4
+    const/4 v8, 0x7
 
     .line 349
-    invoke-static {p1, p4, v0, v4, v8}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {p1, p4, v7, v8, v6}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
-    move-result v0
+    move-result v7
 
-    const-string v4, "valueFrom"
+    const-string v8, "valueFrom"
 
     .line 353
-    invoke-static {p4, v4}, Landroidx/core/a/a/g;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p4, v8}, Landroidx/core/a/a/g;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
-    move-result v4
+    move-result v8
 
-    if-eqz v4, :cond_1
+    if-eqz v8, :cond_1
 
-    const-string v4, "valueTo"
+    const-string v8, "valueTo"
 
     .line 354
-    invoke-static {p4, v4}, Landroidx/core/a/a/g;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p4, v8}, Landroidx/core/a/a/g;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
-    move-result v4
+    move-result v8
 
-    if-eqz v4, :cond_1
+    if-eqz v8, :cond_1
 
-    const/4 v4, 0x6
+    const/4 v8, 0x6
 
     const/4 v9, 0x5
 
-    if-ne v0, v8, :cond_0
+    if-ne v7, v6, :cond_0
 
     .line 356
-    invoke-static {p1, v9, v4}, Landroidx/l/a/a/e;->a(Landroid/content/res/TypedArray;II)I
+    invoke-static {p1, v9, v8}, Landroidx/l/a/a/e;->a(Landroid/content/res/TypedArray;II)I
 
-    move-result v0
+    move-result v7
 
     :cond_0
     const-string v10, ""
 
     .line 360
-    invoke-static {p1, v0, v9, v4, v10}, Landroidx/l/a/a/e;->a(Landroid/content/res/TypedArray;IIILjava/lang/String;)Landroid/animation/PropertyValuesHolder;
+    invoke-static {p1, v7, v9, v8, v10}, Landroidx/l/a/a/e;->a(Landroid/content/res/TypedArray;IIILjava/lang/String;)Landroid/animation/PropertyValuesHolder;
 
-    move-result-object v4
+    move-result-object v8
 
-    if-eqz v4, :cond_1
+    if-eqz v8, :cond_1
 
-    new-array v9, v1, [Landroid/animation/PropertyValuesHolder;
+    new-array v9, v0, [Landroid/animation/PropertyValuesHolder;
 
-    aput-object v4, v9, v5
+    aput-object v8, v9, v3
 
     .line 364
     invoke-virtual {p0, v9}, Landroid/animation/ValueAnimator;->setValues([Landroid/animation/PropertyValuesHolder;)V
 
     .line 367
     :cond_1
-    invoke-virtual {p0, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
+    invoke-virtual {p0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 368
-    invoke-virtual {p0, v6, v7}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
+    invoke-virtual {p0, v4, v5}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
 
-    const/4 v2, 0x3
+    const/4 v1, 0x3
 
-    const-string v3, "repeatCount"
+    const-string v2, "repeatCount"
 
     .line 370
-    invoke-static {p1, p4, v3, v2, v5}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {p1, p4, v2, v1, v3}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
-    move-result v2
+    move-result v1
 
-    invoke-virtual {p0, v2}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
+    invoke-virtual {p0, v1}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    const-string v2, "repeatMode"
+    const-string v1, "repeatMode"
 
     .line 372
-    invoke-static {p1, p4, v2, v8, v1}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {p1, p4, v1, v6, v0}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
     move-result p1
 
@@ -1999,7 +1999,7 @@
     if-eqz p2, :cond_2
 
     .line 376
-    invoke-static {p0, p2, v0, p3, p4}, Landroidx/l/a/a/e;->a(Landroid/animation/ValueAnimator;Landroid/content/res/TypedArray;IFLorg/xmlpull/v1/XmlPullParser;)V
+    invoke-static {p0, p2, v7, p3, p4}, Landroidx/l/a/a/e;->a(Landroid/animation/ValueAnimator;Landroid/content/res/TypedArray;IFLorg/xmlpull/v1/XmlPullParser;)V
 
     :cond_2
     return-void

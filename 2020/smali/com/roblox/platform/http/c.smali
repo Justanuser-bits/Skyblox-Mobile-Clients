@@ -97,11 +97,13 @@
     if-eqz v0, :cond_0
 
     .line 52
-    new-instance v2, Lcom/roblox/platform/http/b/b;
+    new-instance v0, Lcom/roblox/platform/http/b/b;
 
-    invoke-direct {v2, v0}, Lcom/roblox/platform/http/b/b;-><init>(Ljava/lang/String;)V
+    iget-object v2, p0, Lcom/roblox/platform/http/c;->d:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lb/x$a;->b(Lb/u;)Lb/x$a;
+    invoke-direct {v0, v2}, Lcom/roblox/platform/http/b/b;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0}, Lb/x$a;->b(Lb/u;)Lb/x$a;
 
     .line 54
     :cond_0

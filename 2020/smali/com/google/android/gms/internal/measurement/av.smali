@@ -34,91 +34,91 @@
 
     new-instance v0, Lcom/google/android/gms/internal/measurement/av;
 
-    const-string v1, "NONE"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "NONE"
 
-    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/android/gms/internal/measurement/av;->a:Lcom/google/android/gms/internal/measurement/av;
 
     new-instance v0, Lcom/google/android/gms/internal/measurement/av;
 
-    const-string v1, "BATCH_BY_SESSION"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "BATCH_BY_SESSION"
 
-    invoke-direct {v0, v1, v3}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/android/gms/internal/measurement/av;->c:Lcom/google/android/gms/internal/measurement/av;
 
     new-instance v0, Lcom/google/android/gms/internal/measurement/av;
 
-    const-string v1, "BATCH_BY_TIME"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "BATCH_BY_TIME"
 
-    invoke-direct {v0, v1, v4}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/android/gms/internal/measurement/av;->d:Lcom/google/android/gms/internal/measurement/av;
 
     new-instance v0, Lcom/google/android/gms/internal/measurement/av;
 
-    const-string v1, "BATCH_BY_BRUTE_FORCE"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "BATCH_BY_BRUTE_FORCE"
 
-    invoke-direct {v0, v1, v5}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/android/gms/internal/measurement/av;->e:Lcom/google/android/gms/internal/measurement/av;
 
     new-instance v0, Lcom/google/android/gms/internal/measurement/av;
 
-    const-string v1, "BATCH_BY_COUNT"
+    const/4 v5, 0x4
 
-    const/4 v6, 0x4
+    const-string v6, "BATCH_BY_COUNT"
 
-    invoke-direct {v0, v1, v6}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v6, v5}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/android/gms/internal/measurement/av;->b:Lcom/google/android/gms/internal/measurement/av;
 
     new-instance v0, Lcom/google/android/gms/internal/measurement/av;
 
-    const-string v1, "BATCH_BY_SIZE"
+    const/4 v6, 0x5
 
-    const/4 v7, 0x5
+    const-string v7, "BATCH_BY_SIZE"
 
-    invoke-direct {v0, v1, v7}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v7, v6}, Lcom/google/android/gms/internal/measurement/av;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/android/gms/internal/measurement/av;->f:Lcom/google/android/gms/internal/measurement/av;
 
-    const/4 v1, 0x6
+    const/4 v7, 0x6
 
-    new-array v1, v1, [Lcom/google/android/gms/internal/measurement/av;
+    new-array v7, v7, [Lcom/google/android/gms/internal/measurement/av;
 
     sget-object v8, Lcom/google/android/gms/internal/measurement/av;->a:Lcom/google/android/gms/internal/measurement/av;
 
-    aput-object v8, v1, v2
+    aput-object v8, v7, v1
 
-    sget-object v2, Lcom/google/android/gms/internal/measurement/av;->c:Lcom/google/android/gms/internal/measurement/av;
+    sget-object v1, Lcom/google/android/gms/internal/measurement/av;->c:Lcom/google/android/gms/internal/measurement/av;
 
-    aput-object v2, v1, v3
+    aput-object v1, v7, v2
 
-    sget-object v2, Lcom/google/android/gms/internal/measurement/av;->d:Lcom/google/android/gms/internal/measurement/av;
+    sget-object v1, Lcom/google/android/gms/internal/measurement/av;->d:Lcom/google/android/gms/internal/measurement/av;
 
-    aput-object v2, v1, v4
+    aput-object v1, v7, v3
 
-    sget-object v2, Lcom/google/android/gms/internal/measurement/av;->e:Lcom/google/android/gms/internal/measurement/av;
+    sget-object v1, Lcom/google/android/gms/internal/measurement/av;->e:Lcom/google/android/gms/internal/measurement/av;
 
-    aput-object v2, v1, v5
+    aput-object v1, v7, v4
 
-    sget-object v2, Lcom/google/android/gms/internal/measurement/av;->b:Lcom/google/android/gms/internal/measurement/av;
+    sget-object v1, Lcom/google/android/gms/internal/measurement/av;->b:Lcom/google/android/gms/internal/measurement/av;
 
-    aput-object v2, v1, v6
+    aput-object v1, v7, v5
 
-    aput-object v0, v1, v7
+    aput-object v0, v7, v6
 
-    sput-object v1, Lcom/google/android/gms/internal/measurement/av;->g:[Lcom/google/android/gms/internal/measurement/av;
+    sput-object v7, Lcom/google/android/gms/internal/measurement/av;->g:[Lcom/google/android/gms/internal/measurement/av;
 
     return-void
 .end method

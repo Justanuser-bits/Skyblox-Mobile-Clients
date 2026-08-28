@@ -32,67 +32,67 @@
     .line 32
     new-instance v0, Lorg/greenrobot/eventbus/ThreadMode;
 
-    const-string v1, "POSTING"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "POSTING"
 
-    invoke-direct {v0, v1, v2}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->POSTING:Lorg/greenrobot/eventbus/ThreadMode;
 
     .line 39
     new-instance v0, Lorg/greenrobot/eventbus/ThreadMode;
 
-    const-string v1, "MAIN"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "MAIN"
 
-    invoke-direct {v0, v1, v3}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
 
     .line 47
     new-instance v0, Lorg/greenrobot/eventbus/ThreadMode;
 
-    const-string v1, "BACKGROUND"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "BACKGROUND"
 
-    invoke-direct {v0, v1, v4}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->BACKGROUND:Lorg/greenrobot/eventbus/ThreadMode;
 
     .line 56
     new-instance v0, Lorg/greenrobot/eventbus/ThreadMode;
 
-    const-string v1, "ASYNC"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "ASYNC"
 
-    invoke-direct {v0, v1, v5}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v5, v4}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->ASYNC:Lorg/greenrobot/eventbus/ThreadMode;
 
-    const/4 v1, 0x4
+    const/4 v5, 0x4
 
-    new-array v1, v1, [Lorg/greenrobot/eventbus/ThreadMode;
+    new-array v5, v5, [Lorg/greenrobot/eventbus/ThreadMode;
 
     .line 25
     sget-object v6, Lorg/greenrobot/eventbus/ThreadMode;->POSTING:Lorg/greenrobot/eventbus/ThreadMode;
 
-    aput-object v6, v1, v2
+    aput-object v6, v5, v1
 
-    sget-object v2, Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
 
-    aput-object v2, v1, v3
+    aput-object v1, v5, v2
 
-    sget-object v2, Lorg/greenrobot/eventbus/ThreadMode;->BACKGROUND:Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->BACKGROUND:Lorg/greenrobot/eventbus/ThreadMode;
 
-    aput-object v2, v1, v4
+    aput-object v1, v5, v3
 
-    aput-object v0, v1, v5
+    aput-object v0, v5, v4
 
-    sput-object v1, Lorg/greenrobot/eventbus/ThreadMode;->$VALUES:[Lorg/greenrobot/eventbus/ThreadMode;
+    sput-object v5, Lorg/greenrobot/eventbus/ThreadMode;->$VALUES:[Lorg/greenrobot/eventbus/ThreadMode;
 
     return-void
 .end method

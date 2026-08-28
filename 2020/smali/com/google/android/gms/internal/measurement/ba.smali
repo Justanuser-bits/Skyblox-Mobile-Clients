@@ -26,35 +26,35 @@
 
     new-instance v0, Lcom/google/android/gms/internal/measurement/ba;
 
-    const-string v1, "NONE"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "NONE"
 
-    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/internal/measurement/ba;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lcom/google/android/gms/internal/measurement/ba;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/android/gms/internal/measurement/ba;->b:Lcom/google/android/gms/internal/measurement/ba;
 
     new-instance v0, Lcom/google/android/gms/internal/measurement/ba;
 
-    const-string v1, "GZIP"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "GZIP"
 
-    invoke-direct {v0, v1, v3}, Lcom/google/android/gms/internal/measurement/ba;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lcom/google/android/gms/internal/measurement/ba;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/android/gms/internal/measurement/ba;->a:Lcom/google/android/gms/internal/measurement/ba;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/google/android/gms/internal/measurement/ba;
+    new-array v3, v3, [Lcom/google/android/gms/internal/measurement/ba;
 
     sget-object v4, Lcom/google/android/gms/internal/measurement/ba;->b:Lcom/google/android/gms/internal/measurement/ba;
 
-    aput-object v4, v1, v2
+    aput-object v4, v3, v1
 
-    aput-object v0, v1, v3
+    aput-object v0, v3, v2
 
-    sput-object v1, Lcom/google/android/gms/internal/measurement/ba;->c:[Lcom/google/android/gms/internal/measurement/ba;
+    sput-object v3, Lcom/google/android/gms/internal/measurement/ba;->c:[Lcom/google/android/gms/internal/measurement/ba;
 
     return-void
 .end method

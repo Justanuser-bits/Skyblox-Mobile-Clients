@@ -79,11 +79,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/b;
 
-    const-string v2, "CALLBACK"
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    const-string v3, "CALLBACK"
 
-    invoke-direct {v0, v2, v3, v1, v3}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v3, v2, v1, v2}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->a:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -92,11 +92,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/d;
 
-    const-string v2, "CANCEL_RESULT_CALLBACK"
+    const/4 v3, 0x1
 
-    const/4 v4, 0x1
+    const-string v4, "CANCEL_RESULT_CALLBACK"
 
-    invoke-direct {v0, v2, v4, v1, v3}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v4, v3, v1, v2}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->b:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -105,11 +105,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/i;
 
-    const-string v2, "RUN_JOB"
+    const/4 v4, 0x2
 
-    const/4 v5, 0x2
+    const-string v5, "RUN_JOB"
 
-    invoke-direct {v0, v2, v5, v1, v3}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v5, v4, v1, v2}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->c:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -118,11 +118,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/e;
 
-    const-string v2, "COMMAND"
+    const/4 v5, 0x3
 
-    const/4 v6, 0x3
+    const-string v6, "COMMAND"
 
-    invoke-direct {v0, v2, v6, v1, v3}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v6, v5, v1, v2}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->d:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -131,11 +131,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/h;
 
-    const-string v2, "PUBLIC_QUERY"
+    const/4 v6, 0x4
 
-    const/4 v7, 0x4
+    const-string v7, "PUBLIC_QUERY"
 
-    invoke-direct {v0, v2, v7, v1, v3}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v7, v6, v1, v2}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->e:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -144,11 +144,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/g;
 
-    const-string v2, "JOB_CONSUMER_IDLE"
+    const/4 v7, 0x5
 
-    const/4 v8, 0x5
+    const-string v8, "JOB_CONSUMER_IDLE"
 
-    invoke-direct {v0, v2, v8, v1, v3}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v8, v7, v1, v2}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->f:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -157,11 +157,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/a;
 
-    const-string v2, "ADD_JOB"
+    const/4 v8, 0x6
 
-    const/4 v9, 0x6
+    const-string v9, "ADD_JOB"
 
-    invoke-direct {v0, v2, v9, v1, v4}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v9, v8, v1, v3}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->g:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -170,11 +170,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/c;
 
-    const-string v2, "CANCEL"
+    const/4 v9, 0x7
 
-    const/4 v10, 0x7
+    const-string v10, "CANCEL"
 
-    invoke-direct {v0, v2, v10, v1, v4}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v10, v9, v1, v3}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->h:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -183,11 +183,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/f;
 
-    const-string v2, "CONSTRAINT_CHANGE"
+    const/16 v10, 0x8
 
-    const/16 v11, 0x8
+    const-string v11, "CONSTRAINT_CHANGE"
 
-    invoke-direct {v0, v2, v11, v1, v5}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v11, v10, v1, v4}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->i:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -196,11 +196,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/j;
 
-    const-string v2, "RUN_JOB_RESULT"
+    const/16 v11, 0x9
 
-    const/16 v12, 0x9
+    const-string v12, "RUN_JOB_RESULT"
 
-    invoke-direct {v0, v2, v12, v1, v6}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v12, v11, v1, v5}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->j:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -209,11 +209,11 @@
 
     const-class v1, Lcom/birbit/android/jobqueue/messaging/a/k;
 
-    const-string v2, "SCHEDULER"
+    const/16 v12, 0xa
 
-    const/16 v13, 0xa
+    const-string v13, "SCHEDULER"
 
-    invoke-direct {v0, v2, v13, v1, v7}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
+    invoke-direct {v0, v13, v12, v1, v6}, Lcom/birbit/android/jobqueue/messaging/g;-><init>(Ljava/lang/String;ILjava/lang/Class;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/messaging/g;->k:Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -222,47 +222,47 @@
     new-array v1, v1, [Lcom/birbit/android/jobqueue/messaging/g;
 
     .line 21
-    sget-object v2, Lcom/birbit/android/jobqueue/messaging/g;->a:Lcom/birbit/android/jobqueue/messaging/g;
+    sget-object v13, Lcom/birbit/android/jobqueue/messaging/g;->a:Lcom/birbit/android/jobqueue/messaging/g;
 
-    aput-object v2, v1, v3
+    aput-object v13, v1, v2
 
-    sget-object v2, Lcom/birbit/android/jobqueue/messaging/g;->b:Lcom/birbit/android/jobqueue/messaging/g;
+    sget-object v13, Lcom/birbit/android/jobqueue/messaging/g;->b:Lcom/birbit/android/jobqueue/messaging/g;
 
-    aput-object v2, v1, v4
+    aput-object v13, v1, v3
 
-    sget-object v2, Lcom/birbit/android/jobqueue/messaging/g;->c:Lcom/birbit/android/jobqueue/messaging/g;
+    sget-object v3, Lcom/birbit/android/jobqueue/messaging/g;->c:Lcom/birbit/android/jobqueue/messaging/g;
 
-    aput-object v2, v1, v5
+    aput-object v3, v1, v4
 
-    sget-object v2, Lcom/birbit/android/jobqueue/messaging/g;->d:Lcom/birbit/android/jobqueue/messaging/g;
+    sget-object v3, Lcom/birbit/android/jobqueue/messaging/g;->d:Lcom/birbit/android/jobqueue/messaging/g;
 
-    aput-object v2, v1, v6
+    aput-object v3, v1, v5
 
-    sget-object v2, Lcom/birbit/android/jobqueue/messaging/g;->e:Lcom/birbit/android/jobqueue/messaging/g;
+    sget-object v3, Lcom/birbit/android/jobqueue/messaging/g;->e:Lcom/birbit/android/jobqueue/messaging/g;
 
-    aput-object v2, v1, v7
+    aput-object v3, v1, v6
 
-    sget-object v2, Lcom/birbit/android/jobqueue/messaging/g;->f:Lcom/birbit/android/jobqueue/messaging/g;
+    sget-object v3, Lcom/birbit/android/jobqueue/messaging/g;->f:Lcom/birbit/android/jobqueue/messaging/g;
 
-    aput-object v2, v1, v8
+    aput-object v3, v1, v7
 
-    sget-object v2, Lcom/birbit/android/jobqueue/messaging/g;->g:Lcom/birbit/android/jobqueue/messaging/g;
+    sget-object v3, Lcom/birbit/android/jobqueue/messaging/g;->g:Lcom/birbit/android/jobqueue/messaging/g;
 
-    aput-object v2, v1, v9
+    aput-object v3, v1, v8
 
-    sget-object v2, Lcom/birbit/android/jobqueue/messaging/g;->h:Lcom/birbit/android/jobqueue/messaging/g;
+    sget-object v3, Lcom/birbit/android/jobqueue/messaging/g;->h:Lcom/birbit/android/jobqueue/messaging/g;
 
-    aput-object v2, v1, v10
+    aput-object v3, v1, v9
 
-    sget-object v2, Lcom/birbit/android/jobqueue/messaging/g;->i:Lcom/birbit/android/jobqueue/messaging/g;
+    sget-object v3, Lcom/birbit/android/jobqueue/messaging/g;->i:Lcom/birbit/android/jobqueue/messaging/g;
 
-    aput-object v2, v1, v11
+    aput-object v3, v1, v10
 
-    sget-object v2, Lcom/birbit/android/jobqueue/messaging/g;->j:Lcom/birbit/android/jobqueue/messaging/g;
+    sget-object v3, Lcom/birbit/android/jobqueue/messaging/g;->j:Lcom/birbit/android/jobqueue/messaging/g;
 
-    aput-object v2, v1, v12
+    aput-object v3, v1, v11
 
-    aput-object v0, v1, v13
+    aput-object v0, v1, v12
 
     sput-object v1, Lcom/birbit/android/jobqueue/messaging/g;->p:[Lcom/birbit/android/jobqueue/messaging/g;
 
@@ -280,12 +280,12 @@
 
     array-length v1, v0
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     :goto_0
-    if-ge v3, v1, :cond_1
+    if-ge v2, v1, :cond_1
 
-    aget-object v4, v0, v3
+    aget-object v4, v0, v2
 
     .line 46
     sget-object v5, Lcom/birbit/android/jobqueue/messaging/g;->m:Ljava/util/Map;
@@ -297,18 +297,18 @@
     .line 47
     iget v4, v4, Lcom/birbit/android/jobqueue/messaging/g;->n:I
 
-    if-le v4, v2, :cond_0
+    if-le v4, v3, :cond_0
 
-    move v2, v4
+    move v3, v4
 
     :cond_0
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
     .line 51
     :cond_1
-    sput v2, Lcom/birbit/android/jobqueue/messaging/g;->o:I
+    sput v3, Lcom/birbit/android/jobqueue/messaging/g;->o:I
 
     return-void
 .end method

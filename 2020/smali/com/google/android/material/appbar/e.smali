@@ -50,11 +50,11 @@
 
     new-array v2, v2, [I
 
-    const/4 v3, 0x0
+    const v3, 0x101000e
 
-    const v4, 0x101000e
+    const/4 v4, 0x0
 
-    aput v4, v2, v3
+    aput v3, v2, v4
 
     .line 65
     sget v5, Lcom/google/android/material/a$b;->state_liftable:I
@@ -75,7 +75,7 @@
 
     const/4 v7, 0x0
 
-    aput v7, v5, v3
+    aput v7, v5, v4
 
     const-string v8, "elevation"
 
@@ -95,11 +95,11 @@
 
     new-array v0, v6, [I
 
-    aput v4, v0, v3
+    aput v3, v0, v4
 
     new-array v2, v6, [F
 
-    aput p1, v2, v3
+    aput p1, v2, v4
 
     .line 72
     invoke-static {p0, v8, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
@@ -113,11 +113,11 @@
     .line 70
     invoke-virtual {v1, v0, p1}, Landroid/animation/StateListAnimator;->addState([ILandroid/animation/Animator;)V
 
-    new-array p1, v3, [I
+    new-array p1, v4, [I
 
     new-array v0, v6, [F
 
-    aput v7, v0, v3
+    aput v7, v0, v4
 
     .line 75
     invoke-static {p0, v8, v0}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;

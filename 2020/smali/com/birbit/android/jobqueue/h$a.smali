@@ -110,9 +110,9 @@
     .locals 13
 
     .line 309
-    iget-object v4, p0, Lcom/birbit/android/jobqueue/h$a;->d:Lcom/birbit/android/jobqueue/g;
+    iget-object v0, p0, Lcom/birbit/android/jobqueue/h$a;->d:Lcom/birbit/android/jobqueue/g;
 
-    if-eqz v4, :cond_4
+    if-eqz v0, :cond_4
 
     .line 312
     iget v0, p0, Lcom/birbit/android/jobqueue/h$a;->i:I
@@ -130,40 +130,42 @@
     if-eqz v0, :cond_1
 
     .line 321
-    new-instance v12, Lcom/birbit/android/jobqueue/h;
+    new-instance v0, Lcom/birbit/android/jobqueue/h;
 
-    iget v1, p0, Lcom/birbit/android/jobqueue/h$a;->a:I
+    iget v2, p0, Lcom/birbit/android/jobqueue/h$a;->a:I
 
-    iget-object v2, p0, Lcom/birbit/android/jobqueue/h$a;->b:Ljava/lang/String;
+    iget-object v3, p0, Lcom/birbit/android/jobqueue/h$a;->b:Ljava/lang/String;
 
-    iget v3, p0, Lcom/birbit/android/jobqueue/h$a;->c:I
+    iget v4, p0, Lcom/birbit/android/jobqueue/h$a;->c:I
 
-    iget-wide v5, p0, Lcom/birbit/android/jobqueue/h$a;->e:J
+    iget-object v5, p0, Lcom/birbit/android/jobqueue/h$a;->d:Lcom/birbit/android/jobqueue/g;
 
-    iget-wide v7, p0, Lcom/birbit/android/jobqueue/h$a;->f:J
+    iget-wide v6, p0, Lcom/birbit/android/jobqueue/h$a;->e:J
 
-    iget-wide v9, p0, Lcom/birbit/android/jobqueue/h$a;->h:J
+    iget-wide v8, p0, Lcom/birbit/android/jobqueue/h$a;->f:J
 
-    const/4 v11, 0x0
+    iget-wide v10, p0, Lcom/birbit/android/jobqueue/h$a;->h:J
 
-    move-object v0, v12
+    const/4 v12, 0x0
 
-    invoke-direct/range {v0 .. v11}, Lcom/birbit/android/jobqueue/h;-><init>(ILjava/lang/String;ILcom/birbit/android/jobqueue/g;JJJLcom/birbit/android/jobqueue/h$1;)V
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v12}, Lcom/birbit/android/jobqueue/h;-><init>(ILjava/lang/String;ILcom/birbit/android/jobqueue/g;JJJLcom/birbit/android/jobqueue/h$1;)V
 
     .line 323
-    iget-object v0, p0, Lcom/birbit/android/jobqueue/h$a;->g:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/birbit/android/jobqueue/h$a;->g:Ljava/lang/Long;
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     .line 324
-    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+    invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
-    move-result-wide v0
+    move-result-wide v1
 
-    invoke-virtual {v12, v0, v1}, Lcom/birbit/android/jobqueue/h;->c(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/birbit/android/jobqueue/h;->c(J)V
 
     :cond_0
-    return-object v12
+    return-object v0
 
     .line 319
     :cond_1

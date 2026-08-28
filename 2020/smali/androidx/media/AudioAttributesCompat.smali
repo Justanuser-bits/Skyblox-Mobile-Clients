@@ -27,49 +27,49 @@
 
     sput-object v0, Landroidx/media/AudioAttributesCompat;->b:Landroid/util/SparseIntArray;
 
-    const/4 v1, 0x5
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x5
 
     .line 176
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+    invoke-virtual {v0, v2, v1}, Landroid/util/SparseIntArray;->put(II)V
 
     .line 177
     sget-object v0, Landroidx/media/AudioAttributesCompat;->b:Landroid/util/SparseIntArray;
 
-    const/4 v1, 0x6
+    const/4 v2, 0x2
 
-    const/4 v3, 0x2
+    const/4 v3, 0x6
 
-    invoke-virtual {v0, v1, v3}, Landroid/util/SparseIntArray;->put(II)V
+    invoke-virtual {v0, v3, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     .line 178
     sget-object v0, Landroidx/media/AudioAttributesCompat;->b:Landroid/util/SparseIntArray;
 
-    const/4 v1, 0x7
+    const/4 v3, 0x7
 
-    invoke-virtual {v0, v1, v3}, Landroid/util/SparseIntArray;->put(II)V
+    invoke-virtual {v0, v3, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     .line 179
     sget-object v0, Landroidx/media/AudioAttributesCompat;->b:Landroid/util/SparseIntArray;
 
-    const/16 v1, 0x8
+    const/16 v2, 0x8
 
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+    invoke-virtual {v0, v2, v1}, Landroid/util/SparseIntArray;->put(II)V
 
     .line 181
     sget-object v0, Landroidx/media/AudioAttributesCompat;->b:Landroid/util/SparseIntArray;
 
-    const/16 v1, 0x9
+    const/16 v2, 0x9
 
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+    invoke-virtual {v0, v2, v1}, Landroid/util/SparseIntArray;->put(II)V
 
     .line 183
     sget-object v0, Landroidx/media/AudioAttributesCompat;->b:Landroid/util/SparseIntArray;
 
-    const/16 v1, 0xa
+    const/16 v2, 0xa
 
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+    invoke-virtual {v0, v2, v1}, Landroid/util/SparseIntArray;->put(II)V
 
     const/16 v0, 0x10
 

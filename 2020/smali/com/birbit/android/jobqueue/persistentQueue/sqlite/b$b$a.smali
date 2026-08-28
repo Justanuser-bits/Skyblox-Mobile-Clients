@@ -37,37 +37,37 @@
     .line 277
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;
 
-    const-string v1, "ASC"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "ASC"
 
-    invoke-direct {v0, v1, v2}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;->a:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;
 
     .line 278
     new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;
 
-    const-string v1, "DESC"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "DESC"
 
-    invoke-direct {v0, v1, v3}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;->b:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;
+    new-array v3, v3, [Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;
 
     .line 276
     sget-object v4, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;->a:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;
 
-    aput-object v4, v1, v2
+    aput-object v4, v3, v1
 
-    aput-object v0, v1, v3
+    aput-object v0, v3, v2
 
-    sput-object v1, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;->c:[Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;
+    sput-object v3, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;->c:[Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$b$a;
 
     return-void
 .end method

@@ -47,88 +47,88 @@
     .line 223
     new-instance v0, Lcom/appsflyer/internal/g$c;
 
-    const-string v1, "UNKNOWN"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "UNKNOWN"
 
     const-string v3, "uk"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/appsflyer/internal/g$c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v2, v1, v3}, Lcom/appsflyer/internal/g$c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/g$c;->Ι:Lcom/appsflyer/internal/g$c;
 
     new-instance v0, Lcom/appsflyer/internal/g$c;
 
-    const-string v1, "ACCELEROMETER"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "ACCELEROMETER"
 
     const-string v4, "am"
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/appsflyer/internal/g$c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v3, v2, v4}, Lcom/appsflyer/internal/g$c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/g$c;->ǃ:Lcom/appsflyer/internal/g$c;
 
     new-instance v0, Lcom/appsflyer/internal/g$c;
 
-    const-string v1, "MAGNETOMETER"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "MAGNETOMETER"
 
     const-string v5, "mm"
 
-    invoke-direct {v0, v1, v4, v5}, Lcom/appsflyer/internal/g$c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v4, v3, v5}, Lcom/appsflyer/internal/g$c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/g$c;->ι:Lcom/appsflyer/internal/g$c;
 
     new-instance v0, Lcom/appsflyer/internal/g$c;
 
-    const-string v1, "RESERVED"
+    const/4 v4, 0x3
 
-    const/4 v5, 0x3
+    const-string v5, "RESERVED"
 
     const-string v6, "rs"
 
-    invoke-direct {v0, v1, v5, v6}, Lcom/appsflyer/internal/g$c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v5, v4, v6}, Lcom/appsflyer/internal/g$c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/g$c;->ɩ:Lcom/appsflyer/internal/g$c;
 
     new-instance v0, Lcom/appsflyer/internal/g$c;
 
-    const-string v1, "GYROSCOPE"
+    const/4 v5, 0x4
 
-    const/4 v6, 0x4
+    const-string v6, "GYROSCOPE"
 
     const-string v7, "gs"
 
-    invoke-direct {v0, v1, v6, v7}, Lcom/appsflyer/internal/g$c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v6, v5, v7}, Lcom/appsflyer/internal/g$c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     sput-object v0, Lcom/appsflyer/internal/g$c;->Ɩ:Lcom/appsflyer/internal/g$c;
 
-    const/4 v1, 0x5
+    const/4 v6, 0x5
 
-    new-array v1, v1, [Lcom/appsflyer/internal/g$c;
+    new-array v6, v6, [Lcom/appsflyer/internal/g$c;
 
     .line 222
     sget-object v7, Lcom/appsflyer/internal/g$c;->Ι:Lcom/appsflyer/internal/g$c;
 
-    aput-object v7, v1, v2
+    aput-object v7, v6, v1
 
-    sget-object v2, Lcom/appsflyer/internal/g$c;->ǃ:Lcom/appsflyer/internal/g$c;
+    sget-object v1, Lcom/appsflyer/internal/g$c;->ǃ:Lcom/appsflyer/internal/g$c;
 
-    aput-object v2, v1, v3
+    aput-object v1, v6, v2
 
-    sget-object v2, Lcom/appsflyer/internal/g$c;->ι:Lcom/appsflyer/internal/g$c;
+    sget-object v1, Lcom/appsflyer/internal/g$c;->ι:Lcom/appsflyer/internal/g$c;
 
-    aput-object v2, v1, v4
+    aput-object v1, v6, v3
 
-    sget-object v2, Lcom/appsflyer/internal/g$c;->ɩ:Lcom/appsflyer/internal/g$c;
+    sget-object v1, Lcom/appsflyer/internal/g$c;->ɩ:Lcom/appsflyer/internal/g$c;
 
-    aput-object v2, v1, v5
+    aput-object v1, v6, v4
 
-    aput-object v0, v1, v6
+    aput-object v0, v6, v5
 
-    sput-object v1, Lcom/appsflyer/internal/g$c;->ɹ:[Lcom/appsflyer/internal/g$c;
+    sput-object v6, Lcom/appsflyer/internal/g$c;->ɹ:[Lcom/appsflyer/internal/g$c;
 
     return-void
 .end method

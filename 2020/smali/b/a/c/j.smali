@@ -738,7 +738,7 @@
 
 # virtual methods
 .method a([B)[B
-    .locals 6
+    .locals 7
 
     .line 128
     new-instance v0, Ljava/io/ByteArrayOutputStream;
@@ -758,6 +758,8 @@
     :goto_0
     array-length v5, p1
 
+    const/16 v6, 0x8
+
     if-ge v2, v5, :cond_2
 
     .line 133
@@ -772,9 +774,7 @@
     add-int/lit8 v4, v4, 0x8
 
     :goto_1
-    const/16 v5, 0x8
-
-    if-lt v4, v5, :cond_1
+    if-lt v4, v6, :cond_1
 
     add-int/lit8 v5, v4, -0x8
 

@@ -37,35 +37,35 @@
     .line 46
     new-instance v0, Landroidx/constraintlayout/a/a/e$a;
 
-    const-string v1, "RELAXED"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "RELAXED"
 
-    invoke-direct {v0, v1, v2}, Landroidx/constraintlayout/a/a/e$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Landroidx/constraintlayout/a/a/e$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/constraintlayout/a/a/e$a;->a:Landroidx/constraintlayout/a/a/e$a;
 
     new-instance v0, Landroidx/constraintlayout/a/a/e$a;
 
-    const-string v1, "STRICT"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "STRICT"
 
-    invoke-direct {v0, v1, v3}, Landroidx/constraintlayout/a/a/e$a;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Landroidx/constraintlayout/a/a/e$a;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/constraintlayout/a/a/e$a;->b:Landroidx/constraintlayout/a/a/e$a;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Landroidx/constraintlayout/a/a/e$a;
+    new-array v3, v3, [Landroidx/constraintlayout/a/a/e$a;
 
     sget-object v4, Landroidx/constraintlayout/a/a/e$a;->a:Landroidx/constraintlayout/a/a/e$a;
 
-    aput-object v4, v1, v2
+    aput-object v4, v3, v1
 
-    aput-object v0, v1, v3
+    aput-object v0, v3, v2
 
-    sput-object v1, Landroidx/constraintlayout/a/a/e$a;->c:[Landroidx/constraintlayout/a/a/e$a;
+    sput-object v3, Landroidx/constraintlayout/a/a/e$a;->c:[Landroidx/constraintlayout/a/a/e$a;
 
     return-void
 .end method

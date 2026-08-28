@@ -26,11 +26,11 @@
 
     new-array v1, v1, [I
 
-    const/16 v2, 0x10
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    const/16 v3, 0x10
 
-    invoke-direct {v0, v1, v2, v3, v3}, Lcom/appsflyer/internal/ak;-><init>([IIZZ)V
+    invoke-direct {v0, v1, v3, v2, v2}, Lcom/appsflyer/internal/ak;-><init>([IIZZ)V
 
     sput-object v0, Lcom/appsflyer/internal/ak;->ι:Lcom/appsflyer/internal/ak;
 

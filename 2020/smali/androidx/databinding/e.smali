@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a()Lcom/skyblox/c2020/friends/nearby/a/a/a;
+.method public abstract a()Lcom/roblox/client/friends/nearby/a/a/a;
 .end method

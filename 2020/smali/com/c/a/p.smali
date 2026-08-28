@@ -32,37 +32,37 @@
     .line 23
     new-instance v0, Lcom/c/a/p;
 
-    const-string v1, "NO_CACHE"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "NO_CACHE"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/c/a/p;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v3, v1, v2}, Lcom/c/a/p;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/c/a/p;->a:Lcom/c/a/p;
 
     .line 28
     new-instance v0, Lcom/c/a/p;
 
-    const-string v1, "NO_STORE"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "NO_STORE"
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/c/a/p;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v4, v2, v3}, Lcom/c/a/p;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/c/a/p;->b:Lcom/c/a/p;
 
-    new-array v1, v4, [Lcom/c/a/p;
+    new-array v3, v3, [Lcom/c/a/p;
 
     .line 19
     sget-object v4, Lcom/c/a/p;->a:Lcom/c/a/p;
 
-    aput-object v4, v1, v2
+    aput-object v4, v3, v1
 
-    aput-object v0, v1, v3
+    aput-object v0, v3, v2
 
-    sput-object v1, Lcom/c/a/p;->d:[Lcom/c/a/p;
+    sput-object v3, Lcom/c/a/p;->d:[Lcom/c/a/p;
 
     return-void
 .end method

@@ -61,15 +61,17 @@
 
     sput-object v0, Lcom/google/android/gms/auth/api/a/b;->c:Lcom/google/android/gms/common/api/a$a;
 
-    new-instance v1, Lcom/google/android/gms/common/api/a;
+    new-instance v0, Lcom/google/android/gms/common/api/a;
+
+    sget-object v1, Lcom/google/android/gms/auth/api/a/b;->c:Lcom/google/android/gms/common/api/a$a;
 
     sget-object v2, Lcom/google/android/gms/auth/api/a/b;->b:Lcom/google/android/gms/common/api/a$g;
 
     const-string v3, "SmsRetriever.API"
 
-    invoke-direct {v1, v3, v0, v2}, Lcom/google/android/gms/common/api/a;-><init>(Ljava/lang/String;Lcom/google/android/gms/common/api/a$a;Lcom/google/android/gms/common/api/a$g;)V
+    invoke-direct {v0, v3, v1, v2}, Lcom/google/android/gms/common/api/a;-><init>(Ljava/lang/String;Lcom/google/android/gms/common/api/a$a;Lcom/google/android/gms/common/api/a$g;)V
 
-    sput-object v1, Lcom/google/android/gms/auth/api/a/b;->d:Lcom/google/android/gms/common/api/a;
+    sput-object v0, Lcom/google/android/gms/auth/api/a/b;->d:Lcom/google/android/gms/common/api/a;
 
     return-void
 .end method

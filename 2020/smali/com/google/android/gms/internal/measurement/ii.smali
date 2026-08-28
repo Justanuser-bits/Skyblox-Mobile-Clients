@@ -2352,13 +2352,13 @@
     :goto_1a
     add-int/lit8 v8, v23, 0x1
 
-    move-object/from16 v2, v22
-
     const/4 v11, 0x0
 
     const/4 v12, 0x1
 
     move-object/from16 v1, p0
+
+    move-object/from16 v2, v22
 
     goto/16 :goto_a
 

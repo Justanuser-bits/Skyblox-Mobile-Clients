@@ -66,7 +66,7 @@
 
 # virtual methods
 .method public final a(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 12
+    .locals 11
 
     invoke-static {p1}, Lcom/google/android/gms/internal/measurement/fc;->a(Landroid/content/Context;)Lcom/google/android/gms/internal/measurement/fc;
 
@@ -269,19 +269,19 @@
     return-void
 
     :cond_6
-    const-string v0, "referrer_timestamp_seconds"
+    const-wide/16 v0, 0x0
 
-    const-wide/16 v3, 0x0
+    const-string v3, "referrer_timestamp_seconds"
 
-    invoke-virtual {p2, v0, v3, v4}, Landroid/content/Intent;->getLongExtra(Ljava/lang/String;J)J
+    invoke-virtual {p2, v3, v0, v1}, Landroid/content/Intent;->getLongExtra(Ljava/lang/String;J)J
 
-    move-result-wide v0
+    move-result-wide v3
 
     const-wide/16 v9, 0x3e8
 
-    mul-long v9, v9, v0
+    mul-long v3, v3, v9
 
-    cmp-long p2, v9, v3
+    cmp-long p2, v3, v0
 
     if-nez p2, :cond_7
 
@@ -298,19 +298,17 @@
 
     move-result-object p2
 
-    new-instance v11, Lcom/google/android/gms/internal/measurement/eu;
+    new-instance v9, Lcom/google/android/gms/internal/measurement/eu;
 
-    move-object v0, v11
+    move-object v0, v9
 
     move-object v1, p0
-
-    move-wide v3, v9
 
     move-object v6, p1
 
     invoke-direct/range {v0 .. v8}, Lcom/google/android/gms/internal/measurement/eu;-><init>(Lcom/google/android/gms/internal/measurement/es;Lcom/google/android/gms/internal/measurement/fc;JLandroid/os/Bundle;Landroid/content/Context;Lcom/google/android/gms/internal/measurement/dx;Landroid/content/BroadcastReceiver$PendingResult;)V
 
-    invoke-virtual {p2, v11}, Lcom/google/android/gms/internal/measurement/ex;->a(Ljava/lang/Runnable;)V
+    invoke-virtual {p2, v9}, Lcom/google/android/gms/internal/measurement/ex;->a(Ljava/lang/Runnable;)V
 
     :cond_8
     return-void

@@ -15,15 +15,7 @@
 # static fields
 .field private static sAppBridgeNotificationListener:Lcom/roblox/engine/jni/OnAppBridgeNotificationListener;
 
-.field private static sAppShellReloadNeededListener:Ljava/lang/ref/WeakReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/ref/WeakReference<",
-            "Lcom/roblox/engine/jni/NativeGLJavaInterface$OnAppShellReloadNeededListener;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private static sAppShellReloadNeededListener:Lcom/roblox/engine/jni/NativeGLJavaInterface$OnAppShellReloadNeededListener;
 
 .field private static sExitImplementation:Lcom/roblox/engine/jni/EngineExitJavaCallback2;
 
@@ -36,7 +28,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 16
+    .line 14
     new-instance v0, Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-direct {v0}, Lcom/roblox/engine/jni/EngineJavaCallback2;-><init>()V
@@ -49,7 +41,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 11
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +50,7 @@
 .method public static exitGameWithError(I)V
     .locals 1
 
-    .line 65
+    .line 63
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0, p0}, Lcom/roblox/engine/jni/EngineJavaCallback2;->a(I)V
@@ -69,12 +61,12 @@
 .method public static gameDidLeave()V
     .locals 1
 
-    .line 69
+    .line 67
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sExitImplementation:Lcom/roblox/engine/jni/EngineExitJavaCallback2;
 
     if-eqz v0, :cond_0
 
-    .line 70
+    .line 68
     invoke-virtual {v0}, Lcom/roblox/engine/jni/EngineExitJavaCallback2;->a()V
 
     :cond_0
@@ -84,7 +76,7 @@
 .method public static gameLoadedCallback(J)V
     .locals 1
 
-    .line 107
+    .line 105
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0, p0, p1}, Lcom/roblox/engine/jni/EngineJavaCallback2;->a(J)V
@@ -95,7 +87,7 @@
 .method public static getImplementation()Lcom/roblox/engine/jni/EngineJavaCallback2;
     .locals 1
 
-    .line 49
+    .line 47
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     return-object v0
@@ -104,7 +96,7 @@
 .method public static hideKeyboard()V
     .locals 1
 
-    .line 57
+    .line 55
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0}, Lcom/roblox/engine/jni/EngineJavaCallback2;->b()V
@@ -115,7 +107,7 @@
 .method public static listenToMotionEvents(Ljava/lang/String;)V
     .locals 1
 
-    .line 75
+    .line 73
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0, p0}, Lcom/roblox/engine/jni/EngineJavaCallback2;->a(Ljava/lang/String;)V
@@ -126,12 +118,12 @@
 .method public static onAppBridgeNotification(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 152
+    .line 147
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sAppBridgeNotificationListener:Lcom/roblox/engine/jni/OnAppBridgeNotificationListener;
 
     if-eqz v0, :cond_0
 
-    .line 153
+    .line 148
     invoke-virtual {v0, p0, p1}, Lcom/roblox/engine/jni/OnAppBridgeNotificationListener;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
@@ -141,19 +133,13 @@
 .method public static onAppShellReloadNeeded()V
     .locals 1
 
-    .line 132
-    sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sAppShellReloadNeededListener:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/roblox/engine/jni/NativeGLJavaInterface$OnAppShellReloadNeededListener;
+    .line 129
+    sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sAppShellReloadNeededListener:Lcom/roblox/engine/jni/NativeGLJavaInterface$OnAppShellReloadNeededListener;
 
     if-eqz v0, :cond_0
 
-    .line 134
-    invoke-interface {v0}, Lcom/roblox/engine/jni/NativeGLJavaInterface$OnAppShellReloadNeededListener;->A()V
+    .line 130
+    invoke-interface {v0}, Lcom/roblox/engine/jni/NativeGLJavaInterface$OnAppShellReloadNeededListener;->a()V
 
     :cond_0
     return-void
@@ -162,7 +148,7 @@
 .method public static onDataModelNotificationCallback(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 100
+    .line 98
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0, p0, p1}, Lcom/roblox/engine/jni/EngineJavaCallback2;->b(Ljava/lang/String;Ljava/lang/String;)V
@@ -173,12 +159,12 @@
 .method static onExtendedAnalyticsRecvCallback([BI)V
     .locals 1
 
-    .line 161
+    .line 156
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sExtendedAnalyticsImplementation:Lcom/roblox/engine/jni/NativeGLJavaInterface$IExtendedAnalyticsInterface;
 
     if-eqz v0, :cond_0
 
-    .line 162
+    .line 157
     invoke-interface {v0, p0, p1}, Lcom/roblox/engine/jni/NativeGLJavaInterface$IExtendedAnalyticsInterface;->a([BI)V
 
     :cond_0
@@ -188,7 +174,7 @@
 .method public static onLuaTextBoxChangedCallback(Ljava/lang/String;)V
     .locals 1
 
-    .line 114
+    .line 112
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0, p0}, Lcom/roblox/engine/jni/EngineJavaCallback2;->b(Ljava/lang/String;)V
@@ -199,7 +185,7 @@
 .method public static onLuaTextBoxPropertyChangedCallback()V
     .locals 1
 
-    .line 121
+    .line 119
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0}, Lcom/roblox/engine/jni/EngineJavaCallback2;->c()V
@@ -210,7 +196,7 @@
 .method public static openNativeOverlay(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 88
+    .line 86
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0, p0, p1}, Lcom/roblox/engine/jni/EngineJavaCallback2;->a(Ljava/lang/String;Ljava/lang/String;)V
@@ -221,7 +207,7 @@
 .method public static promptNativePurchase(JLjava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 61
+    .line 59
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0, p0, p1, p2, p3}, Lcom/roblox/engine/jni/EngineJavaCallback2;->a(JLjava/lang/String;Ljava/lang/String;)V
@@ -243,7 +229,7 @@
         }
     .end annotation
 
-    .line 39
+    .line 37
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -252,7 +238,7 @@
 
     if-ne v0, p0, :cond_0
 
-    .line 40
+    .line 38
     invoke-static {p1}, Lcom/roblox/engine/jni/NativeGLJavaInterface;->setImplementation(Lcom/roblox/engine/jni/EngineJavaCallback2;)V
 
     :cond_0
@@ -262,7 +248,7 @@
 .method public static screenOrientationChanged(I)V
     .locals 1
 
-    .line 82
+    .line 80
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0, p0}, Lcom/roblox/engine/jni/EngineJavaCallback2;->b(I)V
@@ -273,21 +259,17 @@
 .method public static setAppBridgeNotificationListener(Lcom/roblox/engine/jni/OnAppBridgeNotificationListener;)V
     .locals 0
 
-    .line 149
+    .line 144
     sput-object p0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sAppBridgeNotificationListener:Lcom/roblox/engine/jni/OnAppBridgeNotificationListener;
 
     return-void
 .end method
 
 .method public static setAppShellReloadNeededListener(Lcom/roblox/engine/jni/NativeGLJavaInterface$OnAppShellReloadNeededListener;)V
-    .locals 1
+    .locals 0
 
-    .line 139
-    new-instance v0, Ljava/lang/ref/WeakReference;
-
-    invoke-direct {v0, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    sput-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sAppShellReloadNeededListener:Ljava/lang/ref/WeakReference;
+    .line 135
+    sput-object p0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sAppShellReloadNeededListener:Lcom/roblox/engine/jni/NativeGLJavaInterface$OnAppShellReloadNeededListener;
 
     return-void
 .end method
@@ -295,7 +277,7 @@
 .method public static setExitImplementation(Lcom/roblox/engine/jni/EngineExitJavaCallback2;)V
     .locals 0
 
-    .line 45
+    .line 43
     sput-object p0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sExitImplementation:Lcom/roblox/engine/jni/EngineExitJavaCallback2;
 
     return-void
@@ -304,7 +286,7 @@
 .method public static setExtendedAnalyticsImplementation(Lcom/roblox/engine/jni/NativeGLJavaInterface$IExtendedAnalyticsInterface;)V
     .locals 0
 
-    .line 27
+    .line 25
     sput-object p0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sExtendedAnalyticsImplementation:Lcom/roblox/engine/jni/NativeGLJavaInterface$IExtendedAnalyticsInterface;
 
     return-void
@@ -315,7 +297,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 22
+    .line 20
     sput-object p0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     :cond_0
@@ -325,7 +307,7 @@
 .method public static showKeyboard2(JZ[B)V
     .locals 1
 
-    .line 53
+    .line 51
     sget-object v0, Lcom/roblox/engine/jni/NativeGLJavaInterface;->sImplementation:Lcom/roblox/engine/jni/EngineJavaCallback2;
 
     invoke-virtual {v0, p0, p1, p2, p3}, Lcom/roblox/engine/jni/EngineJavaCallback2;->a(JZ[B)V

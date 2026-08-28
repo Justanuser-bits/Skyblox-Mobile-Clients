@@ -128,18 +128,18 @@
 
     if-eqz v9, :cond_1
 
-    const-string v9, "rfr"
-
     .line 3332
-    iget-object v10, p0, Lcom/appsflyer/AppsFlyerLibCore$a;->Ι:Lcom/appsflyer/AppsFlyerLibCore;
+    iget-object v9, p0, Lcom/appsflyer/AppsFlyerLibCore$a;->Ι:Lcom/appsflyer/AppsFlyerLibCore;
 
-    invoke-static {v10}, Lcom/appsflyer/AppsFlyerLibCore;->ι(Lcom/appsflyer/AppsFlyerLibCore;)Lcom/appsflyer/internal/referrer/GoogleReferrer;
+    invoke-static {v9}, Lcom/appsflyer/AppsFlyerLibCore;->ι(Lcom/appsflyer/AppsFlyerLibCore;)Lcom/appsflyer/internal/referrer/GoogleReferrer;
 
-    move-result-object v10
+    move-result-object v9
 
-    iget-object v10, v10, Lcom/appsflyer/internal/referrer/GoogleReferrer;->oldMap:Ljava/util/Map;
+    iget-object v9, v9, Lcom/appsflyer/internal/referrer/GoogleReferrer;->oldMap:Ljava/util/Map;
 
-    invoke-interface {v0, v9, v10}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v10, "rfr"
+
+    invoke-interface {v0, v10, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3333
     invoke-static {v4}, Lcom/appsflyer/AppsFlyerLibCore;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
@@ -266,16 +266,16 @@
 
     if-eqz v1, :cond_5
 
-    const-string v1, "fb_ddl"
-
     .line 3353
-    iget-object v3, p0, Lcom/appsflyer/AppsFlyerLibCore$a;->Ι:Lcom/appsflyer/AppsFlyerLibCore;
+    iget-object v1, p0, Lcom/appsflyer/AppsFlyerLibCore$a;->Ι:Lcom/appsflyer/AppsFlyerLibCore;
 
-    invoke-static {v3}, Lcom/appsflyer/AppsFlyerLibCore;->ɩ(Lcom/appsflyer/AppsFlyerLibCore;)Ljava/util/Map;
+    invoke-static {v1}, Lcom/appsflyer/AppsFlyerLibCore;->ɩ(Lcom/appsflyer/AppsFlyerLibCore;)Ljava/util/Map;
 
-    move-result-object v3
+    move-result-object v1
 
-    invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v3, "fb_ddl"
+
+    invoke-interface {v0, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3355
     :cond_5
@@ -287,16 +287,16 @@
 
     if-eqz v1, :cond_6
 
-    const-string v1, "lvl"
-
     .line 3356
-    iget-object v3, p0, Lcom/appsflyer/AppsFlyerLibCore$a;->Ι:Lcom/appsflyer/AppsFlyerLibCore;
+    iget-object v1, p0, Lcom/appsflyer/AppsFlyerLibCore$a;->Ι:Lcom/appsflyer/AppsFlyerLibCore;
 
-    invoke-static {v3}, Lcom/appsflyer/AppsFlyerLibCore;->ı(Lcom/appsflyer/AppsFlyerLibCore;)Ljava/util/Map;
+    invoke-static {v1}, Lcom/appsflyer/AppsFlyerLibCore;->ı(Lcom/appsflyer/AppsFlyerLibCore;)Ljava/util/Map;
 
-    move-result-object v3
+    move-result-object v1
 
-    invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v3, "lvl"
+
+    invoke-interface {v0, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1
 

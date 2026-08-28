@@ -1415,8 +1415,6 @@
     goto :goto_14
 
     :cond_2b
-    move-object/from16 v6, p0
-
     move-object v8, v1
 
     move-object/from16 v5, v22
@@ -1424,6 +1422,8 @@
     const/4 v7, 0x6
 
     const/4 v14, 0x1
+
+    move-object/from16 v6, p0
 
     const/4 v1, 0x1
 

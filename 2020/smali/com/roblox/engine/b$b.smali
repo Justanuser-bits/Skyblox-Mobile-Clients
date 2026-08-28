@@ -176,11 +176,11 @@
     int-to-float v3, v3
 
     .line 951
-    invoke-static {}, Lcom/skyblox/c2020/m/c;->a()Lcom/skyblox/c2020/m/e;
+    invoke-static {}, Lcom/roblox/client/m/c;->a()Lcom/roblox/client/m/e;
 
     move-result-object v4
 
-    invoke-interface {v4}, Lcom/skyblox/c2020/m/e;->cP()Z
+    invoke-interface {v4}, Lcom/roblox/client/m/e;->cP()Z
 
     move-result v4
 
@@ -190,11 +190,11 @@
 
     .line 952
     :cond_0
-    invoke-static {}, Lcom/skyblox/c2020/m/c;->a()Lcom/skyblox/c2020/m/e;
+    invoke-static {}, Lcom/roblox/client/m/c;->a()Lcom/roblox/client/m/e;
 
     move-result-object v2
 
-    invoke-interface {v2}, Lcom/skyblox/c2020/m/e;->cP()Z
+    invoke-interface {v2}, Lcom/roblox/client/m/e;->cP()Z
 
     move-result v2
 

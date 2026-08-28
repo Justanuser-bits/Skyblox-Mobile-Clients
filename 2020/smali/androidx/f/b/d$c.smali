@@ -39,52 +39,52 @@
     .line 103
     new-instance v0, Landroidx/f/b/d$c;
 
-    const-string v1, "PENDING"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "PENDING"
 
-    invoke-direct {v0, v1, v2}, Landroidx/f/b/d$c;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Landroidx/f/b/d$c;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/f/b/d$c;->a:Landroidx/f/b/d$c;
 
     .line 107
     new-instance v0, Landroidx/f/b/d$c;
 
-    const-string v1, "RUNNING"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "RUNNING"
 
-    invoke-direct {v0, v1, v3}, Landroidx/f/b/d$c;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Landroidx/f/b/d$c;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/f/b/d$c;->b:Landroidx/f/b/d$c;
 
     .line 111
     new-instance v0, Landroidx/f/b/d$c;
 
-    const-string v1, "FINISHED"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "FINISHED"
 
-    invoke-direct {v0, v1, v4}, Landroidx/f/b/d$c;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Landroidx/f/b/d$c;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/f/b/d$c;->c:Landroidx/f/b/d$c;
 
-    const/4 v1, 0x3
+    const/4 v4, 0x3
 
-    new-array v1, v1, [Landroidx/f/b/d$c;
+    new-array v4, v4, [Landroidx/f/b/d$c;
 
     .line 99
     sget-object v5, Landroidx/f/b/d$c;->a:Landroidx/f/b/d$c;
 
-    aput-object v5, v1, v2
+    aput-object v5, v4, v1
 
-    sget-object v2, Landroidx/f/b/d$c;->b:Landroidx/f/b/d$c;
+    sget-object v1, Landroidx/f/b/d$c;->b:Landroidx/f/b/d$c;
 
-    aput-object v2, v1, v3
+    aput-object v1, v4, v2
 
-    aput-object v0, v1, v4
+    aput-object v0, v4, v3
 
-    sput-object v1, Landroidx/f/b/d$c;->d:[Landroidx/f/b/d$c;
+    sput-object v4, Landroidx/f/b/d$c;->d:[Landroidx/f/b/d$c;
 
     return-void
 .end method

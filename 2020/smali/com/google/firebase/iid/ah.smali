@@ -44,12 +44,12 @@
 
     if-ne v0, v1, :cond_3
 
-    const-string v0, "EnhancedIntentService"
+    const/4 v0, 0x3
 
-    const/4 v1, 0x3
+    const-string v1, "EnhancedIntentService"
 
     .line 6
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v2
 
@@ -58,7 +58,7 @@
     const-string v2, "service received new intent via bind strategy"
 
     .line 7
-    invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 8
     :cond_0
@@ -79,16 +79,16 @@
 
     .line 10
     :cond_1
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
-    const-string v1, "intent being queued for bg execution"
+    const-string v0, "intent being queued for bg execution"
 
     .line 11
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 12
     :cond_2

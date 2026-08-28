@@ -39,52 +39,52 @@
     .line 377
     new-instance v0, Landroidx/h/e$c;
 
-    const-string v1, "AUTOMATIC"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "AUTOMATIC"
 
-    invoke-direct {v0, v1, v2}, Landroidx/h/e$c;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Landroidx/h/e$c;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/h/e$c;->a:Landroidx/h/e$c;
 
     .line 382
     new-instance v0, Landroidx/h/e$c;
 
-    const-string v1, "TRUNCATE"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "TRUNCATE"
 
-    invoke-direct {v0, v1, v3}, Landroidx/h/e$c;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Landroidx/h/e$c;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/h/e$c;->b:Landroidx/h/e$c;
 
     .line 387
     new-instance v0, Landroidx/h/e$c;
 
-    const-string v1, "WRITE_AHEAD_LOGGING"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "WRITE_AHEAD_LOGGING"
 
-    invoke-direct {v0, v1, v4}, Landroidx/h/e$c;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Landroidx/h/e$c;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroidx/h/e$c;->c:Landroidx/h/e$c;
 
-    const/4 v1, 0x3
+    const/4 v4, 0x3
 
-    new-array v1, v1, [Landroidx/h/e$c;
+    new-array v4, v4, [Landroidx/h/e$c;
 
     .line 368
     sget-object v5, Landroidx/h/e$c;->a:Landroidx/h/e$c;
 
-    aput-object v5, v1, v2
+    aput-object v5, v4, v1
 
-    sget-object v2, Landroidx/h/e$c;->b:Landroidx/h/e$c;
+    sget-object v1, Landroidx/h/e$c;->b:Landroidx/h/e$c;
 
-    aput-object v2, v1, v3
+    aput-object v1, v4, v2
 
-    aput-object v0, v1, v4
+    aput-object v0, v4, v3
 
-    sput-object v1, Landroidx/h/e$c;->d:[Landroidx/h/e$c;
+    sput-object v4, Landroidx/h/e$c;->d:[Landroidx/h/e$c;
 
     return-void
 .end method

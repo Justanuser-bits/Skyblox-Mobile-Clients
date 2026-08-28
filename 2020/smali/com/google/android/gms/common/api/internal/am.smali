@@ -205,23 +205,25 @@
 
     iput-object v3, v0, Lcom/google/android/gms/common/api/internal/am;->y:Lcom/google/android/gms/common/internal/k$a;
 
-    move-object v4, p1
+    move-object v3, p1
 
-    iput-object v4, v0, Lcom/google/android/gms/common/api/internal/am;->k:Landroid/content/Context;
+    iput-object v3, v0, Lcom/google/android/gms/common/api/internal/am;->k:Landroid/content/Context;
 
-    move-object v4, p2
+    move-object v3, p2
 
-    iput-object v4, v0, Lcom/google/android/gms/common/api/internal/am;->f:Ljava/util/concurrent/locks/Lock;
+    iput-object v3, v0, Lcom/google/android/gms/common/api/internal/am;->f:Ljava/util/concurrent/locks/Lock;
 
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
-    iput-boolean v4, v0, Lcom/google/android/gms/common/api/internal/am;->g:Z
+    iput-boolean v3, v0, Lcom/google/android/gms/common/api/internal/am;->g:Z
 
-    new-instance v4, Lcom/google/android/gms/common/internal/k;
+    new-instance v3, Lcom/google/android/gms/common/internal/k;
 
-    invoke-direct {v4, p3, v3}, Lcom/google/android/gms/common/internal/k;-><init>(Landroid/os/Looper;Lcom/google/android/gms/common/internal/k$a;)V
+    iget-object v4, v0, Lcom/google/android/gms/common/api/internal/am;->y:Lcom/google/android/gms/common/internal/k$a;
 
-    iput-object v4, v0, Lcom/google/android/gms/common/api/internal/am;->h:Lcom/google/android/gms/common/internal/k;
+    invoke-direct {v3, p3, v4}, Lcom/google/android/gms/common/internal/k;-><init>(Landroid/os/Looper;Lcom/google/android/gms/common/internal/k$a;)V
+
+    iput-object v3, v0, Lcom/google/android/gms/common/api/internal/am;->h:Lcom/google/android/gms/common/internal/k;
 
     iput-object v1, v0, Lcom/google/android/gms/common/api/internal/am;->l:Landroid/os/Looper;
 
@@ -2311,11 +2313,11 @@
 
     invoke-direct {v1, v0}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
-    const-string v2, ""
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    const-string v3, ""
 
-    invoke-virtual {p0, v2, v3, v1, v3}, Lcom/google/android/gms/common/api/f;->a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-virtual {p0, v3, v2, v1, v2}, Lcom/google/android/gms/common/api/f;->a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     invoke-virtual {v0}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
 

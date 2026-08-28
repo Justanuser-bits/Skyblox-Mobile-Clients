@@ -28,37 +28,37 @@
     .line 34
     new-instance v0, Lcom/google/gson/s$1;
 
-    const-string v1, "DEFAULT"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "DEFAULT"
 
-    invoke-direct {v0, v1, v2}, Lcom/google/gson/s$1;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lcom/google/gson/s$1;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/gson/s;->a:Lcom/google/gson/s;
 
     .line 45
     new-instance v0, Lcom/google/gson/s$2;
 
-    const-string v1, "STRING"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "STRING"
 
-    invoke-direct {v0, v1, v3}, Lcom/google/gson/s$2;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lcom/google/gson/s$2;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/google/gson/s;->b:Lcom/google/gson/s;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/google/gson/s;
+    new-array v3, v3, [Lcom/google/gson/s;
 
     .line 27
     sget-object v4, Lcom/google/gson/s;->a:Lcom/google/gson/s;
 
-    aput-object v4, v1, v2
+    aput-object v4, v3, v1
 
-    aput-object v0, v1, v3
+    aput-object v0, v3, v2
 
-    sput-object v1, Lcom/google/gson/s;->c:[Lcom/google/gson/s;
+    sput-object v3, Lcom/google/gson/s;->c:[Lcom/google/gson/s;
 
     return-void
 .end method

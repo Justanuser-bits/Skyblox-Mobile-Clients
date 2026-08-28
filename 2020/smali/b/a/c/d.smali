@@ -833,8 +833,6 @@
 
     new-instance v7, Lb/a/c/d$4;
 
-    const-string v3, "OkHttp %s Push Request[%s]"
-
     const/4 v1, 0x2
 
     new-array v4, v1, [Ljava/lang/Object;
@@ -852,6 +850,8 @@
     move-result-object v2
 
     aput-object v2, v4, v1
+
+    const-string v3, "OkHttp %s Push Request[%s]"
 
     move-object v1, v7
 

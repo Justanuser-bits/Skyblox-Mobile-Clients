@@ -156,6 +156,17 @@
     return-void
 .end method
 
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 395
+    invoke-direct {p0, p1, v0}, Lcom/google/android/material/tabs/TabLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
@@ -223,11 +234,11 @@
     .line 410
     new-instance v2, Landroid/widget/FrameLayout$LayoutParams;
 
-    const/4 v3, -0x2
+    const/4 v3, -0x1
 
-    const/4 v4, -0x1
+    const/4 v4, -0x2
 
-    invoke-direct {v2, v3, v4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
+    invoke-direct {v2, v4, v3}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
     invoke-super {p0, v1, v0, v2}, Landroid/widget/HorizontalScrollView;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
@@ -261,7 +272,7 @@
     sget v2, Lcom/google/android/material/a$i;->TabLayout_tabIndicatorHeight:I
 
     .line 426
-    invoke-virtual {p2, v2, v4}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
+    invoke-virtual {p2, v2, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v2
 
@@ -486,7 +497,7 @@
     sget p3, Lcom/google/android/material/a$i;->TabLayout_tabIconTintMode:I
 
     .line 483
-    invoke-virtual {p2, p3, v4}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {p2, p3, v3}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p3
 
@@ -524,7 +535,7 @@
     sget p1, Lcom/google/android/material/a$i;->TabLayout_tabMinWidth:I
 
     .line 492
-    invoke-virtual {p2, p1, v4}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
+    invoke-virtual {p2, p1, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p1
 
@@ -534,7 +545,7 @@
     sget p1, Lcom/google/android/material/a$i;->TabLayout_tabMaxWidth:I
 
     .line 494
-    invoke-virtual {p2, p1, v4}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
+    invoke-virtual {p2, p1, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p1
 

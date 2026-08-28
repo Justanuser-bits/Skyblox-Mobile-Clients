@@ -130,9 +130,9 @@
 
     iput-object v2, v0, Lcom/google/android/gms/common/api/internal/cq;->a:Landroid/content/Context;
 
-    move-object/from16 v5, p2
+    move-object/from16 v3, p2
 
-    iput-object v5, v0, Lcom/google/android/gms/common/api/internal/cq;->b:Lcom/google/android/gms/common/api/internal/am;
+    iput-object v3, v0, Lcom/google/android/gms/common/api/internal/cq;->b:Lcom/google/android/gms/common/api/internal/am;
 
     move-object/from16 v15, p3
 
@@ -147,6 +147,8 @@
     iput-object v3, v0, Lcom/google/android/gms/common/api/internal/cq;->h:Lcom/google/android/gms/common/api/a$f;
 
     new-instance v13, Lcom/google/android/gms/common/api/internal/av;
+
+    iget-object v5, v0, Lcom/google/android/gms/common/api/internal/cq;->b:Lcom/google/android/gms/common/api/internal/am;
 
     new-instance v12, Lcom/google/android/gms/common/api/internal/cs;
 

@@ -531,12 +531,12 @@
 .method static g()Z
     .locals 4
 
-    const-string v0, "FirebaseInstanceId"
+    const/4 v0, 0x3
 
-    const/4 v1, 0x3
+    const-string v1, "FirebaseInstanceId"
 
     .line 122
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v2
 
@@ -549,7 +549,7 @@
     if-ne v2, v3, :cond_0
 
     .line 123
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
 

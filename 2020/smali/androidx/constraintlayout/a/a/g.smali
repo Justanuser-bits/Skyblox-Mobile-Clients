@@ -1408,10 +1408,10 @@
     const/4 v3, 0x0
 
     .line 585
-    invoke-virtual {v0, v2, v3}, Landroidx/constraintlayout/a/a/m;->a(Landroidx/constraintlayout/a/a/m;F)V
+    invoke-virtual {v0, v3, v2}, Landroidx/constraintlayout/a/a/m;->a(Landroidx/constraintlayout/a/a/m;F)V
 
     .line 586
-    invoke-virtual {v1, v2, v3}, Landroidx/constraintlayout/a/a/m;->a(Landroidx/constraintlayout/a/a/m;F)V
+    invoke-virtual {v1, v3, v2}, Landroidx/constraintlayout/a/a/m;->a(Landroidx/constraintlayout/a/a/m;F)V
 
     return-void
 .end method
@@ -1520,12 +1520,12 @@
 .method public a(Landroidx/constraintlayout/a/e;[Z)V
     .locals 8
 
-    const/4 v0, 0x2
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x2
 
     .line 222
-    aput-boolean v1, p2, v0
+    aput-boolean v0, p2, v1
 
     .line 223
     invoke-virtual {p0, p1}, Landroidx/constraintlayout/a/a/g;->c(Landroidx/constraintlayout/a/e;)V
@@ -1557,7 +1557,7 @@
     .line 228
     iget-object v5, v4, Landroidx/constraintlayout/a/a/f;->C:[Landroidx/constraintlayout/a/a/f$a;
 
-    aget-object v5, v5, v1
+    aget-object v5, v5, v0
 
     sget-object v6, Landroidx/constraintlayout/a/a/f$a;->c:Landroidx/constraintlayout/a/a/f$a;
 
@@ -1577,7 +1577,7 @@
     if-ge v5, v6, :cond_0
 
     .line 230
-    aput-boolean v7, p2, v0
+    aput-boolean v7, p2, v1
 
     .line 232
     :cond_0
@@ -1601,7 +1601,7 @@
     if-ge v5, v4, :cond_1
 
     .line 234
-    aput-boolean v7, p2, v0
+    aput-boolean v7, p2, v1
 
     :cond_1
     add-int/lit8 v3, v3, 0x1

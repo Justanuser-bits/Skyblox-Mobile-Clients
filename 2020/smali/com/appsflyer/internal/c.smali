@@ -678,12 +678,12 @@
 
     const v3, 0xee8a
 
-    const/4 v4, 0x0
+    const/16 v4, 0x22
 
-    const/16 v5, 0x22
+    const/4 v5, 0x0
 
     .line 83
-    invoke-static {v4, v3, v5}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v5, v3, v4}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v3
 
@@ -722,7 +722,7 @@
 
     const/16 v3, 0x71
 
-    invoke-static {v3, v9, v4}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v3, v9, v5}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v3
 
@@ -734,7 +734,7 @@
 
     .line 83
     :cond_0
-    invoke-static {v5, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v4, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v3
 
@@ -769,7 +769,7 @@
     move-result-object v12
 
     .line 1304
-    invoke-static {v5, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v4, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v13
 
@@ -800,7 +800,7 @@
     if-eq v12, v10, :cond_3
 
     .line 1313
-    invoke-static {v5, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v4, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v12
 
@@ -868,7 +868,7 @@
 
     .line 1323
     :cond_5
-    invoke-static {v5, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v4, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v13
 
@@ -909,7 +909,7 @@
 
     move-result-object v11
 
-    invoke-virtual {v3, v11, v4}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-virtual {v3, v11, v5}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     move-result-object v3
 
@@ -1012,7 +1012,7 @@
 
     .line 2200
     :cond_7
-    invoke-static {v5, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v4, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1063,7 +1063,7 @@
     goto :goto_9
 
     :cond_9
-    invoke-static {v5, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v4, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1107,7 +1107,7 @@
     rem-int/2addr v3, v6
 
     .line 2204
-    invoke-static {v5, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v4, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1130,7 +1130,7 @@
     const/16 v13, 0xf
 
     .line 2206
-    invoke-static {v3, v4, v13}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v3, v5, v13}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1192,7 +1192,7 @@
     if-eq v3, v7, :cond_e
 
     .line 2206
-    invoke-static {v5, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v4, v9, v10}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1202,7 +1202,7 @@
     const/16 v3, 0x61
 
     .line 109
-    invoke-static {v3, v9, v4}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v3, v9, v5}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1246,15 +1246,15 @@
 
     move-result v1
 
-    const/16 v5, 0x10
+    const/16 v4, 0x10
 
     .line 3195
-    invoke-static {v1, v5}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
+    invoke-static {v1, v4}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
 
     move-result-object v1
 
     .line 3183
-    invoke-virtual {v1, v4}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {v1, v5}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
 
@@ -1283,12 +1283,12 @@
     move-result v1
 
     .line 4195
-    invoke-static {v1, v5}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
+    invoke-static {v1, v4}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
 
     move-result-object v1
 
     .line 4183
-    invoke-virtual {v1, v4}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {v1, v5}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
 
@@ -1840,14 +1840,14 @@
 
     rem-int/2addr v0, v1
 
-    const/16 v0, 0xa9
+    const v0, 0xc21a
 
-    const v2, 0xc21a
+    const/16 v2, 0xa9
 
     const/4 v3, 0x1
 
     .line 231
-    invoke-static {v0, v2, v3}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v2, v0, v3}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1905,7 +1905,7 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v2, v3}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v2, v0, v3}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v7
 
@@ -1956,7 +1956,7 @@
 
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v2, v3}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
+    invoke-static {v2, v0, v3}, Lcom/appsflyer/internal/c;->ι(ICI)Ljava/lang/String;
 
     move-result-object v8
 

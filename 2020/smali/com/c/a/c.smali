@@ -1094,20 +1094,20 @@
 
     if-eqz v1, :cond_0
 
-    const-string v1, "Hunter"
-
-    const-string v2, "decoded"
-
     .line 199
-    iget-object v3, p0, Lcom/c/a/c;->g:Lcom/c/a/w;
+    iget-object v1, p0, Lcom/c/a/c;->g:Lcom/c/a/w;
 
-    invoke-virtual {v3}, Lcom/c/a/w;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/c/a/w;->a()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
+
+    const-string v2, "Hunter"
+
+    const-string v3, "decoded"
 
     const-string v4, "from cache"
 
-    invoke-static {v1, v2, v3, v4}, Lcom/c/a/ae;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3, v1, v4}, Lcom/c/a/ae;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     return-object v0
@@ -1209,18 +1209,18 @@
 
     if-eqz v1, :cond_5
 
-    const-string v1, "Hunter"
-
-    const-string v2, "decoded"
-
     .line 226
-    iget-object v3, p0, Lcom/c/a/c;->g:Lcom/c/a/w;
+    iget-object v1, p0, Lcom/c/a/c;->g:Lcom/c/a/w;
 
-    invoke-virtual {v3}, Lcom/c/a/w;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/c/a/w;->a()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
 
-    invoke-static {v1, v2, v3}, Lcom/c/a/ae;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    const-string v2, "Hunter"
+
+    const-string v3, "decoded"
+
+    invoke-static {v2, v3, v1}, Lcom/c/a/ae;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 228
     :cond_5

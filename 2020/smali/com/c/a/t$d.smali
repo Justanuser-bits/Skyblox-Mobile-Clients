@@ -43,58 +43,58 @@
     .line 855
     new-instance v0, Lcom/c/a/t$d;
 
-    const-string v1, "MEMORY"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "MEMORY"
 
     const v3, -0xff0100
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/c/a/t$d;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v2, v1, v3}, Lcom/c/a/t$d;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/c/a/t$d;->a:Lcom/c/a/t$d;
 
     .line 856
     new-instance v0, Lcom/c/a/t$d;
 
-    const-string v1, "DISK"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "DISK"
 
     const v4, -0xffff01
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/c/a/t$d;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v3, v2, v4}, Lcom/c/a/t$d;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/c/a/t$d;->b:Lcom/c/a/t$d;
 
     .line 857
     new-instance v0, Lcom/c/a/t$d;
 
-    const-string v1, "NETWORK"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "NETWORK"
 
     const/high16 v5, -0x10000
 
-    invoke-direct {v0, v1, v4, v5}, Lcom/c/a/t$d;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v4, v3, v5}, Lcom/c/a/t$d;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/c/a/t$d;->c:Lcom/c/a/t$d;
 
-    const/4 v1, 0x3
+    const/4 v4, 0x3
 
-    new-array v1, v1, [Lcom/c/a/t$d;
+    new-array v4, v4, [Lcom/c/a/t$d;
 
     .line 854
     sget-object v5, Lcom/c/a/t$d;->a:Lcom/c/a/t$d;
 
-    aput-object v5, v1, v2
+    aput-object v5, v4, v1
 
-    sget-object v2, Lcom/c/a/t$d;->b:Lcom/c/a/t$d;
+    sget-object v1, Lcom/c/a/t$d;->b:Lcom/c/a/t$d;
 
-    aput-object v2, v1, v3
+    aput-object v1, v4, v2
 
-    aput-object v0, v1, v4
+    aput-object v0, v4, v3
 
-    sput-object v1, Lcom/c/a/t$d;->e:[Lcom/c/a/t$d;
+    sput-object v4, Lcom/c/a/t$d;->e:[Lcom/c/a/t$d;
 
     return-void
 .end method

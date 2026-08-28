@@ -382,21 +382,21 @@
     return-void
 
     :cond_0
-    const-string v0, "install_begin_timestamp_seconds"
+    const-wide/16 v0, 0x0
 
-    const-wide/16 v1, 0x0
+    const-string v2, "install_begin_timestamp_seconds"
 
-    invoke-virtual {p1, v0, v1, v2}, Landroid/os/Bundle;->getLong(Ljava/lang/String;J)J
+    invoke-virtual {p1, v2, v0, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;J)J
 
-    move-result-wide v3
+    move-result-wide v2
 
-    const-wide/16 v5, 0x3e8
+    const-wide/16 v4, 0x3e8
 
-    mul-long v3, v3, v5
+    mul-long v2, v2, v4
 
-    cmp-long v0, v3, v1
+    cmp-long v6, v2, v0
 
-    if-nez v0, :cond_1
+    if-nez v6, :cond_1
 
     iget-object p1, p0, Lcom/google/android/gms/internal/measurement/eo;->b:Lcom/google/android/gms/internal/measurement/fc;
 
@@ -416,15 +416,15 @@
     return-void
 
     :cond_1
-    const-string v0, "install_referrer"
+    const-string v6, "install_referrer"
 
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v6}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v6
 
-    if-eqz v0, :cond_a
+    if-eqz v6, :cond_a
 
-    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+    invoke-virtual {v6}, Ljava/lang/String;->isEmpty()Z
 
     move-result v7
 
@@ -445,7 +445,7 @@
 
     const-string v8, "InstallReferrer API result"
 
-    invoke-virtual {v7, v8, v0}, Lcom/google/android/gms/internal/measurement/dz;->a(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {v7, v8, v6}, Lcom/google/android/gms/internal/measurement/dz;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     iget-object v7, p0, Lcom/google/android/gms/internal/measurement/eo;->b:Lcom/google/android/gms/internal/measurement/fc;
 
@@ -455,37 +455,37 @@
 
     const-string v8, "?"
 
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v6}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v6
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    invoke-virtual {v6}, Ljava/lang/String;->length()I
 
     move-result v9
 
     if-eqz v9, :cond_3
 
-    invoke-virtual {v8, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v8, v6}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v6
 
     goto :goto_1
 
     :cond_3
-    new-instance v0, Ljava/lang/String;
+    new-instance v6, Ljava/lang/String;
 
-    invoke-direct {v0, v8}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v8}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
     :goto_1
-    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v6}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    move-result-object v0
+    move-result-object v6
 
-    invoke-virtual {v7, v0}, Lcom/google/android/gms/internal/measurement/iq;->a(Landroid/net/Uri;)Landroid/os/Bundle;
+    invoke-virtual {v7, v6}, Lcom/google/android/gms/internal/measurement/iq;->a(Landroid/net/Uri;)Landroid/os/Bundle;
 
-    move-result-object v0
+    move-result-object v6
 
-    if-nez v0, :cond_4
+    if-nez v6, :cond_4
 
     iget-object p1, p0, Lcom/google/android/gms/internal/measurement/eo;->b:Lcom/google/android/gms/internal/measurement/fc;
 
@@ -504,7 +504,7 @@
     :cond_4
     const-string v7, "medium"
 
-    invoke-virtual {v0, v7}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v6, v7}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -538,13 +538,13 @@
 
     const-string v7, "referrer_click_timestamp_seconds"
 
-    invoke-virtual {p1, v7, v1, v2}, Landroid/os/Bundle;->getLong(Ljava/lang/String;J)J
+    invoke-virtual {p1, v7, v0, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;J)J
 
     move-result-wide v7
 
-    mul-long v7, v7, v5
+    mul-long v7, v7, v4
 
-    cmp-long p1, v7, v1
+    cmp-long p1, v7, v0
 
     if-nez p1, :cond_6
 
@@ -565,7 +565,7 @@
     :cond_6
     const-string p1, "click_timestamp"
 
-    invoke-virtual {v0, p1, v7, v8}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v6, p1, v7, v8}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
     :cond_7
     iget-object p1, p0, Lcom/google/android/gms/internal/measurement/eo;->b:Lcom/google/android/gms/internal/measurement/fc;
@@ -578,9 +578,9 @@
 
     invoke-virtual {p1}, Lcom/google/android/gms/internal/measurement/el;->a()J
 
-    move-result-wide v1
+    move-result-wide v0
 
-    cmp-long p1, v3, v1
+    cmp-long p1, v2, v0
 
     if-nez p1, :cond_8
 
@@ -601,9 +601,9 @@
     :cond_8
     const-string p1, "_cis"
 
-    const-string v1, "referrer API"
+    const-string v0, "referrer API"
 
-    invoke-virtual {v0, p1, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v6, p1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/google/android/gms/internal/measurement/eo;->b:Lcom/google/android/gms/internal/measurement/fc;
 
@@ -613,7 +613,7 @@
 
     iget-object p1, p1, Lcom/google/android/gms/internal/measurement/ei;->i:Lcom/google/android/gms/internal/measurement/el;
 
-    invoke-virtual {p1, v3, v4}, Lcom/google/android/gms/internal/measurement/el;->a(J)V
+    invoke-virtual {p1, v2, v3}, Lcom/google/android/gms/internal/measurement/el;->a(J)V
 
     iget-object p1, p0, Lcom/google/android/gms/internal/measurement/eo;->b:Lcom/google/android/gms/internal/measurement/fc;
 
@@ -621,11 +621,11 @@
 
     move-result-object p1
 
-    const-string v1, "auto"
+    const-string v0, "auto"
 
-    const-string v2, "_cmp"
+    const-string v1, "_cmp"
 
-    invoke-virtual {p1, v1, v2, v0}, Lcom/google/android/gms/internal/measurement/gb;->a(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-virtual {p1, v0, v1, v6}, Lcom/google/android/gms/internal/measurement/gb;->a(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
 
     iget-object p1, p0, Lcom/google/android/gms/internal/measurement/eo;->c:Landroid/content/ServiceConnection;
 

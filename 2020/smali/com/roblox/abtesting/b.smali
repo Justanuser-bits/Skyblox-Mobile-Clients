@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/skyblox/c2020/ae/v$a;)V
+.method public constructor <init>(Lcom/roblox/client/ae/v$a;)V
     .locals 0
 
     .line 14
-    invoke-direct {p0, p1}, Lcom/roblox/abtesting/a;-><init>(Lcom/skyblox/c2020/ae/v$a;)V
+    invoke-direct {p0, p1}, Lcom/roblox/abtesting/a;-><init>(Lcom/roblox/client/ae/v$a;)V
 
     return-void
 .end method

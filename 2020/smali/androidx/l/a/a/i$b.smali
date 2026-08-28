@@ -362,19 +362,19 @@
 
     const/16 v0, 0x8
 
-    const-string v1, "strokeLineCap"
+    const/4 v1, -0x1
 
-    const/4 v2, -0x1
+    const-string v2, "strokeLineCap"
 
     .line 1912
-    invoke-static {p1, p2, v1, v0, v2}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {p1, p2, v2, v0, v1}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
     move-result v0
 
     .line 1914
-    iget-object v1, p0, Landroidx/l/a/a/i$b;->j:Landroid/graphics/Paint$Cap;
+    iget-object v2, p0, Landroidx/l/a/a/i$b;->j:Landroid/graphics/Paint$Cap;
 
-    invoke-direct {p0, v0, v1}, Landroidx/l/a/a/i$b;->a(ILandroid/graphics/Paint$Cap;)Landroid/graphics/Paint$Cap;
+    invoke-direct {p0, v0, v2}, Landroidx/l/a/a/i$b;->a(ILandroid/graphics/Paint$Cap;)Landroid/graphics/Paint$Cap;
 
     move-result-object v0
 
@@ -382,10 +382,10 @@
 
     const/16 v0, 0x9
 
-    const-string v1, "strokeLineJoin"
+    const-string v2, "strokeLineJoin"
 
     .line 1915
-    invoke-static {p1, p2, v1, v0, v2}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {p1, p2, v2, v0, v1}, Landroidx/core/a/a/g;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
     move-result v0
 

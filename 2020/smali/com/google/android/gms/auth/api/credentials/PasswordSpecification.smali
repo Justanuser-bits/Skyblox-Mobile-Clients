@@ -76,11 +76,11 @@
 
     invoke-direct {v0}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;-><init>()V
 
-    const/16 v1, 0xc
+    const/16 v1, 0x10
 
-    const/16 v2, 0x10
+    const/16 v2, 0xc
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(II)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
+    invoke-virtual {v0, v2, v1}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(II)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
 
     move-result-object v0
 
@@ -90,23 +90,23 @@
 
     move-result-object v0
 
-    const-string v3, "abcdefghijkmnopqrstxyz"
+    const/4 v3, 0x1
 
-    const/4 v4, 0x1
+    const-string v4, "abcdefghijkmnopqrstxyz"
 
-    invoke-virtual {v0, v3, v4}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
-
-    move-result-object v0
-
-    const-string v3, "ABCDEFGHJKLMNPQRSTXY"
-
-    invoke-virtual {v0, v3, v4}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
+    invoke-virtual {v0, v4, v3}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
 
     move-result-object v0
 
-    const-string v3, "3456789"
+    const-string v4, "ABCDEFGHJKLMNPQRSTXY"
 
-    invoke-virtual {v0, v3, v4}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
+    invoke-virtual {v0, v4, v3}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
+
+    move-result-object v0
+
+    const-string v4, "3456789"
+
+    invoke-virtual {v0, v4, v3}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
 
     move-result-object v0
 
@@ -120,7 +120,7 @@
 
     invoke-direct {v0}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;-><init>()V
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(II)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
+    invoke-virtual {v0, v2, v1}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(II)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
 
     move-result-object v0
 
@@ -132,19 +132,19 @@
 
     const-string v1, "abcdefghijklmnopqrstuvwxyz"
 
-    invoke-virtual {v0, v1, v4}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
+    invoke-virtual {v0, v1, v3}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
 
     move-result-object v0
 
     const-string v1, "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-    invoke-virtual {v0, v1, v4}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
+    invoke-virtual {v0, v1, v3}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
 
     move-result-object v0
 
     const-string v1, "1234567890"
 
-    invoke-virtual {v0, v1, v4}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
+    invoke-virtual {v0, v1, v3}, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;->a(Ljava/lang/String;I)Lcom/google/android/gms/auth/api/credentials/PasswordSpecification$a;
 
     move-result-object v0
 
@@ -378,23 +378,23 @@
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification;->c:Ljava/lang/String;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification;->d:Ljava/util/List;
 
-    const/4 v1, 0x2
+    const/4 v2, 0x2
 
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/b;->b(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->b(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification;->e:Ljava/util/List;
 
-    const/4 v1, 0x3
+    const/4 v2, 0x3
 
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v2, v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/b;->a(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     iget v0, p0, Lcom/google/android/gms/auth/api/credentials/PasswordSpecification;->f:I
 

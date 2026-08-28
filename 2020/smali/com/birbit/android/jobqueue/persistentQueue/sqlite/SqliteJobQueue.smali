@@ -117,32 +117,34 @@
     .line 45
     invoke-virtual {v0}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
-    move-result-object v1
+    move-result-object v0
 
-    iput-object v1, p0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/SqliteJobQueue;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object v0, p0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/SqliteJobQueue;->b:Landroid/database/sqlite/SQLiteDatabase;
 
     .line 46
-    new-instance v9, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b;
+    new-instance v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b;
 
-    sget-object v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->b:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
+    iget-object v2, p0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/SqliteJobQueue;->b:Landroid/database/sqlite/SQLiteDatabase;
 
-    iget-object v3, v0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;->a:Ljava/lang/String;
+    sget-object v1, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/a;->b:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;
 
-    const/16 v4, 0xb
+    iget-object v4, v1, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b$c;->a:Ljava/lang/String;
 
-    const/4 v6, 0x3
+    const/16 v5, 0xb
 
-    const-string v2, "job_holder"
+    const/4 v7, 0x3
 
-    const-string v5, "job_holder_tags"
+    const-string v3, "job_holder"
 
-    move-object v0, v9
+    const-string v6, "job_holder_tags"
 
-    move-wide v7, p2
+    move-object v1, v0
 
-    invoke-direct/range {v0 .. v8}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b;-><init>(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;IJ)V
+    move-wide v8, p2
 
-    iput-object v9, p0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/SqliteJobQueue;->c:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b;
+    invoke-direct/range {v1 .. v9}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b;-><init>(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;IJ)V
+
+    iput-object v0, p0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/SqliteJobQueue;->c:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b;
 
     .line 49
     iput-object p4, p0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/SqliteJobQueue;->d:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/SqliteJobQueue$JobSerializer;
@@ -150,16 +152,16 @@
     .line 50
     invoke-virtual {p1}, Lcom/birbit/android/jobqueue/b/a;->n()Z
 
-    move-result v0
+    move-result p1
 
-    if-eqz v0, :cond_1
+    if-eqz p1, :cond_1
 
     .line 51
-    iget-object v0, p0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/SqliteJobQueue;->c:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b;
+    iget-object p1, p0, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/SqliteJobQueue;->c:Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b;
 
-    const-wide/high16 v1, -0x8000000000000000L
+    const-wide/high16 p2, -0x8000000000000000L
 
-    invoke-virtual {v0, v1, v2}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b;->a(J)V
+    invoke-virtual {p1, p2, p3}, Lcom/birbit/android/jobqueue/persistentQueue/sqlite/b;->a(J)V
 
     :cond_1
     return-void

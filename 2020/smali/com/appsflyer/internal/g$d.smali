@@ -39,50 +39,50 @@
     .line 199
     new-instance v0, Lcom/appsflyer/internal/g$d;
 
-    const-string v1, "NONE"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "NONE"
 
-    invoke-direct {v0, v1, v2}, Lcom/appsflyer/internal/g$d;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v1}, Lcom/appsflyer/internal/g$d;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/appsflyer/internal/g$d;->ɩ:Lcom/appsflyer/internal/g$d;
 
     new-instance v0, Lcom/appsflyer/internal/g$d;
 
-    const-string v1, "FIRST"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "FIRST"
 
-    invoke-direct {v0, v1, v3}, Lcom/appsflyer/internal/g$d;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v2}, Lcom/appsflyer/internal/g$d;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/appsflyer/internal/g$d;->Ι:Lcom/appsflyer/internal/g$d;
 
     new-instance v0, Lcom/appsflyer/internal/g$d;
 
-    const-string v1, "ALL"
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const-string v4, "ALL"
 
-    invoke-direct {v0, v1, v4}, Lcom/appsflyer/internal/g$d;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v4, v3}, Lcom/appsflyer/internal/g$d;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/appsflyer/internal/g$d;->ι:Lcom/appsflyer/internal/g$d;
 
-    const/4 v1, 0x3
+    const/4 v4, 0x3
 
-    new-array v1, v1, [Lcom/appsflyer/internal/g$d;
+    new-array v4, v4, [Lcom/appsflyer/internal/g$d;
 
     .line 198
     sget-object v5, Lcom/appsflyer/internal/g$d;->ɩ:Lcom/appsflyer/internal/g$d;
 
-    aput-object v5, v1, v2
+    aput-object v5, v4, v1
 
-    sget-object v2, Lcom/appsflyer/internal/g$d;->Ι:Lcom/appsflyer/internal/g$d;
+    sget-object v1, Lcom/appsflyer/internal/g$d;->Ι:Lcom/appsflyer/internal/g$d;
 
-    aput-object v2, v1, v3
+    aput-object v1, v4, v2
 
-    aput-object v0, v1, v4
+    aput-object v0, v4, v3
 
-    sput-object v1, Lcom/appsflyer/internal/g$d;->ı:[Lcom/appsflyer/internal/g$d;
+    sput-object v4, Lcom/appsflyer/internal/g$d;->ı:[Lcom/appsflyer/internal/g$d;
 
     return-void
 .end method

@@ -41,36 +41,36 @@
     .line 70
     new-instance v0, Lcom/appsflyer/internal/w$e;
 
-    const-string v1, "GOOGLE"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "GOOGLE"
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/appsflyer/internal/w$e;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v2, v1, v1}, Lcom/appsflyer/internal/w$e;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/appsflyer/internal/w$e;->ι:Lcom/appsflyer/internal/w$e;
 
     new-instance v0, Lcom/appsflyer/internal/w$e;
 
-    const-string v1, "AMAZON"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "AMAZON"
 
-    invoke-direct {v0, v1, v3, v3}, Lcom/appsflyer/internal/w$e;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v3, v2, v2}, Lcom/appsflyer/internal/w$e;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/appsflyer/internal/w$e;->ı:Lcom/appsflyer/internal/w$e;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    new-array v1, v1, [Lcom/appsflyer/internal/w$e;
+    new-array v3, v3, [Lcom/appsflyer/internal/w$e;
 
     .line 69
     sget-object v4, Lcom/appsflyer/internal/w$e;->ι:Lcom/appsflyer/internal/w$e;
 
-    aput-object v4, v1, v2
+    aput-object v4, v3, v1
 
-    aput-object v0, v1, v3
+    aput-object v0, v3, v2
 
-    sput-object v1, Lcom/appsflyer/internal/w$e;->ǃ:[Lcom/appsflyer/internal/w$e;
+    sput-object v3, Lcom/appsflyer/internal/w$e;->ǃ:[Lcom/appsflyer/internal/w$e;
 
     return-void
 .end method

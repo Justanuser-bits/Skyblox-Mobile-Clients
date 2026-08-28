@@ -545,12 +545,12 @@
     :cond_0
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     .line 779
-    invoke-virtual {p1, v1, v2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
+    invoke-virtual {p1, v2, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     .line 780
     iget-object v3, p0, Landroidx/appcompat/b/a/b$b;->c:Landroidx/appcompat/b/a/b;
@@ -565,18 +565,18 @@
     .line 782
     iget v3, p0, Landroidx/appcompat/b/a/b$b;->j:I
 
-    add-int/2addr v3, v2
+    add-int/2addr v3, v1
 
     iput v3, p0, Landroidx/appcompat/b/a/b$b;->j:I
 
     .line 783
-    iget v2, p0, Landroidx/appcompat/b/a/b$b;->g:I
+    iget v1, p0, Landroidx/appcompat/b/a/b$b;->g:I
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getChangingConfigurations()I
 
     move-result p1
 
-    or-int/2addr p1, v2
+    or-int/2addr p1, v1
 
     iput p1, p0, Landroidx/appcompat/b/a/b$b;->g:I
 
@@ -589,13 +589,13 @@
     iput-object p1, p0, Landroidx/appcompat/b/a/b$b;->m:Landroid/graphics/Rect;
 
     .line 786
-    iput-boolean v1, p0, Landroidx/appcompat/b/a/b$b;->l:Z
+    iput-boolean v2, p0, Landroidx/appcompat/b/a/b$b;->l:Z
 
     .line 787
-    iput-boolean v1, p0, Landroidx/appcompat/b/a/b$b;->o:Z
+    iput-boolean v2, p0, Landroidx/appcompat/b/a/b$b;->o:Z
 
     .line 788
-    iput-boolean v1, p0, Landroidx/appcompat/b/a/b$b;->x:Z
+    iput-boolean v2, p0, Landroidx/appcompat/b/a/b$b;->x:Z
 
     return v0
 .end method

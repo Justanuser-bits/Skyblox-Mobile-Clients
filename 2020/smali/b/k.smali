@@ -164,18 +164,20 @@
     sput-object v0, Lb/k;->a:Lb/k;
 
     .line 72
-    new-instance v1, Lb/k$a;
+    new-instance v0, Lb/k$a;
 
-    invoke-direct {v1, v0}, Lb/k$a;-><init>(Lb/k;)V
+    sget-object v1, Lb/k;->a:Lb/k;
 
-    new-array v0, v3, [Lb/af;
+    invoke-direct {v0, v1}, Lb/k$a;-><init>(Lb/k;)V
+
+    new-array v1, v3, [Lb/af;
 
     sget-object v4, Lb/af;->c:Lb/af;
 
-    aput-object v4, v0, v2
+    aput-object v4, v1, v2
 
     .line 73
-    invoke-virtual {v1, v0}, Lb/k$a;->a([Lb/af;)Lb/k$a;
+    invoke-virtual {v0, v1}, Lb/k$a;->a([Lb/af;)Lb/k$a;
 
     move-result-object v0
 
