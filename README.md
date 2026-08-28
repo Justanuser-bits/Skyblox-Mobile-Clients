@@ -1,8 +1,8 @@
 # Skyblox Mobile Clients
 
-Fully decompiled source code for the historical Roblox Android clients, patched to connect to Skyblox.
+Archive of decompiled older Roblox Android apps, modified to connect to Skyblox instead of the official servers.
 
-## Versions included:
+## Supported Versions
 - 2015
 - 2016
 - 2017
