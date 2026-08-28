@@ -1,0 +1,27 @@
+version: 2.11.1
+apkFileName: Skyblox_2021_Patched.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 19
+  targetSdkVersion: 29
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 970
+  versionName: 2.477.421716
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- jpg
+- png
+- androidsupportmultidexversion.txt
+- assets/fingerprint.txt
+- com/appsflyer/internal/a-
+- com/appsflyer/internal/b-

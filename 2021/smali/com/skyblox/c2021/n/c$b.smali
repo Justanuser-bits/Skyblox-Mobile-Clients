@@ -1,0 +1,90 @@
+.class public Lcom/skyblox/c2021/n/c$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/skyblox/c2021/ac/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/skyblox/c2021/n/c;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "b"
+.end annotation
+
+
+# instance fields
+.field private final a:I
+
+.field private final b:I
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 2
+
+    .line 153
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 154
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Lcom/skyblox/c2021/o$c;->lightThemePremiumBackgroundColor:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/skyblox/c2021/n/c$b;->a:I
+
+    .line 155
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    sget v0, Lcom/skyblox/c2021/o$c;->dark_carbon:I
+
+    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result p1
+
+    iput p1, p0, Lcom/skyblox/c2021/n/c$b;->b:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/skyblox/c2021/ac/f;)I
+    .locals 1
+
+    .line 160
+    sget-object v0, Lcom/skyblox/c2021/n/c$2;->a:[I
+
+    invoke-virtual {p1}, Lcom/skyblox/c2021/ac/f;->ordinal()I
+
+    move-result p1
+
+    aget p1, v0, p1
+
+    const/4 v0, 0x1
+
+    if-eq p1, v0, :cond_0
+
+    .line 162
+    iget p1, p0, Lcom/skyblox/c2021/n/c$b;->a:I
+
+    return p1
+
+    .line 161
+    :cond_0
+    iget p1, p0, Lcom/skyblox/c2021/n/c$b;->b:I
+
+    return p1
+.end method

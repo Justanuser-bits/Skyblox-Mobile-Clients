@@ -1,0 +1,55 @@
+.class Lcom/skyblox/c2021/login/mvp/ActivityLoginMVP$3;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnDismissListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/skyblox/c2021/login/mvp/ActivityLoginMVP;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/skyblox/c2021/login/mvp/ActivityLoginMVP;
+
+
+# direct methods
+.method constructor <init>(Lcom/skyblox/c2021/login/mvp/ActivityLoginMVP;)V
+    .locals 0
+
+    .line 340
+    iput-object p1, p0, Lcom/skyblox/c2021/login/mvp/ActivityLoginMVP$3;->a:Lcom/skyblox/c2021/login/mvp/ActivityLoginMVP;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onDismiss(Landroid/content/DialogInterface;)V
+    .locals 0
+
+    .line 342
+    iget-object p1, p0, Lcom/skyblox/c2021/login/mvp/ActivityLoginMVP$3;->a:Lcom/skyblox/c2021/login/mvp/ActivityLoginMVP;
+
+    invoke-static {p1}, Lcom/skyblox/c2021/login/mvp/ActivityLoginMVP;->a(Lcom/skyblox/c2021/login/mvp/ActivityLoginMVP;)Lcom/skyblox/c2021/login/mvp/a;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 344
+    invoke-virtual {p1}, Lcom/skyblox/c2021/login/mvp/a;->at()V
+
+    :cond_0
+    return-void
+.end method

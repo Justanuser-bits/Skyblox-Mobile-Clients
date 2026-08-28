@@ -1,0 +1,10 @@
+.class public final Lcom/skyblox/c2021/f/c;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/skyblox/c2021/f/c$a;
+    }
+.end annotation

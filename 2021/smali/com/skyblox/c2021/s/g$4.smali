@@ -1,0 +1,51 @@
+.class Lcom/skyblox/c2021/s/g$4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/skyblox/c2021/login/a$g;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/skyblox/c2021/s/g;->a(Landroid/content/Context;Ljava/lang/String;Lcom/skyblox/c2021/s/g$c;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/skyblox/c2021/s/g$c;
+
+.field final synthetic b:Lcom/skyblox/c2021/s/g;
+
+
+# direct methods
+.method constructor <init>(Lcom/skyblox/c2021/s/g;Lcom/skyblox/c2021/s/g$c;)V
+    .locals 0
+
+    .line 336
+    iput-object p1, p0, Lcom/skyblox/c2021/s/g$4;->b:Lcom/skyblox/c2021/s/g;
+
+    iput-object p2, p0, Lcom/skyblox/c2021/s/g$4;->a:Lcom/skyblox/c2021/s/g$c;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()V
+    .locals 1
+
+    .line 339
+    iget-object v0, p0, Lcom/skyblox/c2021/s/g$4;->a:Lcom/skyblox/c2021/s/g$c;
+
+    invoke-interface {v0}, Lcom/skyblox/c2021/s/g$c;->a()V
+
+    return-void
+.end method
