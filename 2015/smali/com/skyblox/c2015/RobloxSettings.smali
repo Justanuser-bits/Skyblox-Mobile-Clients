@@ -463,29 +463,15 @@
     .locals 2
 
     .prologue
-    .line 165
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->baseUrlSecureWWW()Ljava/lang/String;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "mobile-app-upgrades/native-ios/bc"
-
+    const-string v1, "buildersclub"
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
     return-object v0
 .end method
 
@@ -493,29 +479,15 @@
     .locals 2
 
     .prologue
-    .line 163
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->baseUrl()Ljava/lang/String;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "mobile-app-upgrades/"
-
+    const-string v1, "buildersclub"
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
     return-object v0
 .end method
 
@@ -1313,45 +1285,26 @@
 .end method
 
 .method static friendsUrl()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 170
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->baseUrl()Ljava/lang/String;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    const-string v1, "users/"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {}, Lcom/skyblox/c2015/managers/SessionManager;->getInstance()Lcom/skyblox/c2015/managers/SessionManager;
     move-result-object v1
-
-    invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->isTablet()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "friends.aspx"
-
-    :goto_0
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
+    invoke-virtual {v1}, Lcom/skyblox/c2015/managers/SessionManager;->getUserId()I
+    move-result v2
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v1, "/friends"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
     return-object v0
-
-    :cond_0
-    const-string v0, "friends"
-
-    goto :goto_0
 .end method
 
 .method static gamesUrl()Ljava/lang/String;
@@ -1371,7 +1324,7 @@
 
     move-result-object v0
 
-    const-string v1, "games/list"
+    const-string v1, "games"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1408,42 +1361,16 @@
     .locals 2
 
     .prologue
-    .line 168
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->baseUrl()Ljava/lang/String;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->isTablet()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "My/Groups.aspx"
-
-    :goto_0
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
+    const-string v1, "My/Groups.aspx"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
     return-object v0
-
-    :cond_0
-    const-string v0, "my-groups"
-
-    goto :goto_0
 .end method
 
 .method static helpUrl()Ljava/lang/String;
@@ -1886,45 +1813,26 @@
 .end method
 
 .method static inventoryUrl()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 157
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->baseUrl()Ljava/lang/String;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    const-string v1, "users/"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {}, Lcom/skyblox/c2015/managers/SessionManager;->getInstance()Lcom/skyblox/c2015/managers/SessionManager;
     move-result-object v1
-
-    invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->isTablet()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "My/Stuff.aspx"
-
-    :goto_0
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
+    invoke-virtual {v1}, Lcom/skyblox/c2015/managers/SessionManager;->getUserId()I
+    move-result v2
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v1, "/inventory"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
     return-object v0
-
-    :cond_0
-    const-string v0, "inventory"
-
-    goto :goto_0
 .end method
 
 .method public static isAnalyticsEnabled()Z
@@ -2129,42 +2037,16 @@
     .locals 2
 
     .prologue
-    .line 167
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->baseUrl()Ljava/lang/String;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->isTablet()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "my/messages/#!/inbox"
-
-    :goto_0
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
+    const-string v1, "My/Messages"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
     return-object v0
-
-    :cond_0
-    const-string v0, "inbox"
-
-    goto :goto_0
 .end method
 
 .method private static native nativeEnableNDKProfiler(I)Z
@@ -2292,7 +2174,7 @@
 .end method
 
 .method static profileUrl()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
     .prologue
     .line 166
@@ -2306,31 +2188,29 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    const-string v1, "users/"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Lcom/skyblox/c2015/managers/SessionManager;->getInstance()Lcom/skyblox/c2015/managers/SessionManager;
+
     move-result-object v1
 
-    invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->isTablet()Z
+    invoke-virtual {v1}, Lcom/skyblox/c2015/managers/SessionManager;->getUserId()I
 
-    move-result v0
+    move-result v2
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v0, "User.aspx"
+    const-string v1, "/profile"
 
-    :goto_0
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
-
-    :cond_0
-    const-string v0, ""
-
-    goto :goto_0
 .end method
 
 .method private static rbxAnalyticsTestUrl()Ljava/lang/String;
@@ -2492,29 +2372,15 @@
     .locals 2
 
     .prologue
-    .line 164
     new-instance v0, Ljava/lang/StringBuilder;
-
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Lcom/skyblox/c2015/RobloxSettings;->baseUrlSecureWWW()Ljava/lang/String;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "mobile-app-upgrades/native-ios/robux"
-
+    const-string v1, "My/Money.aspx"
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v0
-
     return-object v0
 .end method
 

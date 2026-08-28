@@ -16,10 +16,13 @@
 !2020/**
 !2021/
 !2021/**
+!Logo's/
+!Logo's/**
 
-# Ignore the UI and temporary files
-PatcherUI/
+# Ignore some stuff
 *.tmp
 *.log
 *.bat
-# no release here, go  to the releases page
+*.apk
+*.idsig
+# No release here, go  to the releases page

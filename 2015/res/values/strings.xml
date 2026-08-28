@@ -14,13 +14,13 @@
     <string name="BannedAppeals">If you wish to appeal, please send an email to &lt;a href=\"mailto:appeals@skyblox.co?Subject=Ban%20Appeal\">appeals@skyblox.co&lt;/a>.</string>
     <string name="BannedDefault">Account Unavailable</string>
     <string name="BannedDelete">Account Deleted</string>
-    <string name="BannedDeletedFirstLine">Our content monitors have determined that your behavior at ROBLOX has been in violation of our Terms of Service.</string>
+    <string name="BannedDeletedFirstLine">Our content monitors have determined that your behavior at SKYBLOX has been in violation of our Terms of Service.</string>
     <string name="BannedDeletedMessage">Your account has been terminated.</string>
-    <string name="BannedFirstLine">Our content monitors have determined that your behavior at ROBLOX has been in violation of our Terms of Service. We will terminate your account if you do not abide by the rules.</string>
-    <string name="BannedGuidelines">Please abide by the &lt;a href=\"https://en.help.skyblox.co/hc/en-us/articles/203313410-ROBLOX-Rules-of-Conduct\">ROBLOX Community Guidelines&lt;/a> so that ROBLOX can be fun for users of all ages.</string>
+    <string name="BannedFirstLine">Our content monitors have determined that your behavior at SKYBLOX has been in violation of our Terms of Service. We will terminate your account if you do not abide by the rules.</string>
+    <string name="BannedGuidelines">Please abide by the &lt;a href=\"https://en.help.skyblox.co/hc/en-us/articles/203313410-SKYBLOX-Rules-of-Conduct\">SKYBLOX Community Guidelines&lt;/a> so that SKYBLOX can be fun for users of all ages.</string>
     <string name="BannedLengthAndEndDate">Your account has been banned for %1$d days. You may reactive it after %2$s.</string>
-    <string name="BannedMessagePermanent">You have been banned from ROBLOX permanently. Please login via a browser for more information.</string>
-    <string name="BannedMessageTemporary">You have been temporarily banned from ROBLOX. Please login via a browser for more information.</string>
+    <string name="BannedMessagePermanent">You have been banned from SKYBLOX permanently. Please login via a browser for more information.</string>
+    <string name="BannedMessageTemporary">You have been temporarily banned from SKYBLOX. Please login via a browser for more information.</string>
     <string name="BannedModeratorNote">Moderator Note: %s</string>
     <string name="BannedReviewed">Reviewed: %s</string>
     <string name="BannedTitle">Account Unavailable</string>
@@ -47,10 +47,10 @@
     <string name="ClearCookiesWord">Clear Cookies</string>
     <string name="CloseWord">Close</string>
     <string name="CommunityWord">Community</string>
-    <string name="ConnectionError">ROBLOX requires Internet connection</string>
+    <string name="ConnectionError">SKYBLOX requires Internet connection</string>
     <string name="ConnectionErrorGameEnded">Cannot join this game because it has ended.</string>
     <string name="ConnectionErrorGameFull">Cannot join this game because it is full.</string>
-    <string name="CookiesClearedMessage">Roblox Cookies are cleared</string>
+    <string name="CookiesClearedMessage">Skyblox Cookies are cleared</string>
     <string name="CrashFound">The game did not end correctly. You may need a Software Update. See the Settings section About Device.</string>
     <string name="DefaultDeviceBlacklist">XT1080,Nexus 7,SMÃ‚Â¬?-T210R,SM-T320</string>
     <string name="DismissButtonText">Dismiss</string>
@@ -87,7 +87,7 @@
     <string name="InventoryWord">Inventory</string>
     <string name="LaunchGame">Launching Game</string>
     <string name="LeaderboardsWord">Leaderboards</string>
-    <string name="LegalText">"ROBLOX, 'Online Building Toy', characters, logos, names, and all related indicia are trademarks of ROBLOX Corporation ©2015. US Patents 7,874,921. Patents pending. Contact us at info@skyblox.co"</string>
+    <string name="LegalText">"SKYBLOX, 'Online Building Toy', characters, logos, names, and all related indicia are trademarks of SKYBLOX Corporation ©2015. US Patents 7,874,921. Patents pending. Contact us at info@skyblox.co"</string>
     <string name="LicensingAgreement">Licensing Agreement</string>
     <string name="LoggedOut">You have been logged out.</string>
     <string name="LoggingIn">Logging In</string>
@@ -124,31 +124,31 @@
     <string name="PurchaseValidateLimit">Sorry, your transaction cannot be completed at this time, as you have reached a transaction limit.</string>
     <string name="PurchaseValidateRetry">Billing service is currently unavailable. Please try again later.</string>
     <string name="PurchasedFailed">Purchase failed, please try again</string>
-    <string name="RateMeDialogMessage">We would really appreciate you rating ROBLOX on the Play store.</string>
+    <string name="RateMeDialogMessage">We would really appreciate you rating SKYBLOX on the Play store.</string>
     <string name="RateMeDialogTitle">Please rate this app</string>
     <string name="RateMeNever">Never</string>
     <string name="RateMeNotNow">Not now</string>
     <string name="RateMeRateIt">Rate it</string>
     <string name="RatingNoThanksButton">No, Thanks</string>
     <string name="RatingRemindMeLaterButton">Remind me later</string>
-    <string name="RatingString">If you enjoy using ROBLOX, would you please rate it? It wont take more than a minute. If you are having issues or problems, please email support at support@skyblox.co.</string>
-    <string name="RatingTitle">Rate ROBLOX</string>
-    <string name="RatingYesButton">Rate ROBLOX</string>
-    <string name="RbxDevConnectionCreated">ROBLOX Studio connection created, waiting for setup...</string>
+    <string name="RatingString">If you enjoy using SKYBLOX, would you please rate it? It wont take more than a minute. If you are having issues or problems, please email support at support@skyblox.co.</string>
+    <string name="RatingTitle">Rate SKYBLOX</string>
+    <string name="RatingYesButton">Rate SKYBLOX</string>
+    <string name="RbxDevConnectionCreated">SKYBLOX Studio connection created, waiting for setup...</string>
     <string name="RbxDevFinalizing">Finalizing some things...</string>
-    <string name="RbxDevPairingInstructions">Type your Rbx Dev Code (should be 4 numbers) from ROBLOX Studio to pair this device.</string>
-    <string name="RbxDevPressConnect">Please press connect button when you have a server running on ROBLOX Studio.</string>
-    <string name="RbxDevStudioFound">ROBLOX Studio found, creating connection...</string>
-    <string name="RbxDevWaiting">Waiting for ROBLOX Studio Connection...</string>
+    <string name="RbxDevPairingInstructions">Type your Rbx Dev Code (should be 4 numbers) from SKYBLOX Studio to pair this device.</string>
+    <string name="RbxDevPressConnect">Please press connect button when you have a server running on SKYBLOX Studio.</string>
+    <string name="RbxDevStudioFound">SKYBLOX Studio found, creating connection...</string>
+    <string name="RbxDevWaiting">Waiting for SKYBLOX Studio Connection...</string>
     <string name="RecommendUpgradeBody">A new version of %s is available in the App Store. We recommend installing it before continuing.</string>
     <string name="RecommendUpgradeTitle">Upgrade available!</string>
     <string name="RememberPassword">Remember Password</string>
     <string name="RequireUpgradeBody">Your version of %s is out of date and will not work properly. Please upgrade immediately.</string>
     <string name="RequireUpgradeTitle">Please Upgrade!</string>
     <string name="RobloxDevPairFailure">Did not pair with Studio, did you put in the right code?</string>
-    <string name="RobloxDevPairFailureTimeout">Could not find ROBLOX Studio. Please make sure you are on the same network as ROBLOX studio.</string>
+    <string name="RobloxDevPairFailureTimeout">Could not find SKYBLOX Studio. Please make sure you are on the same network as SKYBLOX studio.</string>
     <string name="RobloxDevSuccessfulPair">Successfuly Paired with %s</string>
-    <string name="RobloxWord">ROBLOX</string>
+    <string name="RobloxWord">Skyblox</string>
     <string name="RobuxWord">Robux</string>
     <string name="SearchCatalogWord">Search catalog...</string>
     <string name="SearchGamesWord">Search games...</string>
@@ -180,9 +180,9 @@
     <string name="UnknownLoginFailure">Login Failure - Unknown error!</string>
     <string name="UnsupportedDevice">Sorry, your device does not meet the minimum requirements to play games.</string>
     <string name="UnsupportedDeviceSkippable">Warning: Your device may not be powerful enough to play games smoothly.</string>
-    <string name="UpgradeBodyString">Your version of ROBLOX is out of date and will not work properly. Taking you to Google Play Store for Upgrade.</string>
+    <string name="UpgradeBodyString">Your version of SKYBLOX is out of date and will not work properly. Taking you to Google Play Store for Upgrade.</string>
     <string name="UpgradeButtonText">Upgrade</string>
-    <string name="UserNeedsToSignIn">Roblox User %s needs to login to complete the pending transaction before you can buy. You may need to restart your device. If this problem persists contact info@skyblox.co</string>
+    <string name="UserNeedsToSignIn">Skyblox User %s needs to login to complete the pending transaction before you can buy. You may need to restart your device. If this problem persists contact info@skyblox.co</string>
     <string name="UsernameCannotContainSpaces">Username cannot contain spaces</string>
     <string name="UsernameExplicit">This username is not allowed, please try another.</string>
     <string name="UsernameRequirements">3-20 alphanumeric characters, no spaces</string>
@@ -200,7 +200,7 @@
     <string name="WaitForAnotherRobuxPurchase">Please wait for some time before making Robux purchase</string>
     <string name="WarnPlaceIsNotIdeal">"We're sorry, this place may not play well on your device because:"</string>
     <string name="WarnTooManyParts" formatted="false">This place has %d parts (%d is recommended)</string>
-    <string name="WelcomeToRoblox">Welcome to ROBLOX!</string>
+    <string name="WelcomeToRoblox">Welcome to SKYBLOX!</string>
     <string name="WiFiOnlyError">Cannot start game because you are not connected via WiFi (you can change this setting in the Settings App)</string>
     <string name="YouAreCurrentlyLoggedInAs">You are currently signed in as a guest</string>
     <string name="YouMustLogin">Create an account or sign in to access this feature.</string>
