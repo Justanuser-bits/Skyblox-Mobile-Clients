@@ -5,5 +5,3 @@ Archive of decompiled older Roblox Android apps, modified to connect to Skyblox 
 ## Supported Versions
 - 2015
 - 2016
-- 2017
-- 2020
