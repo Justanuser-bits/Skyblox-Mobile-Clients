@@ -1,8 +1,3 @@
-*
-!*/
-!.gitignore
-!README.md
-
 # Keep specific folders
 !2015/
 !2015/**
@@ -21,9 +16,7 @@
 
 # Ignore some stuff
 
-*.tmp
-*.log
 *.bat
 *.apk
-*.idsig
-# No release here, go  to the releases page
+*.keystore
+*.py
