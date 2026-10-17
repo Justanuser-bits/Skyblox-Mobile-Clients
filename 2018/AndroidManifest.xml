@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.roblox.client">
-    <permission android:name="com.roblox.client.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
-    <uses-permission android:name="com.roblox.client.permission.C2D_MESSAGE"/>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.skyblox.c2018">
+    <permission android:name="com.skyblox.c2018.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.skyblox.c2018.permission.C2D_MESSAGE"/>
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:requiresSmallestWidthDp="300" android:smallScreens="false" android:xlargeScreens="true"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -25,7 +25,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
-                <category android:name="com.roblox.client.gcm"/>
+                <category android:name="com.skyblox.c2018.gcm"/>
             </intent-filter>
         </receiver>
         <service android:exported="false" android:name="com.roblox.client.gcm.RbxGcmListenerService">
@@ -72,7 +72,7 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="robloxmobile"/>
+                <data android:scheme="sclient"/>
             </intent-filter>
         </activity>
         <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:label="@string/CommonUI_Messages_Label_Roblox" android:launchMode="singleTask" android:name="com.roblox.client.ActivityNativeMain" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustNothing">
@@ -108,7 +108,7 @@
         <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <provider android:authorities="com.roblox.client.lifecycle-trojan" android:exported="false" android:multiprocess="true" android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="com.skyblox.c2018.lifecycle-trojan" android:exported="false" android:multiprocess="true" android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"/>
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
         <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
