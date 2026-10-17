@@ -32,7 +32,7 @@
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
     .line 31
-    const-string v0, "^robloxmobile://(.*)"
+    const-string v0, "^(?:sclient|robloxmobile)://(?:join\\?)?(.*)"
 
     const/4 v3, 0x2
 
@@ -122,6 +122,16 @@
     aget-object v6, v6, v8
 
     invoke-virtual {v2, v7, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v7, "place"
+    aget-object v9, v4, v0
+    const-string v7, "place"
+    invoke-virtual {v9, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    move-result v7
+    if-eqz v7, :cond_alias_skip
+    const-string v7, "placeid"
+    invoke-virtual {v2, v7, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_alias_skip
+    const/4 v9, 0x0
 
     .line 46
     invoke-virtual {v2, v9, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
