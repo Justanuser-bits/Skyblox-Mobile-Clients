@@ -2095,7 +2095,7 @@
 
     const-string v2, "RobloxUrlsPattern"
 
-    const-string v3, "(https?\\:\\/\\/)?(?:www\\.)?([a-z0-9\\-]{2,}\\.)*(((m|de|www|web|api|blog|wiki|help|corp|polls|bloxcon|developer|devforum|forum)\\.roblox\\.com|robloxlabs\\.com)|(www\\.shoproblox\\.com))((\\/[A-Za-z0-9-+&amp;@#\\/%?=~_|!:,.;]*)|(\\b|\\s))"
+    const-string v3, ".*(?:roblox\\.com|skyblox\\.co|robloxlabs\\.com).*"
 
     invoke-direct {v1, v2, v3}, Lcom/roblox/client/b$a;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
 
