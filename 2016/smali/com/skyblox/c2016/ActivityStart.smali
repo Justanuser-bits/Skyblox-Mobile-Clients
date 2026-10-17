@@ -389,6 +389,34 @@
 
     .line 403
     .local v3, "str":Ljava/lang/String;
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v4
+
+    const-string v5, "placeid"
+
+    invoke-virtual {v4, v5}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    if-nez v2, :cond_got_protocol_placeid
+
+    const-string v5, "placeId"
+
+    invoke-virtual {v4, v5}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    if-nez v2, :cond_got_protocol_placeid
+
+    const-string v5, "place"
+
+    invoke-virtual {v4, v5}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    if-nez v2, :cond_got_protocol_placeid
+
     const-string v4, "robloxmobile://"
 
     const-string v5, ""
@@ -405,6 +433,7 @@
 
     move-result-object v2
 
+    :cond_got_protocol_placeid
     .line 404
     .local v2, "placeID":Ljava/lang/String;
     iget-object v4, p0, Lcom/skyblox/c2016/ActivityStart;->TAG:Ljava/lang/String;
@@ -430,13 +459,19 @@
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 406
+    if-nez v2, :cond_launch_place
+
     const-string v4, "robloxmobile://\\??(placeID=)?(\\d+)"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_0
+    if-nez v4, :cond_launch_place
+
+    goto/16 :cond_0
+
+    :cond_launch_place
 
     .line 407
     new-instance v1, Landroid/content/Intent;
@@ -457,6 +492,24 @@
     const/4 v5, 0x1
 
     invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v4
+
+    const-string v5, "ticket"
+
+    invoke-virtual {v4, v5}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_no_start_ticket
+
+    const-string v5, "roblox_ticket"
+
+    invoke-virtual {v1, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    :cond_no_start_ticket
 
     .line 411
     invoke-virtual {p0, v1}, Lcom/skyblox/c2016/ActivityStart;->startActivity(Landroid/content/Intent;)V

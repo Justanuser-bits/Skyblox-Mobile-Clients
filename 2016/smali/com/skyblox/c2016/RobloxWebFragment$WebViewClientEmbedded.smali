@@ -460,7 +460,45 @@
 
     move/from16 v1, v21
 
+    if-gt v0, v1, :cond_is_game_start
+
+    const-string v20, "sclient://"
+
+    move-object/from16 v0, p2
+
+    move-object/from16 v1, v20
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+
+    move-result v20
+
+    const/16 v21, -0x1
+
+    move/from16 v0, v20
+
+    move/from16 v1, v21
+
+    if-gt v0, v1, :cond_is_game_start
+
+    const-string v20, "robloxmobile://"
+
+    move-object/from16 v0, p2
+
+    move-object/from16 v1, v20
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+
+    move-result v20
+
+    const/16 v21, -0x1
+
+    move/from16 v0, v20
+
+    move/from16 v1, v21
+
     if-le v0, v1, :cond_14
+
+    :cond_is_game_start
 
     .line 215
     invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->deviceNotSupportedString()Ljava/lang/String;
@@ -546,6 +584,31 @@
 
     move-result-object v21
 
+    if-nez v21, :cond_has_placeid
+
+    const-string v21, "placeId"
+
+    move-object/from16 v0, v16
+
+    move-object/from16 v1, v21
+
+    invoke-virtual {v0, v1}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v21
+
+    if-nez v21, :cond_has_placeid
+
+    const-string v21, "place"
+
+    move-object/from16 v0, v16
+
+    move-object/from16 v1, v21
+
+    invoke-virtual {v0, v1}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v21
+
+    :cond_has_placeid
     invoke-static/range {v20 .. v21}, Lcom/skyblox/c2016/RobloxWebFragment;->access$402(Lcom/skyblox/c2016/RobloxWebFragment;Ljava/lang/String;)Ljava/lang/String;
 
     .line 237
@@ -826,6 +889,53 @@
     move-object/from16 v1, v20
 
     invoke-virtual {v0, v1, v11}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    const-string v20, "ticket"
+
+    move-object/from16 v0, v16
+
+    move-object/from16 v1, v20
+
+    invoke-virtual {v0, v1}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v20
+
+    if-eqz v20, :cond_no_web_ticket
+
+    const-string v21, "ticket"
+
+    move-object/from16 v0, v18
+
+    move-object/from16 v1, v21
+
+    move-object/from16 v2, v20
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_no_web_ticket
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
+
+    move-result-object v20
+
+    const-string v21, "https://www.skyblox.co"
+
+    invoke-virtual/range {v20 .. v21}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v20
+
+    if-eqz v20, :cond_no_web_cookie
+
+    const-string v21, "cookie"
+
+    move-object/from16 v0, v18
+
+    move-object/from16 v1, v21
+
+    move-object/from16 v2, v20
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_no_web_cookie
 
     .line 301
     invoke-static {}, Lcom/skyblox/c2016/manager/NotificationManager;->getInstance()Lcom/skyblox/c2016/manager/NotificationManager;

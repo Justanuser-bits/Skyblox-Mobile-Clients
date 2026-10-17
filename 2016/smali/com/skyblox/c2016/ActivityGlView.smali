@@ -1455,7 +1455,34 @@
     .line 183
     invoke-static {p0}, Lcom/skyblox/c2016/http/HttpAgent;->onCreate(Landroid/content/Context;)V
 
-    .line 184
+    invoke-virtual {p0}, Lcom/skyblox/c2016/ActivityGlView;->getIntent()Landroid/content/Intent;
+
+    move-result-object v7
+
+    if-eqz v7, :cond_no_gl_intent
+
+    const-string v8, "roblox_ticket"
+
+    invoke-virtual {v7, v8}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_no_gl_ticket
+
+    sput-object v8, Lcom/skyblox/c2016/RobloxSettings;->mSessionTicket:Ljava/lang/String;
+
+    :cond_no_gl_ticket
+    const-string v8, "roblox_cookie"
+
+    invoke-virtual {v7, v8}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_no_gl_intent
+
+    sput-object v8, Lcom/skyblox/c2016/RobloxSettings;->mSessionCookie:Ljava/lang/String;
+
+    :cond_no_gl_intent
     invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->updateNativeSettings()V
 
     .line 186

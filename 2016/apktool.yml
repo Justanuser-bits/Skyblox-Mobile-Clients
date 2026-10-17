@@ -22,3 +22,4 @@ doNotCompress:
 - jpg
 - png
 - assets/fingerprint.txt
+- obb

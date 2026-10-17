@@ -5166,7 +5166,36 @@
 
     invoke-virtual {v4, v6, v10}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 451
+    const-string v6, "roblox_ticket"
+
+    invoke-virtual {v2, v6}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_no_proto_ticket
+
+    const-string v7, "ticket"
+
+    invoke-virtual {v4, v7, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_no_proto_ticket
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
+
+    move-result-object v6
+
+    const-string v7, "https://www.skyblox.co"
+
+    invoke-virtual {v6, v7}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_no_proto_cookie
+
+    const-string v7, "cookie"
+
+    invoke-virtual {v4, v7, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_no_proto_cookie
     invoke-static {v4, p0}, Lcom/skyblox/c2016/ActivityNativeMain;->startLaunchGame(Landroid/os/Bundle;Landroid/content/Context;)V
 
     .line 456
