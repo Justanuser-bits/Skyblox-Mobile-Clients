@@ -209,7 +209,7 @@
 
     .prologue
     .line 27
-    const-string v0, "roblox.com"
+    const-string v0, "skyblox.co"
 
     return-object v0
 .end method

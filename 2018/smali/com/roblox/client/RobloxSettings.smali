@@ -22,7 +22,7 @@
 
 .field private static final USER_AGENT_SUFFIX_DEFAULT_VALUE:Ljava/lang/String; = " RobloxAndroidClient"
 
-.field private static final WEB_VIEW_URL_OVERRIDE_DEFAULT_VALUE:Ljava/lang/String; = "https://www.roblox.com/PlaceItem.aspx?id=150055095"
+.field private static final WEB_VIEW_URL_OVERRIDE_DEFAULT_VALUE:Ljava/lang/String; = "https://www.skyblox.co/PlaceItem.aspx?id=150055095"
 
 .field static dontReloadMorePage:Z
 
@@ -128,7 +128,7 @@
     sput-object v1, Lcom/roblox/client/RobloxSettings;->mRobloxCookiesTmpFile:Ljava/io/File;
 
     .line 82
-    const-string v0, "www.roblox.com/"
+    const-string v0, "www.skyblox.co/"
 
     invoke-static {v0}, Lcom/roblox/client/RobloxSettings;->setBaseUrl(Ljava/lang/String;)V
 
@@ -2650,7 +2650,7 @@
 
     .prologue
     .line 368
-    const-string v0, "https://www.roblox.com/Forum/default.aspx"
+    const-string v0, "https://www.skyblox.co/Forum/default.aspx"
 
     return-object v0
 .end method
@@ -3526,7 +3526,7 @@
     sput-object v0, Lcom/roblox/client/RobloxSettings;->mUserAgentSuffix:Ljava/lang/String;
 
     .line 681
-    const-string v0, "https://www.roblox.com/PlaceItem.aspx?id=150055095"
+    const-string v0, "https://www.skyblox.co/PlaceItem.aspx?id=150055095"
 
     sput-object v0, Lcom/roblox/client/RobloxSettings;->mWebViewURLOverride:Ljava/lang/String;
 
