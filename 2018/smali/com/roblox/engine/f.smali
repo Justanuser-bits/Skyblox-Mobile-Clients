@@ -273,7 +273,7 @@
 .end method
 
 .method private a(Landroid/content/Context;Ljava/lang/String;)V
-    .locals 5
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -358,6 +358,21 @@
 
     move-result-object v4
 
+    const-string v5, "main.1.com.roblox.client/"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_no_prefix
+
+    const/16 v5, 0x19
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    :cond_no_prefix
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
@@ -806,7 +821,19 @@
 
     if-eqz v1, :cond_1
 
-    .line 106
+    new-instance v1, Ljava/io/File;
+
+    invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/io/File;->isDirectory()Z
+
+    move-result v1
+
+    if-nez v1, :cond_assets_uptodate
+
+    goto :cond_1
+
+    :cond_assets_uptodate
     const-string v1, "rbx.xapkmanager"
 
     const-string v2, "Assets are up to date"
