@@ -1,5 +1,5 @@
 version: 2.9.3
-apkFileName: 2017.apk
+apkFileName: Skyblox_2017.apk
 isFrameworkApk: false
 usesFramework:
   ids:
@@ -31,3 +31,4 @@ doNotCompress:
 - assets/fingerprint.txt
 - png
 - jpg
+- obb

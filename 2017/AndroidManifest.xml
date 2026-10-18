@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.roblox.client" platformBuildVersionCode="24" platformBuildVersionName="7.0">
-    <permission android:name="com.roblox.client.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
-    <uses-permission android:name="com.roblox.client.permission.C2D_MESSAGE"/>
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.skyblox.c2017" platformBuildVersionCode="24" platformBuildVersionName="7.0">
+    <permission android:name="com.skyblox.c2017.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.skyblox.c2017.permission.C2D_MESSAGE"/>
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:requiresSmallestWidthDp="300" android:smallScreens="false" android:xlargeScreens="true"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -22,7 +22,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
-                <category android:name="com.roblox.client.gcm"/>
+                <category android:name="com.skyblox.c2017.gcm"/>
             </intent-filter>
         </receiver>
         <service android:exported="false" android:name="com.roblox.client.gcm.RbxGcmListenerService">
@@ -123,7 +123,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
-                <category android:name="com.roblox.client"/>
+                <category android:name="com.skyblox.c2017"/>
             </intent-filter>
         </receiver>
         <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
@@ -132,7 +132,7 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
-        <provider android:authorities="com.roblox.client.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.skyblox.c2017.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
         <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
     </application>
 </manifest>

@@ -28,7 +28,7 @@
     sput-object v0, Lcom/roblox/client/m/i;->a:Ljava/lang/String;
 
     .line 25
-    const-string v0, "main.1.com.roblox.client.obb"
+    const-string v0, "main.1.com.skyblox.c2017.obb"
 
     sput-object v0, Lcom/roblox/client/m/i;->b:Ljava/lang/String;
 
