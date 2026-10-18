@@ -224,6 +224,48 @@
 
     .line 151
     :cond_1
+    invoke-virtual {p2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v6, "sclient://"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v6
+
+    if-nez v6, :cond_sclient
+
+    const-string v6, "robloxmobile://"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_not_sclient
+
+    :cond_sclient
+    new-instance v5, Landroid/content/Intent;
+
+    const-string v6, "android.intent.action.VIEW"
+
+    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v7
+
+    invoke-direct {v5, v6, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    const-class v6, Lcom/roblox/client/ActivitySplash;
+
+    invoke-virtual {v5, v0, v6}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+
+    invoke-virtual {v0, v5}, Landroid/support/v4/app/n;->startActivity(Landroid/content/Intent;)V
+
+    move v0, v3
+
+    goto :goto_0
+
+    :cond_not_sclient
     iget-object v2, p0, Lcom/roblox/client/q$a;->a:Lcom/roblox/client/q;
 
     invoke-virtual {v2}, Lcom/roblox/client/q;->alertIfNetworkNotConnected()Z
