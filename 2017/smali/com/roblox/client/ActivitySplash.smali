@@ -1201,6 +1201,12 @@
 
     invoke-static {v0, v1}, Lcom/roblox/client/t/e;->b(Ljava/lang/String;Ljava/lang/String;)I
 
+    iput-object p1, p0, Lcom/roblox/client/ActivitySplash;->u:Landroid/content/Intent;
+
+    invoke-virtual {p0, p1}, Lcom/roblox/client/ActivitySplash;->setIntent(Landroid/content/Intent;)V
+
+    invoke-direct {p0}, Lcom/roblox/client/ActivitySplash;->A()V
+
     .line 145
     return-void
 .end method

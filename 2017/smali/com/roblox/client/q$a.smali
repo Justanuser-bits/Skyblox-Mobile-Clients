@@ -242,6 +242,18 @@
 
     move-result v5
 
+    if-nez v5, :cond_sclient
+
+    invoke-virtual {p2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v6, "roblox://"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v5
+
     if-eqz v5, :cond_not_sclient
 
     :cond_sclient
@@ -258,6 +270,10 @@
     const-class v6, Lcom/roblox/client/ActivitySplash;
 
     invoke-virtual {v5, v0, v6}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+
+    const/high16 v6, 0x10000000
+
+    invoke-virtual {v5, v6}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     invoke-virtual {v0, v5}, Landroid/support/v4/app/n;->startActivity(Landroid/content/Intent;)V
 
@@ -805,3 +821,32 @@
     .line 331
     goto/16 :goto_0
 .end method
+
+.method public shouldOverrideUrlLoading(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;)Z
+    .locals 1
+
+    .prologue
+    if-eqz p2, :cond_0
+
+    invoke-interface {p2}, Landroid/webkit/WebResourceRequest;->getUrl()Landroid/net/Uri;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, p1, v0}, Lcom/roblox/client/q$a;->shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+

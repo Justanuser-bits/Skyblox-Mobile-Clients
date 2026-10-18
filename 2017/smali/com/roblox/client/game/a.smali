@@ -32,7 +32,7 @@
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
     .line 31
-    const-string v0, "^(?:sclient|robloxmobile)://(?:join\\?\\s*)?(.*)"
+    const-string v0, "^(?:sclient|robloxmobile|roblox)://(?:join\\?\\s*)?(.*)"
 
     const/4 v3, 0x2
 
@@ -124,6 +124,10 @@
     move-result-object v7
 
     aget-object v6, v6, v8
+
+    invoke-virtual {v6}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v6
 
     invoke-virtual {v2, v7, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

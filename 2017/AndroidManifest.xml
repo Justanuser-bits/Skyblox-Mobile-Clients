@@ -78,6 +78,7 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="sclient"/>
                 <data android:scheme="robloxmobile"/>
+                <data android:scheme="roblox"/>
             </intent-filter>
         </activity>
         <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:label="@string/RobloxWord" android:launchMode="singleTask" android:name="com.roblox.client.ActivityNativeMain" android:theme="@style/Theme.Roblox" android:windowSoftInputMode="adjustPan">
