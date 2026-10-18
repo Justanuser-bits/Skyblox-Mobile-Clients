@@ -917,12 +917,25 @@
 
     move-result-object v20
 
+    const-string v21, "https://api.skyblox.co"
+
+    invoke-virtual/range {v20 .. v21}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v20
+
+    if-nez v20, :cond_got_fragment_cookie
+
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
+
+    move-result-object v20
+
     const-string v21, "https://www.skyblox.co"
 
     invoke-virtual/range {v20 .. v21}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v20
 
+    :cond_got_fragment_cookie
     if-eqz v20, :cond_no_web_cookie
 
     const-string v21, "cookie"

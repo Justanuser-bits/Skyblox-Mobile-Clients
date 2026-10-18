@@ -49,7 +49,7 @@
 
 # virtual methods
 .method public execute(Lcom/roblox/hybrid/RBHybridCommand;)V
-    .locals 6
+    .locals 8
     .param p1, "command"    # Lcom/roblox/hybrid/RBHybridCommand;
 
     .prologue
@@ -87,7 +87,74 @@
 
     invoke-virtual {v0, v4, v5}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 66
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
+
+    move-result-object v4
+
+    const-string v5, "https://api.skyblox.co"
+
+    invoke-virtual {v4, v5}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    if-nez v5, :cond_got_party_cookie
+
+    const-string v5, "https://www.skyblox.co"
+
+    invoke-virtual {v4, v5}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    :cond_got_party_cookie
+    if-eqz v5, :cond_no_party_cookie
+
+    const-string v4, "cookie"
+
+    invoke-virtual {v0, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v4, ".ROBLOSECURITY="
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+
+    move-result v4
+
+    const/4 v6, -0x1
+
+    if-eq v4, v6, :cond_no_party_cookie
+
+    add-int/lit8 v4, v4, 0xf
+
+    const-string v6, ";"
+
+    invoke-virtual {v5, v6, v4}, Ljava/lang/String;->indexOf(Ljava/lang/String;I)I
+
+    move-result v6
+
+    const/4 v7, -0x1
+
+    if-ne v6, v7, :cond_has_party_semi
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    goto :cond_trim_party_tok
+
+    :cond_has_party_semi
+    invoke-virtual {v5, v4, v6}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v4
+
+    :cond_trim_party_tok
+    invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "ticket"
+
+    invoke-virtual {v0, v5, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_no_party_cookie
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V

@@ -205,9 +205,81 @@
 
     move-result-object v5
 
+    if-eqz v5, :cond_check_sec
+
+    const-string v6, ".ROBLOSECURITY="
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v6
+
+    if-nez v6, :cond_got_cookie
+
+    :cond_check_sec
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
+
+    move-result-object v6
+
+    const-string v7, "https://api.skyblox.co"
+
+    invoke-virtual {v6, v7}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    if-nez v5, :cond_got_cookie
+
+    const-string v7, "https://www.skyblox.co"
+
+    invoke-virtual {v6, v7}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    :cond_got_cookie
     if-eqz v5, :cond_no_launch_cookie
 
     invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v6, ".ROBLOSECURITY="
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+
+    move-result v6
+
+    const/4 v7, -0x1
+
+    if-eq v6, v7, :cond_no_launch_cookie
+
+    add-int/lit8 v6, v6, 0xf
+
+    const-string v7, ";"
+
+    invoke-virtual {v5, v7, v6}, Ljava/lang/String;->indexOf(Ljava/lang/String;I)I
+
+    move-result v7
+
+    const/4 v8, -0x1
+
+    if-ne v7, v8, :cond_has_tk_semi
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :cond_trim_tk
+
+    :cond_has_tk_semi
+    invoke-virtual {v5, v6, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v6
+
+    :cond_trim_tk
+    invoke-virtual {v6}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v7, "roblox_ticket"
+
+    invoke-virtual {v1, v7, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     :cond_no_launch_cookie
 

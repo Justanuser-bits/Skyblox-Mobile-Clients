@@ -510,6 +510,36 @@
     invoke-virtual {v1, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     :cond_no_start_ticket
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
+
+    move-result-object v4
+
+    const-string v5, "https://api.skyblox.co"
+
+    invoke-virtual {v4, v5}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    if-nez v4, :cond_got_start_cookie
+
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
+
+    move-result-object v4
+
+    const-string v5, "https://www.skyblox.co"
+
+    invoke-virtual {v4, v5}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    :cond_got_start_cookie
+    if-eqz v4, :cond_no_start_cookie
+
+    const-string v5, "roblox_cookie"
+
+    invoke-virtual {v1, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    :cond_no_start_cookie
 
     .line 411
     invoke-virtual {p0, v1}, Lcom/skyblox/c2016/ActivityStart;->startActivity(Landroid/content/Intent;)V

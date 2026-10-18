@@ -15,4 +15,4 @@ Archive of decompiled older Roblox Android apps, modified to connect to Skyblox 
 
 (Legend: *● = Working*, *◐ = Half Working*, *○ = Not Started*)
 
- - if your going to use the 2015 APK then please use a OLDER android device, android 16, and android devices like flagships from 2023/2024 lost 32-bit app support
+ - if your going to use the 2015 APK then please use a OLDER android device.

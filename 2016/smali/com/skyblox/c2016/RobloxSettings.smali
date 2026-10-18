@@ -4816,6 +4816,18 @@
 
     move-result-object v4
 
+    const-string v5, "https://api.skyblox.co"
+
+    invoke-virtual {v4, v5}, Lcom/skyblox/c2016/http/WebkitCookieManagerProxy;->getSimpleCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    if-nez v4, :cond_has_cookie
+
+    invoke-static {}, Lcom/skyblox/c2016/http/HttpAgent;->getCookieManager()Lcom/skyblox/c2016/http/WebkitCookieManagerProxy;
+
+    move-result-object v4
+
     const-string v5, "https://www.skyblox.co"
 
     invoke-virtual {v4, v5}, Lcom/skyblox/c2016/http/WebkitCookieManagerProxy;->getSimpleCookie(Ljava/lang/String;)Ljava/lang/String;
@@ -4895,6 +4907,18 @@
     :cond_set_cookies
     if-eqz v4, :cond_cookie_done
 
+    const-string v5, "RobloxSettings"
+
+    invoke-static {v5, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string v5, ".skyblox.co"
+
+    invoke-static {v5, v4}, Lcom/skyblox/c2016/RobloxSettings;->nativeSetCookiesForDomain(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v5, "assetgame.skyblox.co"
+
+    invoke-static {v5, v4}, Lcom/skyblox/c2016/RobloxSettings;->nativeSetCookiesForDomain(Ljava/lang/String;Ljava/lang/String;)V
+
     const-string v5, "skyblox.co"
 
     invoke-static {v5, v4}, Lcom/skyblox/c2016/RobloxSettings;->nativeSetCookiesForDomain(Ljava/lang/String;Ljava/lang/String;)V
@@ -4903,7 +4927,7 @@
 
     invoke-static {v5, v4}, Lcom/skyblox/c2016/RobloxSettings;->nativeSetCookiesForDomain(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string v5, ".skyblox.co"
+    const-string v5, "api.skyblox.co"
 
     invoke-static {v5, v4}, Lcom/skyblox/c2016/RobloxSettings;->nativeSetCookiesForDomain(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -4912,6 +4936,14 @@
     invoke-static {v5, v4}, Lcom/skyblox/c2016/RobloxSettings;->nativeSetCookiesForDomain(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v5, "https://www.skyblox.co"
+
+    invoke-static {v5, v4}, Lcom/skyblox/c2016/RobloxSettings;->nativeSetCookiesForDomain(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v5, ".roblox.com"
+
+    invoke-static {v5, v4}, Lcom/skyblox/c2016/RobloxSettings;->nativeSetCookiesForDomain(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v5, "roblox.com"
 
     invoke-static {v5, v4}, Lcom/skyblox/c2016/RobloxSettings;->nativeSetCookiesForDomain(Ljava/lang/String;Ljava/lang/String;)V
 

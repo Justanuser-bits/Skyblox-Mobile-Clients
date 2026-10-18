@@ -1483,6 +1483,15 @@
     sput-object v8, Lcom/skyblox/c2016/RobloxSettings;->mSessionCookie:Ljava/lang/String;
 
     :cond_no_gl_intent
+    sget-object v8, Lcom/skyblox/c2016/RobloxSettings;->mSessionCookie:Ljava/lang/String;
+
+    if-eqz v8, :cond_no_gl_log
+
+    const-string v7, "ActivityGlView"
+
+    invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_no_gl_log
     invoke-static {}, Lcom/skyblox/c2016/RobloxSettings;->updateNativeSettings()V
 
     .line 186
