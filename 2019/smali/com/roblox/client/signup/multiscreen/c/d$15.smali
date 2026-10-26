@@ -1,0 +1,193 @@
+.class Lcom/roblox/client/signup/multiscreen/c/d$15;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/text/TextWatcher;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/roblox/client/signup/multiscreen/c/d;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+
+# direct methods
+.method constructor <init>(Lcom/roblox/client/signup/multiscreen/c/d;)V
+    .locals 0
+
+    .line 177
+    iput-object p1, p0, Lcom/roblox/client/signup/multiscreen/c/d$15;->a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public afterTextChanged(Landroid/text/Editable;)V
+    .locals 3
+
+    .line 199
+    iget-object p1, p0, Lcom/roblox/client/signup/multiscreen/c/d$15;->a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+    invoke-static {p1}, Lcom/roblox/client/signup/multiscreen/c/d;->b(Lcom/roblox/client/signup/multiscreen/c/d;)Landroid/widget/EditText;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/roblox/client/signup/multiscreen/c/d$15;->a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+    invoke-static {v0}, Lcom/roblox/client/signup/multiscreen/c/d;->f(Lcom/roblox/client/signup/multiscreen/c/d;)Ljava/lang/Runnable;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/widget/EditText;->removeCallbacks(Ljava/lang/Runnable;)Z
+
+    .line 200
+    iget-object p1, p0, Lcom/roblox/client/signup/multiscreen/c/d$15;->a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+    invoke-static {p1}, Lcom/roblox/client/signup/multiscreen/c/d;->b(Lcom/roblox/client/signup/multiscreen/c/d;)Landroid/widget/EditText;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/roblox/client/signup/multiscreen/c/d$15;->a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+    invoke-static {v0}, Lcom/roblox/client/signup/multiscreen/c/d;->f(Lcom/roblox/client/signup/multiscreen/c/d;)Ljava/lang/Runnable;
+
+    move-result-object v0
+
+    const-wide/16 v1, 0x1f4
+
+    invoke-virtual {p1, v0, v1, v2}, Landroid/widget/EditText;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    return-void
+.end method
+
+.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 3
+
+    const-string v0, "SignUpPhoneNumberFragment"
+
+    .line 185
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "start: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, ". before: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, ". count: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/roblox/client/util/j;->c(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v0, 0x0
+
+    if-nez p2, :cond_0
+
+    if-nez p3, :cond_0
+
+    if-lez p4, :cond_0
+
+    .line 187
+    iget-object p1, p0, Lcom/roblox/client/signup/multiscreen/c/d$15;->a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+    invoke-static {p1}, Lcom/roblox/client/signup/multiscreen/c/d;->b(Lcom/roblox/client/signup/multiscreen/c/d;)Landroid/widget/EditText;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/roblox/client/signup/multiscreen/c/d$15;->a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+    invoke-virtual {p2}, Lcom/roblox/client/signup/multiscreen/c/d;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p2
+
+    const p3, 0x7f070807
+
+    invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object p2
+
+    invoke-virtual {p1, v0, v0, p2, v0}, Landroid/widget/EditText;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+
+    goto :goto_0
+
+    .line 188
+    :cond_0
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    .line 190
+    iget-object p1, p0, Lcom/roblox/client/signup/multiscreen/c/d$15;->a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+    invoke-static {p1}, Lcom/roblox/client/signup/multiscreen/c/d;->b(Lcom/roblox/client/signup/multiscreen/c/d;)Landroid/widget/EditText;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v0, v0, v0, v0}, Landroid/widget/EditText;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+
+    .line 191
+    iget-object p1, p0, Lcom/roblox/client/signup/multiscreen/c/d$15;->a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+    invoke-static {p1}, Lcom/roblox/client/signup/multiscreen/c/d;->b(Lcom/roblox/client/signup/multiscreen/c/d;)Landroid/widget/EditText;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/widget/EditText;->getTransformationMethod()Landroid/text/method/TransformationMethod;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    .line 192
+    iget-object p1, p0, Lcom/roblox/client/signup/multiscreen/c/d$15;->a:Lcom/roblox/client/signup/multiscreen/c/d;
+
+    invoke-static {p1}, Lcom/roblox/client/signup/multiscreen/c/d;->b(Lcom/roblox/client/signup/multiscreen/c/d;)Landroid/widget/EditText;
+
+    move-result-object p1
+
+    new-instance p2, Landroid/text/method/PasswordTransformationMethod;
+
+    invoke-direct {p2}, Landroid/text/method/PasswordTransformationMethod;-><init>()V
+
+    invoke-virtual {p1, p2}, Landroid/widget/EditText;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method

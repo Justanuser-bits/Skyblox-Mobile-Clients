@@ -1,0 +1,79 @@
+version: 2.9.3
+apkFileName: com.roblox.client-585.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 19
+  targetSdkVersion: 27
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 585
+  versionName: 2.394.322464
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  androidsupportmultidexversion.txt: 0
+  firebase-analytics-impl.properties: 8
+  firebase-analytics.properties: 8
+  firebase-common.properties: 8
+  firebase-core.properties: 8
+  firebase-iid-interop.properties: 8
+  firebase-iid.properties: 8
+  firebase-measurement-connector.properties: 8
+  firebase-messaging.properties: 8
+  play-services-ads-base.properties: 8
+  play-services-ads-identifier.properties: 8
+  play-services-ads-lite.properties: 8
+  play-services-ads.properties: 8
+  play-services-analytics-impl.properties: 8
+  play-services-analytics.properties: 8
+  play-services-auth-api-phone.properties: 8
+  play-services-auth-base.properties: 8
+  play-services-auth.properties: 8
+  play-services-base.properties: 8
+  play-services-basement.properties: 8
+  play-services-gass.properties: 8
+  play-services-identity.properties: 8
+  play-services-measurement-base.properties: 8
+  play-services-stats.properties: 8
+  play-services-tasks.properties: 8
+  error_prone/Annotations.gwt.xml: 8
+  jsr305_annotations/Jsr305_annotations.gwt.xml: 8
+  third_party/java_src/error_prone/Annotations.gwt.xml: 8
+  third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml: 8
+  third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml: 8
+doNotCompress:
+- resources.arsc
+- META-INF/android.arch.core_runtime.version
+- META-INF/android.arch.lifecycle_extensions.version
+- META-INF/android.arch.lifecycle_livedata-core.version
+- META-INF/android.arch.lifecycle_livedata.version
+- META-INF/android.arch.lifecycle_runtime.version
+- META-INF/android.arch.lifecycle_viewmodel.version
+- META-INF/android.arch.persistence.room_runtime.version
+- META-INF/android.arch.persistence_db-framework.version
+- META-INF/android.arch.persistence_db.version
+- META-INF/com.android.databinding_baseAdapters.version
+- META-INF/com.android.databinding_library.version
+- META-INF/com.android.support_animated-vector-drawable.version
+- META-INF/com.android.support_appcompat-v7.version
+- META-INF/com.android.support_customtabs.version
+- META-INF/com.android.support_design.version
+- META-INF/com.android.support_recyclerview-v7.version
+- META-INF/com.android.support_support-compat.version
+- META-INF/com.android.support_support-core-ui.version
+- META-INF/com.android.support_support-core-utils.version
+- META-INF/com.android.support_support-fragment.version
+- META-INF/com.android.support_support-media-compat.version
+- META-INF/com.android.support_support-v4.version
+- META-INF/com.android.support_support-vector-drawable.version
+- META-INF/com.android.support_transition.version
+- assets/fingerprint.txt
+- png
+- jpg
