@@ -261,16 +261,16 @@
         <flag name="center" value="0x00000011" />
         <flag name="center_horizontal" value="0x00000001" />
         <flag name="center_vertical" value="0x00000010" />
-        <flag name="clip_horizontal" value="0x00000008" />
-        <flag name="clip_vertical" value="0x00000080" />
         <flag name="end" value="0x00800005" />
-        <flag name="fill" value="0x00000077" />
-        <flag name="fill_horizontal" value="0x00000007" />
         <flag name="fill_vertical" value="0x00000070" />
         <flag name="left" value="0x00000003" />
         <flag name="right" value="0x00000005" />
         <flag name="start" value="0x00800003" />
         <flag name="top" value="0x00000030" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
     </attr>
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
@@ -285,17 +285,17 @@
     <attr name="thickness" format="dimension" />
     <attr name="emojiconSize" format="dimension" />
     <attr name="emojiconAlignment">
-        <enum name="baseline" value="1" />
         <enum name="bottom" value="0" />
+        <enum name="baseline" value="1" />
     </attr>
     <attr name="emojiconTextStart" format="integer" />
     <attr name="emojiconTextLength" format="integer" />
     <attr name="emojiconUseSystemDefault" format="boolean" />
     <attr name="rippleColor" format="color" />
     <attr name="fabSize">
+        <enum name="normal" value="0" />
         <enum name="auto" value="-1" />
         <enum name="mini" value="1" />
-        <enum name="normal" value="0" />
     </attr>
     <attr name="pressedTranslationZ" format="dimension" />
     <attr name="borderWidth" format="dimension" />
@@ -311,16 +311,16 @@
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="showDividers">
-        <flag name="beginning" value="0x00000001" />
-        <flag name="end" value="0x00000004" />
-        <flag name="middle" value="0x00000002" />
         <flag name="none" value="0x00000000" />
+        <flag name="end" value="0x00000004" />
+        <flag name="beginning" value="0x00000001" />
+        <flag name="middle" value="0x00000002" />
     </attr>
     <attr name="dividerPadding" format="dimension" />
     <attr name="imageAspectRatioAdjust">
+        <enum name="none" value="0" />
         <enum name="adjust_height" value="2" />
         <enum name="adjust_width" value="1" />
-        <enum name="none" value="0" />
     </attr>
     <attr name="imageAspectRatio" format="float" />
     <attr name="circleCrop" format="boolean" />

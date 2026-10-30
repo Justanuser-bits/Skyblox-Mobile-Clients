@@ -1,4 +1,4 @@
-version: 2.11.1
+version: 2.9.3
 apkFileName: Skyblox_2017.apk
 isFrameworkApk: false
 usesFramework:
@@ -6,7 +6,7 @@ usesFramework:
   - 1
   tag: null
 sdkInfo:
-  minSdkVersion: 24
+  minSdkVersion: 16
   targetSdkVersion: 24
 packageInfo:
   forcedPackageId: 127
@@ -14,12 +14,21 @@ packageInfo:
 versionInfo:
   versionCode: 264
   versionName: 2.300.138670
+resourcesAreCompressed: false
 sharedLibrary: false
 sparseResources: false
-compactEntries: false
+unknownFiles:
+  NDK_LICENSES: 8
+  build-data.properties: 8
+  dev/google-services.json: 8
+  error_prone/Annotations.gwt.xml: 8
+  jsr305_annotations/Jsr305_annotations.gwt.xml: 8
+  third_party/java_src/error_prone/Annotations.gwt.xml: 8
+  third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml: 8
+  third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml: 8
 doNotCompress:
-- arsc
-- jpg
-- png
+- resources.arsc
 - assets/fingerprint.txt
-- assets/main.1.com.skyblox.c2017.obb
+- png
+- jpg
+- obb
