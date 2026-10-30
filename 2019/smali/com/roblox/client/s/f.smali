@@ -112,6 +112,13 @@
 .method public static a(Ljava/lang/String;)Lcom/roblox/client/s/f;
     .locals 2
 
+    if-nez p0, :cond_not_null
+
+    sget-object p0, Lcom/roblox/client/s/f;->c:Lcom/roblox/client/s/f;
+
+    return-object p0
+
+    :cond_not_null
     .line 18
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -194,7 +201,7 @@
 
     .line 19
     :pswitch_1
-    sget-object p0, Lcom/roblox/client/s/f;->a:Lcom/roblox/client/s/f;
+    sget-object p0, Lcom/roblox/client/s/f;->c:Lcom/roblox/client/s/f;
 
     return-object p0
 
