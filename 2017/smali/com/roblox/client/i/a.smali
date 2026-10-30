@@ -452,7 +452,7 @@
     .line 118
     const-string v0, "appVersion"
 
-    const-string v1, "2.300.138670"
+    const-string v1, "2.300.138971"
 
     invoke-virtual {p0, v0, v1}, Lcom/roblox/client/i/a;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/roblox/client/i/a;
 

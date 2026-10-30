@@ -568,7 +568,7 @@
     move-result-object v0
 
     .line 91
-    const-string v1, "2.300.138670"
+    const-string v1, "2.300.138971"
 
     iget-object v2, p0, Lcom/roblox/client/c/a;->b:Landroid/content/SharedPreferences;
 
@@ -592,7 +592,7 @@
     .line 94
     const-string v1, "CURRENT_APP_VERSION"
 
-    const-string v2, "2.300.138670"
+    const-string v2, "2.300.138971"
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
