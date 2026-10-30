@@ -44,13 +44,48 @@
 
 # virtual methods
 .method protected varargs a([Ljava/lang/Void;)Ljava/lang/Integer;
-    .locals 1
+    .locals 2
 
     .line 371
     invoke-static {}, Lcom/roblox/client/b;->c()Ljava/lang/String;
 
     move-result-object p1
 
+    if-eqz p1, :cond_fix_theme
+
+    const-string v0, "\"FFlagAvatarEditorEnableThemes2\": \"False\""
+
+    const-string v1, "\"FFlagAvatarEditorEnableThemes2\": \"True\""
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "\"FFlagAlwaysLuau\": \"True\""
+
+    const-string v1, "\"FFlagAlwaysLuau\": \"False\""
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "\"DFFlagReplicateAllowLuauOnly\": \"True\""
+
+    const-string v1, "\"DFFlagReplicateAllowLuauOnly\": \"False\""
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "\"FFlagAlwaysLuau\": \"False\""
+
+    const-string v1, "\"FFlagAlwaysLuau\": \"False\", \"DFFlagAlwaysLuau\": \"False\", \"FFlagAppLuau\": \"False\", \"DFFlagAppLuau\": \"False\", \"FFlagReplicateLuau\": \"False\", \"DFFlagReplicateLuau\": \"False\""
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p1
+
+    :cond_fix_theme
     .line 372
     invoke-static {}, Lcom/roblox/client/RobloxSettings;->getClientSettingsGroup()Ljava/lang/String;
 

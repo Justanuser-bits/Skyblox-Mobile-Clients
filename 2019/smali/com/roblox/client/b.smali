@@ -2427,7 +2427,7 @@
 
     const-string v1, "RobloxUrlsPattern"
 
-    const-string v8, "(https?\\:\\/\\/)?(?:www\\.)?([a-z0-9\\-]{2,}\\.)*(((m|de|www|web|api|blog|wiki|help|corp|polls|bloxcon|developer|devforum|forum)\\.roblox\\.com|robloxlabs\\.com)|(www\\.shoproblox\\.com))((\\/[A-Za-z0-9-+&amp;@#\\/%?=~_|!:,.;]*)|(\\b|\\s))"
+    const-string v8, ".*(?:roblox\\.com|skyblox\\.co|robloxlabs\\.com).*"
 
     invoke-direct {v0, v1, v8}, Lcom/roblox/client/b$a;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -3377,7 +3377,7 @@
 
     const-string v1, "RobloxWebLink"
 
-    const-string v8, "www.roblox.com"
+    const-string v8, "www.skyblox.co"
 
     invoke-direct {v0, v1, v8}, Lcom/roblox/client/b$a;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -3527,7 +3527,7 @@
 
     const-string v1, "ContactsLearnMoreUrl"
 
-    const-string v6, "https://en.help.roblox.com/hc/articles/360000015683"
+    const-string v6, "https://en.help.skyblox.co/hc/articles/360000015683"
 
     invoke-direct {v0, v1, v6}, Lcom/roblox/client/b$a;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -4119,7 +4119,7 @@
 
     const-string v1, "NearbyLearnMoreUrl"
 
-    const-string v6, "https://en.help.roblox.com/hc/articles/360001290106"
+    const-string v6, "https://en.help.skyblox.co/hc/articles/360001290106"
 
     invoke-direct {v0, v1, v6}, Lcom/roblox/client/b$a;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -8047,6 +8047,38 @@
 
     .line 94
     sget-object v0, Lcom/roblox/client/b;->b:Ljava/lang/String;
+
+    const-string v1, "\"FFlagAvatarEditorEnableThemes2\": \"False\""
+
+    const-string v2, "\"FFlagAvatarEditorEnableThemes2\": \"True\""
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "\"FFlagAlwaysLuau\": \"True\""
+
+    const-string v2, "\"FFlagAlwaysLuau\": \"False\""
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "\"DFFlagReplicateAllowLuauOnly\": \"True\""
+
+    const-string v2, "\"DFFlagReplicateAllowLuauOnly\": \"False\""
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "\"FFlagAlwaysLuau\": \"False\""
+
+    const-string v2, "\"FFlagAlwaysLuau\": \"False\", \"DFFlagAlwaysLuau\": \"False\", \"FFlagAppLuau\": \"False\", \"DFFlagAppLuau\": \"False\", \"FFlagReplicateLuau\": \"False\", \"DFFlagReplicateLuau\": \"False\""
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v0
 
     return-object v0
 

@@ -7,7 +7,7 @@
 .method public static a(Landroid/content/Context;)V
     .locals 1
 
-    const-string v0, "mailto:info@roblox.com"
+    const-string v0, "mailto:info@skyblox.co"
 
     .line 20
     invoke-static {p0, v0}, Lcom/roblox/client/util/f;->a(Landroid/content/Context;Ljava/lang/String;)V
