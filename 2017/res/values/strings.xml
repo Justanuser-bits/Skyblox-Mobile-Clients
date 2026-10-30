@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -136,7 +136,7 @@
     <string name="GenderRequired">Gender is required.</string>
     <string name="GenderWord">Gender</string>
     <string name="GeneralGameStartError">There was an error starting this game.</string>
-    <string name="GoogleAdTagUrl" formatted="false">http://pubads.g.doubleclick.net/gampad/ads?sz=400x300&amp;iu=%2F6062%2Fhanna_MA_group%2Fvideo_comp_app&amp;ciu_szs=&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=xml_vast2&amp;unviewed_position_start=1&amp;m_ast=vast&amp;url=[referrer_url]&amp;correlator=[timestamp]</string>
+    <string formatted="false" name="GoogleAdTagUrl">http://pubads.g.doubleclick.net/gampad/ads?sz=400x300&amp;iu=%2F6062%2Fhanna_MA_group%2Fvideo_comp_app&amp;ciu_szs=&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=xml_vast2&amp;unviewed_position_start=1&amp;m_ast=vast&amp;url=[referrer_url]&amp;correlator=[timestamp]</string>
     <string name="GroupsWord">Groups</string>
     <string name="HavePendingTransactionError">You already have pending transactions, please try again after some time. You may need to restart your device. If this problem persists contact info@skyblox.co</string>
     <string name="HelpWord">Help</string>
@@ -248,7 +248,7 @@
     <string name="RobloxDevPairFailureTimeout">Could not find ROBLOX Studio. Please make sure you are on the same network as ROBLOX studio.</string>
     <string name="RobloxDevSuccessfulPair">Successfuly Paired with %s</string>
     <string name="RobloxSupport">ROBLOX Support</string>
-    <string name="RobloxWord">ROBLOX</string>
+    <string name="RobloxWord">SKYBLOX</string>
     <string name="RobuxWord">Robux</string>
     <string name="SearchCatalogWord">Search catalog…</string>
     <string name="SearchFriendsWord">Search friends…</string>
@@ -374,7 +374,7 @@
     <string name="WaitForAnotherCatalogPurchase">Please wait for some time before making Catalog purchase</string>
     <string name="WaitForAnotherRobuxPurchase">Please wait for some time before making Robux purchase</string>
     <string name="WarnPlaceIsNotIdeal">"We're sorry, this place may not play well on your device because:"</string>
-    <string name="WarnTooManyParts" formatted="false">This place has %d parts (%d is recommended)</string>
+    <string formatted="false" name="WarnTooManyParts">This place has %d parts (%d is recommended)</string>
     <string name="WelcomeToRoblox">Welcome to ROBLOX!</string>
     <string name="WiFiOnlyError">Cannot start game because you are not connected via WiFi (you can change this setting in the Settings App)</string>
     <string name="Working">Working…</string>
@@ -434,7 +434,7 @@
     <string name="dialog_title_warning">Warning</string>
     <string name="dialog_vr_core_not_enabled">This application may not work properly without enabling Google VR Services, please enable this in phone Settings before continuing.</string>
     <string name="dialog_vr_core_not_installed">This application may not work properly without Google VR Services. Please install Google VR Services from the Play Store before continuing.</string>
-    <string name="empty" />
+    <string name="empty"/>
     <string name="friend_request_ignored">FRIEND REQUEST IGNORED</string>
     <string name="gcm_defaultSenderId">100155320909</string>
     <string name="go_to_playstore_button">Go to the Play Store</string>

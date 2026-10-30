@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <string name="AppRestart_SettingsChanged_Action_RestartApp">Restart app</string>
     <string name="AppRestart_SettingsChanged_Message_OutOfSync">Client and server are out of sync!</string>
@@ -542,7 +542,7 @@
     <string name="Purchasing_RobloxProducts_Response_PurchaseUpdateAndroidVersion">Please upgrade your Android Version to allow Purchasing.</string>
     <string name="Purchasing_RobloxProducts_Response_PurchaseValidateLimit">Sorry, your transaction cannot be completed at this time as you have reached a transaction limit. Need help? Please contact %1$s.</string>
     <string name="Purchasing_RobloxProducts_Response_PurchasingInvalidPurchase">Sorry, your transaction could not be completed.</string>
-    <string name="Roblox_Application_Name">Roblox</string>
+    <string name="Roblox_Application_Name">Skyblox</string>
     <string name="Search_GlobalSearch_Example_SearchCatalog">Search catalog</string>
     <string name="Search_GlobalSearch_Example_SearchGames">Search games</string>
     <string name="Search_GlobalSearch_Example_SearchGroups">Search groups</string>

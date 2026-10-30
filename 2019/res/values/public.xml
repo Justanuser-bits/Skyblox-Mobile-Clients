@@ -26,6 +26,7 @@
     <public type="anim" name="stay" id="0x7f010017" />
     <public type="anim" name="tooltip_enter" id="0x7f010018" />
     <public type="anim" name="tooltip_exit" id="0x7f010019" />
+    <public type="animator" name="design_appbar_state_list_animator" id="0x7f020000" />
     <public type="animator" name="slide_in_from_bottom" id="0x7f020001" />
     <public type="animator" name="slide_in_from_left" id="0x7f020002" />
     <public type="animator" name="slide_in_from_right" id="0x7f020003" />
@@ -34,7 +35,6 @@
     <public type="animator" name="slide_out_to_left" id="0x7f020006" />
     <public type="animator" name="slide_out_to_right" id="0x7f020007" />
     <public type="animator" name="slide_out_to_top" id="0x7f020008" />
-    <public type="animator" name="design_appbar_state_list_animator" id="0x7f020000" />
     <public type="attr" name="actionBarDivider" id="0x7f030000" />
     <public type="attr" name="actionBarItemBackground" id="0x7f030001" />
     <public type="attr" name="actionBarPopupTheme" id="0x7f030002" />
@@ -524,6 +524,7 @@
     <public type="color" name="abc_background_cache_hint_selector_material_light" id="0x7f05001f" />
     <public type="color" name="abc_btn_colored_borderless_text_material" id="0x7f050020" />
     <public type="color" name="abc_btn_colored_text_material" id="0x7f050021" />
+    <public type="color" name="abc_color_highlight_material" id="0x7f050022" />
     <public type="color" name="abc_hint_foreground_material_dark" id="0x7f050023" />
     <public type="color" name="abc_hint_foreground_material_light" id="0x7f050024" />
     <public type="color" name="abc_input_method_navigation_guard" id="0x7f050025" />
@@ -677,7 +678,6 @@
     <public type="color" name="webview_text" id="0x7f0500b9" />
     <public type="color" name="webview_url" id="0x7f0500ba" />
     <public type="color" name="white" id="0x7f0500bb" />
-    <public type="color" name="abc_color_highlight_material" id="0x7f050022" />
     <public type="dimen" name="abc_action_bar_content_inset_material" id="0x7f060000" />
     <public type="dimen" name="abc_action_bar_content_inset_with_nav" id="0x7f060001" />
     <public type="dimen" name="abc_action_bar_default_height_material" id="0x7f060002" />
@@ -752,6 +752,7 @@
     <public type="dimen" name="abc_text_size_subtitle_material_toolbar" id="0x7f060047" />
     <public type="dimen" name="abc_text_size_title_material" id="0x7f060048" />
     <public type="dimen" name="abc_text_size_title_material_toolbar" id="0x7f060049" />
+    <public type="dimen" name="alertIconHeight" id="0x7f06004a" />
     <public type="dimen" name="btnFlatStdCornerRadius" id="0x7f06004b" />
     <public type="dimen" name="btnFlatStdPaddingLeftRight" id="0x7f06004c" />
     <public type="dimen" name="btnFlatStdPaddingTopBtm" id="0x7f06004d" />
@@ -832,6 +833,7 @@
     <public type="dimen" name="item_touch_helper_max_drag_scroll_per_frame" id="0x7f060098" />
     <public type="dimen" name="item_touch_helper_swipe_escape_max_velocity" id="0x7f060099" />
     <public type="dimen" name="item_touch_helper_swipe_escape_velocity" id="0x7f06009a" />
+    <public type="dimen" name="landingButtonHeight" id="0x7f06009b" />
     <public type="dimen" name="loadingSquareExpandSize" id="0x7f06009c" />
     <public type="dimen" name="loadingSquareSize" id="0x7f06009d" />
     <public type="dimen" name="mainTabWidgetHeight" id="0x7f06009e" />
@@ -864,11 +866,22 @@
     <public type="dimen" name="notification_top_pad_large_text" id="0x7f0600b9" />
     <public type="dimen" name="rbxEditTextHint" id="0x7f0600ba" />
     <public type="dimen" name="settingsAlertIconLeftMargin" id="0x7f0600bb" />
+    <public type="dimen" name="settingsIconHeight" id="0x7f0600bc" />
     <public type="dimen" name="splashLoadingTextSize" id="0x7f0600bd" />
     <public type="dimen" name="stdHintLeftIndent" id="0x7f0600be" />
+    <public type="dimen" name="tabBarTextSize" id="0x7f0600bf" />
     <public type="dimen" name="textSizeBtnCancel" id="0x7f0600c0" />
+    <public type="dimen" name="textSizeBtnSubmit" id="0x7f0600c1" />
+    <public type="dimen" name="textSizeBtnSubmitProgress" id="0x7f0600c2" />
+    <public type="dimen" name="textSizeButton" id="0x7f0600c3" />
+    <public type="dimen" name="textSizeButtonImportant" id="0x7f0600c4" />
+    <public type="dimen" name="textSizeCreateUsernameChoose" id="0x7f0600c5" />
+    <public type="dimen" name="textSizeCreateUsernameHeader" id="0x7f0600c6" />
+    <public type="dimen" name="textSizeLabel" id="0x7f0600c7" />
     <public type="dimen" name="textSizeLoginFinePrint" id="0x7f0600c8" />
+    <public type="dimen" name="textSizeSignupFinePrint" id="0x7f0600c9" />
     <public type="dimen" name="textSizeSignupHeader" id="0x7f0600ca" />
+    <public type="dimen" name="textSizeSignupLogin" id="0x7f0600cb" />
     <public type="dimen" name="thumbnailCellHeight" id="0x7f0600cc" />
     <public type="dimen" name="thumbnailCellWidth" id="0x7f0600cd" />
     <public type="dimen" name="tooltip_corner_radius" id="0x7f0600ce" />
@@ -881,60 +894,107 @@
     <public type="dimen" name="tooltip_y_offset_touch" id="0x7f0600d5" />
     <public type="dimen" name="typingProgressDotExpandSize" id="0x7f0600d6" />
     <public type="dimen" name="typingProgressDotSize" id="0x7f0600d7" />
-    <public type="dimen" name="alertIconHeight" id="0x7f06004a" />
-    <public type="dimen" name="landingButtonHeight" id="0x7f06009b" />
-    <public type="dimen" name="settingsIconHeight" id="0x7f0600bc" />
-    <public type="dimen" name="textSizeBtnSubmit" id="0x7f0600c1" />
-    <public type="dimen" name="textSizeBtnSubmitProgress" id="0x7f0600c2" />
-    <public type="dimen" name="textSizeCreateUsernameChoose" id="0x7f0600c5" />
-    <public type="dimen" name="textSizeCreateUsernameHeader" id="0x7f0600c6" />
-    <public type="dimen" name="textSizeSignupFinePrint" id="0x7f0600c9" />
-    <public type="dimen" name="textSizeSignupLogin" id="0x7f0600cb" />
-    <public type="dimen" name="tabBarTextSize" id="0x7f0600bf" />
-    <public type="dimen" name="textSizeButton" id="0x7f0600c3" />
-    <public type="dimen" name="textSizeButtonImportant" id="0x7f0600c4" />
-    <public type="dimen" name="textSizeLabel" id="0x7f0600c7" />
+    <public type="drawable" name="$avd_hide_password__0" id="0x7f070000" />
+    <public type="drawable" name="$avd_hide_password__1" id="0x7f070001" />
+    <public type="drawable" name="$avd_hide_password__2" id="0x7f070002" />
+    <public type="drawable" name="$avd_show_password__0" id="0x7f070003" />
+    <public type="drawable" name="$avd_show_password__1" id="0x7f070004" />
+    <public type="drawable" name="$avd_show_password__2" id="0x7f070005" />
+    <public type="drawable" name="$ic_launcher_foreground__0" id="0x7f070006" />
+    <public type="drawable" name="abc_ab_share_pack_mtrl_alpha" id="0x7f070007" />
+    <public type="drawable" name="abc_action_bar_item_background_material" id="0x7f070008" />
     <public type="drawable" name="abc_btn_borderless_material" id="0x7f070009" />
     <public type="drawable" name="abc_btn_check_material" id="0x7f07000a" />
+    <public type="drawable" name="abc_btn_check_to_on_mtrl_000" id="0x7f07000b" />
+    <public type="drawable" name="abc_btn_check_to_on_mtrl_015" id="0x7f07000c" />
     <public type="drawable" name="abc_btn_colored_material" id="0x7f07000d" />
     <public type="drawable" name="abc_btn_default_mtrl_shape" id="0x7f07000e" />
     <public type="drawable" name="abc_btn_radio_material" id="0x7f07000f" />
+    <public type="drawable" name="abc_btn_radio_to_on_mtrl_000" id="0x7f070010" />
+    <public type="drawable" name="abc_btn_radio_to_on_mtrl_015" id="0x7f070011" />
+    <public type="drawable" name="abc_btn_switch_to_on_mtrl_00001" id="0x7f070012" />
+    <public type="drawable" name="abc_btn_switch_to_on_mtrl_00012" id="0x7f070013" />
     <public type="drawable" name="abc_cab_background_internal_bg" id="0x7f070014" />
     <public type="drawable" name="abc_cab_background_top_material" id="0x7f070015" />
+    <public type="drawable" name="abc_cab_background_top_mtrl_alpha" id="0x7f070016" />
+    <public type="drawable" name="abc_control_background_material" id="0x7f070017" />
     <public type="drawable" name="abc_dialog_material_background" id="0x7f070018" />
     <public type="drawable" name="abc_edit_text_material" id="0x7f070019" />
     <public type="drawable" name="abc_ic_ab_back_material" id="0x7f07001a" />
     <public type="drawable" name="abc_ic_arrow_drop_right_black_24dp" id="0x7f07001b" />
     <public type="drawable" name="abc_ic_clear_material" id="0x7f07001c" />
+    <public type="drawable" name="abc_ic_commit_search_api_mtrl_alpha" id="0x7f07001d" />
     <public type="drawable" name="abc_ic_go_search_api_material" id="0x7f07001e" />
+    <public type="drawable" name="abc_ic_menu_copy_mtrl_am_alpha" id="0x7f07001f" />
+    <public type="drawable" name="abc_ic_menu_cut_mtrl_alpha" id="0x7f070020" />
     <public type="drawable" name="abc_ic_menu_overflow_material" id="0x7f070021" />
+    <public type="drawable" name="abc_ic_menu_paste_mtrl_am_alpha" id="0x7f070022" />
+    <public type="drawable" name="abc_ic_menu_selectall_mtrl_alpha" id="0x7f070023" />
+    <public type="drawable" name="abc_ic_menu_share_mtrl_alpha" id="0x7f070024" />
     <public type="drawable" name="abc_ic_search_api_material" id="0x7f070025" />
+    <public type="drawable" name="abc_ic_star_black_16dp" id="0x7f070026" />
+    <public type="drawable" name="abc_ic_star_black_36dp" id="0x7f070027" />
+    <public type="drawable" name="abc_ic_star_black_48dp" id="0x7f070028" />
+    <public type="drawable" name="abc_ic_star_half_black_16dp" id="0x7f070029" />
+    <public type="drawable" name="abc_ic_star_half_black_36dp" id="0x7f07002a" />
+    <public type="drawable" name="abc_ic_star_half_black_48dp" id="0x7f07002b" />
     <public type="drawable" name="abc_ic_voice_search_api_material" id="0x7f07002c" />
     <public type="drawable" name="abc_item_background_holo_dark" id="0x7f07002d" />
     <public type="drawable" name="abc_item_background_holo_light" id="0x7f07002e" />
+    <public type="drawable" name="abc_list_divider_mtrl_alpha" id="0x7f07002f" />
+    <public type="drawable" name="abc_list_focused_holo" id="0x7f070030" />
+    <public type="drawable" name="abc_list_longpressed_holo" id="0x7f070031" />
+    <public type="drawable" name="abc_list_pressed_holo_dark" id="0x7f070032" />
+    <public type="drawable" name="abc_list_pressed_holo_light" id="0x7f070033" />
     <public type="drawable" name="abc_list_selector_background_transition_holo_dark" id="0x7f070034" />
     <public type="drawable" name="abc_list_selector_background_transition_holo_light" id="0x7f070035" />
+    <public type="drawable" name="abc_list_selector_disabled_holo_dark" id="0x7f070036" />
+    <public type="drawable" name="abc_list_selector_disabled_holo_light" id="0x7f070037" />
     <public type="drawable" name="abc_list_selector_holo_dark" id="0x7f070038" />
     <public type="drawable" name="abc_list_selector_holo_light" id="0x7f070039" />
+    <public type="drawable" name="abc_menu_hardkey_panel_mtrl_mult" id="0x7f07003a" />
+    <public type="drawable" name="abc_popup_background_mtrl_mult" id="0x7f07003b" />
     <public type="drawable" name="abc_ratingbar_indicator_material" id="0x7f07003c" />
     <public type="drawable" name="abc_ratingbar_material" id="0x7f07003d" />
     <public type="drawable" name="abc_ratingbar_small_material" id="0x7f07003e" />
+    <public type="drawable" name="abc_scrubber_control_off_mtrl_alpha" id="0x7f07003f" />
+    <public type="drawable" name="abc_scrubber_control_to_pressed_mtrl_000" id="0x7f070040" />
+    <public type="drawable" name="abc_scrubber_control_to_pressed_mtrl_005" id="0x7f070041" />
+    <public type="drawable" name="abc_scrubber_primary_mtrl_alpha" id="0x7f070042" />
+    <public type="drawable" name="abc_scrubber_track_mtrl_alpha" id="0x7f070043" />
     <public type="drawable" name="abc_seekbar_thumb_material" id="0x7f070044" />
     <public type="drawable" name="abc_seekbar_tick_mark_material" id="0x7f070045" />
     <public type="drawable" name="abc_seekbar_track_material" id="0x7f070046" />
+    <public type="drawable" name="abc_spinner_mtrl_am_alpha" id="0x7f070047" />
     <public type="drawable" name="abc_spinner_textfield_background_material" id="0x7f070048" />
     <public type="drawable" name="abc_switch_thumb_material" id="0x7f070049" />
+    <public type="drawable" name="abc_switch_track_mtrl_alpha" id="0x7f07004a" />
     <public type="drawable" name="abc_tab_indicator_material" id="0x7f07004b" />
+    <public type="drawable" name="abc_tab_indicator_mtrl_alpha" id="0x7f07004c" />
     <public type="drawable" name="abc_text_cursor_material" id="0x7f07004d" />
+    <public type="drawable" name="abc_text_select_handle_left_mtrl_dark" id="0x7f07004e" />
+    <public type="drawable" name="abc_text_select_handle_left_mtrl_light" id="0x7f07004f" />
+    <public type="drawable" name="abc_text_select_handle_middle_mtrl_dark" id="0x7f070050" />
+    <public type="drawable" name="abc_text_select_handle_middle_mtrl_light" id="0x7f070051" />
+    <public type="drawable" name="abc_text_select_handle_right_mtrl_dark" id="0x7f070052" />
+    <public type="drawable" name="abc_text_select_handle_right_mtrl_light" id="0x7f070053" />
+    <public type="drawable" name="abc_textfield_activated_mtrl_alpha" id="0x7f070054" />
+    <public type="drawable" name="abc_textfield_default_mtrl_alpha" id="0x7f070055" />
+    <public type="drawable" name="abc_textfield_search_activated_mtrl_alpha" id="0x7f070056" />
+    <public type="drawable" name="abc_textfield_search_default_mtrl_alpha" id="0x7f070057" />
     <public type="drawable" name="abc_textfield_search_material" id="0x7f070058" />
     <public type="drawable" name="abc_vector_test" id="0x7f070059" />
     <public type="drawable" name="about_icon" id="0x7f07005a" />
     <public type="drawable" name="about_icon_2" id="0x7f07005b" />
+    <public type="drawable" name="about_icon_grey" id="0x7f07005c" />
     <public type="drawable" name="accept_friend_request" id="0x7f07005d" />
     <public type="drawable" name="accept_friend_request_pre_lolipop" id="0x7f07005e" />
     <public type="drawable" name="activity_start_tab_indicator_default" id="0x7f07005f" />
     <public type="drawable" name="activity_start_tab_indicator_selected" id="0x7f070060" />
     <public type="drawable" name="activity_start_tab_selector" id="0x7f070061" />
+    <public type="drawable" name="avd_hide_password" id="0x7f070062" />
+    <public type="drawable" name="avd_show_password" id="0x7f070063" />
+    <public type="drawable" name="back_arrow_sign_up" id="0x7f070064" />
     <public type="drawable" name="background_row_button" id="0x7f070065" />
     <public type="drawable" name="badge_circle" id="0x7f070066" />
     <public type="drawable" name="chat_bubble_blue_ear_v2" id="0x7f070067" />
@@ -946,6 +1006,7 @@
     <public type="drawable" name="chat_join_game_button_down" id="0x7f07006d" />
     <public type="drawable" name="chat_join_game_button_up" id="0x7f07006e" />
     <public type="drawable" name="chat_join_game_image_border" id="0x7f07006f" />
+    <public type="drawable" name="chat_notification_reply" id="0x7f070070" />
     <public type="drawable" name="chat_send_button" id="0x7f070071" />
     <public type="drawable" name="chat_send_button_disabled" id="0x7f070072" />
     <public type="drawable" name="chat_send_button_down" id="0x7f070073" />
@@ -957,6 +1018,10 @@
     <public type="drawable" name="chat_white_button" id="0x7f070079" />
     <public type="drawable" name="chat_white_button_down" id="0x7f07007a" />
     <public type="drawable" name="chat_white_button_up" id="0x7f07007b" />
+    <public type="drawable" name="choose_adv_background" id="0x7f07007c" />
+    <public type="drawable" name="choose_adv_customize" id="0x7f07007d" />
+    <public type="drawable" name="choose_adv_nearby" id="0x7f07007e" />
+    <public type="drawable" name="choose_adv_vcontacts" id="0x7f07007f" />
     <public type="drawable" name="choose_your_adv_button_selector" id="0x7f070080" />
     <public type="drawable" name="circle_shape_blue" id="0x7f070081" />
     <public type="drawable" name="circle_shape_darkgray" id="0x7f070082" />
@@ -965,432 +1030,41 @@
     <public type="drawable" name="circle_shape_orange" id="0x7f070085" />
     <public type="drawable" name="circle_shape_red" id="0x7f070086" />
     <public type="drawable" name="circle_shape_white" id="0x7f070087" />
+    <public type="drawable" name="close_chat_rename" id="0x7f070088" />
+    <public type="drawable" name="common_full_open_on_phone" id="0x7f070089" />
     <public type="drawable" name="common_google_signin_btn_icon_dark" id="0x7f07008a" />
     <public type="drawable" name="common_google_signin_btn_icon_dark_focused" id="0x7f07008b" />
     <public type="drawable" name="common_google_signin_btn_icon_dark_normal" id="0x7f07008c" />
+    <public type="drawable" name="common_google_signin_btn_icon_dark_normal_background" id="0x7f07008d" />
     <public type="drawable" name="common_google_signin_btn_icon_disabled" id="0x7f07008e" />
     <public type="drawable" name="common_google_signin_btn_icon_light" id="0x7f07008f" />
     <public type="drawable" name="common_google_signin_btn_icon_light_focused" id="0x7f070090" />
     <public type="drawable" name="common_google_signin_btn_icon_light_normal" id="0x7f070091" />
+    <public type="drawable" name="common_google_signin_btn_icon_light_normal_background" id="0x7f070092" />
     <public type="drawable" name="common_google_signin_btn_text_dark" id="0x7f070093" />
     <public type="drawable" name="common_google_signin_btn_text_dark_focused" id="0x7f070094" />
     <public type="drawable" name="common_google_signin_btn_text_dark_normal" id="0x7f070095" />
+    <public type="drawable" name="common_google_signin_btn_text_dark_normal_background" id="0x7f070096" />
     <public type="drawable" name="common_google_signin_btn_text_disabled" id="0x7f070097" />
     <public type="drawable" name="common_google_signin_btn_text_light" id="0x7f070098" />
     <public type="drawable" name="common_google_signin_btn_text_light_focused" id="0x7f070099" />
     <public type="drawable" name="common_google_signin_btn_text_light_normal" id="0x7f07009a" />
+    <public type="drawable" name="common_google_signin_btn_text_light_normal_background" id="0x7f07009b" />
     <public type="drawable" name="contact_selected_button" id="0x7f07009c" />
     <public type="drawable" name="contact_selected_button_down" id="0x7f07009d" />
     <public type="drawable" name="contact_selected_button_up" id="0x7f07009e" />
     <public type="drawable" name="contact_selector" id="0x7f07009f" />
     <public type="drawable" name="contact_status_ring" id="0x7f0700a0" />
-    <public type="drawable" name="design_bottom_navigation_item_background" id="0x7f0700a3" />
-    <public type="drawable" name="design_fab_background" id="0x7f0700a4" />
-    <public type="drawable" name="design_password_eye" id="0x7f0700a7" />
-    <public type="drawable" name="design_snackbar_background" id="0x7f0700a8" />
-    <public type="drawable" name="edit_red_border" id="0x7f0700aa" />
-    <public type="drawable" name="empty_contact_icon" id="0x7f070701" />
-    <public type="drawable" name="empty_drawable" id="0x7f070702" />
-    <public type="drawable" name="gr_arrow_pointer" id="0x7f070706" />
-    <public type="drawable" name="home_bg_1" id="0x7f070708" />
-    <public type="drawable" name="home_bg_2" id="0x7f070709" />
-    <public type="drawable" name="home_bg_3" id="0x7f07070a" />
-    <public type="drawable" name="home_bg_4" id="0x7f07070b" />
-    <public type="drawable" name="home_bg_5" id="0x7f07070c" />
-    <public type="drawable" name="home_bg_6" id="0x7f07070d" />
-    <public type="drawable" name="ic_avatar_placement" id="0x7f07070f" />
-    <public type="drawable" name="ic_emoji_nature_light" id="0x7f070711" />
-    <public type="drawable" name="ic_emoji_objects_light" id="0x7f070714" />
-    <public type="drawable" name="ic_emoji_people_light" id="0x7f070717" />
-    <public type="drawable" name="ic_emoji_places_light" id="0x7f07071a" />
-    <public type="drawable" name="ic_emoji_recent_light" id="0x7f07071d" />
-    <public type="drawable" name="ic_emoji_symbols_light" id="0x7f070720" />
-    <public type="drawable" name="ic_launcher_background" id="0x7f070723" />
-    <public type="drawable" name="ic_notification" id="0x7f070727" />
-    <public type="drawable" name="ic_notification_2x" id="0x7f070728" />
-    <public type="drawable" name="ic_notification_on" id="0x7f070729" />
-    <public type="drawable" name="ic_notification_on_2x" id="0x7f07072a" />
-    <public type="drawable" name="icon_add" id="0x7f07072b" />
-    <public type="drawable" name="icon_autogenerate" id="0x7f07072c" />
-    <public type="drawable" name="icon_autogenerate_disabled" id="0x7f07072d" />
-    <public type="drawable" name="icon_back" id="0x7f070730" />
-    <public type="drawable" name="icon_check" id="0x7f07073b" />
-    <public type="drawable" name="icon_check_green" id="0x7f07073c" />
-    <public type="drawable" name="icon_close" id="0x7f07073d" />
-    <public type="drawable" name="icon_close_14x14" id="0x7f07073e" />
-    <public type="drawable" name="icon_close_black" id="0x7f07073f" />
-    <public type="drawable" name="icon_create_group" id="0x7f070740" />
-    <public type="drawable" name="icon_create_group_off" id="0x7f070741" />
-    <public type="drawable" name="icon_create_group_on" id="0x7f070742" />
-    <public type="drawable" name="icon_facebook_blue" id="0x7f070743" />
-    <public type="drawable" name="icon_facebook_white" id="0x7f070744" />
-    <public type="drawable" name="icon_female" id="0x7f070745" />
-    <public type="drawable" name="icon_female_on" id="0x7f070746" />
-    <public type="drawable" name="icon_flag" id="0x7f070747" />
-    <public type="drawable" name="icon_flag_on" id="0x7f070748" />
-    <public type="drawable" name="icon_flag_selector" id="0x7f070749" />
-    <public type="drawable" name="icon_logout" id="0x7f070755" />
-    <public type="drawable" name="icon_male" id="0x7f070756" />
-    <public type="drawable" name="icon_male_on" id="0x7f070757" />
-    <public type="drawable" name="icon_messages" id="0x7f070759" />
-    <public type="drawable" name="icon_messages_on" id="0x7f07075a" />
-    <public type="drawable" name="icon_next" id="0x7f07075f" />
-    <public type="drawable" name="icon_quit" id="0x7f070761" />
-    <public type="drawable" name="icon_quit_on" id="0x7f070762" />
-    <public type="drawable" name="icon_quit_selector" id="0x7f070763" />
-    <public type="drawable" name="icon_remove" id="0x7f070764" />
-    <public type="drawable" name="icon_remove_on" id="0x7f070765" />
-    <public type="drawable" name="icon_remove_selector" id="0x7f070766" />
-    <public type="drawable" name="icon_search_32x32" id="0x7f070768" />
-    <public type="drawable" name="icon_send" id="0x7f07076b" />
-    <public type="drawable" name="icon_send_on" id="0x7f07076c" />
-    <public type="drawable" name="icon_settings_off" id="0x7f07076e" />
-    <public type="drawable" name="icon_settings_on" id="0x7f07076f" />
-    <public type="drawable" name="icon_vr" id="0x7f070771" />
-    <public type="drawable" name="icon_warning" id="0x7f070772" />
-    <public type="drawable" name="ignore_friend_request" id="0x7f070773" />
-    <public type="drawable" name="ignore_friend_request_pre_lolipop" id="0x7f070774" />
-    <public type="drawable" name="img_landing_carousel_avatar" id="0x7f070775" />
-    <public type="drawable" name="img_landing_carousel_chat" id="0x7f070776" />
-    <public type="drawable" name="img_landing_carousel_game" id="0x7f070777" />
-    <public type="drawable" name="light_gradient" id="0x7f070779" />
-    <public type="drawable" name="more_events_button_background" id="0x7f07077a" />
-    <public type="drawable" name="more_events_button_focused" id="0x7f07077b" />
-    <public type="drawable" name="more_events_button_pressed" id="0x7f07077c" />
-    <public type="drawable" name="more_page_item_selector" id="0x7f07078a" />
-    <public type="drawable" name="more_square_background" id="0x7f07078b" />
-    <public type="drawable" name="navigation_empty_icon" id="0x7f07078e" />
-    <public type="drawable" name="nearby_main_icon_anim" id="0x7f07079b" />
-    <public type="drawable" name="nearby_rounded_error_view_background" id="0x7f0707a0" />
-    <public type="drawable" name="notification_bg" id="0x7f0707a3" />
-    <public type="drawable" name="notification_bg_low" id="0x7f0707a4" />
-    <public type="drawable" name="notification_icon" id="0x7f0707a9" />
-    <public type="drawable" name="notification_icon_background" id="0x7f0707aa" />
-    <public type="drawable" name="notification_stream_tooltip" id="0x7f0707ab" />
-    <public type="drawable" name="notification_template_icon_bg" id="0x7f0707ac" />
-    <public type="drawable" name="notification_template_icon_low_bg" id="0x7f0707ad" />
-    <public type="drawable" name="notification_tile_bg" id="0x7f0707ae" />
-    <public type="drawable" name="overlay_submit_button_disabled" id="0x7f0707ce" />
-    <public type="drawable" name="overlay_submit_button_enabled" id="0x7f0707cf" />
-    <public type="drawable" name="overlay_submit_button_selector" id="0x7f0707d0" />
-    <public type="drawable" name="phone_prefix_item_back" id="0x7f0707d2" />
-    <public type="drawable" name="progress_dot" id="0x7f0707d3" />
-    <public type="drawable" name="rbx_bg_card_shadow" id="0x7f0707d4" />
-    <public type="drawable" name="rbx_bg_card_shadow_blue" id="0x7f0707d5" />
-    <public type="drawable" name="rbx_bg_card_shadow_blue_light" id="0x7f0707d6" />
-    <public type="drawable" name="rbx_bg_card_shadow_red" id="0x7f0707d7" />
-    <public type="drawable" name="rbx_bg_flat_button_animated" id="0x7f0707d8" />
-    <public type="drawable" name="rbx_bg_flat_button_blue_dark" id="0x7f0707d9" />
-    <public type="drawable" name="rbx_bg_flat_button_blue_down" id="0x7f0707da" />
-    <public type="drawable" name="rbx_bg_flat_button_blue_up" id="0x7f0707db" />
-    <public type="drawable" name="rbx_bg_flat_button_circle" id="0x7f0707dc" />
-    <public type="drawable" name="rbx_bg_flat_button_gray_down" id="0x7f0707dd" />
-    <public type="drawable" name="rbx_bg_flat_button_gray_up" id="0x7f0707de" />
-    <public type="drawable" name="rbx_bg_flat_button_progress_blue_down" id="0x7f0707df" />
-    <public type="drawable" name="rbx_bg_flat_button_progress_blue_up" id="0x7f0707e0" />
-    <public type="drawable" name="rbx_bg_flat_button_progress_disabled" id="0x7f0707e1" />
-    <public type="drawable" name="rbx_bg_flat_button_progress_green_down" id="0x7f0707e2" />
-    <public type="drawable" name="rbx_bg_flat_button_progress_green_up" id="0x7f0707e3" />
-    <public type="drawable" name="rbx_bg_flat_button_red" id="0x7f0707e4" />
-    <public type="drawable" name="rbx_bg_flat_button_white_down" id="0x7f0707e5" />
-    <public type="drawable" name="rbx_bg_flat_button_white_up" id="0x7f0707e6" />
-    <public type="drawable" name="rbx_bg_flat_edittext" id="0x7f0707e7" />
-    <public type="drawable" name="rbx_bg_flat_edittext_error" id="0x7f0707e8" />
-    <public type="drawable" name="rbx_bg_flat_edittext_success" id="0x7f0707e9" />
-    <public type="drawable" name="rbx_bg_flat_square_corners_button_blue_down" id="0x7f0707ea" />
-    <public type="drawable" name="rbx_bg_flat_square_corners_button_blue_up" id="0x7f0707eb" />
-    <public type="drawable" name="rbx_bg_flat_square_corners_button_white_down" id="0x7f0707ec" />
-    <public type="drawable" name="rbx_bg_flat_square_corners_button_white_up" id="0x7f0707ed" />
-    <public type="drawable" name="rbx_bg_gender" id="0x7f0707ee" />
-    <public type="drawable" name="rbx_bg_gender_full" id="0x7f0707ef" />
-    <public type="drawable" name="rbx_bg_gender_full_error" id="0x7f0707f0" />
-    <public type="drawable" name="rbx_bg_gender_full_success" id="0x7f0707f1" />
-    <public type="drawable" name="rbx_bg_progress_btn_spinner" id="0x7f0707f2" />
-    <public type="drawable" name="rbx_bg_solid_white" id="0x7f0707f3" />
-    <public type="drawable" name="rbx_bg_spinner_outline" id="0x7f0707f4" />
-    <public type="drawable" name="rbx_drawable_flat_button_blue" id="0x7f0707f5" />
-    <public type="drawable" name="rbx_drawable_flat_button_blue_square_corners" id="0x7f0707f6" />
-    <public type="drawable" name="rbx_drawable_flat_button_gray" id="0x7f0707f7" />
-    <public type="drawable" name="rbx_drawable_flat_button_progress_blue" id="0x7f0707f8" />
-    <public type="drawable" name="rbx_drawable_flat_button_progress_green" id="0x7f0707f9" />
-    <public type="drawable" name="rbx_drawable_flat_button_white" id="0x7f0707fa" />
-    <public type="drawable" name="rbx_drawable_flat_button_white_square_corners" id="0x7f0707fb" />
-    <public type="drawable" name="rbx_spinner_loading_edittext" id="0x7f0707fc" />
-    <public type="drawable" name="rbx_spinner_splash" id="0x7f0707fd" />
-    <public type="drawable" name="resend_msg_button_selector" id="0x7f0707fe" />
-    <public type="drawable" name="right_arrow" id="0x7f0707ff" />
-    <public type="drawable" name="rounded_square_shape_blue" id="0x7f070801" />
-    <public type="drawable" name="rounded_square_shape_choose_your_adventure" id="0x7f070802" />
-    <public type="drawable" name="rounded_square_shape_pressed_choose_your_adventure" id="0x7f070803" />
-    <public type="drawable" name="shadow" id="0x7f070804" />
-    <public type="drawable" name="shadow_background" id="0x7f070805" />
-    <public type="drawable" name="shadow_background_pressed" id="0x7f070806" />
-    <public type="drawable" name="sign_up_checkmark" id="0x7f070808" />
-    <public type="drawable" name="sign_up_xmark" id="0x7f070809" />
-    <public type="drawable" name="symbol_chat_empty" id="0x7f07080c" />
-    <public type="drawable" name="symbol_friends" id="0x7f07080d" />
-    <public type="drawable" name="tab_icon_catalog" id="0x7f07080e" />
-    <public type="drawable" name="tab_icon_games" id="0x7f07080f" />
-    <public type="drawable" name="tab_icon_groups" id="0x7f070810" />
-    <public type="drawable" name="tab_icon_home" id="0x7f070811" />
-    <public type="drawable" name="tab_icon_inventory" id="0x7f070812" />
-    <public type="drawable" name="tab_icon_messages" id="0x7f070813" />
-    <public type="drawable" name="tab_icon_profile" id="0x7f070814" />
-    <public type="drawable" name="tab_indicator_black" id="0x7f070815" />
-    <public type="drawable" name="tab_indicator_blue" id="0x7f070816" />
-    <public type="drawable" name="tab_indicator_blue_dark" id="0x7f070817" />
-    <public type="drawable" name="tab_indicator_green" id="0x7f070818" />
-    <public type="drawable" name="tab_selector" id="0x7f070819" />
-    <public type="drawable" name="textfield_searchview_background" id="0x7f07081c" />
-    <public type="drawable" name="textfield_searchview_holo_light" id="0x7f07081d" />
-    <public type="drawable" name="tix_symbol2x" id="0x7f07081e" />
-    <public type="drawable" name="tooltip_frame_dark" id="0x7f07081f" />
-    <public type="drawable" name="tooltip_frame_light" id="0x7f070820" />
-    <public type="drawable" name="universal_friends_tab_selected" id="0x7f070841" />
-    <public type="drawable" name="universal_friends_tab_unselected" id="0x7f070842" />
-    <public type="drawable" name="white__square_background_rounded_corners" id="0x7f070843" />
-    <public type="drawable" name="white_button" id="0x7f070844" />
-    <public type="drawable" name="white_button_down" id="0x7f070845" />
-    <public type="drawable" name="white_button_drawable" id="0x7f070846" />
-    <public type="drawable" name="choose_adv_background" id="0x7f07007c" />
-    <public type="drawable" name="$avd_hide_password__0" id="0x7f070000" />
-    <public type="drawable" name="$avd_hide_password__1" id="0x7f070001" />
-    <public type="drawable" name="$avd_hide_password__2" id="0x7f070002" />
-    <public type="drawable" name="$avd_show_password__0" id="0x7f070003" />
-    <public type="drawable" name="$avd_show_password__1" id="0x7f070004" />
-    <public type="drawable" name="$avd_show_password__2" id="0x7f070005" />
-    <public type="drawable" name="abc_action_bar_item_background_material" id="0x7f070008" />
-    <public type="drawable" name="avd_hide_password" id="0x7f070062" />
-    <public type="drawable" name="avd_show_password" id="0x7f070063" />
-    <public type="drawable" name="notification_action_background" id="0x7f0707a2" />
-    <public type="drawable" name="abc_control_background_material" id="0x7f070017" />
-    <public type="drawable" name="$ic_launcher_foreground__0" id="0x7f070006" />
-    <public type="drawable" name="ic_launcher_foreground" id="0x7f070724" />
-    <public type="drawable" name="close_chat_rename" id="0x7f070088" />
-    <public type="drawable" name="game_icon" id="0x7f070703" />
-    <public type="drawable" name="icon_avatar" id="0x7f07072e" />
-    <public type="drawable" name="icon_avatar_on" id="0x7f07072f" />
-    <public type="drawable" name="icon_bc" id="0x7f070731" />
-    <public type="drawable" name="icon_catalog" id="0x7f070734" />
-    <public type="drawable" name="icon_catalog_on" id="0x7f070736" />
-    <public type="drawable" name="icon_chat" id="0x7f070738" />
-    <public type="drawable" name="icon_chat_on" id="0x7f07073a" />
-    <public type="drawable" name="icon_friends" id="0x7f07074c" />
-    <public type="drawable" name="icon_friends_on" id="0x7f07074d" />
-    <public type="drawable" name="icon_game" id="0x7f07074e" />
-    <public type="drawable" name="icon_game_on" id="0x7f07074f" />
-    <public type="drawable" name="icon_home" id="0x7f070752" />
-    <public type="drawable" name="icon_home_on" id="0x7f070753" />
-    <public type="drawable" name="icon_more2" id="0x7f07075b" />
-    <public type="drawable" name="icon_more2_notification" id="0x7f07075c" />
-    <public type="drawable" name="icon_more2_on" id="0x7f07075d" />
-    <public type="drawable" name="icon_more2_on_notification" id="0x7f07075e" />
-    <public type="drawable" name="icon_robux" id="0x7f070767" />
-    <public type="drawable" name="icon_search_white" id="0x7f07076a" />
-    <public type="drawable" name="msg_resend" id="0x7f07078c" />
-    <public type="drawable" name="msg_resend_on" id="0x7f07078d" />
-    <public type="drawable" name="nearby_context_menu_icon_close" id="0x7f07078f" />
-    <public type="drawable" name="nearby_context_menu_icon_profile" id="0x7f070790" />
-    <public type="drawable" name="nearby_friends_confetti" id="0x7f070792" />
-    <public type="drawable" name="nearby_main_icon_1" id="0x7f070793" />
-    <public type="drawable" name="nearby_main_icon_2" id="0x7f070794" />
-    <public type="drawable" name="nearby_main_icon_3" id="0x7f070795" />
-    <public type="drawable" name="nearby_main_icon_4" id="0x7f070796" />
-    <public type="drawable" name="nearby_main_icon_5" id="0x7f070797" />
-    <public type="drawable" name="nearby_main_icon_6" id="0x7f070798" />
-    <public type="drawable" name="nearby_main_icon_7" id="0x7f070799" />
-    <public type="drawable" name="nearby_main_icon_8" id="0x7f07079a" />
-    <public type="drawable" name="nearby_plus_sign_blue" id="0x7f07079c" />
-    <public type="drawable" name="nearby_plus_sign_gray" id="0x7f07079d" />
-    <public type="drawable" name="nearby_presentation" id="0x7f07079e" />
-    <public type="drawable" name="nearby_rainbow" id="0x7f07079f" />
-    <public type="drawable" name="abc_ab_share_pack_mtrl_alpha" id="0x7f070007" />
-    <public type="drawable" name="abc_btn_check_to_on_mtrl_000" id="0x7f07000b" />
-    <public type="drawable" name="abc_btn_check_to_on_mtrl_015" id="0x7f07000c" />
-    <public type="drawable" name="abc_btn_radio_to_on_mtrl_000" id="0x7f070010" />
-    <public type="drawable" name="abc_btn_radio_to_on_mtrl_015" id="0x7f070011" />
-    <public type="drawable" name="abc_btn_switch_to_on_mtrl_00001" id="0x7f070012" />
-    <public type="drawable" name="abc_btn_switch_to_on_mtrl_00012" id="0x7f070013" />
-    <public type="drawable" name="abc_cab_background_top_mtrl_alpha" id="0x7f070016" />
-    <public type="drawable" name="abc_ic_commit_search_api_mtrl_alpha" id="0x7f07001d" />
-    <public type="drawable" name="abc_ic_menu_copy_mtrl_am_alpha" id="0x7f07001f" />
-    <public type="drawable" name="abc_ic_menu_cut_mtrl_alpha" id="0x7f070020" />
-    <public type="drawable" name="abc_ic_menu_paste_mtrl_am_alpha" id="0x7f070022" />
-    <public type="drawable" name="abc_ic_menu_selectall_mtrl_alpha" id="0x7f070023" />
-    <public type="drawable" name="abc_ic_menu_share_mtrl_alpha" id="0x7f070024" />
-    <public type="drawable" name="abc_ic_star_black_16dp" id="0x7f070026" />
-    <public type="drawable" name="abc_ic_star_black_36dp" id="0x7f070027" />
-    <public type="drawable" name="abc_ic_star_black_48dp" id="0x7f070028" />
-    <public type="drawable" name="abc_ic_star_half_black_16dp" id="0x7f070029" />
-    <public type="drawable" name="abc_ic_star_half_black_36dp" id="0x7f07002a" />
-    <public type="drawable" name="abc_ic_star_half_black_48dp" id="0x7f07002b" />
-    <public type="drawable" name="abc_list_divider_mtrl_alpha" id="0x7f07002f" />
-    <public type="drawable" name="abc_list_focused_holo" id="0x7f070030" />
-    <public type="drawable" name="abc_list_longpressed_holo" id="0x7f070031" />
-    <public type="drawable" name="abc_list_pressed_holo_dark" id="0x7f070032" />
-    <public type="drawable" name="abc_list_pressed_holo_light" id="0x7f070033" />
-    <public type="drawable" name="abc_list_selector_disabled_holo_dark" id="0x7f070036" />
-    <public type="drawable" name="abc_list_selector_disabled_holo_light" id="0x7f070037" />
-    <public type="drawable" name="abc_menu_hardkey_panel_mtrl_mult" id="0x7f07003a" />
-    <public type="drawable" name="abc_popup_background_mtrl_mult" id="0x7f07003b" />
-    <public type="drawable" name="abc_scrubber_control_off_mtrl_alpha" id="0x7f07003f" />
-    <public type="drawable" name="abc_scrubber_control_to_pressed_mtrl_000" id="0x7f070040" />
-    <public type="drawable" name="abc_scrubber_control_to_pressed_mtrl_005" id="0x7f070041" />
-    <public type="drawable" name="abc_scrubber_primary_mtrl_alpha" id="0x7f070042" />
-    <public type="drawable" name="abc_scrubber_track_mtrl_alpha" id="0x7f070043" />
-    <public type="drawable" name="abc_spinner_mtrl_am_alpha" id="0x7f070047" />
-    <public type="drawable" name="abc_switch_track_mtrl_alpha" id="0x7f07004a" />
-    <public type="drawable" name="abc_tab_indicator_mtrl_alpha" id="0x7f07004c" />
-    <public type="drawable" name="abc_text_select_handle_left_mtrl_dark" id="0x7f07004e" />
-    <public type="drawable" name="abc_text_select_handle_left_mtrl_light" id="0x7f07004f" />
-    <public type="drawable" name="abc_text_select_handle_middle_mtrl_dark" id="0x7f070050" />
-    <public type="drawable" name="abc_text_select_handle_middle_mtrl_light" id="0x7f070051" />
-    <public type="drawable" name="abc_text_select_handle_right_mtrl_dark" id="0x7f070052" />
-    <public type="drawable" name="abc_text_select_handle_right_mtrl_light" id="0x7f070053" />
-    <public type="drawable" name="abc_textfield_activated_mtrl_alpha" id="0x7f070054" />
-    <public type="drawable" name="abc_textfield_default_mtrl_alpha" id="0x7f070055" />
-    <public type="drawable" name="abc_textfield_search_activated_mtrl_alpha" id="0x7f070056" />
-    <public type="drawable" name="abc_textfield_search_default_mtrl_alpha" id="0x7f070057" />
-    <public type="drawable" name="about_icon_grey" id="0x7f07005c" />
-    <public type="drawable" name="back_arrow_sign_up" id="0x7f070064" />
-    <public type="drawable" name="chat_notification_reply" id="0x7f070070" />
-    <public type="drawable" name="choose_adv_customize" id="0x7f07007d" />
-    <public type="drawable" name="choose_adv_nearby" id="0x7f07007e" />
-    <public type="drawable" name="choose_adv_vcontacts" id="0x7f07007f" />
-    <public type="drawable" name="common_google_signin_btn_icon_dark_normal_background" id="0x7f07008d" />
-    <public type="drawable" name="common_google_signin_btn_icon_light_normal_background" id="0x7f070092" />
-    <public type="drawable" name="common_google_signin_btn_text_dark_normal_background" id="0x7f070096" />
-    <public type="drawable" name="common_google_signin_btn_text_light_normal_background" id="0x7f07009b" />
     <public type="drawable" name="contacts_tab_main_icon" id="0x7f0700a1" />
     <public type="drawable" name="contactsheader" id="0x7f0700a2" />
+    <public type="drawable" name="design_bottom_navigation_item_background" id="0x7f0700a3" />
+    <public type="drawable" name="design_fab_background" id="0x7f0700a4" />
     <public type="drawable" name="design_ic_visibility" id="0x7f0700a5" />
     <public type="drawable" name="design_ic_visibility_off" id="0x7f0700a6" />
+    <public type="drawable" name="design_password_eye" id="0x7f0700a7" />
+    <public type="drawable" name="design_snackbar_background" id="0x7f0700a8" />
     <public type="drawable" name="dialog_full_holo_light" id="0x7f0700a9" />
-    <public type="drawable" name="googleg_disabled_color_18" id="0x7f070704" />
-    <public type="drawable" name="googleg_standard_color_18" id="0x7f070705" />
-    <public type="drawable" name="hide_password" id="0x7f070707" />
-    <public type="drawable" name="ic_action_search" id="0x7f07070e" />
-    <public type="drawable" name="ic_clear" id="0x7f070710" />
-    <public type="drawable" name="ic_emoji_nature_light_activated" id="0x7f070712" />
-    <public type="drawable" name="ic_emoji_nature_light_normal" id="0x7f070713" />
-    <public type="drawable" name="ic_emoji_objects_light_activated" id="0x7f070715" />
-    <public type="drawable" name="ic_emoji_objects_light_normal" id="0x7f070716" />
-    <public type="drawable" name="ic_emoji_people_light_activated" id="0x7f070718" />
-    <public type="drawable" name="ic_emoji_people_light_normal" id="0x7f070719" />
-    <public type="drawable" name="ic_emoji_places_light_activated" id="0x7f07071b" />
-    <public type="drawable" name="ic_emoji_places_light_normal" id="0x7f07071c" />
-    <public type="drawable" name="ic_emoji_recent_light_activated" id="0x7f07071e" />
-    <public type="drawable" name="ic_emoji_recent_light_normal" id="0x7f07071f" />
-    <public type="drawable" name="ic_emoji_symbols_light_activated" id="0x7f070721" />
-    <public type="drawable" name="ic_emoji_symbols_light_normal" id="0x7f070722" />
-    <public type="drawable" name="ic_launcher_transparent" id="0x7f070725" />
-    <public type="drawable" name="ic_login_close" id="0x7f070726" />
-    <public type="drawable" name="icon_bc_more" id="0x7f070732" />
-    <public type="drawable" name="icon_blog_more" id="0x7f070733" />
-    <public type="drawable" name="icon_catalog_more" id="0x7f070735" />
-    <public type="drawable" name="icon_character_more" id="0x7f070737" />
-    <public type="drawable" name="icon_chat_more" id="0x7f070739" />
-    <public type="drawable" name="icon_forum_more" id="0x7f07074a" />
-    <public type="drawable" name="icon_friend_more" id="0x7f07074b" />
-    <public type="drawable" name="icon_group_more" id="0x7f070750" />
-    <public type="drawable" name="icon_help_more" id="0x7f070751" />
-    <public type="drawable" name="icon_inventory_more" id="0x7f070754" />
-    <public type="drawable" name="icon_message_more" id="0x7f070758" />
-    <public type="drawable" name="icon_profile_more" id="0x7f070760" />
-    <public type="drawable" name="icon_search_black" id="0x7f070769" />
-    <public type="drawable" name="icon_setting_more" id="0x7f07076d" />
-    <public type="drawable" name="icon_trade_more" id="0x7f070770" />
-    <public type="drawable" name="keyboard_background_holo" id="0x7f070778" />
-    <public type="drawable" name="more_page_icon_blog" id="0x7f07077d" />
-    <public type="drawable" name="more_page_icon_builders_club" id="0x7f07077e" />
-    <public type="drawable" name="more_page_icon_catalog" id="0x7f07077f" />
-    <public type="drawable" name="more_page_icon_company" id="0x7f070780" />
-    <public type="drawable" name="more_page_icon_create" id="0x7f070781" />
-    <public type="drawable" name="more_page_icon_events" id="0x7f070782" />
-    <public type="drawable" name="more_page_icon_friends" id="0x7f070783" />
-    <public type="drawable" name="more_page_icon_groups" id="0x7f070784" />
-    <public type="drawable" name="more_page_icon_help" id="0x7f070785" />
-    <public type="drawable" name="more_page_icon_inventory" id="0x7f070786" />
-    <public type="drawable" name="more_page_icon_messages" id="0x7f070787" />
-    <public type="drawable" name="more_page_icon_profile" id="0x7f070788" />
-    <public type="drawable" name="more_page_icon_settings" id="0x7f070789" />
-    <public type="drawable" name="nearby_default_thumbnail" id="0x7f070791" />
-    <public type="drawable" name="nearby_tab_main_icon" id="0x7f0707a1" />
-    <public type="drawable" name="notification_bg_low_normal" id="0x7f0707a5" />
-    <public type="drawable" name="notification_bg_low_pressed" id="0x7f0707a6" />
-    <public type="drawable" name="notification_bg_normal" id="0x7f0707a7" />
-    <public type="drawable" name="notification_bg_normal_pressed" id="0x7f0707a8" />
-    <public type="drawable" name="notify_panel_notification_icon_bg" id="0x7f0707af" />
-    <public type="drawable" name="orca_attach_camera_normal" id="0x7f0707b0" />
-    <public type="drawable" name="orca_attach_camera_pressed" id="0x7f0707b1" />
-    <public type="drawable" name="orca_attach_location_normal" id="0x7f0707b2" />
-    <public type="drawable" name="orca_attach_location_pressed" id="0x7f0707b3" />
-    <public type="drawable" name="orca_attach_photo_normal" id="0x7f0707b4" />
-    <public type="drawable" name="orca_attach_photo_pressed" id="0x7f0707b5" />
-    <public type="drawable" name="orca_attachments_arrow" id="0x7f0707b6" />
-    <public type="drawable" name="orca_attachments_arrow_reversed" id="0x7f0707b7" />
-    <public type="drawable" name="orca_composer_divider_horizontal" id="0x7f0707b8" />
-    <public type="drawable" name="orca_composer_divider_vertical" id="0x7f0707b9" />
-    <public type="drawable" name="orca_composer_popup_active_normal" id="0x7f0707ba" />
-    <public type="drawable" name="orca_composer_popup_active_pressed" id="0x7f0707bb" />
-    <public type="drawable" name="orca_composer_popup_normal" id="0x7f0707bc" />
-    <public type="drawable" name="orca_composer_popup_pressed" id="0x7f0707bd" />
-    <public type="drawable" name="orca_composer_tab" id="0x7f0707be" />
-    <public type="drawable" name="orca_composer_tab_active" id="0x7f0707bf" />
-    <public type="drawable" name="orca_composer_tab_dark" id="0x7f0707c0" />
-    <public type="drawable" name="orca_composer_tab_pressed" id="0x7f0707c1" />
-    <public type="drawable" name="orca_composer_top_divider" id="0x7f0707c2" />
-    <public type="drawable" name="orca_emoji_backspace_back_normal" id="0x7f0707c3" />
-    <public type="drawable" name="orca_emoji_backspace_front_normal" id="0x7f0707c4" />
-    <public type="drawable" name="orca_emoji_backspace_front_pressed" id="0x7f0707c5" />
-    <public type="drawable" name="orca_emoji_category_cars" id="0x7f0707c6" />
-    <public type="drawable" name="orca_emoji_category_nature" id="0x7f0707c7" />
-    <public type="drawable" name="orca_emoji_category_objects" id="0x7f0707c8" />
-    <public type="drawable" name="orca_emoji_category_people" id="0x7f0707c9" />
-    <public type="drawable" name="orca_emoji_category_punctuation" id="0x7f0707ca" />
-    <public type="drawable" name="orca_emoji_more_back_normal" id="0x7f0707cb" />
-    <public type="drawable" name="orca_emoji_more_front_normal" id="0x7f0707cc" />
-    <public type="drawable" name="orca_emoji_more_front_pressed" id="0x7f0707cd" />
-    <public type="drawable" name="pending_requests_tab_main_icon" id="0x7f0707d1" />
-    <public type="drawable" name="show_password" id="0x7f070807" />
-    <public type="drawable" name="status_premium_small_light" id="0x7f07080a" />
-    <public type="drawable" name="sym_keyboard_delete_holo_dark" id="0x7f07080b" />
-    <public type="drawable" name="textfield_search_selected_holo_light" id="0x7f07081b" />
-    <public type="drawable" name="topbar_ic_back" id="0x7f070821" />
-    <public type="drawable" name="topbar_ic_back_dark" id="0x7f070822" />
-    <public type="drawable" name="topbar_ic_back_light" id="0x7f070823" />
-    <public type="drawable" name="topbar_ic_clear_20x20" id="0x7f070824" />
-    <public type="drawable" name="topbar_ic_clear_20x20_dark" id="0x7f070825" />
-    <public type="drawable" name="topbar_ic_clear_20x20_light" id="0x7f070826" />
-    <public type="drawable" name="topbar_ic_close" id="0x7f070827" />
-    <public type="drawable" name="topbar_ic_close_20x20" id="0x7f070828" />
-    <public type="drawable" name="topbar_ic_close_20x20_dark" id="0x7f070829" />
-    <public type="drawable" name="topbar_ic_close_20x20_light" id="0x7f07082a" />
-    <public type="drawable" name="topbar_ic_close_dark" id="0x7f07082b" />
-    <public type="drawable" name="topbar_ic_close_light" id="0x7f07082c" />
-    <public type="drawable" name="topbar_ic_compose" id="0x7f07082d" />
-    <public type="drawable" name="topbar_ic_compose_dark" id="0x7f07082e" />
-    <public type="drawable" name="topbar_ic_compose_light" id="0x7f07082f" />
-    <public type="drawable" name="topbar_ic_gear" id="0x7f070830" />
-    <public type="drawable" name="topbar_ic_gear_dark" id="0x7f070831" />
-    <public type="drawable" name="topbar_ic_gear_light" id="0x7f070832" />
-    <public type="drawable" name="topbar_ic_info" id="0x7f070833" />
-    <public type="drawable" name="topbar_ic_info_dark" id="0x7f070834" />
-    <public type="drawable" name="topbar_ic_info_light" id="0x7f070835" />
-    <public type="drawable" name="topbar_ic_notification" id="0x7f070836" />
-    <public type="drawable" name="topbar_ic_notification_dark" id="0x7f070837" />
-    <public type="drawable" name="topbar_ic_notification_light" id="0x7f070838" />
-    <public type="drawable" name="topbar_ic_robux" id="0x7f070839" />
-    <public type="drawable" name="topbar_ic_robux_dark" id="0x7f07083a" />
-    <public type="drawable" name="topbar_ic_robux_light" id="0x7f07083b" />
-    <public type="drawable" name="topbar_ic_search" id="0x7f07083c" />
-    <public type="drawable" name="topbar_ic_search_dark" id="0x7f07083d" />
-    <public type="drawable" name="topbar_ic_search_light" id="0x7f07083e" />
-    <public type="drawable" name="two_step_verification_logo_email" id="0x7f07083f" />
-    <public type="drawable" name="two_step_verification_logo_sms" id="0x7f070840" />
-    <public type="drawable" name="common_full_open_on_phone" id="0x7f070089" />
-    <public type="drawable" name="roblox_logo" id="0x7f070800" />
-    <public type="drawable" name="textfield_search_default_holo_light" id="0x7f07081a" />
+    <public type="drawable" name="edit_red_border" id="0x7f0700aa" />
     <public type="drawable" name="emoji_0023" id="0x7f0700ab" />
     <public type="drawable" name="emoji_002a_20e3" id="0x7f0700ac" />
     <public type="drawable" name="emoji_0030" id="0x7f0700ad" />
@@ -3013,6 +2687,332 @@
     <public type="drawable" name="emoji_3297" id="0x7f0706fe" />
     <public type="drawable" name="emoji_3299" id="0x7f0706ff" />
     <public type="drawable" name="emoji_871" id="0x7f070700" />
+    <public type="drawable" name="empty_contact_icon" id="0x7f070701" />
+    <public type="drawable" name="empty_drawable" id="0x7f070702" />
+    <public type="drawable" name="game_icon" id="0x7f070703" />
+    <public type="drawable" name="googleg_disabled_color_18" id="0x7f070704" />
+    <public type="drawable" name="googleg_standard_color_18" id="0x7f070705" />
+    <public type="drawable" name="gr_arrow_pointer" id="0x7f070706" />
+    <public type="drawable" name="hide_password" id="0x7f070707" />
+    <public type="drawable" name="home_bg_1" id="0x7f070708" />
+    <public type="drawable" name="home_bg_2" id="0x7f070709" />
+    <public type="drawable" name="home_bg_3" id="0x7f07070a" />
+    <public type="drawable" name="home_bg_4" id="0x7f07070b" />
+    <public type="drawable" name="home_bg_5" id="0x7f07070c" />
+    <public type="drawable" name="home_bg_6" id="0x7f07070d" />
+    <public type="drawable" name="ic_action_search" id="0x7f07070e" />
+    <public type="drawable" name="ic_avatar_placement" id="0x7f07070f" />
+    <public type="drawable" name="ic_clear" id="0x7f070710" />
+    <public type="drawable" name="ic_emoji_nature_light" id="0x7f070711" />
+    <public type="drawable" name="ic_emoji_nature_light_activated" id="0x7f070712" />
+    <public type="drawable" name="ic_emoji_nature_light_normal" id="0x7f070713" />
+    <public type="drawable" name="ic_emoji_objects_light" id="0x7f070714" />
+    <public type="drawable" name="ic_emoji_objects_light_activated" id="0x7f070715" />
+    <public type="drawable" name="ic_emoji_objects_light_normal" id="0x7f070716" />
+    <public type="drawable" name="ic_emoji_people_light" id="0x7f070717" />
+    <public type="drawable" name="ic_emoji_people_light_activated" id="0x7f070718" />
+    <public type="drawable" name="ic_emoji_people_light_normal" id="0x7f070719" />
+    <public type="drawable" name="ic_emoji_places_light" id="0x7f07071a" />
+    <public type="drawable" name="ic_emoji_places_light_activated" id="0x7f07071b" />
+    <public type="drawable" name="ic_emoji_places_light_normal" id="0x7f07071c" />
+    <public type="drawable" name="ic_emoji_recent_light" id="0x7f07071d" />
+    <public type="drawable" name="ic_emoji_recent_light_activated" id="0x7f07071e" />
+    <public type="drawable" name="ic_emoji_recent_light_normal" id="0x7f07071f" />
+    <public type="drawable" name="ic_emoji_symbols_light" id="0x7f070720" />
+    <public type="drawable" name="ic_emoji_symbols_light_activated" id="0x7f070721" />
+    <public type="drawable" name="ic_emoji_symbols_light_normal" id="0x7f070722" />
+    <public type="drawable" name="ic_launcher_background" id="0x7f070723" />
+    <public type="drawable" name="ic_launcher_foreground" id="0x7f070724" />
+    <public type="drawable" name="ic_launcher_transparent" id="0x7f070725" />
+    <public type="drawable" name="ic_login_close" id="0x7f070726" />
+    <public type="drawable" name="ic_notification" id="0x7f070727" />
+    <public type="drawable" name="ic_notification_2x" id="0x7f070728" />
+    <public type="drawable" name="ic_notification_on" id="0x7f070729" />
+    <public type="drawable" name="ic_notification_on_2x" id="0x7f07072a" />
+    <public type="drawable" name="icon_add" id="0x7f07072b" />
+    <public type="drawable" name="icon_autogenerate" id="0x7f07072c" />
+    <public type="drawable" name="icon_autogenerate_disabled" id="0x7f07072d" />
+    <public type="drawable" name="icon_avatar" id="0x7f07072e" />
+    <public type="drawable" name="icon_avatar_on" id="0x7f07072f" />
+    <public type="drawable" name="icon_back" id="0x7f070730" />
+    <public type="drawable" name="icon_bc" id="0x7f070731" />
+    <public type="drawable" name="icon_bc_more" id="0x7f070732" />
+    <public type="drawable" name="icon_blog_more" id="0x7f070733" />
+    <public type="drawable" name="icon_catalog" id="0x7f070734" />
+    <public type="drawable" name="icon_catalog_more" id="0x7f070735" />
+    <public type="drawable" name="icon_catalog_on" id="0x7f070736" />
+    <public type="drawable" name="icon_character_more" id="0x7f070737" />
+    <public type="drawable" name="icon_chat" id="0x7f070738" />
+    <public type="drawable" name="icon_chat_more" id="0x7f070739" />
+    <public type="drawable" name="icon_chat_on" id="0x7f07073a" />
+    <public type="drawable" name="icon_check" id="0x7f07073b" />
+    <public type="drawable" name="icon_check_green" id="0x7f07073c" />
+    <public type="drawable" name="icon_close" id="0x7f07073d" />
+    <public type="drawable" name="icon_close_14x14" id="0x7f07073e" />
+    <public type="drawable" name="icon_close_black" id="0x7f07073f" />
+    <public type="drawable" name="icon_create_group" id="0x7f070740" />
+    <public type="drawable" name="icon_create_group_off" id="0x7f070741" />
+    <public type="drawable" name="icon_create_group_on" id="0x7f070742" />
+    <public type="drawable" name="icon_facebook_blue" id="0x7f070743" />
+    <public type="drawable" name="icon_facebook_white" id="0x7f070744" />
+    <public type="drawable" name="icon_female" id="0x7f070745" />
+    <public type="drawable" name="icon_female_on" id="0x7f070746" />
+    <public type="drawable" name="icon_flag" id="0x7f070747" />
+    <public type="drawable" name="icon_flag_on" id="0x7f070748" />
+    <public type="drawable" name="icon_flag_selector" id="0x7f070749" />
+    <public type="drawable" name="icon_forum_more" id="0x7f07074a" />
+    <public type="drawable" name="icon_friend_more" id="0x7f07074b" />
+    <public type="drawable" name="icon_friends" id="0x7f07074c" />
+    <public type="drawable" name="icon_friends_on" id="0x7f07074d" />
+    <public type="drawable" name="icon_game" id="0x7f07074e" />
+    <public type="drawable" name="icon_game_on" id="0x7f07074f" />
+    <public type="drawable" name="icon_group_more" id="0x7f070750" />
+    <public type="drawable" name="icon_help_more" id="0x7f070751" />
+    <public type="drawable" name="icon_home" id="0x7f070752" />
+    <public type="drawable" name="icon_home_on" id="0x7f070753" />
+    <public type="drawable" name="icon_inventory_more" id="0x7f070754" />
+    <public type="drawable" name="icon_logout" id="0x7f070755" />
+    <public type="drawable" name="icon_male" id="0x7f070756" />
+    <public type="drawable" name="icon_male_on" id="0x7f070757" />
+    <public type="drawable" name="icon_message_more" id="0x7f070758" />
+    <public type="drawable" name="icon_messages" id="0x7f070759" />
+    <public type="drawable" name="icon_messages_on" id="0x7f07075a" />
+    <public type="drawable" name="icon_more2" id="0x7f07075b" />
+    <public type="drawable" name="icon_more2_notification" id="0x7f07075c" />
+    <public type="drawable" name="icon_more2_on" id="0x7f07075d" />
+    <public type="drawable" name="icon_more2_on_notification" id="0x7f07075e" />
+    <public type="drawable" name="icon_next" id="0x7f07075f" />
+    <public type="drawable" name="icon_profile_more" id="0x7f070760" />
+    <public type="drawable" name="icon_quit" id="0x7f070761" />
+    <public type="drawable" name="icon_quit_on" id="0x7f070762" />
+    <public type="drawable" name="icon_quit_selector" id="0x7f070763" />
+    <public type="drawable" name="icon_remove" id="0x7f070764" />
+    <public type="drawable" name="icon_remove_on" id="0x7f070765" />
+    <public type="drawable" name="icon_remove_selector" id="0x7f070766" />
+    <public type="drawable" name="icon_robux" id="0x7f070767" />
+    <public type="drawable" name="icon_search_32x32" id="0x7f070768" />
+    <public type="drawable" name="icon_search_black" id="0x7f070769" />
+    <public type="drawable" name="icon_search_white" id="0x7f07076a" />
+    <public type="drawable" name="icon_send" id="0x7f07076b" />
+    <public type="drawable" name="icon_send_on" id="0x7f07076c" />
+    <public type="drawable" name="icon_setting_more" id="0x7f07076d" />
+    <public type="drawable" name="icon_settings_off" id="0x7f07076e" />
+    <public type="drawable" name="icon_settings_on" id="0x7f07076f" />
+    <public type="drawable" name="icon_trade_more" id="0x7f070770" />
+    <public type="drawable" name="icon_vr" id="0x7f070771" />
+    <public type="drawable" name="icon_warning" id="0x7f070772" />
+    <public type="drawable" name="ignore_friend_request" id="0x7f070773" />
+    <public type="drawable" name="ignore_friend_request_pre_lolipop" id="0x7f070774" />
+    <public type="drawable" name="img_landing_carousel_avatar" id="0x7f070775" />
+    <public type="drawable" name="img_landing_carousel_chat" id="0x7f070776" />
+    <public type="drawable" name="img_landing_carousel_game" id="0x7f070777" />
+    <public type="drawable" name="keyboard_background_holo" id="0x7f070778" />
+    <public type="drawable" name="light_gradient" id="0x7f070779" />
+    <public type="drawable" name="more_events_button_background" id="0x7f07077a" />
+    <public type="drawable" name="more_events_button_focused" id="0x7f07077b" />
+    <public type="drawable" name="more_events_button_pressed" id="0x7f07077c" />
+    <public type="drawable" name="more_page_icon_blog" id="0x7f07077d" />
+    <public type="drawable" name="more_page_icon_builders_club" id="0x7f07077e" />
+    <public type="drawable" name="more_page_icon_catalog" id="0x7f07077f" />
+    <public type="drawable" name="more_page_icon_company" id="0x7f070780" />
+    <public type="drawable" name="more_page_icon_create" id="0x7f070781" />
+    <public type="drawable" name="more_page_icon_events" id="0x7f070782" />
+    <public type="drawable" name="more_page_icon_friends" id="0x7f070783" />
+    <public type="drawable" name="more_page_icon_groups" id="0x7f070784" />
+    <public type="drawable" name="more_page_icon_help" id="0x7f070785" />
+    <public type="drawable" name="more_page_icon_inventory" id="0x7f070786" />
+    <public type="drawable" name="more_page_icon_messages" id="0x7f070787" />
+    <public type="drawable" name="more_page_icon_profile" id="0x7f070788" />
+    <public type="drawable" name="more_page_icon_settings" id="0x7f070789" />
+    <public type="drawable" name="more_page_item_selector" id="0x7f07078a" />
+    <public type="drawable" name="more_square_background" id="0x7f07078b" />
+    <public type="drawable" name="msg_resend" id="0x7f07078c" />
+    <public type="drawable" name="msg_resend_on" id="0x7f07078d" />
+    <public type="drawable" name="navigation_empty_icon" id="0x7f07078e" />
+    <public type="drawable" name="nearby_context_menu_icon_close" id="0x7f07078f" />
+    <public type="drawable" name="nearby_context_menu_icon_profile" id="0x7f070790" />
+    <public type="drawable" name="nearby_default_thumbnail" id="0x7f070791" />
+    <public type="drawable" name="nearby_friends_confetti" id="0x7f070792" />
+    <public type="drawable" name="nearby_main_icon_1" id="0x7f070793" />
+    <public type="drawable" name="nearby_main_icon_2" id="0x7f070794" />
+    <public type="drawable" name="nearby_main_icon_3" id="0x7f070795" />
+    <public type="drawable" name="nearby_main_icon_4" id="0x7f070796" />
+    <public type="drawable" name="nearby_main_icon_5" id="0x7f070797" />
+    <public type="drawable" name="nearby_main_icon_6" id="0x7f070798" />
+    <public type="drawable" name="nearby_main_icon_7" id="0x7f070799" />
+    <public type="drawable" name="nearby_main_icon_8" id="0x7f07079a" />
+    <public type="drawable" name="nearby_main_icon_anim" id="0x7f07079b" />
+    <public type="drawable" name="nearby_plus_sign_blue" id="0x7f07079c" />
+    <public type="drawable" name="nearby_plus_sign_gray" id="0x7f07079d" />
+    <public type="drawable" name="nearby_presentation" id="0x7f07079e" />
+    <public type="drawable" name="nearby_rainbow" id="0x7f07079f" />
+    <public type="drawable" name="nearby_rounded_error_view_background" id="0x7f0707a0" />
+    <public type="drawable" name="nearby_tab_main_icon" id="0x7f0707a1" />
+    <public type="drawable" name="notification_action_background" id="0x7f0707a2" />
+    <public type="drawable" name="notification_bg" id="0x7f0707a3" />
+    <public type="drawable" name="notification_bg_low" id="0x7f0707a4" />
+    <public type="drawable" name="notification_bg_low_normal" id="0x7f0707a5" />
+    <public type="drawable" name="notification_bg_low_pressed" id="0x7f0707a6" />
+    <public type="drawable" name="notification_bg_normal" id="0x7f0707a7" />
+    <public type="drawable" name="notification_bg_normal_pressed" id="0x7f0707a8" />
+    <public type="drawable" name="notification_icon" id="0x7f0707a9" />
+    <public type="drawable" name="notification_icon_background" id="0x7f0707aa" />
+    <public type="drawable" name="notification_stream_tooltip" id="0x7f0707ab" />
+    <public type="drawable" name="notification_template_icon_bg" id="0x7f0707ac" />
+    <public type="drawable" name="notification_template_icon_low_bg" id="0x7f0707ad" />
+    <public type="drawable" name="notification_tile_bg" id="0x7f0707ae" />
+    <public type="drawable" name="notify_panel_notification_icon_bg" id="0x7f0707af" />
+    <public type="drawable" name="orca_attach_camera_normal" id="0x7f0707b0" />
+    <public type="drawable" name="orca_attach_camera_pressed" id="0x7f0707b1" />
+    <public type="drawable" name="orca_attach_location_normal" id="0x7f0707b2" />
+    <public type="drawable" name="orca_attach_location_pressed" id="0x7f0707b3" />
+    <public type="drawable" name="orca_attach_photo_normal" id="0x7f0707b4" />
+    <public type="drawable" name="orca_attach_photo_pressed" id="0x7f0707b5" />
+    <public type="drawable" name="orca_attachments_arrow" id="0x7f0707b6" />
+    <public type="drawable" name="orca_attachments_arrow_reversed" id="0x7f0707b7" />
+    <public type="drawable" name="orca_composer_divider_horizontal" id="0x7f0707b8" />
+    <public type="drawable" name="orca_composer_divider_vertical" id="0x7f0707b9" />
+    <public type="drawable" name="orca_composer_popup_active_normal" id="0x7f0707ba" />
+    <public type="drawable" name="orca_composer_popup_active_pressed" id="0x7f0707bb" />
+    <public type="drawable" name="orca_composer_popup_normal" id="0x7f0707bc" />
+    <public type="drawable" name="orca_composer_popup_pressed" id="0x7f0707bd" />
+    <public type="drawable" name="orca_composer_tab" id="0x7f0707be" />
+    <public type="drawable" name="orca_composer_tab_active" id="0x7f0707bf" />
+    <public type="drawable" name="orca_composer_tab_dark" id="0x7f0707c0" />
+    <public type="drawable" name="orca_composer_tab_pressed" id="0x7f0707c1" />
+    <public type="drawable" name="orca_composer_top_divider" id="0x7f0707c2" />
+    <public type="drawable" name="orca_emoji_backspace_back_normal" id="0x7f0707c3" />
+    <public type="drawable" name="orca_emoji_backspace_front_normal" id="0x7f0707c4" />
+    <public type="drawable" name="orca_emoji_backspace_front_pressed" id="0x7f0707c5" />
+    <public type="drawable" name="orca_emoji_category_cars" id="0x7f0707c6" />
+    <public type="drawable" name="orca_emoji_category_nature" id="0x7f0707c7" />
+    <public type="drawable" name="orca_emoji_category_objects" id="0x7f0707c8" />
+    <public type="drawable" name="orca_emoji_category_people" id="0x7f0707c9" />
+    <public type="drawable" name="orca_emoji_category_punctuation" id="0x7f0707ca" />
+    <public type="drawable" name="orca_emoji_more_back_normal" id="0x7f0707cb" />
+    <public type="drawable" name="orca_emoji_more_front_normal" id="0x7f0707cc" />
+    <public type="drawable" name="orca_emoji_more_front_pressed" id="0x7f0707cd" />
+    <public type="drawable" name="overlay_submit_button_disabled" id="0x7f0707ce" />
+    <public type="drawable" name="overlay_submit_button_enabled" id="0x7f0707cf" />
+    <public type="drawable" name="overlay_submit_button_selector" id="0x7f0707d0" />
+    <public type="drawable" name="pending_requests_tab_main_icon" id="0x7f0707d1" />
+    <public type="drawable" name="phone_prefix_item_back" id="0x7f0707d2" />
+    <public type="drawable" name="progress_dot" id="0x7f0707d3" />
+    <public type="drawable" name="rbx_bg_card_shadow" id="0x7f0707d4" />
+    <public type="drawable" name="rbx_bg_card_shadow_blue" id="0x7f0707d5" />
+    <public type="drawable" name="rbx_bg_card_shadow_blue_light" id="0x7f0707d6" />
+    <public type="drawable" name="rbx_bg_card_shadow_red" id="0x7f0707d7" />
+    <public type="drawable" name="rbx_bg_flat_button_animated" id="0x7f0707d8" />
+    <public type="drawable" name="rbx_bg_flat_button_blue_dark" id="0x7f0707d9" />
+    <public type="drawable" name="rbx_bg_flat_button_blue_down" id="0x7f0707da" />
+    <public type="drawable" name="rbx_bg_flat_button_blue_up" id="0x7f0707db" />
+    <public type="drawable" name="rbx_bg_flat_button_circle" id="0x7f0707dc" />
+    <public type="drawable" name="rbx_bg_flat_button_gray_down" id="0x7f0707dd" />
+    <public type="drawable" name="rbx_bg_flat_button_gray_up" id="0x7f0707de" />
+    <public type="drawable" name="rbx_bg_flat_button_progress_blue_down" id="0x7f0707df" />
+    <public type="drawable" name="rbx_bg_flat_button_progress_blue_up" id="0x7f0707e0" />
+    <public type="drawable" name="rbx_bg_flat_button_progress_disabled" id="0x7f0707e1" />
+    <public type="drawable" name="rbx_bg_flat_button_progress_green_down" id="0x7f0707e2" />
+    <public type="drawable" name="rbx_bg_flat_button_progress_green_up" id="0x7f0707e3" />
+    <public type="drawable" name="rbx_bg_flat_button_red" id="0x7f0707e4" />
+    <public type="drawable" name="rbx_bg_flat_button_white_down" id="0x7f0707e5" />
+    <public type="drawable" name="rbx_bg_flat_button_white_up" id="0x7f0707e6" />
+    <public type="drawable" name="rbx_bg_flat_edittext" id="0x7f0707e7" />
+    <public type="drawable" name="rbx_bg_flat_edittext_error" id="0x7f0707e8" />
+    <public type="drawable" name="rbx_bg_flat_edittext_success" id="0x7f0707e9" />
+    <public type="drawable" name="rbx_bg_flat_square_corners_button_blue_down" id="0x7f0707ea" />
+    <public type="drawable" name="rbx_bg_flat_square_corners_button_blue_up" id="0x7f0707eb" />
+    <public type="drawable" name="rbx_bg_flat_square_corners_button_white_down" id="0x7f0707ec" />
+    <public type="drawable" name="rbx_bg_flat_square_corners_button_white_up" id="0x7f0707ed" />
+    <public type="drawable" name="rbx_bg_gender" id="0x7f0707ee" />
+    <public type="drawable" name="rbx_bg_gender_full" id="0x7f0707ef" />
+    <public type="drawable" name="rbx_bg_gender_full_error" id="0x7f0707f0" />
+    <public type="drawable" name="rbx_bg_gender_full_success" id="0x7f0707f1" />
+    <public type="drawable" name="rbx_bg_progress_btn_spinner" id="0x7f0707f2" />
+    <public type="drawable" name="rbx_bg_solid_white" id="0x7f0707f3" />
+    <public type="drawable" name="rbx_bg_spinner_outline" id="0x7f0707f4" />
+    <public type="drawable" name="rbx_drawable_flat_button_blue" id="0x7f0707f5" />
+    <public type="drawable" name="rbx_drawable_flat_button_blue_square_corners" id="0x7f0707f6" />
+    <public type="drawable" name="rbx_drawable_flat_button_gray" id="0x7f0707f7" />
+    <public type="drawable" name="rbx_drawable_flat_button_progress_blue" id="0x7f0707f8" />
+    <public type="drawable" name="rbx_drawable_flat_button_progress_green" id="0x7f0707f9" />
+    <public type="drawable" name="rbx_drawable_flat_button_white" id="0x7f0707fa" />
+    <public type="drawable" name="rbx_drawable_flat_button_white_square_corners" id="0x7f0707fb" />
+    <public type="drawable" name="rbx_spinner_loading_edittext" id="0x7f0707fc" />
+    <public type="drawable" name="rbx_spinner_splash" id="0x7f0707fd" />
+    <public type="drawable" name="resend_msg_button_selector" id="0x7f0707fe" />
+    <public type="drawable" name="right_arrow" id="0x7f0707ff" />
+    <public type="drawable" name="roblox_logo" id="0x7f070800" />
+    <public type="drawable" name="rounded_square_shape_blue" id="0x7f070801" />
+    <public type="drawable" name="rounded_square_shape_choose_your_adventure" id="0x7f070802" />
+    <public type="drawable" name="rounded_square_shape_pressed_choose_your_adventure" id="0x7f070803" />
+    <public type="drawable" name="shadow" id="0x7f070804" />
+    <public type="drawable" name="shadow_background" id="0x7f070805" />
+    <public type="drawable" name="shadow_background_pressed" id="0x7f070806" />
+    <public type="drawable" name="show_password" id="0x7f070807" />
+    <public type="drawable" name="sign_up_checkmark" id="0x7f070808" />
+    <public type="drawable" name="sign_up_xmark" id="0x7f070809" />
+    <public type="drawable" name="status_premium_small_light" id="0x7f07080a" />
+    <public type="drawable" name="sym_keyboard_delete_holo_dark" id="0x7f07080b" />
+    <public type="drawable" name="symbol_chat_empty" id="0x7f07080c" />
+    <public type="drawable" name="symbol_friends" id="0x7f07080d" />
+    <public type="drawable" name="tab_icon_catalog" id="0x7f07080e" />
+    <public type="drawable" name="tab_icon_games" id="0x7f07080f" />
+    <public type="drawable" name="tab_icon_groups" id="0x7f070810" />
+    <public type="drawable" name="tab_icon_home" id="0x7f070811" />
+    <public type="drawable" name="tab_icon_inventory" id="0x7f070812" />
+    <public type="drawable" name="tab_icon_messages" id="0x7f070813" />
+    <public type="drawable" name="tab_icon_profile" id="0x7f070814" />
+    <public type="drawable" name="tab_indicator_black" id="0x7f070815" />
+    <public type="drawable" name="tab_indicator_blue" id="0x7f070816" />
+    <public type="drawable" name="tab_indicator_blue_dark" id="0x7f070817" />
+    <public type="drawable" name="tab_indicator_green" id="0x7f070818" />
+    <public type="drawable" name="tab_selector" id="0x7f070819" />
+    <public type="drawable" name="textfield_search_default_holo_light" id="0x7f07081a" />
+    <public type="drawable" name="textfield_search_selected_holo_light" id="0x7f07081b" />
+    <public type="drawable" name="textfield_searchview_background" id="0x7f07081c" />
+    <public type="drawable" name="textfield_searchview_holo_light" id="0x7f07081d" />
+    <public type="drawable" name="tix_symbol2x" id="0x7f07081e" />
+    <public type="drawable" name="tooltip_frame_dark" id="0x7f07081f" />
+    <public type="drawable" name="tooltip_frame_light" id="0x7f070820" />
+    <public type="drawable" name="topbar_ic_back" id="0x7f070821" />
+    <public type="drawable" name="topbar_ic_back_dark" id="0x7f070822" />
+    <public type="drawable" name="topbar_ic_back_light" id="0x7f070823" />
+    <public type="drawable" name="topbar_ic_clear_20x20" id="0x7f070824" />
+    <public type="drawable" name="topbar_ic_clear_20x20_dark" id="0x7f070825" />
+    <public type="drawable" name="topbar_ic_clear_20x20_light" id="0x7f070826" />
+    <public type="drawable" name="topbar_ic_close" id="0x7f070827" />
+    <public type="drawable" name="topbar_ic_close_20x20" id="0x7f070828" />
+    <public type="drawable" name="topbar_ic_close_20x20_dark" id="0x7f070829" />
+    <public type="drawable" name="topbar_ic_close_20x20_light" id="0x7f07082a" />
+    <public type="drawable" name="topbar_ic_close_dark" id="0x7f07082b" />
+    <public type="drawable" name="topbar_ic_close_light" id="0x7f07082c" />
+    <public type="drawable" name="topbar_ic_compose" id="0x7f07082d" />
+    <public type="drawable" name="topbar_ic_compose_dark" id="0x7f07082e" />
+    <public type="drawable" name="topbar_ic_compose_light" id="0x7f07082f" />
+    <public type="drawable" name="topbar_ic_gear" id="0x7f070830" />
+    <public type="drawable" name="topbar_ic_gear_dark" id="0x7f070831" />
+    <public type="drawable" name="topbar_ic_gear_light" id="0x7f070832" />
+    <public type="drawable" name="topbar_ic_info" id="0x7f070833" />
+    <public type="drawable" name="topbar_ic_info_dark" id="0x7f070834" />
+    <public type="drawable" name="topbar_ic_info_light" id="0x7f070835" />
+    <public type="drawable" name="topbar_ic_notification" id="0x7f070836" />
+    <public type="drawable" name="topbar_ic_notification_dark" id="0x7f070837" />
+    <public type="drawable" name="topbar_ic_notification_light" id="0x7f070838" />
+    <public type="drawable" name="topbar_ic_robux" id="0x7f070839" />
+    <public type="drawable" name="topbar_ic_robux_dark" id="0x7f07083a" />
+    <public type="drawable" name="topbar_ic_robux_light" id="0x7f07083b" />
+    <public type="drawable" name="topbar_ic_search" id="0x7f07083c" />
+    <public type="drawable" name="topbar_ic_search_dark" id="0x7f07083d" />
+    <public type="drawable" name="topbar_ic_search_light" id="0x7f07083e" />
+    <public type="drawable" name="two_step_verification_logo_email" id="0x7f07083f" />
+    <public type="drawable" name="two_step_verification_logo_sms" id="0x7f070840" />
+    <public type="drawable" name="universal_friends_tab_selected" id="0x7f070841" />
+    <public type="drawable" name="universal_friends_tab_unselected" id="0x7f070842" />
+    <public type="drawable" name="white__square_background_rounded_corners" id="0x7f070843" />
+    <public type="drawable" name="white_button" id="0x7f070844" />
+    <public type="drawable" name="white_button_down" id="0x7f070845" />
+    <public type="drawable" name="white_button_drawable" id="0x7f070846" />
     <public type="id" name="ALT" id="0x7f080000" />
     <public type="id" name="CTRL" id="0x7f080001" />
     <public type="id" name="Emoji_GridView" id="0x7f080002" />
@@ -4487,6 +4487,8 @@
     <public type="style" name="Base.TextAppearance.AppCompat.Inverse" id="0x7f0f0017" />
     <public type="style" name="Base.TextAppearance.AppCompat.Large" id="0x7f0f0018" />
     <public type="style" name="Base.TextAppearance.AppCompat.Large.Inverse" id="0x7f0f0019" />
+    <public type="style" name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" id="0x7f0f001a" />
+    <public type="style" name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" id="0x7f0f001b" />
     <public type="style" name="Base.TextAppearance.AppCompat.Medium" id="0x7f0f001c" />
     <public type="style" name="Base.TextAppearance.AppCompat.Medium.Inverse" id="0x7f0f001d" />
     <public type="style" name="Base.TextAppearance.AppCompat.Menu" id="0x7f0f001e" />
@@ -4548,6 +4550,21 @@
     <public type="style" name="Base.V12.Widget.AppCompat.AutoCompleteTextView" id="0x7f0f0056" />
     <public type="style" name="Base.V12.Widget.AppCompat.EditText" id="0x7f0f0057" />
     <public type="style" name="Base.V14.Widget.Design.AppBarLayout" id="0x7f0f0058" />
+    <public type="style" name="Base.V21.Theme.AppCompat" id="0x7f0f0059" />
+    <public type="style" name="Base.V21.Theme.AppCompat.Dialog" id="0x7f0f005a" />
+    <public type="style" name="Base.V21.Theme.AppCompat.Light" id="0x7f0f005b" />
+    <public type="style" name="Base.V21.Theme.AppCompat.Light.Dialog" id="0x7f0f005c" />
+    <public type="style" name="Base.V21.Theme.Roblox" id="0x7f0f005d" />
+    <public type="style" name="Base.V21.ThemeOverlay.AppCompat.Dialog" id="0x7f0f005e" />
+    <public type="style" name="Base.V21.Widget.Design.AppBarLayout" id="0x7f0f005f" />
+    <public type="style" name="Base.V22.Theme.AppCompat" id="0x7f0f0060" />
+    <public type="style" name="Base.V22.Theme.AppCompat.Light" id="0x7f0f0061" />
+    <public type="style" name="Base.V23.Theme.AppCompat" id="0x7f0f0062" />
+    <public type="style" name="Base.V23.Theme.AppCompat.Light" id="0x7f0f0063" />
+    <public type="style" name="Base.V26.Theme.AppCompat" id="0x7f0f0064" />
+    <public type="style" name="Base.V26.Theme.AppCompat.Light" id="0x7f0f0065" />
+    <public type="style" name="Base.V26.Widget.AppCompat.Toolbar" id="0x7f0f0066" />
+    <public type="style" name="Base.V26.Widget.Design.AppBarLayout" id="0x7f0f0067" />
     <public type="style" name="Base.V7.Theme.AppCompat" id="0x7f0f0068" />
     <public type="style" name="Base.V7.Theme.AppCompat.Dialog" id="0x7f0f0069" />
     <public type="style" name="Base.V7.Theme.AppCompat.Light" id="0x7f0f006a" />
@@ -4627,6 +4644,10 @@
     <public type="style" name="Platform.V11.AppCompat.Light" id="0x7f0f00b4" />
     <public type="style" name="Platform.V14.AppCompat" id="0x7f0f00b5" />
     <public type="style" name="Platform.V14.AppCompat.Light" id="0x7f0f00b6" />
+    <public type="style" name="Platform.V21.AppCompat" id="0x7f0f00b7" />
+    <public type="style" name="Platform.V21.AppCompat.Light" id="0x7f0f00b8" />
+    <public type="style" name="Platform.V25.AppCompat" id="0x7f0f00b9" />
+    <public type="style" name="Platform.V25.AppCompat.Light" id="0x7f0f00ba" />
     <public type="style" name="Platform.Widget.AppCompat.Spinner" id="0x7f0f00bb" />
     <public type="style" name="RobloxCompatTheme.Toolbar.SubTitleText" id="0x7f0f00bc" />
     <public type="style" name="RobloxCompatTheme.Toolbar.TitleText" id="0x7f0f00bd" />
@@ -4866,27 +4887,6 @@
     <public type="style" name="Widget.Design.Snackbar" id="0x7f0f01a7" />
     <public type="style" name="Widget.Design.TabLayout" id="0x7f0f01a8" />
     <public type="style" name="Widget.Design.TextInputLayout" id="0x7f0f01a9" />
-    <public type="style" name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" id="0x7f0f001a" />
-    <public type="style" name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" id="0x7f0f001b" />
-    <public type="style" name="Base.V21.Theme.AppCompat" id="0x7f0f0059" />
-    <public type="style" name="Base.V21.Theme.AppCompat.Dialog" id="0x7f0f005a" />
-    <public type="style" name="Base.V21.Theme.AppCompat.Light" id="0x7f0f005b" />
-    <public type="style" name="Base.V21.Theme.AppCompat.Light.Dialog" id="0x7f0f005c" />
-    <public type="style" name="Base.V21.Theme.Roblox" id="0x7f0f005d" />
-    <public type="style" name="Base.V21.ThemeOverlay.AppCompat.Dialog" id="0x7f0f005e" />
-    <public type="style" name="Base.V21.Widget.Design.AppBarLayout" id="0x7f0f005f" />
-    <public type="style" name="Platform.V21.AppCompat" id="0x7f0f00b7" />
-    <public type="style" name="Platform.V21.AppCompat.Light" id="0x7f0f00b8" />
-    <public type="style" name="Base.V22.Theme.AppCompat" id="0x7f0f0060" />
-    <public type="style" name="Base.V22.Theme.AppCompat.Light" id="0x7f0f0061" />
-    <public type="style" name="Base.V23.Theme.AppCompat" id="0x7f0f0062" />
-    <public type="style" name="Base.V23.Theme.AppCompat.Light" id="0x7f0f0063" />
-    <public type="style" name="Platform.V25.AppCompat" id="0x7f0f00b9" />
-    <public type="style" name="Platform.V25.AppCompat.Light" id="0x7f0f00ba" />
-    <public type="style" name="Base.V26.Theme.AppCompat" id="0x7f0f0064" />
-    <public type="style" name="Base.V26.Theme.AppCompat.Light" id="0x7f0f0065" />
-    <public type="style" name="Base.V26.Widget.AppCompat.Toolbar" id="0x7f0f0066" />
-    <public type="style" name="Base.V26.Widget.Design.AppBarLayout" id="0x7f0f0067" />
     <public type="xml" name="android_tracker" id="0x7f110000" />
     <public type="xml" name="network_security_config" id="0x7f110001" />
     <public type="xml" name="searchable" id="0x7f110002" />
