@@ -193,7 +193,7 @@
 .method protected a()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "skyblox.co"
+    const-string v0, "roblox.com"
 
     return-object v0
 .end method

@@ -20,7 +20,7 @@
 
 .field private static final USER_AGENT_SUFFIX_DEFAULT_VALUE:Ljava/lang/String; = " RobloxAndroidClient"
 
-.field private static final WEB_VIEW_URL_OVERRIDE_DEFAULT_VALUE:Ljava/lang/String; = "https://www.skyblox.co/PlaceItem.aspx?id=150055095"
+.field private static final WEB_VIEW_URL_OVERRIDE_DEFAULT_VALUE:Ljava/lang/String; = "https://www.roblox.com/PlaceItem.aspx?id=150055095"
 
 .field static dontReloadMorePage:Z = false
 
@@ -77,7 +77,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    const-string v0, "www.skyblox.co/"
+    const-string v0, "www.roblox.com/"
 
     .line 84
     invoke-static {v0}, Lcom/roblox/client/RobloxSettings;->setBaseUrl(Ljava/lang/String;)V
@@ -252,7 +252,7 @@
 .method static aboutUsUrl()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "https://corp.skyblox.co/"
+    const-string v0, "https://corp.roblox.com/"
 
     return-object v0
 .end method
@@ -856,7 +856,7 @@
 .method static blogUrl()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "https://blog.skyblox.co/"
+    const-string v0, "https://blog.roblox.com/"
 
     return-object v0
 .end method
@@ -1020,7 +1020,7 @@
 .method static careersUrl()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "https://corp.skyblox.co/careers/"
+    const-string v0, "https://corp.roblox.com/careers/"
 
     return-object v0
 .end method
@@ -1098,7 +1098,7 @@
 .method public static contactRobloxSupportUrl()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "https://en.help.skyblox.co/hc/en-us/articles/212459863"
+    const-string v0, "https://en.help.roblox.com/hc/en-us/articles/212459863"
 
     return-object v0
 .end method
@@ -1486,7 +1486,7 @@
 .method static forumUrl()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "https://www.skyblox.co/Forum/default.aspx"
+    const-string v0, "https://www.roblox.com/Forum/default.aspx"
 
     return-object v0
 .end method
@@ -2264,7 +2264,7 @@
     .line 631
     sput-object v0, Lcom/roblox/client/RobloxSettings;->mUserAgentSuffix:Ljava/lang/String;
 
-    const-string v0, "https://www.skyblox.co/PlaceItem.aspx?id=150055095"
+    const-string v0, "https://www.roblox.com/PlaceItem.aspx?id=150055095"
 
     .line 633
     sput-object v0, Lcom/roblox/client/RobloxSettings;->mWebViewURLOverride:Ljava/lang/String;
@@ -3095,7 +3095,7 @@
 .method static parentsUrl()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "https://corp.skyblox.co/parents/"
+    const-string v0, "https://corp.roblox.com/parents/"
 
     return-object v0
 .end method
